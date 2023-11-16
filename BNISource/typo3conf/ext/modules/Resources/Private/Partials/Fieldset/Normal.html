@@ -1,0 +1,17 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="col-md-6">
+			<div class="{fieldset.css.class.fieldset}" style="{fieldset.css.style.fieldset}">
+				<f:if condition="{fieldset.label}">
+					<div class="{fieldset.css.class.legend}" style="{fieldset.css.style.legend}">{fieldset.label}</div>
+				</f:if>
+				<div class="{fieldset.css.class.fieldsetInner}" style="{fieldset.css.style.fieldsetInner}">
+					<f:for each="{fieldset.fields}" as="field" key="fieldKey">
+						<f:render partial="Field/{field.type}" section="{field.section}" arguments="{_all}"  />
+					</f:for>
+				</div>
+			</div>
+		</div>
+	</f:section>
+</div>

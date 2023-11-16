@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:lo="http://typo3.org/ns/Lavitto/Gridgallery/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="Header">
+	<f:if condition="{gallery.position.noWrap} != 1">
+		<f:render partial="Header/All" arguments="{_all}"/>
+	</f:if>
+</f:section>
+
+<f:section name="Main">
+	<lo:removeWhitespace>
+		<f:variable name="captionsEnabled"
+					value="{lo:flexForm(
+						flexform: data.pi_flexform,
+						option: 'captions',
+						defaultValue: settings.gridgallery.defaultCaptions
+					)}"/>
+		<f:variable name="rowHeight" value="{f:if(
+			condition: data.imageheight,
+			then: data.imageheight,
+			else: settings.gridgallery.defaultRowHeight
+		)}"/>
+		<f:variable name="margins" value="{f:if(
+			condition: data.imagewidth,
+			then: data.imagewidth,
+			else: settings.gridgallery.defaultMargins
+		)}"/>
+		<div class="ce-gridgallery" data-row-height="{rowHeight}" data-margins="{margins}"
+			 data-captions="{captionsEnabled}"
+			 data-randomize="{lo:flexForm(flexform: data.pi_flexform, option: 'randomize', defaultValue: settings.gridgallery.defaultRandomize)}"
+			 data-last-row="{lo:flexForm(flexform: data.pi_flexform, option: 'lastRow', defaultValue: settings.gridgallery.defaultLastRow)}"
+			 data-border="{lo:flexForm(flexform: data.pi_flexform, option: 'border', defaultValue: settings.gridgallery.defaultBorder)}">
+			<f:render partial="GridGallery/Gallery" arguments="{_all}"/>
+		</div>
+	</lo:removeWhitespace>
+</f:section>
+
+</html>

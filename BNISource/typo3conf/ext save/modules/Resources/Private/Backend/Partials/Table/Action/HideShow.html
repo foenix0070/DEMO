@@ -1,0 +1,24 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<f:if condition="{listItem.hidden}">
+	<f:then>
+		<modules:variable.set name="languageKey" value="tx_modules_label.list_{list.underscoredId}_action_show" />
+		<modules:be.editLink table="{list.table}"
+							 uid="{listItem.uid}"
+							 action="show"
+							 module="{list.module}"
+							 title="{f:translate(key: languageKey)}"
+							 class="btn btn-default {options.css}">
+			<core:icon identifier="actions-edit-unhide"/></modules:be.editLink>
+	</f:then>
+	<f:else>
+		<modules:variable.set name="languageKey" value="tx_modules_label.list_{list.underscoredId}_action_hide" />
+		<modules:be.editLink table="{list.table}"
+							 uid="{listItem.uid}"
+							 action="hide"
+							 module="{list.module}"
+							 title="{f:translate(key: languageKey)}"
+							 class="btn btn-default {options.css}">
+			<core:icon identifier="actions-edit-hide"/></modules:be.editLink>
+	</f:else>
+</f:if>

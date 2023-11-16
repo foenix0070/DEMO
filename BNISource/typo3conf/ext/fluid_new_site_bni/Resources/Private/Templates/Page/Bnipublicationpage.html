@@ -1,0 +1,95 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section id="tab-section" class="mb-5">
+            <div class="container py-4">
+                <f:for each="{ArticleSectionTitle}" as="MainSectionTitleContent">
+                    <div class="heading-block border-bottom-0 text-center mb-5">
+                        <h2>{MainSectionTitleContent.data.header}</h2>
+                        <span>{MainSectionTitleContent.data.subheader}</span>
+                    </div>
+                </f:for>
+
+                
+                
+                <div class="justify-content-center" id="main-publication">
+                    
+                    <div class="row row-cols-1 row-cols-md-4" id="publication-row">
+                        <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                            <div class="col mb-5">
+                                <f:if condition="{ArticleSectionTextContent.data.header_link}">
+                                    <f:then>
+                                        <a href="{f:uri.image(src:'{ArticleSectionTextContent.data.header_link}', treatIdAsReference: 1)}" data-imglink="/fileadmin{ArticleSectionTextContent.ArticleImages.0.originalFile.identifier}" class="card bni_publication-card" alt="{ArticleSectionTextContent.data.header}">
+                                    </f:then>
+                                    <f:else>
+                                        <a href="" data-imglink="/fileadmin{ArticleSectionTextContent.ArticleImages.0.originalFile.identifier}" class="card bni_publication-card" alt="{ArticleSectionTextContent.data.header}">
+                                    </f:else>
+                                </f:if> 
+                                    <div class="bni_card_img m-2">
+                                        <img src="/fileadmin{ArticleSectionTextContent.ArticleImages.0.originalFile.identifier}" class="img-fluid" alt="{ArticleSectionTextContent.data.header}">
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner">{ArticleSectionTextContent.data.header}</span>
+                                            <!-- <span class="thumb-info-type">CEO</span> -->
+                                            <!-- <div class="d-flex"><f:if condition="{ArticleSectionTextContent.data.header_link}"><f:then><a href="{f:uri.image(src:'{ArticleSectionTextContent.data.header_link}', treatIdAsReference: 1)}" class="bni_publication-link"></a></f:then></f:if></div> -->
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </f:for>
+                    </div>
+                    <nav aria-label="Page navigation" id="pagination-data-container">
+                        <ul class="pagination">
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+
+                
+        </section>
+
+        
+    </div><!-- End Main -->
+
+
+   <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="/typo3conf/ext/fluid_new_site_bni/Resources/Public/JavaScript/Dist/publication.js"></script>
+   
+   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+
+
+</f:section>

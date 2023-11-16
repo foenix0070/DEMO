@@ -1,0 +1,69 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section id="main-category" class="mb-5">
+            <div class="container">
+                <div class="row heading-block border-bottom-0 mb-5 center">
+                    <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                        <div class="col-lg-12">
+                            <h2 class="text-left text-5">{ArticleSectionTextContent.data.header}</h2>
+                            <f:format.html>{ArticleSectionTextContent.data.bodytext}</f:format.html>
+                        </div>
+                    </f:for> 
+                    
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+                    <!-- 
+                    <f:for each="{ArticleSectionImage}" as="ArticleSectionImageContent">
+                        <div class="col-lg-4">
+                            <div class="cascading-images-wrapper p-0 mb-5">
+                                <div class="cascading-images position-relative">
+                                    <img src="/fileadmin{ArticleSectionImageContent.ArticleImage.0.originalFile.identifier}" class="box-shadow-4 appear-animation animated expandIn appear-animation-visible img-fluid" alt="" style="animation-duration: 600ms; animation-delay: 100ms;">
+                                    <div class="position-absolute w-100" style="top: 61%; left: -20%;">
+                                        <img src="content/brand/generic-3.jpeg" class="box-shadow-4 appear-animation animated expandIn appear-animation-visible img-fluid" width="285" alt="" style="animation-duration: 600ms; animation-delay: 300ms;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </f:for>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        
+    </div><!-- End Main -->
+
+    
+ 
+
+</f:section>
+
+</html>

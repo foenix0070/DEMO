@@ -1,0 +1,55 @@
+plugin.tx_dftabs_plugin1 {
+	css = EXT:df_tabs/Resources/Public/StyleSheets/df_tabs.css
+	js {
+		dftabs = EXT:df_tabs/Resources/Public/JavaScript/tabs.js
+	}
+
+	# cat=plugin.tx_dftabs_plugin1/settings; type=text; label=Defines the Renderer that is used
+	renderer = Fluid
+
+	# Fluid settings
+	view {
+		templateRootPath = EXT:df_tabs/Resources/Private/Templates/
+		partialRootPath = EXT:df_tabs/Resources/Private/Partials/
+		layoutRootPath = EXT:df_tabs/Resources/Private/Layouts/
+	}
+
+	# typoscript specific options
+	enableJavascript = 1
+	defaultTabTitle = Tab
+	classPrefix = tx-dftabs-
+	hashName = tab
+	pollingInterval = 1000
+	animationSpeed = 400
+	startIndex = 0
+	forceUsageOfLeft = false
+	menuNodeType = li
+	contentNodeType = div
+	animationCallback =
+	changeHashOnTabChange = 0
+	removeFromTitle =
+
+	# flexform options for the plugin usage with plain typoscript
+	enableAutoPlay = 0
+	autoPlayInterval = 7000
+	enableMouseOver = 0
+	mode = tt_content
+	titles =
+	data =
+
+	# pages mode related configuration settings
+	pages {
+		limit = 999
+		orderBy = colPos,sorting
+		additionalWhere = AND colPos >= 0
+
+		titleField = title
+		linkField = uid
+	}
+
+	# tt_content mode related configuration settings
+	tt_content {
+		titleField = header
+		linkField = header_link
+	}
+}

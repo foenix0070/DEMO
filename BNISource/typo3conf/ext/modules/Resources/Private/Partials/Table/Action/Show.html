@@ -1,0 +1,4 @@
+<f:link.action action="{options.action -> f:format.case(mode: 'lower')}" title="{options.title}" class="btn btn-primary btn-icon"
+			   controller="{options.controller}" extensionName="{options.extensionName}" pluginName="{options.pluginName}"
+			   arguments="{modules:variable.setUid(value: listItem.uid, name: options.parameter)}" target="_blank"
+			   pageUid="{options.pageUid}"><f:spaceless><f:if condition="{options.iconIdentifier}"><core:icon alternativeMarkupIdentifier="inline" identifier="{options.iconIdentifier}"/></f:if> <f:if condition="{options.label}"><span class="btn-label">{options.label}</span></f:if></f:spaceless></f:link.action>

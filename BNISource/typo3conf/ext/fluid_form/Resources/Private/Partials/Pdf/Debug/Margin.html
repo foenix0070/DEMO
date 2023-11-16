@@ -1,0 +1,9 @@
+{namespace fpdf=CodingMs\FluidFpdf\ViewHelpers}
+<f:if condition="{debug}">
+	<fpdf:setDrawColor hex="#FF0000" />
+	<fpdf:setLineWidth width="0.05" />
+	<fpdf:line x1="{marginLeft}" x2="{marginLeft}" y1="0" y2="297.00" />
+	<fpdf:line x1="{marginRight}" x2="{marginRight}" y1="0" y2="297.00" />
+	<fpdf:line x1="0" x2="210.00" y1="{marginTop}" y2="{marginTop}" />
+	<fpdf:line x1="0" x2="210.00" y1="{marginBottom}" y2="{marginBottom}" />
+</f:if>

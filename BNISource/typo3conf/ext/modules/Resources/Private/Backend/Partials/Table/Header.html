@@ -1,0 +1,10 @@
+<thead>
+	<tr class="t3-row-header">
+		<f:for each="{list.fields}" key="field" as="options">
+			<f:if condition="({options.hideInList} == 0) && {options.visible}">
+				<f:render partial="Table/HeaderColumn" arguments="{field: field, list: list, options: options}" />
+			</f:if>
+		</f:for>
+		<th><f:translate key="tx_modules_label.list_{list.underscoredId}_col_actions" /></th>
+	</tr>
+</thead>

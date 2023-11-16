@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+
+        <section id="produits-services" class="bni_prd-bg-grey mb-5">
+            <div class="container">
+                <div class="heading-block border-bottom-0 text-center">
+                    <h2>NOS PRODUITS ET SERVICES</h2>
+                    <span>Une sélection d'offres bancaires en Fonction de votre profil</span>
+                </div>
+                <div id="card-category" class="bni_prd-cards">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                            <div class="col mt-3">
+                                <a href="{ArticleSectionTextContent.data.header_link}" class="card bni_card shadow bni_prd-cards_card bni_prd-cards-{ArticleSectionTextContent.data.header}" alt="{ArticleSectionTextContent.data.header}">
+                                    <div class="bni_prdcards-card-container">
+                                        <div class="bni_card_img mt-4 ms-4">
+                                            <i class="{ArticleSectionTextContent.data.subheader} fa-5x"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">{ArticleSectionTextContent.data.header}</h5>
+                                            <p class="bni_card-text"><f:format.html>{ArticleSectionTextContent.data.bodytext}</f:format.html></p>
+                                        </div>
+                                        <div class="bni-card-actions m-3 text-right">
+                                            <button type="button" class="btn btn-outline-success rounded-pill">En Savoir plus</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </f:for>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div><!-- End Main -->
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+</f:section>

@@ -1,0 +1,303 @@
+{
+    "title": "TYPO3 Modules",
+    "subtitle": "Little helper for creating Backend modules in TYPO3.",
+    "logo": "../Resources/Public/Icons/Extension.svg",
+    "markdown": "../Readme.en.md",
+    "features": [
+        "Profile processing for logged in frontend user",
+        "Registration for frontend users (optional: registration confirmation by site administrator)",
+        "Invitation codes for registration (can be personalized and can have a time limit)",
+        "Backend module for managing frontend users incl. authorizations.",
+        "Backend module for managing backend users (suitable for editor users as well) incl. authorizations.",
+        "Backend module for managing invitation codes for registration.",
+        "Backend module for importing invitation codes for registration.",
+        "Toolbox for creating backend modules (find an example in the EXT:internal_notes extension in TYPO3-TER)",
+        "Toolbox for creating frontend administration areas"
+    ],
+    "meta": {
+        "description": "TYPO3 Modules - Little helper for creating Backend modules in TYPO3.",
+        "abstract": "Modules - Little helper for creating frontend and backend modules in TYPO3",
+        "keywords": "TYPO3, extension, Backend, Backend modules",
+        "og:title": "TYPO3 Modules",
+        "og:description": "TYPO3 Modules - Little helper for creating Backend modules in TYPO3."
+    },
+    "links": {
+        "product": {
+            "link": "https://www.coding.ms/typo3-extensions/typo3-modules/",
+            "name": "TYPO3 Modules"
+        },
+        "download": {
+            "link": "https://typo3.org/extensions/repository/view/modules",
+            "name": "TYPO3 Modules Download"
+        }
+    },
+    "pages": [
+        {
+            "title": "Configuration",
+            "pages": [
+                {
+                    "title": "Emails",
+                    "markdown": "Configuration/Emails.en.md",
+                    "meta": {
+                        "description": "Configuration and setup of a simple user registration in two steps with a form and e-mail confirmation link or by activation.",
+                        "abstract": "Two-step user registration with form and email confirmation link",
+                        "keywords": "TYPO3, extension, modules, form ",
+                        "og:title": "TYPO3 Shop - Two-step user registration with form and email confirmation link",
+                        "og:description": "Configuration and setup of a simple user registration in two steps with a form and e-mail confirmation link or by activation."
+                    }
+                },
+                {
+                    "title": "Human readable urls",
+                    "markdown": "Configuration/HumanReadableUrls.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Configuration settings for human readable urls.",
+                        "abstract": "Configuration settings for human readable urls.",
+                        "keywords": "TYPO3, extension, modules, readable, URL",
+                        "og:title": "TYPO3 Modules - Configuration settings for human readable urls.",
+                        "og:description": "TYPO3 Modules - Configuration settings for human readable urls."
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Backend",
+            "pages": [
+                {
+                    "title": "Define data tables",
+                    "markdown": "Backend/DefiningDataTables.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Define data tables, table fields, table actions, translations, TypoScript configuration and creation user usage.",
+                        "abstract": "Defining data tables, table fields, table actions",
+                        "keywords": "TYPO3, extension, modules, data tables, table fields, table actions, translations, TypoScript configuration",
+                        "og:title": "TYPO3 Modules - Define data tables",
+                        "og:description": "TYPO3 Modules - Define data tables, table fields, table actions, translations, TypoScript configuration and creation user usage."
+                    }
+                },
+                {
+                    "title": "Invitation code import",
+                    "markdown": "Backend/InvitationCodeImport.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Import invitation code from a CSV file.",
+                        "abstract": "Import invitation code from a CSV file",
+                        "keywords": "TYPO3, extension, modules, invitation code, CSV",
+                        "og:title": "TYPO3 Modules - Invitation code import",
+                        "og:description": "TYPO3 Modules - Import invitation code from a CSV file."
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Frontend",
+            "pages": [
+                {
+                    "title": "Integrate frontend modules",
+                    "markdown": "Frontend/TodoListForFrontendIntegration.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Integration of the frontend modules and adding an editable frontend user property in objects. Define the plugin and controller.",
+                        "abstract": "Integrate frontend modules",
+                        "keywords": "TYPO3, extension, modules, frontend modules, frontend user property",
+                        "og:title": "TYPO3 Modules - Integrate frontend modules",
+                        "og:description": "TYPO3 Modules - Integration of the frontend modules and adding an editable frontend user property in objects. Define the plugin and controller."
+                    }
+                },
+                {
+                    "title": "Automatic user-friendly URLs",
+                    "markdown": "Frontend/AutomaticSlugGeneration.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Automatically create speaking URLs on every save or update.",
+                        "abstract": "Automatic user-friendly URLs",
+                        "keywords": "TYPO3, extension, modules, url, slug",
+                        "og:title": "TYPO3 Modules - Automatic user-friendly URLs",
+                        "og:description": "TYPO3 Modules - Automatically create speaking URLs on every save or update."
+                    }
+                },
+                {
+                    "title": "Available validators",
+                    "markdown": "Frontend/AvailableValidators.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Listing and explanation of available validators.",
+                        "abstract": "Listing and explanation of available validators.",
+                        "keywords": "TYPO3, extension, modules, validators",
+                        "og:title": "TYPO3 Modules - Available validators",
+                        "og:description": "TYPO3 Modules - Listing and explanation of available validators."
+                    }
+                },
+                {
+                    "title": "Clear Frontend Cache",
+                    "markdown": "Frontend/ClearPageCache.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Configuration to flush the frontend cache of certain pages when it becomes necessary during object creation or editing.",
+                        "abstract": "Configuration to clear the frontend cache",
+                        "keywords": "TYPO3, extension, modules, frontend caches",
+                        "og:title": "TYPO3 Modules - Clear Frontend Cache",
+                        "og:description": "TYPO3 Modules - Configuration to flush the frontend cache of certain pages when it becomes necessary during object creation or editing."
+                    }
+                },
+                {
+                    "title": "Create new Records",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionCreate.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Instructions for creating new data records for frontend management using an example with subsequent TypoScript configuration.",
+                        "abstract": "Instructions for creating new data sets",
+                        "keywords": "TYPO3, extension, modules, Instructions, data sets, create",
+                        "og:title": "TYPO3 Modules - Neue Datensätze anlegen",
+                        "og:description": "TYPO3 Modules - Instructions for creating new data records for frontend management using an example with subsequent TypoScript configuration."
+                    }
+                },
+                {
+                    "title": "Delete data records",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionDelete.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - TypoScript configuration of the delete button for deleting records and adding methods.",
+                        "abstract": "Delete data records",
+                        "keywords": "TYPO3, extension, modules, Records, button, configuration, delete",
+                        "og:title": "TYPO3 Modules - Delete data records",
+                        "og:description": "TYPO3 Modules - TypoScript configuration of the delete button for deleting records and adding methods."
+                    }
+                },
+                {
+                    "title": "Editing records",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionEdit.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - TypoScript configuration for editing records and methods that provide editing.",
+                        "abstract": "Editing records",
+                        "keywords": "TYPO3, extension, modules, Records, configuration, edit",
+                        "og:title": "TYPO3 Modules - Editing records",
+                        "og:description": "TYPO3 Modules - TypoScript configuration for editing records and methods that provide editing."
+                    }
+                },
+                {
+                    "title": "Display error messages",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionError.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Configuration for displaying error messages when the frontend management is called without a valid login.",
+                        "abstract": "Configuration for displaying error messages",
+                        "keywords": "TYPO3, extension, modules, configuration, show, error message",
+                        "og:title": "TYPO3 Modules - Display error messages",
+                        "og:description": "TYPO3 Modules - Configuration for displaying error messages when the frontend management is called without a valid login."
+                    }
+                },
+                {
+                    "title": "Create a list of records",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionList.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Setup Typoscript configuration for creating a record list and associated method.",
+                        "abstract": "Create a list of records",
+                        "keywords": "TYPO3, extension, modules, data sets, create, TypoScript, configuration",
+                        "og:title": "TYPO3 Modules - Create a list of records",
+                        "og:description": "TYPO3 Modules - Setup Typoscript configuration for creating a record list and associated method."
+                    }
+                },
+                {
+                    "title": "Preperations",
+                    "markdown": "Frontend/IntegrateManagementInOwnExtensionPreparation.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Preparing the frontend controllers, plugin integration, adapting the repository and adapting the data model.",
+                        "abstract": "Preparation of the modules",
+                        "keywords": "TYPO3, extension, modules, frontend controllers, data models",
+                        "og:title": "TYPO3 Modules - Preperations",
+                        "og:description": "TYPO3 Modules - Preparing the frontend controllers, plugin integration, adapting the repository and adapting the data model."
+                    }
+                },
+                {
+                    "title": "Automatic email after records have been edited",
+                    "markdown": "Frontend/SendMailOnChangedRecords.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Send email when records need to be adjusted or reviewed. Configuration of the TypoScript.",
+                        "abstract": "Automatic email after records have been edited",
+                        "keywords": "TYPO3, extension, modules, records, email",
+                        "og:title": "TYPO3 Modules - Send email when records are adjusted",
+                        "og:description": "TYPO3 Modules - Send email when records need to be adjusted or reviewed. Configuration of the TypoScript."
+                    }
+                },
+                {
+                    "title": "Forms with tabs",
+                    "markdown": "Frontend/UseFormTabs.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Configuration of the TypoScript to display the editing form with tabs. Error handling of the individual tabs.",
+                        "abstract": "Show processing form with tabs",
+                        "keywords": "TYPO3, extension, modules, Configuration, form, error handling",
+                        "og:title": "TYPO3 Modules - Forms with tabs",
+                        "og:description": "TYPO3 Modules - Configuration of the TypoScript to display the editing form with tabs. Error handling of the individual tabs."
+                    }
+                }
+            ]
+        },
+        {
+            "title": "HowTo",
+            "pages": [
+                {
+                    "title": "Example registration email",
+                    "markdown": "HowTo/ActivationMailExample.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - How the template for the registration mail can look like using an example.",
+                        "abstract": "Sample mail of a registration mail",
+                        "keywords": "TYPO3, extension, modules, registration mail",
+                        "og:title": "TYPO3 Modules - Example registration email",
+                        "og:description": "TYPO3 Modules - How the template for the registration mail can look like using an example."
+                    }
+                },
+                {
+                    "title": "Define different configurations depending on frontend user group",
+                    "markdown": "HowTo/DefineDifferentConfigurationsDependingOnFrontendUserGroup.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - How to set up different configurations for the frontend user groups via TypoScript.",
+                        "abstract": "Different configurations for frontend user groups",
+                        "keywords": "TYPO3, extension, modules, User groups, configurations",
+                        "og:title": "TYPO3 Modules - Different configurations for frontend user groups",
+                        "og:description": "TYPO3 Modules - How to set up different configurations for the frontend user groups via TypoScript."
+                    }
+                },
+                {
+                    "title": "Fluid conditions for frontend user groups",
+                    "markdown": "HowTo/FluidConditionsOnFrontendUserGroup.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - How to provide different functions or content to frontend user groups via Fluid-Fluid-Template in Fluid-Template.",
+                        "abstract": "Fluid conditions for frontend user groups",
+                        "keywords": "TYPO3, extension, modules, fluid template, conditions, content",
+                        "og:title": "TYPO3 Modules - Fluid conditions for frontend user groups",
+                        "og:description": "TYPO3 Modules - How to provide different functions or content to frontend user groups via Fluid-Fluid-Template in Fluid-Template."
+                    }
+                },
+                {
+                    "title": "Manage banking details at registration",
+                    "markdown": "HowTo/FrontendSwitchAccountingType.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - How to control bank data fields during registration or only display them in \"Edit profile\" if direct debit is selected.",
+                        "abstract": "Control bank data fields during registration",
+                        "keywords": "TYPO3, extension, modules, registration, bank details, fields",
+                        "og:title": "TYPO3 Modules - Manage banking details at registration",
+                        "og:description": "TYPO3 Modules - How to control bank data fields during registration or only display them in \"Edit profile\" if direct debit is selected."
+                    }
+                }
+            ]
+        },
+        {
+            "title": "FAQ",
+            "pages": [
+                {
+                    "title": "Why is the HideShow action not working as expected?",
+                    "markdown": "Faq/ActionHideShow.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Why is the HideShow action not working as expected?",
+                        "abstract": "Why is the HideShow action not working as expected?",
+                        "keywords": "TYPO3, extension, modules, ",
+                        "og:title": "TYPO3 Modules - Why is the HideShow action not working as expected?",
+                        "og:description": "TYPO3 Modules - Why is the HideShow action not working as expected?"
+                    }
+                },
+                {
+                    "title": "Why isn't the delete modal showing up?",
+                    "markdown": "Faq/DeleteModule.en.md",
+                    "meta": {
+                        "description": "TYPO3 Modules - Why isn't the delete modal showing up?",
+                        "abstract": "Why isn't the delete modal showing up?",
+                        "keywords": "TYPO3, extension, modules, delete, modal, anzeigen",
+                        "og:title": "TYPO3 Modules - Why isn't the delete modal showing up?",
+                        "og:description": "TYPO3 Modules - Why isn't the delete modal showing up?"
+                    }
+                }
+            ]
+        }
+    ]
+}

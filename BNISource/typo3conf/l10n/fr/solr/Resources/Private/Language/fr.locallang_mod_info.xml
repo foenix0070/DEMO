@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Info</label>
+			<label index="mlang_labels_tablabel">Obtenez de l'information sur l'utilisation et les données de votre recherche.</label>
+			<label index="mlang_labels_tabdescr">Ce module vous permet d'obtenir des informations (statistiques, champs utilisés, détails de connexion) à partir du noyau.</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

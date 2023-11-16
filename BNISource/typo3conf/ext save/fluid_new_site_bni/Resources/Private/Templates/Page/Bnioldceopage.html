@@ -1,0 +1,88 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section class="sponsor-section">
+            <div class="container">
+                <div class="row heading-block border-bottom-0 mt-4 mb-4 center">
+                    <f:for each="{MainSectionTitle}" as="MainSectionTitleContent">
+                        <div class="col-lg-12">
+                            <h2 class="text-left text-5">{MainSectionTitleContent.data.header}</h2>
+                        </div>
+                    </f:for> 
+                </div>
+                <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                    <div class="row mb-4">
+                            <div class="col">
+                                <div class="d-flex flex-wrap bg-white shadow mb-5 rounded custom-link-hover-effects">
+                                    <div class="position-relative col-12 col-md-2 lazyloaded" data-bg-src="content/brand/team-4.jpeg" style="background-position: center center; min-height: 190; background-size: cover; background-image: url('content/brand/team-4.jpeg');">
+                                        <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+                                            <div class="custom-crooked-line">
+                                                <div class="animated-icon animated fadeIn svg-fill-color-primary">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 p-5">
+                                        <div class="d-flex justify-content-between justify-content-md-start mb-4">
+                                            <div>
+                                                <h2 class="font-weight-semibold text-6 line-height-1 mb-0">{ArticleSectionTextContent.data.header}</h2>
+                                                <p class="text-3-5 mb-0">{ArticleSectionTextContent.data.subheader}</p>
+                                            </div>
+                                            <div class="bg-light ms-4 me-1 d-none d-md-block" style="width: 8px;"></div>
+                                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">
+                                                <li class="social-icons-instagram">
+                                                    <a href="http://www.instagram.com/" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                                <li class="social-icons-twitter">
+                                                    <a href="http://www.twitter.com/" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li class="social-icons-facebook">
+                                                    <a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="custom-read-more-style-1 position-relative">
+                                            <p class="text-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </f:for>
+            </div>
+        </section>
+
+        
+    </div><!-- End Main -->
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+</f:section>

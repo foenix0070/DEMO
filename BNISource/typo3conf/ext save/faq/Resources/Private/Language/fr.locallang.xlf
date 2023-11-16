@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2016-06-09T06:59:02Z">
+		<header>
+			<type>database</type>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="form.email" approved="yes">
+			<source>Email (for the answer)</source>
+			<target>Adresse mail (pour notre réponse)</target>
+		</trans-unit>
+		<trans-unit id="form.headline" approved="yes">
+			<source>Send us your question!</source>
+			<target>Envoyez-nous votre question!</target>
+		</trans-unit>
+		<trans-unit id="form.submit" approved="yes">
+			<source>Send question</source>
+			<target>Envoyer question</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

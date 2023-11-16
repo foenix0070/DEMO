@@ -1,0 +1,108 @@
+plugin.tx_modules {
+	view {
+		templateRootPaths {
+			200 = EXT:modules/Resources/Private/Templates/
+			300 = {$themes.configuration.extension.modules.view.templateRootPath}
+			400 = {$themes.resourcesPrivatePath}Extensions/Modules/Templates/
+		}
+		partialRootPaths {
+			200 = EXT:modules/Resources/Private/Partials/
+			300 = {$themes.configuration.extension.modules.view.partialRootPath}
+			400 = {$themes.resourcesPrivatePath}Extensions/Modules/Partials/
+		}
+		layoutRootPaths {
+			200 = EXT:modules/Resources/Private/Layouts/
+			300 = {$themes.configuration.extension.modules.view.layoutRootPath}
+			400 = {$themes.resourcesPrivatePath}Extensions/Modules/Layouts/
+		}
+	}
+	persistence {
+		storagePid = {$themes.configuration.container.frontendUser}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+		# Skip default arguments from urls
+		skipDefaultArguments = 0
+	}
+	settings {
+		# Debug extension
+		debug = 0
+		pages {
+			registration = {$themes.configuration.pages.registration}
+			profile = {$themes.configuration.pages.profile}
+			terms = {$themes.configuration.pages.terms}
+			login = {$themes.configuration.pages.login}
+			privacy = {$themes.configuration.pages.privacy}
+			disclaimer = {$themes.configuration.pages.disclaimer}
+		}
+		container {
+			frontendUser = {$themes.configuration.container.frontendUser}
+		}
+		registration {
+			# Disables the username field and use email as username
+			emailAsUsername = {$themes.configuration.extension.modules.registration.emailAsUsername}
+			usernameMinLength = {$themes.configuration.extension.modules.registration.usernameMinLength}
+			passwordMinLength = {$themes.configuration.extension.modules.registration.passwordMinLength}
+			passwordEncryption = {$themes.configuration.extension.modules.registration.passwordEncryption}
+			enableAdminConfirmation = {$themes.configuration.extension.modules.registration.enableAdminConfirmation}
+			email {
+				subject = {$themes.configuration.extension.modules.registration.email.subject}
+				fromEmail = {$themes.configuration.extension.modules.registration.email.fromEmail}
+				fromName = {$themes.configuration.extension.modules.registration.email.fromName}
+				bccEmail = {$themes.configuration.extension.modules.registration.email.bccEmail}
+			}
+			emailOnActivation {
+				active = {$themes.configuration.extension.modules.registration.emailOnActivation.active}
+				subject = {$themes.configuration.extension.modules.registration.emailOnActivation.subject}
+				fromEmail = {$themes.configuration.extension.modules.registration.emailOnActivation.fromEmail}
+				fromName = {$themes.configuration.extension.modules.registration.emailOnActivation.fromName}
+				bccEmail = {$themes.configuration.extension.modules.registration.emailOnActivation.bccEmail}
+			}
+			emailAdminActivation {
+				subject = {$themes.configuration.extension.modules.registration.emailAdminActivation.subject}
+				fromEmail = {$themes.configuration.extension.modules.registration.emailAdminActivation.fromEmail}
+				toEmail = {$themes.configuration.extension.modules.registration.emailAdminActivation.toEmail}
+				bccEmail = {$themes.configuration.extension.modules.registration.emailAdminActivation.bccEmail}
+			}
+			emailAdminConfirmation {
+				subject = {$themes.configuration.extension.modules.registration.emailAdminConfirmation.subject}
+				fromEmail = {$themes.configuration.extension.modules.registration.emailAdminConfirmation.fromEmail}
+				fromName = {$themes.configuration.extension.modules.registration.emailAdminConfirmation.fromName}
+				bccEmail = {$themes.configuration.extension.modules.registration.emailAdminConfirmation.bccEmail}
+			}
+			emailAdminRejection {
+				subject = {$themes.configuration.extension.modules.registration.emailAdminRejection.subject}
+				fromEmail = {$themes.configuration.extension.modules.registration.emailAdminRejection.fromEmail}
+				fromName = {$themes.configuration.extension.modules.registration.emailAdminRejection.fromName}
+				bccEmail = {$themes.configuration.extension.modules.registration.emailAdminRejection.bccEmail}
+			}
+			frontendUserGroups = {$themes.configuration.extension.modules.registration.frontendUserGroups}
+			recordType = {$themes.configuration.extension.modules.registration.recordType}
+			finisher = CodingMs\Modules\Service\Finisher\Registration\DefaultService
+			# Possible values for profession selection
+			professions = {$themes.configuration.extension.modules.registration.professions}
+			# Possible values for marital status selection
+			maritalStatus = {$themes.configuration.extension.modules.registration.maritalStatus}
+			# Possible values for gender selection (male, female, family, diverse)
+			gender = {$themes.configuration.extension.modules.registration.gender}
+			# Possible values for accounting type selection
+			accountingType = {$themes.configuration.extension.modules.registration.accountingType}
+			# User must have at least an age of:
+			minAge = {$themes.configuration.extension.modules.registration.minAge}
+			# New user needs an invitation code:
+			invitationRequired = {$themes.configuration.extension.modules.registration.invitationRequired}
+		}
+		profile {
+			emailOnUserUpdate {
+				active = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.active}
+				subject = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.subject}
+				fromEmail = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.fromEmail}
+				fromName = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.fromName}
+				toEmail = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.toEmail}
+				toName = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.toName}
+				bccEmail = {$themes.configuration.extension.modules.profile.emailOnUserUpdate.bccEmail}
+			}
+		}
+	}
+}

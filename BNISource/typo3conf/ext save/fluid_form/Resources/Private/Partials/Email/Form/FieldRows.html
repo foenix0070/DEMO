@@ -1,0 +1,32 @@
+<f:comment>
+<p>
+	<ul>
+		<f:for each="{form.fieldsets}" as="fieldset">
+			<f:for each="{fieldset.fields}" as="field">
+				<f:if condition="{field.excludeFromMail} != '1'">
+					<f:switch expression="{field.type}">
+						<f:case value="Hidden">
+							<li>{field.label}: {field.value}</li>
+						</f:case>
+						<f:case value="Input">
+							<li>{field.label}: {field.value}</li>
+						</f:case>
+						<f:case value="Textarea">
+							<li>{field.label}:<br />
+								{field.value}</li>
+						</f:case>
+					</f:switch>
+				</f:if>
+			</f:for>
+		</f:for>
+	</ul>
+</p>
+</f:comment>
+
+<p>
+	<ul>
+		<f:for each="{rows}" as="row">
+			<li><f:format.raw>{row}</f:format.raw></li>
+		</f:for>
+	</ul>
+</p>

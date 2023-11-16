@@ -1,0 +1,109 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:fpdf="http://typo3.org/ns/CodingMs/FluidFpdf/ViewHelpers"
+	  data-namespace-typo3-fluid="true"><f:spaceless>
+<f:format.raw>
+	<fpdf:pdf destination="S">
+
+		<!-- show all border and debug information -->
+		<fpdf:variable.set name="debug" value="0" />
+		<fpdf:variable.set name="debugText" value="" />
+
+		<fpdf:addPage orientation="P" size="A4">
+
+			<!-- If set, insert a background pdf -->
+			<f:if condition="{form.configuration.pdf.receiver.background}">
+				<fpdf:setSourceFile file="{form.configuration.pdf.receiver.background}" />
+				<fpdf:useTemplate pageNo="1" x="0" y="0" />
+			</f:if>
+
+			<!-- Automatic page break -->
+			<fpdf:variable.set name="autoPageBreak" value="49" />
+			<fpdf:setAutoPageBreak margin="{autoPageBreak}" />
+
+			<!-- Set margins -->
+			<fpdf:variable.set name="marginTop" value="57" />
+			<fpdf:variable.set name="marginLeft" value="20" />
+			<fpdf:variable.set name="marginRight" value="{fpdf:math.subtract(a: 210, b: 20)}" />
+			<fpdf:variable.set name="marginBottom" value="{fpdf:math.subtract(a: 297, b: autoPageBreak)}" />
+			<fpdf:variable.set name="marginLeftAndRight" value="40" />
+			<fpdf:variable.set name="marginTopAndBottom" value="{fpdf:math.sum(a: marginTop, b: autoPageBreak)}" />
+			<fpdf:setTopMargin margin="{marginTop}" />
+			<fpdf:setLeftMargin margin="{marginLeft}" />
+			<fpdf:setRightMargin margin="{marginRight}" />
+
+			<!-- Print debug lines for margin -->
+			<f:render partial="Pdf/Debug/Margin" arguments="{_all}" />
+
+			<!-- Set start position -->
+			<fpdf:setXY x="{marginLeft}" y="{marginTop}" />
+
+			<!-- Content width & height -->
+			<fpdf:variable.set name="contentWidth" value="{fpdf:math.subtract(a: 210, b: marginLeftAndRight)}" />
+			<fpdf:variable.set name="contentHeight" value="{fpdf:math.subtract(a: 297, b: marginTopAndBottom)}" />
+
+			<!-- Normal text settings -->
+			<fpdf:variable.set name="textFontName" value="Arial" />
+			<fpdf:variable.set name="textFontSize" value="7.8" />
+			<fpdf:variable.set name="textFontStyle" value="" />
+			<fpdf:variable.set name="textColor" value="#808080" />
+			<fpdf:variable.set name="textLineHeight" value="5" />
+			<fpdf:variable.set name="textMarginBottom" value="1" />
+			<fpdf:variable.set name="textWidth" value="150" />
+
+			<!-- Label text settings -->
+			<fpdf:variable.set name="labelFontName" value="Arial" />
+			<fpdf:variable.set name="labelFontSize" value="8" />
+			<fpdf:variable.set name="labelFontStyle" value="B" />
+			<fpdf:variable.set name="labelColor" value="#808080" />
+			<fpdf:variable.set name="labelWidth" value="150" />
+
+			<!-- Headline -->
+			<fpdf:setFont family="{labelFontName}" style="{labelFontStyle}" size="10" />
+			<fpdf:setTextColor hex="{labelColor}" />
+			<fpdf:setXY x="{marginLeft}" y="{fpdf:getY()}" />
+			<fpdf:multiCell width="{labelWidth}" height="{textLineHeight}" text="Sender" border="{debug}" />
+
+			<!-- Process all fieldsets -->
+			<f:for each="{form.fieldsets}" as="fieldset">
+
+				<!-- Fieldset label -->
+				<f:comment>
+					<fpdf:setFont family="{labelFontName}" style="{labelFontStyle}" size="{labelFontSize}" />
+					<fpdf:setTextColor hex="{labelColor}" />
+					<fpdf:setXY x="{marginLeft}" y="{fpdf:getY()}" />
+					<fpdf:multiCell width="{labelWidth}" height="{textLineHeight}" text="{fieldset.label}" border="{debug}" />
+				</f:comment>
+
+				<f:for each="{fieldset.fields}" as="field">
+					<f:if condition="{field.excludeFromPdf} != '1'">
+
+						<!-- Field label -->
+						<fpdf:setFont family="{labelFontName}" style="{labelFontStyle}" size="{labelFontSize}" />
+						<fpdf:setTextColor hex="{labelColor}" />
+						<fpdf:setXY x="{marginLeft}" y="{fpdf:getY()}" />
+						<fpdf:multiCell width="{labelWidth}" height="{textLineHeight}" text="{field.label}" border="{debug}" />
+
+						<fpdf:setFont family="{textFontName}" style="{textFontStyle}" size="{textFontSize}" />
+						<fpdf:setTextColor hex="{textColor}" />
+						<fpdf:setXY x="{marginLeft}" y="{fpdf:getY()}" />
+
+						<!-- Switch case for handling different output of types -->
+						<f:switch expression="{field.type}">
+							<f:case value="Hidden">
+								<fpdf:multiCell width="{textWidth}" height="{textLineHeight}" text="{field.value}" border="{debug}" />
+							</f:case>
+							<f:case value="Input">
+								<fpdf:multiCell width="{textWidth}" height="{textLineHeight}" text="{field.value}" border="{debug}" />
+							</f:case>
+						</f:switch>
+					</f:if>
+				</f:for>
+			</f:for>
+
+			<!-- Debug output -->
+			<f:render partial="Pdf/Debug/Output" arguments="{_all}" />
+
+		</fpdf:addPage>
+	</fpdf:pdf>
+</f:format.raw>
+</f:spaceless></html>

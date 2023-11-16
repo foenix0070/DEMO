@@ -1,0 +1,10 @@
+<f:if condition="{listItem.hidden}">
+	<f:then>
+		<f:link.action action="activate" title="{options.title.show}" class="btn btn-primary btn-icon" addQueryString="1"
+					   arguments="{object: listItem, parentObject: list.parentObject}"><f:spaceless><f:if condition="{options.iconIdentifier.show}"><core:icon alternativeMarkupIdentifier="inline" identifier="{options.iconIdentifier.show}"/></f:if> <f:if condition="{options.label.show}"><span class="btn-label">{options.label.show}</span></f:if></f:spaceless></f:link.action>
+	</f:then>
+	<f:else>
+		<f:link.action action="deactivate" title="{options.title.hide}" class="btn btn-primary btn-icon" addQueryString="1"
+					   arguments="{object: listItem, parentObject: list.parentObject}"><f:spaceless><f:if condition="{options.iconIdentifier.hide}"><core:icon alternativeMarkupIdentifier="inline" identifier="{options.iconIdentifier.hide}"/></f:if> <f:if condition="{options.label.hide}"><span class="btn-label">{options.label.hide}</span></f:if></f:spaceless></f:link.action>
+	</f:else>
+</f:if>

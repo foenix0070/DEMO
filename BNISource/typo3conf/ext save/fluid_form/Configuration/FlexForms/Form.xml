@@ -1,0 +1,28 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+		<!--  <langChildren>1</langChildren> !-->
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:fluid_form/Resources/Private/Language/locallang_flexform_form.xlf:tx_fluidform_flexform_form.title_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.form>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:fluid_form/Resources/Private/Language/locallang_flexform_form.xlf:tx_fluidform_flexform_form.form</label>
+							<config>
+								<type>select</type>
+                                <renderType>selectSingle</renderType>
+							</config>
+						</TCEforms>
+					</settings.form>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

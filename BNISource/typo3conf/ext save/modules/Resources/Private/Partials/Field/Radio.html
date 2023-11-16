@@ -1,0 +1,58 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-radio" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+
+				<f:for each="{field.options}" as="label" key="key" iteration="fieldOptionIterator">
+					<div class="{field.css.class.radioWrapper}" style="{field.css.style.radioWrapper}">
+
+						<!-- is already a value selected!? -->
+						<f:if condition="{field.value}">
+							<f:then>
+								<!-- check the selected one! -->
+								<f:if condition="{field.value} == {key}">
+									<f:then>
+										<f:form.radio value="{key}" name="{fieldKey}"
+													  id="form-{formUid}-{fieldsetKey}-{fieldKey}-{key}" checked="checked"
+													  class="{field.css.class.field}" style="{field.css.style.field}"  />
+									</f:then>
+									<f:else>
+										<f:form.radio value="{key}" name="{fieldKey}"
+													  id="form-{formUid}-{fieldsetKey}-{fieldKey}-{key}"
+													  class="{field.css.class.field}" style="{field.css.style.field}"  />
+									</f:else>
+								</f:if>
+							</f:then>
+							<f:else>
+								<!-- check the first one! -->
+								<f:if condition="{fieldOptionIterator.cycle} == 1">
+									<f:then>
+										<f:form.radio value="{key}" name="{fieldKey}"
+													  id="form-{formUid}-{fieldsetKey}-{fieldKey}-{key}" checked="checked"
+													  class="{field.css.class.field}" style="{field.css.style.field}"  />
+									</f:then>
+									<f:else>
+										<f:form.radio value="{key}" name="{fieldKey}"
+													  id="form-{formUid}-{fieldsetKey}-{fieldKey}-{key}"
+													  class="{field.css.class.field}" style="{field.css.style.field}"  />
+									</f:else>
+								</f:if>
+							</f:else>
+						</f:if>
+						<label class="{field.css.class.radioLabel}" style="{field.css.style.radioLabel}" for="form-{formUid}-{fieldsetKey}-{fieldKey}">{label}</label>
+
+					</div>
+				</f:for>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+
+			</div>
+		</div>
+	</f:section>
+</div>

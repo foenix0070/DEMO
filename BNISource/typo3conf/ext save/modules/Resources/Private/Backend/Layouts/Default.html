@@ -1,0 +1,43 @@
+<f:be.container
+		pageTitle="Modules Backend-Administration"
+		loadJQuery="1"
+		includeCssFiles="{
+			0: '../typo3conf/ext/modules/Resources/Public/Stylesheets/Modules.css'
+		}"
+		>
+	<!-- try with ="{f:uri.resource(path:'Backend/Styles/Common/Style.css')}" -->
+	<div class="typo3-fullDoc">
+		<!-- Page header with buttons, path details and csh -->
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<div class="left">
+					<f:render section="ActionMenu" optional="1" />
+				</div>
+				<div class="right">
+					<f:comment>
+						<!-- Page path and info in case of page related module -->
+						<f:be.pagePath />
+						<f:be.pageInfo />
+					</f:comment>
+				</div>
+			</div>
+			<div class="typo3-docheader-buttons">
+				<div class="left">
+					<f:render section="ActionButtons" optional="1" />
+				</div>
+				<div class="right">
+					<f:be.buttons.shortcut />
+				</div>
+			</div>
+		</div>
+
+		<!-- Content of module, for instance listing, info or editing -->
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<f:render section="Headline" optional="1" />
+				<f:flashMessages />
+				<f:render section="Main" />
+			</div>
+		</div>
+	</div>
+</f:be.container>

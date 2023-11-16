@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-05-17T16:03:21Z" product-name="modules">
+		<header/>
+		<body>
+			<trans-unit id="tx_modules_newcontentelementwizard_registration.title">
+				<source>Registration</source>
+				<target>Registrierung</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_newcontentelementwizard_registration.description">
+				<source>Display a registration form</source>
+				<target>Zeigt ein Registrierformular an</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_newcontentelementwizard_profile.title">
+				<source>Profile</source>
+				<target>Profil</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_newcontentelementwizard_profile.description">
+				<source>Display a profile form</source>
+				<target>Zeigt ein Profilformular an</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

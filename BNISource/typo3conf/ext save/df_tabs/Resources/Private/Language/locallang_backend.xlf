@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-08-10T16:46:50Z" product-name="df_tabs">
+		<header>
+			<generator>XLIFF Editor</generator>
+			<authorName>Tim Wagner</authorName>
+			<authorEmail>tim.wagner@sgalinski.de</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="backend.plugin.preview.settings">
+				<source><![CDATA[Settings]]></source>
+			</trans-unit>
+			<trans-unit id="backend.plugin.preview.values">
+				<source><![CDATA[Values]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

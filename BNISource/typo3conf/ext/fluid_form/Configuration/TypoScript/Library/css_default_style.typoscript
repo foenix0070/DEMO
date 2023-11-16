@@ -1,0 +1,44 @@
+plugin.tx_fluidform._CSS_DEFAULT_STYLE (
+	.tx-fluid-form .ajax.sending {
+		opacity: 0.6;
+	}
+	.tx-fluid-form .ajax.sending .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+	}
+	.tx-fluid-form #mathguard {
+		border-radius: 0;
+	}
+	.tx-fluid-form pre {
+		overflow: hidden;
+		color: {$themes.configuration.colors.primary};
+		font-size: 4px;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		line-height: 0;
+		border: 0 solid;
+	}
+	.tx-fluid-form pre span {
+		background-color: {$themes.configuration.colors.primary};
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		height: 4px;
+		width: 4px;
+		overflow: hidden;
+	}
+	.tx-fluid-form pre span.space {
+		background-color: transparent;
+		color: transparent;
+		padding: 0;
+		margin: 0;
+	}
+	.tx-fluid-form .custom-file-input {
+		cursor: pointer;
+	}
+)

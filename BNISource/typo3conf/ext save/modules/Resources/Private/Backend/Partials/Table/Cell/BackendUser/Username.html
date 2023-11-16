@@ -1,0 +1,7 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+<td>
+	<modules:variable.set name="backendUser" value="{modules:variable.get(name: 'listItem.{field}')}" />
+	<nobr>
+		{backendUser.username}
+	</nobr>
+</td>

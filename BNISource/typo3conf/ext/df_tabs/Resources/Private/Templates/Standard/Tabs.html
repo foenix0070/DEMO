@@ -1,0 +1,17 @@
+<div class="m-tabs tabs tabs-bottom tabs-center tabs-simple custom-tabs-style-1" data-more-label="{f:translate(key: 'frontend.buttonLabelMore', extensionName: 'df_tabs')}">
+	<div class="m-tabs__tablist nav nav-tabs" role="tablist">
+		<f:for each="{tabElements}" as="tab" iteration="iterator">
+			<button class="m-tabs__tab nav-item" role="tab" aria-controls="panel-{tab.record}-{iterator.index}" id="tab-{tab.record}-{iterator.index}" aria-selected="{f:if(condition: iterator.isFirst, then: 'true', else: 'false')}">
+				{tab.title -> f:format.raw()}
+			</button>
+		</f:for>
+	</div>
+
+	<div class="m-tabs__panellist">
+		<f:for each="{tabElements}" as="tab" iteration="iterator">
+			<div class="m-tabs__panel {f:if(condition: iterator.isFirst, else: 'm-tabs__panel--closed')}" role="tabpanel" aria-labelledby="tab-{tab.record}-{iterator.index}" id="panel-{tab.record}-{iterator.index}">
+				{tab.content -> f:format.raw()}
+			</div>
+		</f:for>
+	</div>
+</div>

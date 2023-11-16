@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-28T17:06:24Z" product-name="nitsan_hellobar">
+		<header/>
+		<body>
+			<trans-unit id="tx_nitsanhellobar_domain_model_hellobar">
+				<source>Hellobar.com</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

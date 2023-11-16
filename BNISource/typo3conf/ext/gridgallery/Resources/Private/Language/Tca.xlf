@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1427832976" source-language="en" datatype="plaintext" original="messages" date="2014-02-07T20:22:32Z"
+		  product-name="gridgallery">
+		<header/>
+		<body>
+			<trans-unit id="gridgallery_gallery">
+				<source>Grid Gallery</source>
+			</trans-unit>
+			<trans-unit id="gridgallery_gallery.wizard.title">
+				<source>Grid Gallery</source>
+			</trans-unit>
+			<trans-unit id="gridgallery_gallery.wizard.description">
+				<source>Adds a grid gallery to the page</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.imageheight">
+				<source>Row height (pixel)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.imagewidth">
+				<source>Margins (pixel)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform">
+				<source>Additional Options</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.captions">
+				<source>Show captions on mouseover</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.randomize">
+				<source>Randomize the image-order</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row">
+				<source>Last row</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.nojustify">
+				<source>No justify</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.justify">
+				<source>Justify</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.hide">
+				<source>Hide</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.center">
+				<source>Align center</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.right">
+				<source>Align right</source>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.border">
+				<source>Space around content element</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

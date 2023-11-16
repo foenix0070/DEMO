@@ -1,0 +1,16 @@
+mod {
+	wizards.newContentElement.wizardItems.plugins {
+		elements {
+			tabs {
+				iconIdentifier = extension-df_tabs-content-element
+				title = LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:plugin1_title
+				description = LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:plugin1_plus_wiz_description
+				tt_content_defValues {
+					CType = list
+					list_type = df_tabs_plugin1
+				}
+			}
+		}
+		show = *
+	}
+}

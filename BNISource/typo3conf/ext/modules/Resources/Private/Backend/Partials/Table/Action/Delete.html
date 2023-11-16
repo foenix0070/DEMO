@@ -1,0 +1,21 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<modules:variable.set name="languageKeyTitle" value="tx_modules_label.list_{list.underscoredId}_action_{action}" />
+<modules:variable.set name="languageKeyModalTitle" value="tx_modules_label.list_{list.underscoredId}_action_{action}_title" />
+<modules:variable.set name="languageKeyModalContent" value="tx_modules_label.list_{list.underscoredId}_action_{action}_content" />
+<modules:variable.set name="languageKeyModalContentSubject" value="{modules:variable.get(name: 'listItem.{options.subjectField}')}" />
+<modules:variable.set name="languageKeyModalContentTranslation">{f:translate(key: languageKeyModalContent, arguments: {0: languageKeyModalContentSubject} )}</modules:variable.set>
+<modules:variable.set name="languageKeyModalCancel" value="tx_modules_label.list_{list.underscoredId}_action_{action}_cancel" />
+<modules:be.editLink table="{list.table}"
+					 uid="{listItem.uid}"
+					 action="delete"
+					 module="{list.module}"
+					 title="{f:translate(key: languageKeyTitle)}"
+					 modal="{
+						 severity: 'warning',
+						 title: '{f:translate(key: languageKeyModalTitle)}',
+						 content: languageKeyModalContentTranslation,
+						 buttonCloseText: '{f:translate(key: languageKeyModalCancel)}'
+					 }"
+					 class="btn btn-default t3js-modal-trigger {options.css}">
+	<core:icon identifier="actions-edit-delete"/></modules:be.editLink>

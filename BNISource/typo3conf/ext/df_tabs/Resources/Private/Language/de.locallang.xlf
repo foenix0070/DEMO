@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-08-07T14:14:17Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for plugin &quot;tx_dftabs_plugin1&quot;</description>
+			<generator>LFEditor</generator>
+			<authorName>Stefan Galinski</authorName>
+			<authorEmail>stefan.galinski@gmail.com</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="flexform.sheets.general.autoPlayInterval" approved="yes">
+				<source><![CDATA[Autoplay Interval in Milliseconds]]></source>
+				<target><![CDATA[Autoplay-Intervall in Millisekunden]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.autoPlayInterval.description" approved="yes">
+				<source><![CDATA[Sets the interval for the automatic tab-switching in milliseconds (e.g. entering the value 7000 switches the tabs every 7 seconds). Is ignored if Autoplay is disabled.]]></source>
+				<target><![CDATA[Stellt das Intervall für das automatische Umschalten der Tabs in Millisekunden ein (z.B. die Eingabe des Wertes 7000 schaltet die Tabs alle 7 Sekunden um). Wird ignoriert, wenn Autoplay deaktiviert ist.]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.data" approved="yes">
+				<source><![CDATA[Pages and Content That Shall be Rendered as Tabs]]></source>
+				<target><![CDATA[Seiten und Inhalte, die als Tabs gerendert werden sollen]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.data.description" approved="yes">
+				<source><![CDATA[If the selection is not empty, "Combined" mode is forced.]]></source>
+				<target><![CDATA[Wenn die Auswahl nicht leer ist, wird der "Kombiniert" Modus erzwungen.]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableAutoPlayInterval" approved="yes">
+				<source><![CDATA[Enable Autoplay]]></source>
+				<target><![CDATA[Auto-Play aktivieren]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableAutoPlayInterval.description" approved="yes">
+				<source><![CDATA[When Autoplay is enabled, the page will automatically switch between the tabs from left to right in the interval specified below. When the last tab is reached, the animation starts over with the first tab. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+				<target><![CDATA[Wenn Autoplay aktiviert ist, wechselt die Seite automatisch zwischen den Tabs von links nach rechts in dem unten angegebenen Intervall. Wenn der letzte Tab erreicht ist, beginnt die Animation von vorne mit dem ersten Tab. Verfügbar für die Website-Base als zusätzliches Feature. Weitere Informationen unter www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableMouseOver" approved="yes">
+				<source><![CDATA[Enable MouseOver Navigation]]></source>
+				<target><![CDATA[MouseOver-Navigation aktivieren]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableMouseOver.description" approved="yes">
+				<source><![CDATA[If not enabled, users need to click on a tab to open it. If enabled, the tabs will switch when the user hovers over them. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+				<target><![CDATA[Wenn diese Option deaktiviert ist, müssen Benutzer auf einen Tab klicken, um ihn zu öffnen. Wenn aktiviert, wechseln die Tabs, wenn der Benutzer mit der Maus über sie fährt. Verfügbar für die Website-Basis als zusätzliches Feature. Weitere Informationen unter www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.hash" approved="yes">
+				<source><![CDATA[Hash]]></source>
+				<target><![CDATA[Hash]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.hash.description" approved="yes">
+				<source><![CDATA[Name that is used to implement history and direct linking functionality. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+				<target><![CDATA[Name, der zur Implementierung von History- und Direct-Linking-Funktionen verwendet wird. Verfügbar für die Website-Basis als zusätzliches Feature. Weitere Informationen unter www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode" approved="yes">
+				<source><![CDATA[Mode]]></source>
+				<target><![CDATA[Modus]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.combined" approved="yes">
+				<source><![CDATA[Combined (Show elements chosen below, one tab each)]]></source>
+				<target><![CDATA[Kombiniert (je unten ausgewähltem Element wird ein Tab angezeigt)]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.pages" approved="yes">
+				<source><![CDATA[Show every subpage of this page one tab each]]></source>
+				<target><![CDATA[Zeige für jede Unterseite dieser Seite jeweils einen Tab]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.tt_content" approved="yes">
+				<source><![CDATA[Show every content element of the current page as one tab each]]></source>
+				<target><![CDATA[Zeige jedes Inhaltselement der aktuellen Seite als je ein Tab]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.titles" approved="yes">
+				<source><![CDATA[Override Tab Titles]]></source>
+				<target><![CDATA[Titel der Reiter überschreiben]]></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.titles.description" approved="yes">
+				<source><![CDATA[Separation of the tab headings by line break, i.e. one title per line must be entered. If a title is not to be overwritten, simply insert a blank line or the keyword "DEFAULT". In order to override other titles, the first tab's title has to be overridden because empty lines at the beginning are ignored.]]></source>
+				<target><![CDATA[Trennung der Tab-Überschriften per Zeilenumbruch, d.h. ein Titel pro Zeile muss eingetragen werden. Falls ein Titel nicht überschrieben werden soll, einfach eine Leerzeile oder "DEFAULT" einfügen. Um andere Titel zu überschreiben, muss der Titel des ersten Tabs überschrieben werden, da leere Zeilen am Anfang ignoriert werden.]]></target>
+			</trans-unit>
+			<trans-unit id="frontend.buttonLabelMore" approved="yes">
+				<source><![CDATA[More]]></source>
+				<target><![CDATA[Mehr]]></target>
+			</trans-unit>
+			<trans-unit id="noContentFound" approved="yes">
+				<source><![CDATA[Didn't found any content for rendering of the tabs. Please check your plugin configuration.]]></source>
+				<target><![CDATA[Es wurde kein Inhalt für das Rendering der Tabs gefunden. Bitte überprüfen Sie die Plugin-Konfiguration.]]></target>
+			</trans-unit>
+			<trans-unit id="plugin1_plus_wiz_description" approved="yes">
+				<source><![CDATA[Show pages or content elements like tabs.]]></source>
+				<target><![CDATA[Darstellung von Seiten oder Inhaltselementen als Tabs.]]></target>
+			</trans-unit>
+			<trans-unit id="plugin1_title" approved="yes">
+				<source><![CDATA[Pages/Content Elements In Tabs]]></source>
+				<target><![CDATA[Seiten/Inhalte in Tabs]]></target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_plugin1" approved="yes">
+				<source><![CDATA[[ContentTabs] Pages/Content Elements In Tabs]]></source>
+				<target><![CDATA[[Inhaltstabs] Seiten/Inhalte in Tabs]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

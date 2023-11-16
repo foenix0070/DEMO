@@ -1,0 +1,7 @@
+D:\BNISource\bin\BNISource.dll.config
+D:\BNISource\bin\BNISource.dll
+D:\BNISource\bin\BNISource.pdb
+D:\BNISource\obj\Debug\BNISource.csproj.AssemblyReference.cache
+D:\BNISource\obj\Debug\BNISource.csproj.CoreCompileInputs.cache
+D:\BNISource\obj\Debug\BNISource.dll
+D:\BNISource\obj\Debug\BNISource.pdb

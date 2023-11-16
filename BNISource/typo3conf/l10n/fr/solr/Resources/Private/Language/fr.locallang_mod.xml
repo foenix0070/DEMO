@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Apache Solr</label>
+			<label index="mlang_labels_tablabel">Administration solr</label>
+			<label index="mlang_labels_tabdescr">Administration solr</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

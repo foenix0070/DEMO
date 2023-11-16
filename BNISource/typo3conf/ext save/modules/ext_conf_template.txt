@@ -1,0 +1,12 @@
+
+# cat=basic; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_extensionmanager.xlf:tx_modules_extensionmanager.module_frontend_user_disable
+module.frontendUser.disable = 0
+
+# cat=basic; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_extensionmanager.xlf:tx_modules_extensionmanager.module_frontend_user_allow_non_admin_users_to_login_as_frontend_user
+module.frontendUser.allowNonAdminUsersToLoginAsFrontendUser = 0
+
+# cat=basic; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_extensionmanager.xlf:tx_modules_extensionmanager.module_backend_user_disable
+module.backendUser.disable = 1
+
+# cat=logging//40; type=options[DEBUG, INFO, NOTICE, WARNING, ERROR, CRITICAL, ALERT, EMERGENCY]; label=LLL:EXT:modules/Resources/Private/Language/locallang_extensionmanager.xlf:tx_modules_extensionmanager.loglevel
+loglevel = ERROR

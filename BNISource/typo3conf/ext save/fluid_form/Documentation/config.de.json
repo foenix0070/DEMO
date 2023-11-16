@@ -1,0 +1,327 @@
+{
+    "title": "TYPO3 Fluid-Form",
+    "subtitle": "Fluid Form ist eine kleine TYPO3-Erweiterung zum Erstellen von Formularen nur mit TypoScript. Diese Erweiterung wurde für den Versand von TYPO3-Themes mit vorkonfigurierten Formularen entwickelt.",
+    "logo": "../Resources/Public/Icons/Extension.svg",
+    "markdown": "../Readme.de.md",
+    "meta": {
+        "description": "TYPO3 Fluid-Form - Fluid Form ist eine kleine TYPO3-Erweiterung zum Erstellen von Formularen nur mit TypoScript. Diese Erweiterung wurde für den Versand von TYPO3-Themes mit vorkonfigurierten Formularen entwickelt.",
+        "abstract": "Forms configured only by TypoScript",
+        "keywords": "TYPO3, extension, Forms",
+        "og:title": "TYPO3 Fluid-Form",
+        "og:description": "TYPO3 Fluid-Form - Fluid Form ist eine kleine TYPO3-Erweiterung zum Erstellen von Formularen nur mit TypoScript. Diese Erweiterung wurde für den Versand von TYPO3-Themes mit vorkonfigurierten Formularen entwickelt."
+    },
+    "features": [
+        "Ausgabe von Ajax-Formularen die einfach per TS konfigurierbar sind",
+        "Es sind beliebige Felder und Feldtypen erstellbar",
+        "Die Extension ist versionier- und somit einfach wartbar",
+        "Verschiedene Finisher ermöglichen die Bestimmung was nach dem Versand passieren soll - so ist natürlich ein einfacher Mailversand möglich, es besteht aber auch die Option die Inhalte in die Datenbank schreiben zu lassen sowie \"on-the-fly\" ein PDF generieren zu lassen",
+        "Es können beliebig viele Fieldsets mit unterschiedlichsten Feldtypen (date, time, etc.) abgelegt werden",
+        "Auch Notizen/Hinweise können eingesetzt werden",
+        "Captcha, Mathguard, Honeypot sind ebenfalls realisierbar",
+        "Sofern Anfragen in der Datenbank gespeichert werden, lassen sich diese Inhalte über einen Scheduler automatisiert gesammelt verschicken",
+        "Die Formulare sind an beliebige Datensätze anknüpfbar (z.B. bei News), so ist es u.a. möglich, die entsprechende Zielseite versteckt in den Formulareingaben bei Versand mitzuliefern",
+        "Backendmodul zur Übersicht aller Mails und Anfragen"
+    ],
+    "links": {
+        "product": {
+            "link": "https://www.coding.ms/de/typo3-extensions/typo3-fluid-form",
+            "name": "TYPO3 Fluid-Form Produktdetails"
+        }
+    },
+    "pages": [
+        {
+            "title": "Über diese Erweiterung",
+            "originalTitle": "About this Extension",
+            "markdown": "Index.de.md",
+            "meta": {
+                "description": "TYPO3 Fluid Form - Über diese Erweiterung",
+                "abstract": "Nur von TypoScript konfigurierte Formulare",
+                "keywords": "TYPO3, Extension, Über",
+                "og:title": "TYPO3 Fluid Form",
+                "og:description": "TYPO3 Fluid Form - Über diese Erweiterung"
+            }
+        },
+        {
+            "title": "Konfiguration",
+            "originalTitle": "Configuration",
+            "pages": [
+                {
+                    "title": "TypoScript Konfiguration",
+                    "originalTitle": "TypoScript configuration",
+                    "markdown": "Configuration/TypoScriptConfiguration.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - TypoScript Konfiguration",
+                        "abstract": "Wie man das TypoScript von Fluid-Form konfiguriert",
+                        "keywords": "TYPO3, extension, Fluid Form, TypoScript",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - TypoScript Konfiguration"
+                    }
+                },
+                {
+                    "title": "Feld-Optionen und Validatoren",
+                    "originalTitle": "Field options and validators",
+                    "markdown": "Configuration/FieldOptionsAndValidators.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Feld-Optionen und Validatoren",
+                        "abstract": "Wie man die Feld-Optionen und Validatoren von Fluid-Form konfiguriert",
+                        "keywords": "TYPO3, extension, Fluid Form, Feld-Optionen, Validatoren",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Feld-Optionen und Validatoren"
+                    }
+                },
+                {
+                    "title": "Backend-Modul",
+                    "originalTitle": "Backend Module",
+                    "markdown": "Configuration/BackendModule.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Konfiguration des Backend-Moduls",
+                        "abstract": "Wie man das Backend-Modul von Fluid-Form konfiguriert",
+                        "keywords": "TYPO3, extension, Fluid Form, Backend Modul",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Konfiguration des Backend-Moduls"
+                    }
+                },
+                {
+                    "title": "Konfiguration des Datenbank-Finishers",
+                    "originalTitle": "Configuration of the database finisher",
+                    "markdown": "Configuration/DatabaseFinisher.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Konfiguration des Datenbank-Finishers",
+                        "abstract": "Wie man den Datenbank-Finisher von Fluid-Form konfiguriert",
+                        "keywords": "TYPO3, extension, Fluid Form, Datenbank-Finisher",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Konfiguration des Datenbank-Finishers"
+                    }
+                },
+                {
+                    "title": "JavaScript-Events",
+                    "originalTitle": "JavaScript-Events",
+                    "markdown": "Configuration/JavaScriptEvents.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - JavaScript-Events mit TypoScript einbinden",
+                        "abstract": "Wie man JavaScript-Events mit TypoScript einbindet",
+                        "keywords": "TYPO3, extension, Fluid Form, JavaScript, einbinden",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - JavaScript-Events mit TypoScript einbinden"
+                    }
+                },
+                {
+                    "title": "Konfiguration des Mail-Finishers",
+                    "originalTitle": "Configuration of the mail finisher",
+                    "markdown": "Configuration/MailFinisher.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Konfiguration des E-Mail-Finishers",
+                        "abstract": "Wie man den Mail-Finisher von Fluid-Form konfiguriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, E-Mail, Finisher",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Konfiguration des E-Mail-Finishers"
+                    }
+                },
+                {
+                    "title": "Reporting",
+                    "originalTitle": "Reporting",
+                    "markdown": "Configuration/Reporting.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Konfiguration des Schedulers",
+                        "abstract": "Wie man den Scheduler von Fluid-Form konfiguriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, Reporting, Scheduler",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Konfiguration des Schedulers"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "HowTo",
+            "originalTitle": "HowTo",
+            "pages": [
+                {
+                    "title": "Dynamisches PDF an E-Mail anhängen",
+                    "originalTitle": "Attach a dynamic PDF to Email",
+                    "markdown": "HowTo/AttachPdfInEmail.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Dynamisches PDF an E-Mail anhängen",
+                        "abstract": "Wie man eine dynamisches PDF an eine E-Mail anhängt",
+                        "keywords": "TYPO3, extension, Fluid Form, E-Mail",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Hängen Sie ein dynamisches PDF an eine E-Mail an"
+                    }
+                },
+                {
+                    "title": "Erstelle ein einfaches Formular",
+                    "originalTitle": "Create a simple form",
+                    "markdown": "HowTo/CreateASimpleForm.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Erstelle ein einfaches Formular",
+                        "abstract": "Wie man ein einfaches Formular erstellt",
+                        "keywords": "TYPO3, extension, Fluid Form, Formular",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Ein einfaches Formular erstellen"
+                    }
+                },
+                {
+                    "title": "Alle Datensätze eines Formulars aus der Datenbank löschen",
+                    "originalTitle": "Delete all records of a form from database",
+                    "markdown": "HowTo/DeleteAllRecordsByFormKey.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Alle Datensätze eines Formulars aus der Datenbank löschen",
+                        "abstract": "Wie man ein alle Datensätze aus der Datenbank löscht.",
+                        "keywords": "TYPO3, extension, Fluid Form, Formularschlüssel, löschen",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Alle Datensätze eines Formulars aus der Datenbank löschen"
+                    }
+                },
+                {
+                    "title": "Fluid-Forms mit TypoScript einbinden",
+                    "originalTitle": "Include Fluid-Forms by using TypoScript",
+                    "markdown": "HowTo/IncludeFluidFormsByUsingTypoScript.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Fluid-Forms mit TypoScript einbinden",
+                        "abstract": "Wie man ein alle Datensätze nach Formularschlüssel löscht.",
+                        "keywords": "TYPO3, extension, Fluid Form, TypoScript, einbinden",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Fluid-Forms mit TypoScript einbinden"
+                    }
+                },
+                {
+                    "title": "Formulare hinzufügen oder entfernen",
+                    "originalTitle": "Add or remove forms",
+                    "markdown": "HowTo/SelectableForms.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Formulare hinzufügen oder entfernen",
+                        "abstract": "Wie man Formulare hinzufügt oder entfernt.",
+                        "keywords": "TYPO3, extension, Fluid Form, Formulare, hinzufügen, entfernen",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Formulare hinzufügen oder entfernen"
+                    }
+                },
+                {
+                    "title": "Abweichende Empfänger",
+                    "originalTitle": "Divergent recipients",
+                    "markdown": "HowTo/DivergentRecipients.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Abweichende Empfänger konfigurieren",
+                        "abstract": "Wie man abweichende Empfänger konfiguriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, Empfänger, abweichende",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Abweichende Empfänger konfigurieren"
+                    }
+                },
+                {
+                    "title": "Captcha integrieren",
+                    "originalTitle": "Integrate a captcha",
+                    "markdown": "HowTo/IntegrateCaptcha.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Captcha integrieren",
+                        "abstract": "Wie man ein Captcha integriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, captcha, integrieren",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Captcha integrieren"
+                    }
+                },
+                {
+                    "title": "Honeypot integrieren",
+                    "originalTitle": "Integrate a honeypot",
+                    "markdown": "HowTo/IntegrateHoneypot.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Honeypot integrieren",
+                        "abstract": "Wie man ein Honeypot integriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, Honeypot, integrieren",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Honeypot integrieren"
+                    }
+                },
+                {
+                    "title": "CSS-Stylesheets hinzufügen",
+                    "originalTitle": "CSS stylesheets",
+                    "markdown": "HowTo/AddStylesheetsQuickly.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - CSS-Stylesheets hinzufügen",
+                        "abstract": "Wie man CSS-Stylesheets hinzufügt.",
+                        "keywords": "TYPO3, extension, Fluid Form, Honeypot, integrieren",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - CSS-Stylesheets hinzufügen"
+                    }
+                },
+                {
+                    "title": "Bootstrap4 Migration",
+                    "originalTitle": "Bootstrap4 Migration",
+                    "markdown": "HowTo/MigrateToBootstrap4.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Migration zu Bootstrap 4",
+                        "abstract": "Wie man zu Bootstrap 4 migriert.",
+                        "keywords": "TYPO3, extension, Fluid Form, Bootstrap, Migration",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Migration zu Bootstrap 4"
+                    }
+                },
+                {
+                    "title": "Vorbefüllen eines Hidden-Feld mit einem News-Titel",
+                    "originalTitle": "Prefill hidden field with News-Title or similar data",
+                    "markdown": "HowTo/PrefillHiddenFieldWithNewsTitle.de.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Verstecktes Feld mit News-Titel oder Daten vorausfüllen",
+                        "abstract": "Wie man ein verstecktes Feld mit News-Titel oder ähnlichen Daten vorausfüllt.",
+                        "keywords": "TYPO3, extension, Fluid Form, Titel, Daten, vorausfüllen",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Verstecktes Feld mit News-Titel oder Daten vorausfüllen"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Faq",
+            "originalTitle": "Faq",
+            "pages": [
+                {
+                    "title": "Aufruf von Google-Analytics wirft Fehler",
+                    "markdown": "Faq/CallingGoogleAnalyticsThrows.de.md",
+                    "originalTitle": "Calling Google-Analytics throws",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Aufruf von Google-Analytics wirft Fehler",
+                        "abstract": "Wenn der Aufruf von Google-Analytics Referenz-Fehler wirft",
+                        "keywords": "TYPO3, extension, Fluid Form, Google, Analytics, Fehler",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Aufruf von Google-Analytics wirft Fehler"
+                    }
+                },
+                {
+                    "title": "Empfang von fehlgeschlagenen E-Mails",
+                    "markdown": "Faq/ReceivingFailedEmails.de.md",
+                    "originalTitle": "Receiving emails failed (For example by using Hosteurope as Hoster)",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Empfang von fehlgeschlagenen E-Mail",
+                        "abstract": "Wie man fehlgeschlagenen E-Mail-Empfang behebt",
+                        "keywords": "TYPO3, extension, Fluid Form, E-Mail, Empfang, fehlgeschlagen",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Empfang von fehlgeschlagenen E-Mail"
+                    }
+                },
+                {
+                    "title": "Das Absenden des Formulars endet mit einem 404-Fehler",
+                    "markdown": "Faq/FormEndsIn404Error.de.md",
+                    "originalTitle": "Sending the form ends in a 404 error",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Das Absenden des Formulars endet mit einem 404-Fehler",
+                        "abstract": "Wie man einen 404-Fehler beim Absenden des Formulars behebt",
+                        "keywords": "TYPO3, extension, Fluid Form, Formular, senden, 404, Fehler",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Das Absenden des Formulars endet mit einem 404-Fehler"
+                    }
+                },
+                {
+                    "title": "Nach dem Senden des Formulars wird das empfangene JSON angezeigt",
+                    "markdown": "Faq/ShowsReceivedJsonAfterSendingForm.de.md",
+                    "originalTitle": "After sending the form the received JSON is shown",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Nach dem Senden des Formulars wird das empfangene JSON angezeigt",
+                        "abstract": "Wie man die Anzeige des JSON nach Absenden des Formulars behebt",
+                        "keywords": "TYPO3, extension, Fluid Form, Formular, senden, JSON",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Nach dem Senden des Formulars wird das empfangene JSON angezeigt"
+                    }
+                }
+            ]
+        }
+    ]
+}

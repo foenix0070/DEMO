@@ -1,0 +1,68 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers">
+<f:layout name="Default" />
+<f:section name="main">
+
+	<div class="modules-profile">
+		<div class="card">
+			<div class="card-body">
+
+				<h2 id="profile-form-anchor">{settings.profile.headline}</h2>
+				<f:flashMessages />
+				<f:if condition="{loggedIn}">
+					<f:form section="profile-form-anchor">
+						<f:render partial="Fields/Username" arguments="{frontendUser: frontendUser, prefix: 'profile'}" />
+						<f:for each="{settings.profile.fields}" as="field">
+							<f:switch expression="{field.type}">
+								<f:case value="input">
+									<f:render partial="Fields/Textfield"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="date">
+									<f:render partial="Fields/Date"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="year">
+									<f:render partial="Fields/Year"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="email">
+									<f:render partial="Fields/Email"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="select">
+									<f:render partial="Fields/Select"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="radio">
+									<f:render partial="Fields/Radio"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+								<f:case value="checkbox">
+									<f:render partial="Fields/Checkbox"
+											  arguments="{field: field, prefix: 'profile'}" />
+								</f:case>
+							</f:switch>
+						</f:for>
+						<div class="form-group mandatory-notice">
+							<f:translate key="tx_profile_label.profile_mandatory_fields" />
+						</div>
+						<div class="form-group" data-type="actions">
+							<f:form.submit class="btn btn-success" name="save"
+										   value="{f:translate(key: 'tx_profile_label.button_profile_save_label')}"
+										   title="{f:translate(key: 'tx_profile_label.button_profile_save_title')}" />
+							<f:form.submit class="btn btn-danger" name="reset"
+										   value="{f:translate(key: 'tx_profile_label.button_profile_reset_label')}"
+										   title="{f:translate(key: 'tx_profile_label.button_profile_reset_title')}" />
+						</div>
+					</f:form>
+				</f:if>
+
+			</div>
+		</div>
+	</div>
+
+
+</f:section>
+</div>

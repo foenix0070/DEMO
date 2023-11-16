@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+            <label index="skiptomaincontent">Aller au contenu principal</label>
+
+            <label index="skipnavigation">Passer le bloc de navigation</label>
+
+            <label index="scrolltop">Retourner en haut de page</label>
+
+            <label index="togglenavigation"/>
+
+            <label index="linktop">Haut de page</label>
+
+            <label index="breadcrumb">Vous êtes ici:</label>
+            <label index="breadcrumb.label">Fil d'Ariane</label>
+
+            <label index="previous">Précédent</label>
+
+            <label index="next">Suivant</label>
+
+            <label index="readmore">En savoir plus</label>
+
+            <label index="externalmediaunsupported">La source externe du média %s n'est pas supportée. Merci de fournir une URL YouTube ou Vimeo valide</label>
+
+            <label index="form.browse">Parcourir</label>
+            <label index="form.selectfile">Choisir un fichier</label>
+
+            <label index="element.contactform.renderingOptions.submitButtonLabel">Confirmer</label>
+             <label index="contactform.element.mandatory.properties.label">Vos informations personnelles</label>
+            <label index="contactform.element.mandatory.properties.text">* Champs obligatoires</label>
+            <label index="contactform.element.fullname.properties.label">Nom complet et prénom</label>
+            <label index="contactform.element.fullname.properties.placeholder">Nom complet et prénom</label>
+            <label index="contactform.element.company.properties.label">Société</label>
+            <label index="contactform.element.company.properties.placeholder">Société</label>
+            <label index="contactform.element.email.properties.label">Adresse mail</label>
+            <label index="contactform.element.email.properties.placeholder">Adresse mail</label>
+            <label index="contactform.element.subject.properties.label">Sujet</label>
+            <label index="contactform.element.subject.properties.placeholder">Sujet</label>
+            <label index="contactform.element.message.properties.label">Message</label>
+            <label index="contactform.element.message.properties.placeholder">Message</label>
+            <label index="contactform.element.summary.properties.label">Vérification</label>
+
+            <label index="cookieconsent.common.header">Ce site web utilise des cookies.</label>
+            <label index="cookieconsent.common.message">Les cookies sont utilisés pour vous permettre une utilisation optimale de notre site web.</label>
+            <label index="cookieconsent.common.dismiss">Compris!</label>
+            <label index="cookieconsent.common.allow">Autoriser les cookies</label>
+            <label index="cookieconsent.common.deny">Refuser</label>
+            <label index="cookieconsent.common.link">En savoir plus</label>
+
+            <label index="googleanalyticsstatus.title">Statut de Google Analytics</label>
+            <label index="googleanalyticsstatus.description">Vous pouvez vous opposer à la collecte anonyme de Google Analytics sur ce site web pour votre navigateur en utilisant un "Opt-Out-Cookie". Veuillez noter que si vous supprimez le témoin d'exclusion ou si vous utilisez un ordinateur ou un navigateur Web différent, vous devrez réinitialiser l'exclusion.</label>
+            <label index="googleanalyticsstatus.link.enable">Activer Google Analytics (Opt-In)</label>
+            <label index="googleanalyticsstatus.link.disable">Désactiver Google Analytics (Opt-Out)</label>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

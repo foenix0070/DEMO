@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-27T20:37:07Z" product-name="fs_media_gallery" target-language="fr">
+		<header/>
+		<body>
+			<!--
+				General plugin configuration
+			-->
+
+			<trans-unit id="mediagallery.title" approved="yes">
+				<source>Media Album</source>
+			<target state="translated">Album média</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album média</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Album</target></alt-trans></trans-unit>
+			<trans-unit id="mediagallery.description" approved="yes">
+				<source>Show your assets from your local or remote storage as a gallery of albums.</source>
+			<target state="translated">Afficher vos images / médias depuis votre local ou depuis votre serveur distant en tant que galerie d'albums</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Afficher vos galeries depuis votre local ou depuis votre serveur distant en tant que galerie d'albums</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Afficher les albums du dossier de stockage </target></alt-trans></trans-unit>
+
+			<!--
+				FLEXFORMS
+			-->
+
+			<!-- flexforms.general -->
+			<trans-unit id="flexforms.general.I.inherit" approved="yes">
+				<source>Inherit (TypoScript)</source>
+			<target state="translated">Hérité (Typoscript)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Hérité (Typoscript)</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.general.resizeMode" approved="yes">
+				<source>Resize mode</source>
+			<target state="translated">Mode de redimensionnement</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Mode de redimensionnent </target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Mode de redimensionnement</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.general.resizeMode.I.m" approved="yes">
+				<source>resize proportional</source>
+			<target state="translated">Redimensionner proportionnellement</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Rendimension proportionnel</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Redimensionner proportionnellement</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.general.resizeMode.I.c" approved="yes">
+				<source>crop</source>
+			<target state="translated">rogner</target></trans-unit>
+			<trans-unit id="flexforms.general.resizeMode.I.s" approved="yes">
+				<source>squeeze (unproportional exact fit)</source>
+			<target state="translated">compresser (ajustement exact mais déformé)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Rendimension taille exacte (déformé)</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Compresser (ajustement exact mais déformé)</target></alt-trans></trans-unit>
+			<!--
+				flexforms.mediagallery
+			-->
+			<trans-unit id="flexforms.mediagallery.tabs.general" approved="yes">
+				<source>General</source>
+			<target state="translated">Général</target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.tabs.list" approved="yes">
+				<source>Albums list</source>
+			<target state="translated">Liste d'albums</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Liste d'albums</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.tabs.album" approved="yes">
+				<source>Album view</source>
+			<target state="translated">Affichage des albums</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Affichage des albums</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.tabs.detail" approved="yes">
+				<source>Detail view</source>
+			<target state="translated">Vue détail</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Vue détail</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.tabs.random" approved="yes">
+				<source>Random asset</source>
+			<target state="translated">Image / média aléatoire</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album aléatoire</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Galerie aléatoire</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions" approved="yes">
+				<source>Display mode</source>
+			<target state="translated">Mode d'affichage</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Mode d'affichage</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions.I.nestedList" approved="yes">
+				<source>Selected albums (nested)</source>
+			<target state="translated">Albums sélectionnés (manuellement)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums sélectionnés (manuellement)</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Sélection d'albums (imbriqués) </target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions.I.flatList" approved="yes">
+				<source>Albums list (flattened)</source>
+			<target state="translated">Liste d'albums</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Liste d'albums</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Liste d'albums (à plat) </target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions.I.showAlbumByParam" approved="yes">
+				<source>Single album (URL handover enabled)</source>
+			<target state="translated">Album seul (Surcharge activée)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album unique (Surcharge activée)</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Album seul (Surcharge activée)</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions.I.showAlbumByConfig" approved="yes">
+				<source>Single album (URL handover disabled)</source>
+			<target state="translated">Album seul (Surcharge désactivée)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album seul (Surcharge désactivée)</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Album unique (Surcharge désactivée)</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.switchableControllerActions.I.randomAsset" approved="yes">
+				<source>Random media asset</source>
+			<target state="translated">Image / média aléatoire</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album aléatoire</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Galerie aléatoire</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.mediaAlbum" approved="yes">
+				<source>Album to display</source>
+			<target state="translated">Album à afficher</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album à afficher</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.mediaAlbumsUids" approved="yes">
+				<source>Albums to display</source>
+			<target state="translated">Albums à afficher</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums à afficher</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.useAlbumFilterAsExclude" approved="yes">
+				<source>Album selection filter (if no items are selected all are shown)</source>
+			<target state="translated">Filtres de sélection (si aucun album n'est sélectionné tous sont affichés)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Filtres de sélection (si aucun albums sont sélectionnés tous sont affichés)</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.useAlbumFilterAsExclude.I.0" approved="yes">
+				<source>Show only selected items</source>
+			<target state="translated">Afficher seulement les éléments sélectionnés</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Afficher seulement les albums sélectionnés</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.useAlbumFilterAsExclude.I.1" approved="yes">
+				<source>Exclude selected items</source>
+			<target state="translated">Exclure les éléments sélectionnés</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Exclure les albums sélectionnés</target></alt-trans></trans-unit>
+			<!-- flexforms.mediagallery.list (both nested and flat) -->
+			<trans-unit id="flexforms.mediagallery.list.hideEmptyAlbums" approved="yes">
+				<source>Hide empty albums</source>
+			<target state="translated">Cacher les albums vides</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Cacher les albums vides </target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.pagination.itemsPerPage" approved="yes">
+				<source>Max. thumbs to display per page</source>
+			<target state="translated">Nombre maximal de vignettes à afficher par page</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Nombre maximal de vignettes à afficher par page</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Nombre maximal d'albums à afficher par page</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.thumb.width" approved="yes">
+				<source>Thumbnail width</source>
+			<target state="translated">Largeur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur de la vignette</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.thumb.height" approved="yes">
+				<source>Thumbnail height</source>
+			<target state="translated">Hauteur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur de la vignette</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.thumb.random" approved="yes">
+				<source>Random thumbnail</source>
+			<target state="translated">Vignette aléatoire</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Vignette aléatoire</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderBy" approved="yes">
+				<source>Sort albums list by</source>
+			<target state="translated">Trier les albums par</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Trier les albums par</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderBy.I.datetime" approved="yes">
+				<source>Given date</source>
+			<target state="translated">Date d'album</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Date d'album</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderBy.I.crdate" approved="yes">
+				<source>Creation date</source>
+			<target state="translated">Date de création</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Date de création</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderBy.I.sorting" approved="yes">
+				<source>Given sort order</source>
+			<target state="translated">Ordre de tri du backend</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Ordre de tri</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Ordre aléatoire</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderDirection" approved="yes">
+				<source>Sort direction for albums list</source>
+			<target state="translated">Direction de tri des listes d'albums</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Direction de tri des listes d'albums</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderDirection.I.asc" approved="yes">
+				<source>Ascending (old to new/low to high)</source>
+			<target state="translated">Ascendant (ancien à récent)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Ascendant (ancien à récent)</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.list.orderDirection.I.desc" approved="yes">
+				<source>Descending (new to old/high to low)</source>
+			<target state="translated">Descendant (récent à ancien)</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Descendant (récent à ancien)</target></alt-trans></trans-unit>
+			<!-- flexforms.mediagallery.album -->
+			<trans-unit id="flexforms.mediagallery.album.pagination.itemsPerPage" approved="yes">
+				<source>Max. thumbs to display per page</source>
+			<target state="translated">Nombre de vignettes maximales affichées par page</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Nombre d’albums par page</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Nombre de vignettes maximales affichées par page</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderBy">
+				<source>Sort media/files by</source>
+			<target></target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderBy.I.name">
+				<source>Filename</source>
+			<target></target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderBy.I.crdate" approved="yes">
+				<source>Creation date</source>
+			<target state="translated">Date de création</target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderBy.I.title">
+				<source>Title (metadata)</source>
+			<target></target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderDirection">
+				<source>Sort direction for media/files</source>
+			<target></target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderDirection.I.asc" approved="yes">
+				<source>Ascending (old to new/low to high)</source>
+			<target state="translated">Ascendant (ancien à récent)</target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.assets.orderDirection.I.desc" approved="yes">
+				<source>Descending (new to old/high to low)</source>
+			<target state="translated">Descendant (récent à ancien)</target></trans-unit>
+			<trans-unit id="flexforms.mediagallery.album.thumb.width" approved="yes">
+				<source>Thumbnail width</source>
+			<target state="translated">Largeur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur vignette</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur de la vignette</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.album.thumb.height" approved="yes">
+				<source>Thumbnail height</source>
+			<target state="translated">Hauteur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur de la vignette</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur vignette</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.album.lightbox.enable" approved="yes">
+				<source>Use LightBox/Colorbox instead of detail view</source>
+			<target state="translated">Utiliser une lightbox / colorbox à la place de la vue détaillée</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Utiliser Lightbox à la place de la vue détaillée </target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.album.displayTitle" approved="yes">
+				<source>Display title</source>
+			<target state="translated">Afficher le titre</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Afficher le titre</target></alt-trans></trans-unit>
+			<!-- flexforms.mediagallery.detail -->
+			<trans-unit id="flexforms.mediagallery.detail.asset.width" approved="yes">
+				<source>Media width</source>
+			<target state="translated">Largeur des médias</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur de l'album</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur de la galerie</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.detail.asset.height" approved="yes">
+				<source>Media height</source>
+			<target state="translated">Hauteur des médias</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur de la galerie</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur de l'album</target></alt-trans></trans-unit>
+			<!-- flexforms.mediagallery.random -->
+			<trans-unit id="flexforms.mediagallery.random.targetPid" approved="yes">
+				<source>Album page</source>
+			<target state="translated">Page de l'album</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Page de l'album</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.random.thumb.width" approved="yes">
+				<source>Thumbnail width</source>
+			<target state="translated">Largeur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur Vignette</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Largeur de la vignette</target></alt-trans></trans-unit>
+			<trans-unit id="flexforms.mediagallery.random.thumb.height" approved="yes">
+				<source>Thumbnail height</source>
+			<target state="translated">Hauteur de la vignette</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur de la vignette</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Hauteur vignette</target></alt-trans></trans-unit>
+
+			<!--
+				EXTENSION MANAGER
+			-->
+			<trans-unit id="extmng.allowedActionsInFlexforms" approved="yes">
+				<source>Plugin actions shown in flexforms: Comma separated list of controller actions which could be selected as plugin action in flexforms. Available actions are nestedList,flatList,showAlbumByParam,showAlbumByConfig,randomAsset. If no action is defined, all available actions are selectable.</source>
+			<target state="translated">Actions du plugin disponibles dans le flexform : Liste séparée par des virgules des vues qui peuvent être choisies dans le plugin. Les options disponibles sont la sélection d'albums (nestedList), la liste d'albums (flatList), un album unique (avec ou sans surcharge active / showAlbumByParam), un album aléatoire (randomAsset). Si aucune configuration n'est faite, toutes ces options sont disponibles.</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Actions du plugin disponibles dans le flexform :Les options disponibles sont la sélection d'albums, la liste d'albums, un album unique(surcharge activée), un album unique(surcharge désactivée), un album aléatoire. Si aucune configuration n'est faite, toutes ces options sont disponibles.</target></alt-trans></trans-unit>
+			<trans-unit id="extmng.list.orderOptions" approved="yes">
+				<source>Sort options for albums lists in flexforms: Comma separated list of sort options for field "Sort albums list by" which could be selected in flexforms. Available options are datetime,crdate,sorting.</source>
+			<target state="translated">L'option de tri pour les listes d'albums dans le plugin : liste des options séparées par des virgules. Les options disponibles sont : date de l'album (datetime), date de création (crdate), ordre du backend (sorting).</target><alt-trans xml:space="preserve" origin="sdambreville"><target>L'option de tri pour les listes d'albums dans le flexform : les options disponibles sont : date de l'album, date de création, ordre aléatoire</target></alt-trans></trans-unit>
+			<trans-unit id="extmng.asset.orderOptions">
+				<source>Sort options for assets (files) in flexforms: Comma separated list of sort options for field "Sort files by" which could be selected in flexforms. Available options are sys_file and sys_file_metadata options.</source>
+			<target></target></trans-unit>
+			<trans-unit id="extmng.enableAutoCreateFileCollection">
+				<source>Enable auto creation of fileCollections/albums when a new folder is created beneath an existing album.</source>
+			<target></target></trans-unit>
+			<trans-unit id="extmng.clearCacheAfterFileChange">
+				<source>Clear the cache of the album after a file change: Make sure PageTS option TCEMAIN.clearCacheCmd is set, see documentation.</source>
+			<target></target></trans-unit>
+
+			<!--
+				BE MODULE
+			-->
+
+			<trans-unit id="module.buttons.createAlbum" approved="yes">
+				<source>Create album</source>
+			<target state="translated">Créer un nouvel album</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Créer un nouvel album</target></alt-trans></trans-unit>
+			<trans-unit id="module.buttons.createAlbumIn" approved="yes">
+				<source>Create album in "%s"</source>
+			<target state="translated">Créer un nouvel album dan "%s</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Création d'un nouvel album dan "%s</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Créer un nouvel album dan "%s</target></alt-trans></trans-unit>
+			<trans-unit id="module.buttons.editAlbum" approved="yes">
+				<source>Edit album "%s"</source>
+			<target state="translated">Modifier l'album "%s"</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Modifier l'album "%s"</target></alt-trans></trans-unit>
+			<trans-unit id="module.alerts.firstCreateStorageFolder" approved="yes">
+				<source>You must first create a storage folder for your media albums!</source>
+			<target state="translated">Vous devez d'abord créer un dossier de stockage pour vos albums !</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Vous devez d'abord créer un dossier de stockage pour vos albums !</target></alt-trans></trans-unit>
+
+		</body>
+	</file>
+</xliff>

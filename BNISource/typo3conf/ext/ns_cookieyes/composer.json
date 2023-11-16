@@ -1,0 +1,36 @@
+{
+  "name": "nitsan/ns-cookieyes",
+  "type": "typo3-cms-extension",
+  "description": "Quickly configure cookieyes.com to your TYPO3 site to helps make your use of cookies and online tracking GDPR and EPR compliant. LIVE-demo: https://demo.t3planet.com/t3t-extensions/cookieyes PRO-version: https://t3terminal.com/cookieyes-gdpr-compliant-typo3-extension-free",
+  "homepage": "https://extensions.typo3.org/extension/ns_cookieyes/",
+  "license": "GPL-2.0+",
+  "keywords": [
+    "TYPO3 CMS",
+    "Cookie Yes",
+    "Nitsan",
+    "Cookie",
+    "Yes",
+    "GDPR",
+    "EPR"
+  ],
+  "support": {
+    "issues": "https://github.com/nitsan-technologies/ns_cookieyes/issues"
+  },
+  "require": {
+    "typo3/cms-core": "^6 || ^7 || ^8  || ^9 || ^10  || ^11 || ^12"
+  },
+  "replace": {
+      "typo3-ter/ns-cookieyes": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor/",
+    "bin-dir": ".Build/bin/"
+  },
+  "extra": {
+    "typo3/cms": {
+        "cms-package-dir": "{$vendor-dir}/typo3/cms",
+        "web-dir": ".Build/public",
+        "extension-key": "ns_cookieyes"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+mod.web_layout.BackendLayouts {
+    BniFaqPage {
+        title = Bni Faq Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = SubHeader
+                                colspan = 3
+                                colPos = 18
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = ArticleSectionTitle
+                                colPos = 29
+                                colspan = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = ArticleSectionText
+                                colPos = 23
+                                colspan = 2
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = ProductServiceCard
+                                colPos = 4
+                                colspan = 1
+                            }
+                            2 {
+                                name = SecondCard
+                                colPos = 5
+                                colspan = 1
+                            }
+                            3 {
+                                name = ThirdCard
+                                colPos = 6
+                                colspan = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

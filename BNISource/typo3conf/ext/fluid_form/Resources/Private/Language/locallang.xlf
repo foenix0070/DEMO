@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-10-08T18:50:41Z" product-name="fluid_form">
+		<header/>
+		<body>
+			<trans-unit id="tx_fluidform_domain_model_form">
+				<source>Fluid Form</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_form.title">
+				<source>Title</source>
+			</trans-unit>
+
+			<!--=========
+				Constants
+				=========-->
+
+			<!--=== General ===-->
+			<trans-unit id="tx_fluidform_constants.category">
+				<source>Fluid-Form</source>
+			</trans-unit>
+
+			<!--=== Container ===-->
+			<trans-unit id="tx_fluidform_constants.subcategory_container">
+				<source>Fluid-Form Container</source>
+			</trans-unit>
+
+			<!--=== PDF ===-->
+			<trans-unit id="tx_fluidform_constants.subcategory_pdf">
+				<source>Fluid-Form PDF</source>
+			</trans-unit>
+
+			<trans-unit id="tx_fluidform_constants.pdf_receiver_font_path">
+				<source>Receiver Font path: Overwrites the path to the PDF-Fonts</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_receiver_image_path">
+				<source>Receiver Image path: Overwrites the path to the PDF-Images</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_receiver_background">
+				<source>Receiver Background path: For example EXT:fluid_fpdf/Resources/Private/Pdf/Normbriefbogen_DIN5008.pdf or fileadmin/Pdf/Expose/Briefpapier.pdf</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_receiver_partial_path">
+				<source>Receiver Partials path: Overwrites the path to the Fluid-Partials</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_receiver_template_path">
+				<source>Receiver Template path: Overwrites the path to the Expose-Template</source>
+			</trans-unit>
+
+			<trans-unit id="tx_fluidform_constants.pdf_sender_font_path">
+				<source>Sender Font path: Overwrites the path to the PDF-Fonts</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_sender_image_path">
+				<source>Sender Image path: Overwrites the path to the PDF-Images</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_sender_background">
+				<source>Sender Background path: For example EXT:fluid_fpdf/Resources/Private/Pdf/Normbriefbogen_DIN5008.pdf or fileadmin/Pdf/Expose/Briefpapier.pdf</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_sender_partial_path">
+				<source>Sender Partials path: Overwrites the path to the Fluid-Partials</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_constants.pdf_sender_template_path">
+				<source>Sender Template path: Overwrites the path to the Expose-Template</source>
+			</trans-unit>
+
+
+			<!--===========
+				Module menu
+				===========-->
+			<trans-unit id="tx_fluidform_label.menu_overview">
+				<source>Mail overview</source>
+			</trans-unit>
+
+			<!--=== Backend: Overview (of addresses) ===-->
+			<!--trans-unit id="tx_fluidform_label.new_mail">
+				<source>Create a new address</source>
+			</trans-unit-->
+			<trans-unit id="tx_fluidform_label.list_overview_mails_refresh">
+				<source>Refresh mails</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.list_overview_mails_bookmark">
+				<source>Mail list</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_date_from">
+				<source>Date from</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_date_to">
+				<source>Date to</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_page">
+				<source>Storage</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_form">
+				<source>Form</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_search_word">
+				<source>Search word</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter_submit">
+				<source>Refresh</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_label.backend_filter">
+				<source>Filter</source>
+			</trans-unit>
+
+			<!--=== Backend: Titles ===-->
+			<trans-unit id="tx_fluidform_label.headline_mails_overview">
+				<source>Mails overview</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

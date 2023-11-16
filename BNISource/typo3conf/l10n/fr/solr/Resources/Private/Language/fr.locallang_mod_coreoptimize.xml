@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Optimisation du noyau</label>
+			<label index="mlang_labels_tablabel">Maintenir les synonymes et les mots vides</label>
+			<label index="mlang_labels_tabdescr">Ce module vous permet d'optimiser les noyaux, vous pouvez maintenir les synonymes et les mots-clés pour améliorer les résultats de recherche.</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,611 @@
+plugin.tx_fluidform {
+	presets {
+		# Fields
+		fields {
+			hidden {
+				label = Required for E-Mail
+				type = Hidden
+				section = Default
+				required = 0
+			}
+			honeypot {
+				label = Honeypot content
+				type = Hidden
+				section = Default
+				required = 1
+				excludeFromMail = 1
+				excludeFromPdf = 1
+				validation {
+					Empty = Bitte befüllen Sie keine nicht sichtbaren Felder
+				}
+			}
+			input {
+				label = Name
+				placeholder =
+				type = Input
+				section = Default
+				required = 0
+				validation {
+					NotEmpty = Bitte füllen Sie dieses Feld aus
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			inputName < plugin.tx_fluidform.presets.fields.input
+			inputName {
+				label = Name
+				placeholder = Max Mustermann
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Namen ein
+				}
+			}
+			inputFirstname < plugin.tx_fluidform.presets.fields.input
+			inputFirstname {
+				label = Vorname
+				placeholder = Max
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Vornamen ein
+				}
+			}
+			inputLastname < plugin.tx_fluidform.presets.fields.input
+			inputLastname {
+				label = Nachname
+				placeholder = Mustermann
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Nachnamen ein
+				}
+			}
+			inputFirstnameLastname < plugin.tx_fluidform.presets.fields.input
+			inputFirstnameLastname {
+				label = Vorname, Nachname
+				placeholder = Max Mustermann
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Namen ein
+				}
+			}
+			inputStreetHousenumber < plugin.tx_fluidform.presets.fields.input
+			inputStreetHousenumber {
+				label = Straße, Hausnummer
+				placeholder = Musterstraße 4a
+				validation {
+					NotEmpty = Bitte geben Sie Ihre Straße und Hausnummer ein
+				}
+			}
+			inputStreet < plugin.tx_fluidform.presets.fields.input
+			inputStreet {
+				label = Straße
+				placeholder = Musterstraße
+				validation {
+					NotEmpty = Bitte geben Sie Ihre Straße ein
+				}
+			}
+			inputPostalCodeCity < plugin.tx_fluidform.presets.fields.input
+			inputPostalCodeCity {
+				label = Postleitzahl Ort
+				placeholder = 12345 Musterstadt
+				validation {
+					NotEmpty = Bitte geben Sie Ihre Postleitzahl und Ort ein
+				}
+			}
+			inputPostalCode < plugin.tx_fluidform.presets.fields.input
+			inputPostalCode {
+				label = PLZ
+				placeholder = 54321
+				validation {
+					NotEmpty = Bitte geben Sie Ihre Postleitzahl ein
+				}
+			}
+			inputCity < plugin.tx_fluidform.presets.fields.input
+			inputCity {
+				label = Ort
+				placeholder = Musterstadt
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Ort ein
+				}
+			}
+			inputPhone < plugin.tx_fluidform.presets.fields.input
+			inputPhone {
+				label = Telefon
+				placeholder = 0123 456789
+				validation {
+					NotEmpty = Bitte geben Sie Ihre Telefonnummer ein
+				}
+			}
+			inputEmail < plugin.tx_fluidform.presets.fields.input
+			inputEmail {
+				label = E-Mailadresse
+				placeholder = max@mustermann.de
+				validation {
+					NotEmpty = Bitte geben Sie Ihre E-Mailadresse ein
+					Email = Bitte geben Sie eine gültige E-Mailadresse ein
+				}
+			}
+			inputCompany < plugin.tx_fluidform.presets.fields.input
+			inputCompany {
+				label = Firma
+				placeholder = Mustermann AG
+				validation {
+					NotEmpty = Bitte geben Sie Ihren Firmennamen ein
+				}
+			}
+
+			checkbox {
+				label = Checkbox label
+				placeholder =
+				type = Checkbox
+				section = Default
+				required = 0
+				checkboxLabel = Checkbox label text
+				value = 1
+				htmlSpecialChars = 1
+				validation {
+					NotEmpty = Bitte haken Sie dieses Feld an
+				}
+				options {
+					0 = Nein
+					1 = Ja
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						checkboxLabel = form-check-label
+						fieldWrapper = form-check
+						field = form-check-input
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label = padding-left: 0; font-weight: bold
+						checkboxLabel =
+						fieldWrapper =
+						field =
+						notice = margin-top: 0
+						message =
+					}
+				}
+			}
+			checkboxCustom < plugin.tx_fluidform.presets.fields.checkbox
+			checkboxCustom {
+				css {
+					class {
+						checkboxLabel = custom-control-label
+						fieldWrapper = custom-control custom-checkbox
+						field = custom-control-input
+					}
+				}
+			}
+
+			upload {
+				label = Upload label
+				placeholder =
+				type = Upload
+				section = Default
+				required = 0
+				validation {
+					NotEmpty = Bitte wählen Sie eine Datei aus
+					# @todo message
+				}
+				upload {
+					# Storage uid where the file should be saved
+					storage = 1
+					# Folder in storage
+					folder = fluid_form_upload
+					# Allowed file types
+					allowedFileTypes = jpg, jpeg, png
+					# Attach to mail
+					attachToSenderMail = 0
+					attachToReceiverMail = 0
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						uploadLabel = custom-file-label
+						fieldWrapper = custom-file
+						field = custom-file-input
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						checkboxLabel =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+
+			captcha {
+				label = Sicherheitsabfrage
+				type = Captcha
+				section = Default
+				required = 1
+				excludeFromMail = 1
+				excludeFromPdf = 1
+				excludeFromDb = 1
+				validation {
+					MathGuard = Bitte lösen Sie die Rechenaufgabe
+				}
+				captcha {
+					type = MathGuard
+					html =
+					prime = 37
+				}
+				css {
+					class {
+						wrapper = form-group col-md-12
+						label =
+						fieldWrapper =
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						notice =
+						message =
+					}
+				}
+			}
+
+			datetime {
+				label = Datum & Uhrzeit
+				type = DateTime
+				section = Default
+				required = 0
+				validation {
+					NotEmpty = Bitte geben Sie ein Datum und eine Uhrzeit an
+				}
+				options {
+					#empty = bitte wählen
+					#option1 = option 1
+					#option2 = option 2
+					#option3 = option 3
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						fieldWrapper = input-group
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+						icon {
+							#calendar = glyphicon glyphicon-calendar
+							calendar = fa fa-calendar
+						}
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			date  < plugin.tx_fluidform.presets.fields.datetime
+			date {
+				label = Datum
+				section = Date
+				placeholder = 31.12.2016
+				validation {
+					NotEmpty = Bitte geben Sie ein Datum an
+				}
+			}
+			time  < plugin.tx_fluidform.presets.fields.datetime
+			time {
+				label = Datum
+				section = Time
+				placeholder = 20:15
+				validation {
+					NotEmpty = Bitte geben Sie eine Uhrzeit an
+				}
+				css {
+					class {
+						icon {
+							#clock = glyphicon glyphicon-time
+							clock = fa fa-clock-o
+						}
+					}
+				}
+			}
+			select {
+				label = Auswahl
+				type = Select
+				section = Default
+				required = 0
+				validation {
+					#0 = NotEmpty
+				}
+				options {
+					#empty = bitte wählen
+					#option1 = option 1
+					#option2 = option 2
+					#option3 = option 3
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			selectCustom < plugin.tx_fluidform.presets.fields.select
+			selectCustom {
+				css {
+					class {
+						field = custom-select
+					}
+				}
+			}
+			selectGender < plugin.tx_fluidform.presets.fields.select
+			selectGender {
+				label = Anrede
+				options {
+					male = Herr
+					female = Frau
+				}
+			}
+			selectNumbersFrom0To20 < plugin.tx_fluidform.presets.fields.select
+			selectNumbersFrom0To20 {
+				label = Zahlen von 0-20
+				options {
+					0 = 1
+					1 = 1
+					2 = 2
+					3 = 3
+					4 = 4
+					5 = 5
+					6 = 6
+					7 = 7
+					8 = 8
+					9 = 9
+					10 = 10
+					11 = 11
+					12 = 12
+					13 = 13
+					14 = 14
+					15 = 15
+					16 = 16
+					17 = 17
+					18 = 18
+					19 = 19
+					20 = 20
+				}
+			}
+			selectNumbersFrom1To20 < plugin.tx_fluidform.presets.fields.select
+			selectNumbersFrom1To20 {
+				label = Zahlen von 1-20
+				options {
+					1 = 1
+					2 = 2
+					3 = 3
+					4 = 4
+					5 = 5
+					6 = 6
+					7 = 7
+					8 = 8
+					9 = 9
+					10 = 10
+					11 = 11
+					12 = 12
+					13 = 13
+					14 = 14
+					15 = 15
+					16 = 16
+					17 = 17
+					18 = 18
+					19 = 19
+					20 = 20
+				}
+			}
+			selectMultipleItems < plugin.tx_fluidform.presets.fields.select
+			selectMultipleItems {
+				label = Zahlen von 1-20
+				# Indicates, multiple items can be selected
+				multiple = 1
+				required = 1
+				validation {
+					NotEmpty = Bitte wählen Sie mindestens einen Wert aus
+				}
+				options {
+					1 = 1
+					2 = 2
+					3 = 3
+					4 = 4
+					5 = 5
+					6 = 6
+					7 = 7
+					8 = 8
+					9 = 9
+					10 = 10
+					11 = 11
+					12 = 12
+					13 = 13
+					14 = 14
+					15 = 15
+					16 = 16
+					17 = 17
+					18 = 18
+					19 = 19
+					20 = 20
+				}
+			}
+			radio {
+				label = Auswahl
+				type = Radio
+				section = Default
+				required = 0
+				validation {
+					#0 = NotEmpty
+				}
+				options {
+					#empty = bitte wählen
+					#option1 = option 1
+					#option2 = option 2
+					#option3 = option 3
+				}
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						fieldWrapper =
+						radioWrapper = form-check form-check-inline
+						radioLabel = form-check-label
+						field = form-check-input
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						radioWrapper =
+						radioLabel =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			radioGender < plugin.tx_fluidform.presets.fields.radio
+			radioGender {
+				label = Anrede
+				options {
+					male = Herr
+					female = Frau
+				}
+			}
+			radioCustom < plugin.tx_fluidform.presets.fields.radio
+			radioCustom {
+				css {
+					class {
+						radioLabel = custom-control-label
+						radioWrapper = custom-control custom-radio form-check-inline
+						field = custom-control-input
+					}
+				}
+			}
+			radioGenderCustom < plugin.tx_fluidform.presets.fields.radioCustom
+			radioGenderCustom {
+				label = Anrede
+				options {
+					male = Herr
+					female = Frau
+				}
+			}
+			textarea {
+				label = Nachricht
+				placeholder = Geben Sie hier Ihre Nachricht ein
+				type = Textarea
+				section = Default
+				required = 0
+				cols = 30
+				rows = 5
+				validation {
+					NotEmpty = Bitte füllen Sie dieses Feld aus
+				}
+				css {
+					class {
+						wrapper = form-group col-md-12
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			notice {
+				type = Notice
+				section = Default
+				value = * Bitte beachten Sie...
+				htmlSpecialChars = 1
+				css {
+					class {
+						wrapper = form-group col-md-6
+						label =
+						fieldWrapper =
+						field =
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+					}
+				}
+			}
+			submit {
+				label =
+				type = Submit
+				section = Default
+				value = Senden
+				excludeFromMail = 1
+				excludeFromPdf = 1
+				excludeFromDb = 1
+				css {
+					class {
+						wrapper = form-group form-input-submit pull-left
+						label =
+						fieldWrapper =
+						field = btn btn-primary
+						notice = form-text
+					}
+					style {
+						wrapper = margin-right:10px
+						label =
+						fieldWrapper =
+						field =
+						notice =
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,66 @@
+
+.Extbase-Utility-Debugger-VarDump-Floating {
+	width: 50% !important;
+	float: right;
+}
+
+.table-wrapper-modules {
+	overflow: visible;
+}
+.table-wrapper-modules .panel-heading {
+	padding: 2px 2px 3px 8px;
+}
+.table-wrapper-modules .panel-body {
+	padding: 0;
+}
+.table-wrapper-modules .panel-heading .table-actions .btn {
+	padding: 6px 8px;
+}
+.table-wrapper-modules .panel-heading .dropdown-menu {
+	padding: 4px 0;
+}
+
+table.table-modules {
+	border: 0 solid;
+}
+table.table-modules th {
+	width: 1%;
+}
+table.table-modules th.col-title {
+	width: auto;
+}
+table.table-modules th.col-title a {
+	color: #000;
+	cursor: pointer;
+}
+
+.table-import-invitation-codes small {
+	display: inline-block;
+	width: 100%;
+}
+.table-import-invitation-codes input.field-date {
+	width: 70px;
+}
+.table-import-invitation-codes input.field-datetime {
+	width: 115px;
+}
+
+/* This is the column selector in list header */
+.table-columns-form {
+	margin-right: 10px;
+}
+.table-columns-form .input-group {
+	border: 1px solid #c3c3c3;
+}
+.table-columns-form .input-group .dropdown-toggle {
+	background-color: #fff;
+}
+.table-columns-form .input-group .dropdown-toggle,
+.table-columns-form .input-group .btn {
+	border: 0 solid;
+}
+.table-columns-form .input-group .input-group-text {
+	border: 0 solid;
+	margin: 0;
+	font-size: 12px;
+}

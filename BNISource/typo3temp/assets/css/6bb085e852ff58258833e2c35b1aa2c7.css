@@ -1,0 +1,11 @@
+/* default styles for extension "tx_tinyaccordion" */
+	ul.tinyaccordion {list-style:none; background:none !important;}
+	ul.tinyaccordion li {background:none !important; padding-left:0px;}
+	ul.tinyaccordion h4 {margin: 0 0 6px 0;padding-left:20px; cursor:pointer; background: url('/typo3conf/ext/tinyaccordion/Resources/Public/Images/plus.png') no-repeat 0 3px;}
+	ul.tinyaccordion h4.acc-selected {background: url('/typo3conf/ext/tinyaccordion/Resources/Public/Images/minus.png') no-repeat 0 7px;}
+	ul.tinyaccordion h4:hover {text-decoration:underline;}
+	ul.tinyaccordion .acc-section {overflow:hidden;}
+	ul.tinyaccordion .csc-default,
+	ul.tinyaccordion ul.tinyaccordion,
+	ul.tinyaccordion ul.tinyaccordion .news-single-item {padding: 0 0 10px 21px;}
+	ul.tinyaccordion li .csc-header:first-child {display:none;}

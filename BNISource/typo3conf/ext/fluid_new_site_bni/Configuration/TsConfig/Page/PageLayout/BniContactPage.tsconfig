@@ -1,0 +1,58 @@
+mod.web_layout.BackendLayouts {
+    BniContactPage {
+        title = Bni Contact Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = SubHeader
+                                colspan = 3
+                                colPos = 18
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = LeftNavigation                               
+                                colPos = 20
+                            }
+                            2 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = BniLocalisation
+                                colPos = 25
+                            }
+                            2 {
+                                name = BniContactFrm
+                                colPos = 26
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = BniRequestFrm
+                                colPos = 27
+                            }
+                            2 {
+                                name = BniMap
+                                colPos = 28
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

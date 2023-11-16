@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_labels_tablabel">Administration de la recherche Apache Solr</label>
+			<label index="mlang_labels_tabdescr">Permet de gérer Apache Solr à partir de TYPO3.&lt;br /&gt;&lt;em&gt;Accès pour les utilisateurs' admin' seulement!&lt;/em&gt;em&gt;.</label>
+			<label index="mlang_tabs_tab">Rechercher</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

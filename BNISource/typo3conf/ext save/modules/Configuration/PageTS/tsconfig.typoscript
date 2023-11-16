@@ -1,0 +1,29 @@
+mod.wizards.newContentElement.wizardItems {
+	forms {
+		elements {
+			modules_registration {
+				title = LLL:EXT:modules/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_modules_newcontentelementwizard_registration.title
+				description = LLL:EXT:modules/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_modules_newcontentelementwizard_registration.description
+				icon = ../typo3conf/ext/modules/Resources/Public/Icons/iconmonstr-user-20.svg
+				iconIdentifier = mimetypes-x-content-profile
+				tt_content_defValues {
+					CType = list
+					list_type = modules_registration
+				}
+			}
+			modules_profile {
+				title = LLL:EXT:modules/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_modules_newcontentelementwizard_profile.title
+				description = LLL:EXT:modules/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_modules_newcontentelementwizard_profile.description
+				icon = ../typo3conf/ext/modules/Resources/Public/Icons/iconmonstr-user-20.svg
+				iconIdentifier = mimetypes-x-content-profile
+				tt_content_defValues {
+					CType = list
+					list_type = modules_profile
+				}
+			}
+		}
+		show := addToList(modules_registration)
+		show := addToList(modules_profile)
+	}
+}
+

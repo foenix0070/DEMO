@@ -1,0 +1,15 @@
+<f:layout name="SystemEmail" />
+<f:section name="Subject"><f:format.raw>{subject}</f:format.raw></f:section>
+<f:section name="Title">{subject}</f:section>
+<f:section name="Main">
+	<p>Hi,<br />
+		the user {frontendUser.username} has updated his user account. Please keep care everything is alright.<br />
+		<br />
+		<b>User data:</b>
+		<br />
+		<f:render partial="FrontendUserFields" arguments="{_all}"/>
+	</p>
+	<p>
+		Thank you for your attention
+	</p>
+</f:section>

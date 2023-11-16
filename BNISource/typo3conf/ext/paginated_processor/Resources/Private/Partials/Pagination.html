@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{above} && {pagination.{parameter}.settings.insertAbove}">
+	<f:render section="Pagination" arguments="{pagination: '{pagination.{parameter}}'}" />
+</f:if>
+<f:if condition="{below} && {pagination.{parameter}.settings.insertBelow}">
+	<f:render section="Pagination" arguments="{pagination: '{pagination.{parameter}}'}" />
+</f:if>
+
+<f:section name="Pagination">
+	<nav role="navigation" aria-label="Pagination News">
+		<ol>
+			<f:for each="{pagination.pageLinks}" as="link" key="page">
+				<f:variable name="current" value="0" />
+				<f:if condition="{page} == {pagination.page}">
+					<f:variable name="current" value="1" />
+				</f:if>
+				<li class="{f:if(condition: current, then: 'current')}">
+					<a href="{link}" aria-current="{f:if(condition: current, then: 'true', else: 'false')}" aria-label="{f:if(condition: current, then: 'Current page, ')}Go to page {page}">{page}</a>
+				</li>
+			</f:for>
+		</ol>
+	</nav>
+</f:section>
+</html>

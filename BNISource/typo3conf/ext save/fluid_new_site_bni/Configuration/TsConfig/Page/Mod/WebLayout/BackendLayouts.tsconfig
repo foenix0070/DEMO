@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fluid_new_site_bni/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">

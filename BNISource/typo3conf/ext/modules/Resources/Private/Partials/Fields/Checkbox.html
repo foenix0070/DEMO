@@ -1,0 +1,42 @@
+<div class="form-group" data-type="checkbox">
+	<div class="form-check">
+		<f:if condition="{field.error}">
+			<f:then>
+				<f:form.checkbox name="{field.key}"
+								 class="form-check-input is-invalid"
+								 id="{prefix}_{field.key}"
+								 value="{field.key}"/>
+				<label class="form-check-label" for="{prefix}_{field.key}">
+					<f:format.raw>{field.label}</f:format.raw>
+					<f:if condition="{field.required}"><span>*</span></f:if>
+				</label>
+				<div class="invalid-feedback">{field.error}</div>
+			</f:then>
+			<f:else>
+				<f:if condition="{field.value}">
+					<f:then>
+						<f:form.checkbox name="{field.key}"
+										 class="form-check-input"
+										 id="{prefix}_{field.key}"
+										 value="{field.key}"
+										 checked="checked" />
+						<label class="form-check-label" for="{prefix}_{field.key}">
+							<f:format.raw>{field.label}</f:format.raw>
+							<f:if condition="{field.required}"><span>*</span></f:if>
+						</label>
+					</f:then>
+					<f:else>
+						<f:form.checkbox name="{field.key}"
+										 class="form-check-input"
+										 id="{prefix}_{field.key}"
+										 value="{field.key}"/>
+						<label class="form-check-label" for="{prefix}_{field.key}">
+							<f:format.raw>{field.label}</f:format.raw>
+							<f:if condition="{field.required}"><span>*</span></f:if>
+						</label>
+					</f:else>
+				</f:if>
+			</f:else>
+		</f:if>
+	</div>
+</div>

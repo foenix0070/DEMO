@@ -1,0 +1,25 @@
+page {
+	includeCSS {
+		# http://eonasdan.github.io/bootstrap-datetimepicker/
+		# Requires Bootstrap: table, input-group
+		bootstrapDateTimePicker = //cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css
+		bootstrapDateTimePicker {
+			external = 1
+			forceOnTop = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+	includeJSFooterlibs {
+        moment = EXT:modules/Resources/Public/Contrib/Moment/moment-with-locales.min.js
+		moment.forceOnTop = 1
+		# http://eonasdan.github.io/bootstrap-datetimepicker/
+		bootstrapDateTimePicker = //cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js
+		bootstrapDateTimePicker {
+			external = 1
+			forceOnTop = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+}

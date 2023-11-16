@@ -1,0 +1,92 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+        
+        
+
+        <section id="tab-section" class="mb-5">
+            <div class="container py-4" id="isote-product">
+                <f:for each="{MainSectionTitle}" as="MainSectionTitleContent">
+                    <div class="heading-block border-bottom-0 text-center mb-5">
+                        <h2 class="text-green">{MainSectionTitleContent.data.header}</h2>
+                        <span>{MainSectionTitleContent.data.subheader}</span>
+                    </div>
+                </f:for>
+
+                <!--<span class="d-block text-2">Filtre Isotope</span>-->
+                <div class="row">
+                    <div class="filtering col-sm-12 text-center" id="individual_filter">
+                        <span data-filter="*" class="active">Tous</span>
+                        <f:for each="{ArticleSectionTitle}" as="ArticleSectionTitleContent">
+                            <span data-filter=".{ArticleSectionTitleContent.data.subheader}" class="">{ArticleSectionTitleContent.data.header}</span>
+                        </f:for>
+                    </div>
+                </div>
+
+                <div class="justify-content-center" id="main-news">
+                    <div class="row form-row gallery" id="news-row">
+                        <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                            <div class="col-sm-9 col-md-6 col-lg-3 mb-4 {ArticleSectionTextContent.data.subheader} ">
+                                <a href="{ArticleSectionTextContent.data.header_link}" class="custom-link-hover-effects text-decoration-none">
+                                    <div id="news-row" class="news-card card border-0">
+                                        <div class="news-card-img-top position-relative overlay">
+                                            <img src="/fileadmin{ArticleSectionTextContent.ArticleImages.0.originalFile.identifier}" class="img-fluid" alt="{ArticleSectionTextContent.data.header}">
+                                        </div>
+                                        <div class="news-card-text card-body p-3 individual">
+                                            <!--<span class="d-block text-2">{ArticleSectionTextContent.data.subheader}</span>-->
+                                            <h4 class="font-weight-semibold text-color-hover-primary mt-0 mb-2">{ArticleSectionTextContent.data.header}</h4>
+                                            <span class="custom-view-more d-inline-flex font-weight-medium text-green">
+                                                Voir plus
+                                                <div class="animated-icon animated fadeIn svg-fill-color-primary ms-2"><!--?xml version="1.0" ?-->
+                                                    <svg version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    id="icon_251673894495790" data-filename="arrow-right.svg" width="27" height="27">
+                                                    <polygon points="1,26 44.586,26 38.293,32.293 39.707,33.707 48.414,25 39.707,16.293 38.293,17.707 44.586,24 1,24  "></polygon>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </f:for>
+                    </div>
+                </div>
+
+            </div>
+
+
+                
+        </section>
+
+        
+    </div><!-- End Main -->
+
+   <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+</f:section> 

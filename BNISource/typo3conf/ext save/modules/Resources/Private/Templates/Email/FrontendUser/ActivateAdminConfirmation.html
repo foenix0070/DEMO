@@ -1,0 +1,19 @@
+<f:layout name="SystemEmail" />
+<f:section name="Subject"><f:format.raw>{subject}</f:format.raw></f:section>
+<f:section name="Title">{subject}</f:section>
+<f:section name="Main">
+	<p>
+		Hi {frontendUser.username},<br />
+		site administrator has activated your account - login by clicking the following link:<br />
+		<br />
+		<f:link.page pageUid="{settings.pages.login}"
+					 absolute="1">
+			<f:format.raw><f:uri.page pageUid="{settings.pages.login}"
+									  absolute="1" /></f:format.raw>
+		</f:link.page>
+
+	</p>
+	<p>
+		Thank you for your attention
+	</p>
+</f:section>

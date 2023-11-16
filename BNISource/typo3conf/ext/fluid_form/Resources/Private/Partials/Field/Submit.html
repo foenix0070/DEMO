@@ -1,0 +1,13 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-submit" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label class="{field.css.class.label}" style="{field.css.style.label}">{field.label}</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+				<f:form.submit value="{field.value}"
+							   name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+							   class="{field.css.class.field}" style="{field.css.style.field}"/>
+			</div>
+		</div>
+	</f:section>
+</div>

@@ -1,0 +1,211 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+	  xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers"
+	  data-namespace-typo3-fluid="true" lang="en">
+
+<style>
+	.btn-header {
+		margin-bottom: 10px;
+	}
+	.btn-icon {
+		padding: 5px;
+		width: auto;
+		min-width: 32px;
+	}
+	.btn-icon img {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.btn-label {
+		margin: 0 6px;
+	}
+	.icon-size-small {
+		position: relative;
+		height: 16px;
+		display: inline-block;
+		width: 20px;
+	}
+	.icon-size-small .icon-markup {
+		top: 2px;
+		position: absolute;
+		left: 0;
+	}
+	.icon-size-small .icon-markup svg {
+		width: 16px;
+		height: 16px;
+	}
+</style>
+
+<f:if condition="{f:count(subject: data)}">
+	<f:then>
+
+		<f:if condition="{list.header.title}">
+			<h2>{list.header.title}</h2>
+			<f:if condition="{list.maxItems} > 0">
+				<small class="text-muted"><f:format.printf arguments="{0: list.countAll, 1: list.maxItems}" value="{list.messages.info.amountOfEntries}" /></small>
+			</f:if>
+		</f:if>
+
+		<div class="row">
+			<div class="col-md-9">
+				<f:if condition="{f:count(subject: list.header.actions)}">
+					<div class="btn-group btn-header " role="group" aria-label="Actions">
+						<f:for each="{list.header.actions}" key="action" as="options">
+							<f:render partial="Table/Action/{options.action}" arguments="{listItem: listItem, list: list, action: action, options: options}" />
+						</f:for>
+					</div>
+				</f:if>
+			</div>
+			<div class="col-md-3">
+				<div class="btn-group pull-right pagination" role="group" aria-label="Pagination">
+					<modules:variable.set name="list.nextOffset" value="{modules:math.sum(a: list.offset, b: list.limit)}" />
+					<modules:variable.set name="list.previousOffset" value="{modules:math.subtract(a: list.offset, b: list.limit)}" />
+					<modules:variable.set name="list.pagesModulo" value="{modules:math.modulo(a: list.countAll, b: list.limit)}" />
+					<modules:variable.set name="list.lastOffset" value="{modules:math.subtract(a: list.countAll, b: list.pagesModulo)}" />
+					<f:if condition="{list.offset}>0">
+						<f:then>
+							<f:link.action action="{list.action}" arguments="{offset: 0}" title="First" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-first"/></f:link.action>
+							<f:link.action action="{list.action}" arguments="{offset: list.previousOffset}" title="Previous" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-previous"/></f:link.action>
+						</f:then>
+						<f:else>
+							<span title="First" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-first-disabled"/></span>
+							<span title="Previous" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-previous-disabled"/></span>
+						</f:else>
+					</f:if>
+					<f:if condition="{list.nextOffset} >= {list.countAll}">
+						<f:then>
+							<span title="Next" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-next-disabled"/></span>
+							<span title="Last" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-last-disabled"/></span>
+						</f:then>
+						<f:else>
+							<f:link.action action="{list.action}" arguments="{offset: list.nextOffset}" title="Next" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-next"/></f:link.action>
+							<f:link.action action="{list.action}" arguments="{offset: list.lastOffset}" title="Last" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-last"/></f:link.action>
+						</f:else>
+					</f:if>
+				</div>
+			</div>
+		</div>
+
+		<table class="table table-modules table-striped table-hover table-bordered">
+			<f:render partial="Table/Header" arguments="{list: list}" />
+			<tbody>
+				<f:for each="{data}" as="listItem" iteration="listItemIterator">
+					<tr class="{listItem.beTableClass} {f:if(condition: listItemIterator.isFirst, then: 'firstcol')} {f:if(condition: listItemIterator.isLast, then: 'lastcol')}">
+						<f:for each="{list.fields}" key="field" as="options">
+							<f:if condition="({options.hideInList} == 0) && {options.visible}">
+								<modules:variable.set name="fieldUnprocessed" value="1" />
+								<f:if condition="{options.format}=='Plain'">
+									<modules:variable.set name="fieldUnprocessed" value="0" />
+									<td>
+										<f:if condition="{options.crop}">
+											<f:then>
+												<f:format.crop maxCharacters="{options.crop}" append="..."><f:format.stripTags>{modules:variable.get(name: 'listItem.{field}')}</f:format.stripTags></f:format.crop>
+											</f:then>
+											<f:else><f:format.stripTags>{modules:variable.get(name: 'listItem.{field}')}</f:format.stripTags></f:else>
+										</f:if>
+									</td>
+								</f:if>
+								<f:if condition="{options.format}=='DateTime'">
+									<modules:variable.set name="fieldUnprocessed" value="0" />
+									<td><f:format.date format="{options.dateFormat}">{modules:variable.get(name: 'listItem.{field}')}</f:format.date></td>
+								</f:if>
+								<f:if condition="{options.format}=='Email'">
+									<modules:variable.set name="fieldUnprocessed" value="0" />
+									<td><f:link.email email="{listItem.email}">{listItem.email}</f:link.email></td>
+								</f:if>
+								<f:if condition="{options.format}=='Boolean'">
+									<modules:variable.set name="fieldUnprocessed" value="0" />
+									<td>
+										<f:if condition="{modules:variable.get(name: 'listItem.{field}')}">
+											<f:then><f:translate key="tx_modules_label.boolean_true" extensionName="modules" /></f:then>
+											<f:else><f:translate key="tx_modules_label.boolean_false" extensionName="modules" /></f:else>
+										</f:if>
+									</td>
+								</f:if>
+								<f:if condition="{fieldUnprocessed}">
+									<f:render partial="Table/Cell/{options.format}" arguments="{listItem: listItem, list: list, field: field, options: options}" />
+								</f:if>
+							</f:if>
+						</f:for>
+						<td nowrap="nowrap">
+							<f:if condition="{f:count(subject: list.actions)}">
+								<div class="btn-group pull-right" role="group" aria-label="Actions">
+									<f:for each="{list.actions}" key="action" as="options">
+										<f:render partial="Table/Action/{options.action}" arguments="{listItem: listItem, list: list, action: action, options: options}" />
+									</f:for>
+								</div>
+							</f:if>
+						</td>
+					</tr>
+				</f:for>
+			</tbody>
+		</table>
+
+		<div class="row">
+			<div class="col-md-9">
+				<f:if condition="{f:count(subject: list.header.actions)}">
+					<div class="btn-group btn-header" role="group" aria-label="Actions">
+						<f:for each="{list.header.actions}" key="action" as="options">
+							<f:render partial="Table/Action/{options.action}" arguments="{listItem: listItem, list: list, action: action, options: options}" />
+						</f:for>
+					</div>
+				</f:if>
+			</div>
+			<div class="col-md-3">
+				<div class="btn-group pull-right pagination" role="group" aria-label="Pagination">
+					<modules:variable.set name="list.nextOffset" value="{modules:math.sum(a: list.offset, b: list.limit)}" />
+					<modules:variable.set name="list.previousOffset" value="{modules:math.subtract(a: list.offset, b: list.limit)}" />
+					<modules:variable.set name="list.pagesModulo" value="{modules:math.modulo(a: list.countAll, b: list.limit)}" />
+					<modules:variable.set name="list.lastOffset" value="{modules:math.subtract(a: list.countAll, b: list.pagesModulo)}" />
+					<f:if condition="{list.offset}>0">
+						<f:then>
+							<f:link.action action="{list.action}" arguments="{offset: 0}" title="First" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-first"/></f:link.action>
+							<f:link.action action="{list.action}" arguments="{offset: list.previousOffset}" title="Previous" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-previous"/></f:link.action>
+						</f:then>
+						<f:else>
+							<span title="First" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-first-disabled"/></span>
+							<span title="Previous" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-previous-disabled"/></span>
+						</f:else>
+					</f:if>
+					<f:if condition="{list.nextOffset} >= {list.countAll}">
+						<f:then>
+							<span title="Next" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-next-disabled"/></span>
+							<span title="Last" class="btn btn-primary disabled btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-last-disabled"/></span>
+						</f:then>
+						<f:else>
+							<f:link.action action="{list.action}" arguments="{offset: list.nextOffset}" title="Next" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-next"/></f:link.action>
+							<f:link.action action="{list.action}" arguments="{offset: list.lastOffset}" title="Last" class="btn btn-primary btn-icon"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-view-paging-last"/></f:link.action>
+						</f:else>
+					</f:if>
+				</div>
+			</div>
+		</div>
+
+	</f:then>
+	<f:else>
+
+		<div class="row">
+			<div class="col-md-12">
+				<f:if condition="{f:count(subject: list.header.actions)}">
+					<div class="btn-group btn-header" role="group" aria-label="Actions">
+						<f:for each="{list.header.actions}" key="action" as="options">
+							<f:render partial="Table/Action/{options.action}" arguments="{listItem: listItem, list: list, action: action, options: options}" />
+						</f:for>
+					</div>
+				</f:if>
+			</div>
+		</div>
+
+		<f:if condition="{list.messages.info.noEntries}">
+			<f:then>
+				<div class="alert alert-info">{list.messages.info.noEntries}</div>
+			</f:then>
+			<f:else>
+				<div class="alert alert-info">No entries found!</div>
+				<div class="alert alert-danger">Static template for frontend management not included or missing translation for: <code>list.messages.info.noEntries</code></div>
+			</f:else>
+		</f:if>
+
+	</f:else>
+</f:if>
+</html>

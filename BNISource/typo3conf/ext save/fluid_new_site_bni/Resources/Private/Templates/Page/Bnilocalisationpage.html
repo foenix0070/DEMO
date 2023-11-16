@@ -1,0 +1,513 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section id="main-section" class="mb-5">
+            <div class="container py-4">
+                <f:for each="{ArticleSectionTitle}" as="MainSectionTitleContent">
+                    <div class="heading-block border-bottom-0 text-center mb-5">
+                        <h2>{MainSectionTitleContent.data.header}</h2>
+                        <span>{MainSectionTitleContent.data.subheader}</span>
+                    </div>
+                </f:for>
+
+                
+
+                <div class="justify-content-center" id="main-publication">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="accordion" class="accordion-style">
+                                    <div class="card mb-3">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Affichez la liste </button>
+                                            </h5>
+                                        </div>
+                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville1">ABENGOUROU</a>
+                                                    <div id="accordion_ville1" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller">
+                                                                <i class="fa fa-caret-right " style="margin-right:8px"></i>ABENGOUROU
+                                                            </a> 
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville2" data-bs-parent="#innerAccordion">ABIDJAN</a>
+                                                        <div id="accordion_ville2" class="accordion-collapse collapse">
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i> ABOBO</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>ABOBO PK18</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>ADJAME BANFORA</a> 
+                                                            </div>
+                                                            
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>ADJAME ST-MICHEL</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY 9ème TRANCHE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY 8ème TRANCHE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>DANGA</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY II PLATEAUX VALLONS</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY II PLATEAUX AGBAN</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY II PLATEAUX LATRILLE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY RIVIERA M'POUTO</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>COCODY RIVIERA PALMERAIE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>KOUMASSI MAIRIE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>MARCORY RESIDENTIEL</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>MARCORY ZONE 4</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>PLATEAU ALLIANCE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>PLATEAU REPUBLIQUE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>PORT-BOUET</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>RIVIERA ABATTA</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>RIVIERA M'POUTO</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>TREICHVILLE MARCHE</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>TREICHVILLE ZONE 3(Agence P.A.C.T.E)</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>YOPOUGON COSMOS</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>YOPOUGON KENEYA</a> 
+                                                            </div>
+                                                            <div class="accordion-body">
+                                                                <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>YOPOUGON MAROC </a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville3">ABOISSO</a>
+                                                    <div id="accordion_ville3" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>ABOISSO EHANIA</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville4">BINGERVILLE</a>
+                                                    <div id="accordion_ville4" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BINGERVILLE</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville5">BONON</a>
+                                                    <div id="accordion_ville5" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BONON</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville6">BONOUA</a>
+                                                    <div id="accordion_ville6" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BONOUA</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville7">BOUAKE</a>
+                                                    <div id="accordion_ville7" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BOUAKE COMMERCE</a> 
+                                                    </div>
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BOUAKE MARCHE DE GROS</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville8">BOUNDIALI</a>
+                                                    <div id="accordion_ville8" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>BOUNDIALI</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville9">DABOU</a>
+                                                    <div id="accordion_ville9" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>DABOU</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville10">DALOA</a>
+                                                    <div id="accordion_ville10" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>DALOA</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville11">DIVO</a>
+                                                    <div id="accordion_ville11" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>DIVO</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville12">FERKESSEDOUGOU</a>
+                                                    <div id="accordion_ville12" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>FERKESSEDOUGOU</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville13">GAGNOA</a>
+                                                    <div id="accordion_ville13" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>GAGNOA</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville14">GRAND LAHOU</a>
+                                                    <div id="accordion_ville14" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>GRAND-LAHOU IROBO</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville15">GRAND BASSAM</a>
+                                                    <div id="accordion_ville15" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>GRAND BASSAM</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville16">KORHOGO</a>
+                                                    <div id="accordion_ville16" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>KORHOGO</a> 
+                                                    </div>
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>KORHOGO TONGON</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville17">MAN</a>
+                                                    <div id="accordion_ville17" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>MAN</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville18">MEAGUI</a>
+                                                    <div id="accordion_ville18" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>MEAGUI</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville19">SAN-PEDRO</a>
+                                                    <div id="accordion_ville19" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                    <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>SAN-PEDRO CITE</a> 
+                                                    </div>
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>SAN-PEDRO IBOKE</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville20">SOUBRE</a>
+                                                    <div id="accordion_ville20" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>SOUBRE</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville21">TOUBA</a>
+                                                    <div id="accordion_ville21" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>TOUBA</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <a href="#" class="accordion-header text-decoration-none text-black" data-bs-toggle="collapse" data-bs-target="#accordion_ville22">YAMOUSSOUKRO</a>
+                                                    <div id="accordion_ville22" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        <a href="#" class="text-decoration-none text-2 text-black" style="text-transform: none; font-size: smaller"><i class="fa fa-caret-right " style="margin-right:8px"></i>YAMOUSSOUKRO</a> 
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                            <div id="mainmap_reseau" style="height: 60vh;width: 100%;"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+                
+        </section>
+
+        
+    </div><!-- End Main -->
+
+ <!-- Google Maps API -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3jXRQKrBhn3BDJISs2yHqwHmBWLz5Wnw&callback=initMap" async defer></script>
+
+    <script>
+        let map;
+        let infowindow;
+
+        function initMap() {
+
+          
+            var markersList = [];
+            const mapConf = {
+                centerMapOnCountry: false,
+                center: "7.539989,-5.54708",
+                zoom: "6",
+                activeImplantation: 0,
+                activeCountry: 0,
+                activeCountryIso: 0,
+                activeCountryUid: 0,
+                showCountryLayer: 1,
+                useClusters: "1",
+                baseUrl: "http://localhost/",
+                showLegend: 0,
+                countryLink: 0
+            };
+          
+            var coordonnesStr = mapConf.center;
+            var coordonneeArr = coordonnesStr.split(',');
+            var myOptions = {
+                mapTypeControl: false,
+                zoom: parseInt(mapConf.zoom), 
+                center: new google.maps.LatLng(coordonneeArr[0],coordonneeArr[1])
+            }
+          
+          // Create a new map object
+           map = new google.maps.Map(document.getElementById('mainmap_reseau'),  myOptions);
+          
+        // Define the locations
+          var implantationsList = [{"uid":25,"adr1":"En face du Grand March\u00e9, mitoyen au TRESOR","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 35 90 00 92 \/ 94 \/ 95","name":"ABENGOUROU","type_map":"3","actif":"1","coordX":"-3.487329","coordY":"6.730453"},
+            {"uid":24,"adr1":"Face \u00e0 l'H\u00f4pital G\u00e9n\u00e9ral d'Abobo-Sud, \u00e0 proximit\u00e9 du Grand- March\u00e9 <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 25 23 00 54 19 \/ 26","name":"ABOBO","type_map":"3","actif":"1","coordX":"-4.015669","coordY":"5.423586"},
+            {"uid":4,"adr1":"A proximit\u00e9 de l'H\u00f4pital G\u00e9n\u00e9ral d'Adjam\u00e9 <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00(225) 27 20 30 51 65 \/ 66","name":"ADJAME BANFORA","type_map":"3","actif":"1","coordX":"-4.024789","coordY":"5.348504"},
+            {"uid":37,"adr1":"Carrefour March\u00e9 Gouro","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 31 99 00","name":"ADJAME ST-MICHEL","type_map":"3","actif":"1","coordX":"-4.023106","coordY":"5.348980"},
+            {"uid":47,"adr1":"Axe principale menant au rond-point \u00ab ADO \u00bb ; \u00e0 proximit\u00e9 de cash Djibi","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 30 35 19","name":"COCODY 9\u00e8me TRANCHE","type_map":"3","actif":"1","coordX":"-3.973258","coordY":"5.383731"},
+            {"uid":32,"adr1":"Face au th\u00e9\u00e2tre de la cit\u00e9 et la Cit\u00e9 universitaire \"Cit\u00e9 Rouge\" <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 48 27 10 \/ 11","name":"COCODY DANGA","type_map":"3","actif":"1","coordX":"-4.005023","coordY":"5.33774"},
+            {"uid":15,"adr1":"Axe Boulevard Latrille - Route d'Agban <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 40 56 85 \/ 86","name":"COCODY II PLATEAUX AGBAN","type_map":"3","actif":"1","coordX":"-4.000335","coordY":"5.368401"},
+            {"uid":23,"adr1":"Boulevard Latrille - Carrefour Duncan <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence,Point digital<\/i><br>","tel":"00 (225) 27 22 52 95 60 \/ 61 \/ 62","name":"COCODY II PLATEAUX LATRILLE","type_map":"3","actif":"1","coordX":"-3.997371","coordY":"5.377640"},
+            {"uid":55,"adr1":"Cocody Riviera 4 <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"Bient\u00f4t disponible","name":"COCODY RIVIERA M'POUTO","type_map":"3","actif":"1","coordX":"-3.948175","coordY":"5.328371"},
+            {"uid":14,"adr1":"Axe principal Palmeraie-Rosiers <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 49 01 50 \/ 51 \/ 52","name":"COCODY RIVIERA PALMERAIE","type_map":"3","actif":"1","coordX":"-3.958836","coordY":"5.369861"},
+            {"uid":45,"adr1":"A proximit\u00e9 de la Mairie de Koumassi","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 30 30 84 \/ 85","name":"KOUMASSI MAIRIE","type_map":"3","actif":"1","coordX":"-3.969805","coordY":"5.290571"},
+            {"uid":13,"adr1":"Rue Pierre et Marie Curie <br>Angle de la rue du Dr Blanchard, face \u00e0 Nice Cream <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 75 82 85 \/ 86 \/ 87","name":"MARCORY ZONE 4","type_map":"3","actif":"1","coordX":"-3.982505","coordY":"5.291463"},
+            {"uid":38,"adr1":"Avenue Terrason de Foug\u00e8res 2\u00e8me \u00e9tage de l'immeuble ALLIANCE, <br> Face c\u00f4t\u00e9 entr\u00e9e salle des f\u00eates de l'immeuble de la CAISTAB <br> 01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 30 22 \/ 11","name":"PLATEAU ALLIANCE","type_map":"3","actif":"1","coordX":"-4.017922","coordY":"5.325895"},
+            {"uid":30,"adr1":"Place de la R\u00e9publique<br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 21 75 82 85 \/ 86 \/ 87","name":"PLATEAU REPUBLIQUE","type_map":"3","actif":"1","coordX":"-4.019727","coordY":"5.318434"},
+            {"uid":46,"adr1":"Axe principale Riviera Palmeraie - Bingerville - Carrefour dit \u00ab Faya \u00bb sur la droite, en face du Mall Playce","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 30 24","name":"RIVIERA ABATTA","type_map":"3","actif":"1","coordX":"-3.979014","coordY":"5.345541"},
+            {"uid":3,"adr1":"Grand march\u00e9 de Treichville - Face \u00e0 la maison du PDCI RDA <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 75 55 35 \/ 32","name":"TREICHVILLE MARCH\u00c9","type_map":"3","actif":"1","coordX":"-4.014052","coordY":"5.309464"},
+            {"uid":12,"adr1":"Axe principal - Entre les carrefours Figayo et Keneya <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 35 31","name":"YOPOUGON KENEYA","type_map":"3","actif":"1","coordX":"-4.073131","coordY":"5.347487"},
+            {"uid":36,"adr1":"Axe Station Lubafrique - Eglise Ste Rita de Niangon","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 23 46 94 80","name":"YOPOUGON MAROC","type_map":"3","actif":"1","coordX":"-4.103809","coordY":"5.330211"},
+            {"uid":22,"adr1":"Site PALM-CI de Ehania","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 30 48 50","name":"ABOISSO EHANIA","type_map":"3","actif":"1","coordX":"-3.053246","coordY":"5.285542"},
+            {"uid":11,"adr1":"Voie principale Abidjan - Aboisso <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 30 97 70 \/ 71 \/ 72","name":"BONOUA","type_map":"3","actif":"1","coordX":"-3.597406","coordY":"5.268620"},
+            {"uid":34,"adr1":"Rue Bernard Dadi\u00e9, Quartier Commerce <br>01 BP 1363 Bouak\u00e9 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 31 65 67 45 \/ 49","name":"BOUAKE COMMERCE","type_map":"3","actif":"1","coordX":"-5.028895","coordY":"7.682638"},
+            {"uid":16,"adr1":"March\u00e9 de Gros de Bouak\u00e9 <br> 01 BP 1363 Bouak\u00e9 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 31 65 67 67 \/ 68 \/ 69","name":"BOUAKE MARCHE DE GROS","type_map":"3","actif":"1","coordX":"-5.022602","coordY":"7.697940"},
+            {"uid":18,"adr1":"Carrefour des Axes Tengr\u00e9la - Odienne, <br>apr\u00e8s la Station Total, \u00e0 proximit\u00e9 de l'ancien Commissariat","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 36 86 57 90 \/ 91 \/ 92","name":"BOUNDIALI","type_map":"3","actif":"1","coordX":"-6.484987","coordY":"9.522925"},
+            {"uid":26,"adr1":"Quartier Soleil, Route de Du\u00e9kou\u00e9","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 32 76 73 40 \/ 41 \/42","name":"DALOA","type_map":"3","actif":"1","coordX":"-6,4594770","coordY":"6,8845990"},
+            {"uid":19,"adr1":"Carrefour de Korhogo, en face du March\u00e9","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 36 86 90 62 \/ 65","name":"FERKESSEDOUGOU","type_map":"3","actif":"1","coordX":"-5.197731","coordY":"9.592457"},
+            {"uid":27,"adr1":"Quartier Commerce, entre l'H\u00f4tel de ville et le march\u00e9","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 32 77 71 95 \/ 96 \/ 97","name":"GAGNOA","type_map":"3","actif":"1","coordX":"-5,9458390","coordY":"6,1306740"},
+            {"uid":39,"adr1":"Axe Grand-Lahou Site PALMCI Irobo","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 20 99 74 \/ 76","name":"GRAND-LAHOU IROBO","type_map":"3","actif":"1","coordX":"-4,7958980","coordY":"5,2973700"},
+            {"uid":35,"adr1":"Rue des Banques","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 36 85 00 40 \/ 41 \/45","name":"KORHOGO","type_map":"3","actif":"1","coordX":"-5.631852","coordY":"9.457337"},
+            {"uid":28,"adr1":"Village de Tongon, Mine d'or Rangold \u00e0 65 km de Korhogo","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 07 48 59 05 32","name":"KORHOGO TONGON","type_map":"3","actif":"1","coordX":"-5.730662","coordY":"9.901097"},
+            {"uid":40,"adr1":"Quartier Commerce - Route de Facobly \/ Lac","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 33 79 18 20","name":"MAN","type_map":"3","actif":"1","coordX":"-7.545198","coordY":"7.412676"},
+            {"uid":20,"adr1":"Axe San Pedro - Soubr\u00e9, \u00e0 proximit\u00e9 de la gare routi\u00e8re","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 34 72 66 15 \/ 16 \/ 17","name":"MEAGUI","type_map":"3","actif":"1","coordX":"-6.558391","coordY":"5.410757"},
+            {"uid":10,"adr1":"Rue des banques <br> 01 BP 95 SAN PEDRO 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 34 71 92 00 \/ 01 \/ 02","name":"SAN-PEDRO CITE","type_map":"3","actif":"1","coordX":"-6,6347400","coordY":"4,7477510"},
+            {"uid":42,"adr1":"Site PALMCI Iboke V2","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 20 99 77","name":"SAN-PEDRO IBOKE","type_map":"3","actif":"1","coordX":"-7,4071810","coordY":"4,6823450"},
+            {"uid":7,"adr1":"Axe principal Abidjan-Bouak\u00e9, Quartier habitat <br>BP 1531 Yamoussoukro","horaire":"<i>Point digital,Agence,Guichet<\/i><br>","tel":"00 (225) 27 30 64 09 54 \/ 55","name":"YAMOUSSOUKRO","type_map":"3","actif":"1","coordX":"-5.279204","coordY":"6.821579"
+            }];
+          
+                var polyList = [];
+
+
+            // Add a marker for each location
+            var markers = [];
+            for (var i = 0; i < implantationsList.length; i++) {
+                var item = implantationsList[i];
+
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(item.coordY, item.coordX),
+                    map: map,
+                    title: item.name,
+                    myLink: item.link,
+                    item: item
+                });
+
+                marker.addListener('click', function() {
+                    addToolTip(this);
+                });
+
+
+                marker.addListener('change', function() {
+                    addToolTip(this);
+                });
+                markersList['bni'+item.uid] = marker;
+                markers.push(marker);
+
+            }
+
+
+        }
+
+       
+
+    </script>
+
+    <!-- <script type="text/javascript">
+        
+
+        function initMap() {
+
+            var infowindow;
+            var markersList = [];
+            var mapConf =  {"centerMapOnCountry":false,
+            "center":"7.539989,-5.54708","zoom":"6","activeImplantation":0,"activeCountry":0,"activeCountryIso":0,"activeCountryUid":0,"showCountryLayer":1,"useClusters":"1","baseUrl":"https:\/\/www.bni.ci\/","showLegend":0,"countryLink":0};
+            var coordonnesStr = mapConf.center;
+            var coordonneeArr = coordonnesStr.split(',');
+            var myOptions = {
+                mapTypeControl: false,
+                zoom: parseInt(mapConf.zoom), 
+                center: new google.maps.LatLng(coordonneeArr[0],coordonneeArr[1]),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [ { stylers: [ { saturation: -100 } ] } ] 
+            }
+            var map = new google.maps.Map(document.getElementById("mainmap_reseau"),  myOptions);
+            var countryList = [{"name":"Cote d'Ivoire","iso":"CIV","link":"https:\/\/bni.ci\/","color":"rgba(0, 0, 255, 0)"}];;
+            var implantationsList = [{"uid":25,"adr1":"En face du Grand March\u00e9, mitoyen au TRESOR","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 35 90 00 92 \/ 94 \/ 95","name":"ABENGOUROU","type_map":"3","actif":"1","coordX":"-3.487329","coordY":"6.730453"},{"uid":24,"adr1":"Face \u00e0 l'H\u00f4pital G\u00e9n\u00e9ral d'Abobo-Sud, \u00e0 proximit\u00e9 du Grand- March\u00e9 <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 25 23 00 54 19 \/ 26","name":"ABOBO","type_map":"3","actif":"1","coordX":"-4.015669","coordY":"5.423586"},{"uid":4,"adr1":"A proximit\u00e9 de l'H\u00f4pital G\u00e9n\u00e9ral d'Adjam\u00e9 <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00(225) 27 20 30 51 65 \/ 66","name":"ADJAME BANFORA","type_map":"3","actif":"1","coordX":"-4.024789","coordY":"5.348504"},{"uid":37,"adr1":"Carrefour March\u00e9 Gouro","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 31 99 00","name":"ADJAME ST-MICHEL","type_map":"3","actif":"1","coordX":"-4.023106","coordY":"5.348980"},{"uid":47,"adr1":"Axe principale menant au rond-point \u00ab ADO \u00bb ; \u00e0 proximit\u00e9 de cash Djibi","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 30 35 19","name":"COCODY 9\u00e8me TRANCHE","type_map":"3","actif":"1","coordX":"-3.973258","coordY":"5.383731"},{"uid":32,"adr1":"Face au th\u00e9\u00e2tre de la cit\u00e9 et la Cit\u00e9 universitaire \"Cit\u00e9 Rouge\" <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 48 27 10 \/ 11","name":"COCODY DANGA","type_map":"3","actif":"1","coordX":"-4.005023","coordY":"5.33774"},{"uid":15,"adr1":"Axe Boulevard Latrille - Route d'Agban <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 40 56 85 \/ 86","name":"COCODY II PLATEAUX AGBAN","type_map":"3","actif":"1","coordX":"-4.000335","coordY":"5.368401"},{"uid":23,"adr1":"Boulevard Latrille - Carrefour Duncan <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence,Point digital<\/i><br>","tel":"00 (225) 27 22 52 95 60 \/ 61 \/ 62","name":"COCODY II PLATEAUX LATRILLE","type_map":"3","actif":"1","coordX":"-3.997371","coordY":"5.377640"},{"uid":55,"adr1":"Cocody Riviera 4 <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"Bient\u00f4t disponible","name":"COCODY RIVIERA M'POUTO","type_map":"3","actif":"1","coordX":"-3.948175","coordY":"5.328371"},{"uid":14,"adr1":"Axe principal Palmeraie-Rosiers <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 22 49 01 50 \/ 51 \/ 52","name":"COCODY RIVIERA PALMERAIE","type_map":"3","actif":"1","coordX":"-3.958836","coordY":"5.369861"},{"uid":45,"adr1":"A proximit\u00e9 de la Mairie de Koumassi","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 30 30 84 \/ 85","name":"KOUMASSI MAIRIE","type_map":"3","actif":"1","coordX":"-3.969805","coordY":"5.290571"},{"uid":13,"adr1":"Rue Pierre et Marie Curie <br>Angle de la rue du Dr Blanchard, face \u00e0 Nice Cream <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 75 82 85 \/ 86 \/ 87","name":"MARCORY ZONE 4","type_map":"3","actif":"1","coordX":"-3.982505","coordY":"5.291463"},{"uid":38,"adr1":"Avenue Terrason de Foug\u00e8res 2\u00e8me \u00e9tage de l'immeuble ALLIANCE, <br> Face c\u00f4t\u00e9 entr\u00e9e salle des f\u00eates de l'immeuble de la CAISTAB <br> 01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 30 22 \/ 11","name":"PLATEAU ALLIANCE","type_map":"3","actif":"1","coordX":"-4.017922","coordY":"5.325895"},{"uid":30,"adr1":"Place de la R\u00e9publique<br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 21 75 82 85 \/ 86 \/ 87","name":"PLATEAU REPUBLIQUE","type_map":"3","actif":"1","coordX":"-4.019727","coordY":"5.318434"},{"uid":46,"adr1":"Axe principale Riviera Palmeraie - Bingerville - Carrefour dit \u00ab Faya \u00bb sur la droite, en face du Mall Playce","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 30 24","name":"RIVIERA ABATTA","type_map":"3","actif":"1","coordX":"-3.979014","coordY":"5.345541"},{"uid":3,"adr1":"Grand march\u00e9 de Treichville - Face \u00e0 la maison du PDCI RDA <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 75 55 35 \/ 32","name":"TREICHVILLE MARCH\u00c9","type_map":"3","actif":"1","coordX":"-4.014052","coordY":"5.309464"},{"uid":12,"adr1":"Axe principal - Entre les carrefours Figayo et Keneya <br>01 BP 670 Abidjan 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 20 30 35 31","name":"YOPOUGON KENEYA","type_map":"3","actif":"1","coordX":"-4.073131","coordY":"5.347487"},{"uid":36,"adr1":"Axe Station Lubafrique - Eglise Ste Rita de Niangon","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 23 46 94 80","name":"YOPOUGON MAROC","type_map":"3","actif":"1","coordX":"-4.103809","coordY":"5.330211"},{"uid":22,"adr1":"Site PALM-CI de Ehania","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 30 48 50","name":"ABOISSO EHANIA","type_map":"3","actif":"1","coordX":"-3.053246","coordY":"5.285542"},{"uid":11,"adr1":"Voie principale Abidjan - Aboisso <br>01 BP 670 Abidjan 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 21 30 97 70 \/ 71 \/ 72","name":"BONOUA","type_map":"3","actif":"1","coordX":"-3.597406","coordY":"5.268620"},{"uid":34,"adr1":"Rue Bernard Dadi\u00e9, Quartier Commerce <br>01 BP 1363 Bouak\u00e9 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 31 65 67 45 \/ 49","name":"BOUAKE COMMERCE","type_map":"3","actif":"1","coordX":"-5.028895","coordY":"7.682638"},{"uid":16,"adr1":"March\u00e9 de Gros de Bouak\u00e9 <br> 01 BP 1363 Bouak\u00e9 01","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 31 65 67 67 \/ 68 \/ 69","name":"BOUAKE MARCHE DE GROS","type_map":"3","actif":"1","coordX":"-5.022602","coordY":"7.697940"},{"uid":18,"adr1":"Carrefour des Axes Tengr\u00e9la - Odienne, <br>apr\u00e8s la Station Total, \u00e0 proximit\u00e9 de l'ancien Commissariat","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 36 86 57 90 \/ 91 \/ 92","name":"BOUNDIALI","type_map":"3","actif":"1","coordX":"-6.484987","coordY":"9.522925"},{"uid":26,"adr1":"Quartier Soleil, Route de Du\u00e9kou\u00e9","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 32 76 73 40 \/ 41 \/42","name":"DALOA","type_map":"3","actif":"1","coordX":"-6,4594770","coordY":"6,8845990"},{"uid":19,"adr1":"Carrefour de Korhogo, en face du March\u00e9","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 36 86 90 62 \/ 65","name":"FERKESSEDOUGOU","type_map":"3","actif":"1","coordX":"-5.197731","coordY":"9.592457"},{"uid":27,"adr1":"Quartier Commerce, entre l'H\u00f4tel de ville et le march\u00e9","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 32 77 71 95 \/ 96 \/ 97","name":"GAGNOA","type_map":"3","actif":"1","coordX":"-5,9458390","coordY":"6,1306740"},{"uid":39,"adr1":"Axe Grand-Lahou Site PALMCI Irobo","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 20 99 74 \/ 76","name":"GRAND-LAHOU IROBO","type_map":"3","actif":"1","coordX":"-4,7958980","coordY":"5,2973700"},{"uid":35,"adr1":"Rue des Banques","horaire":"<i>Guichet,Agence<\/i><br>","tel":"00 (225) 27 36 85 00 40 \/ 41 \/45","name":"KORHOGO","type_map":"3","actif":"1","coordX":"-5.631852","coordY":"9.457337"},{"uid":28,"adr1":"Village de Tongon, Mine d'or Rangold \u00e0 65 km de Korhogo","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 07 48 59 05 32","name":"KORHOGO TONGON","type_map":"3","actif":"1","coordX":"-5.730662","coordY":"9.901097"},{"uid":40,"adr1":"Quartier Commerce - Route de Facobly \/ Lac","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 33 79 18 20","name":"MAN","type_map":"3","actif":"1","coordX":"-7.545198","coordY":"7.412676"},{"uid":20,"adr1":"Axe San Pedro - Soubr\u00e9, \u00e0 proximit\u00e9 de la gare routi\u00e8re","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 34 72 66 15 \/ 16 \/ 17","name":"MEAGUI","type_map":"3","actif":"1","coordX":"-6.558391","coordY":"5.410757"},{"uid":10,"adr1":"Rue des banques <br> 01 BP 95 SAN PEDRO 01","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 34 71 92 00 \/ 01 \/ 02","name":"SAN-PEDRO CITE","type_map":"3","actif":"1","coordX":"-6,6347400","coordY":"4,7477510"},{"uid":42,"adr1":"Site PALMCI Iboke V2","horaire":"<i>Agence,Guichet<\/i><br>","tel":"00 (225) 27 20 20 99 77","name":"SAN-PEDRO IBOKE","type_map":"3","actif":"1","coordX":"-7,4071810","coordY":"4,6823450"},{"uid":7,"adr1":"Axe principal Abidjan-Bouak\u00e9, Quartier habitat <br>BP 1531 Yamoussoukro","horaire":"<i>Point digital,Agence,Guichet<\/i><br>","tel":"00 (225) 27 30 64 09 54 \/ 55","name":"YAMOUSSOUKRO","type_map":"3","actif":"1","coordX":"-5.279204","coordY":"6.821579"}];
+            var polyList = [];
+
+            // dessiner tous les markers
+            var markers = [];
+            for(var i=0; i < implantationsList.length; i++){
+                var item = implantationsList[i];
+                var image = 'images/gmap_marker.png';
+                var imageactive = 'images/gmap_marker_active.png';
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    icon: image,
+                    active: imageactive,
+                    position: new google.maps.LatLng(item.coordY, item.coordX),
+                    title: item.name,
+                    myLink: item.link,
+                    item: item
+                });
+
+                marker.addListener('click', function() {
+                    addToolTip(this);
+                });
+
+
+                marker.addListener('change', function() {
+                    addToolTip(this);
+                });
+                markersList['bni'+item.uid] = marker;
+                markers.push(marker);
+            }
+            
+        }
+    </script> -->
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+   <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+</f:section>
+</html>

@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+	<th class="col-title">
+		<f:if condition="{options.sortable}">
+			<f:then>
+				<f:if condition="{field} == {list.sortingFieldUnmapped}">
+					<f:then>
+						<f:if condition="{list.sortingOrder} == 'asc'">
+							<f:then>
+								<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'desc'}">{options.label}</f:link.action>
+								<core:icon alternativeMarkupIdentifier="inline" identifier="status-status-sorting-asc"/>
+							</f:then>
+							<f:else>
+								<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'asc'}">{options.label}</f:link.action>
+								<core:icon alternativeMarkupIdentifier="inline" identifier="status-status-sorting-desc"/>
+							</f:else>
+						</f:if>
+					</f:then>
+					<f:else>
+						<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'asc'}">{options.label}</f:link.action>
+					</f:else>
+				</f:if>
+			</f:then>
+			<f:else>{options.label}</f:else>
+		</f:if>
+	</th>
+
+</html>

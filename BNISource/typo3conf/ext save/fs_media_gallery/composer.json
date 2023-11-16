@@ -1,0 +1,44 @@
+{
+  "name": "minifranske/fs-media-gallery",
+  "description": "A FAL based media gallery for TYPO3. Show your assets from your local or remote storage as a gallery of albums.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "media",
+    "gallery",
+    "images"
+  ],
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Frans Saris",
+      "role": "Developer",
+      "homepage": "http://minifranske.nl"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+    "typo3/cms-core": "^11.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MiniFranske\\FsMediaGallery\\": "Classes/"
+    }
+  },
+  "replace": {
+    "typo3-ter/fs-media-gallery": "self.version"
+  },
+  "suggest": {
+    "georgringer/numbered-pagination": "^1.0.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    },
+    "typo3/cms": {
+      "extension-key": "fs_media_gallery"
+    }
+  }
+}

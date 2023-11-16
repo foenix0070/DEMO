@@ -1,0 +1,30 @@
+mod.web_layout.BackendLayouts {
+    BniProductServicePage {
+        title = Bni Product Service Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = ArticleSectionText
+                                colPos = 23
+                                colspan = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

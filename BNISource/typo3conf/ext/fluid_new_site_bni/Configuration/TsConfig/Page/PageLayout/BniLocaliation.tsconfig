@@ -1,0 +1,48 @@
+mod.web_layout.BackendLayouts {
+    BniLocalisationPage {
+        title = Bni Localisation Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = SubHeader
+                                colspan = 3
+                                colPos = 18
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = ArticleSectionTitle
+                                colPos = 29
+                                colspan = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = ArticleSectionText
+                                colPos = 23
+                                colspan = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

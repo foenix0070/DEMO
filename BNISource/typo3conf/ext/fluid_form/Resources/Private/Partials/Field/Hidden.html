@@ -1,0 +1,13 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<f:form.hidden value="{field.value}"
+					   name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+		/>
+	</f:section>
+	<f:section name="ValueFromTypoScript">
+		<f:form.hidden value="{f:cObject(typoscriptObjectPath: field.value)}"
+					   name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+		/>
+	</f:section>
+</div>

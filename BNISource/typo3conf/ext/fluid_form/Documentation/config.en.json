@@ -1,0 +1,301 @@
+{
+    "title": "TYPO3 Fluid-Form",
+    "subtitle": "Fluid form is a small TYPO3 extension for creating forms only by using TypoScript. This extension was developed form shipping TYPO3 Themes with pre-configured forms.",
+    "logo": "../Resources/Public/Icons/Extension.svg",
+    "markdown": "../Readme.en.md",
+    "meta": {
+        "description": "TYPO3 Fluid-Form - Fluid form is a small TYPO3 extension for creating forms only by using TypoScript. This extension was developed form shipping TYPO3 Themes with pre-configured forms.",
+        "abstract": "Forms configured only by TypoScript",
+        "keywords": "TYPO3, extension, Forms",
+        "og:title": "TYPO3 Fluid-Form",
+        "og:description": "TYPO3 Fluid-Form - Fluid form is a small TYPO3 extension for creating forms only by using TypoScript. This extension was developed form shipping TYPO3 Themes with pre-configured forms."
+    },
+    "features": [
+        "Output of Ajax forms that are easily configurable via TS",
+        "Any fields and field types can be created",
+        "The extension includes versioning and is easy to maintain",
+        "Various finishers set what should happen after the form is sent - send an email or additional option to write contents to a database or generate a PDF on the fly",
+        "Any number of field sets with different field types (date, time, etc.)",
+        "Notes can be used",
+        "Captcha, Mathguard, Honeypot can be used",
+        "If data is to be written to a database, an automated scheduler can collect the data and send it",
+        "Forms can be linked to any data records (e.g. news) and it is possible to send the webpage address hidden in the form entries",
+        "Backend module overview of all mails and requests"
+    ],
+    "links": {
+        "product": {
+            "link": "https://www.coding.ms/de/typo3-extensions/typo3-fluid-form",
+            "name": "TYPO3 Fluid-Form Productdetails"
+        }
+    },
+    "pages": [
+        {
+            "title": "About this Extension",
+            "markdown": "Index.en.md",
+            "meta": {
+                "description": "TYPO3 Fluid Form - About this Extension",
+                "abstract": "Forms configured only by TypoScript",
+                "keywords": "TYPO3, Extension, about",
+                "og:title": "TYPO3 Fluid Form",
+                "og:description": "TYPO3 Fluid Form - About this Extension"
+            }
+        },
+        {
+            "title": "Configuration",
+            "pages": [
+                {
+                    "title": "TypoScript configuration",
+                    "markdown": "Configuration/TypoScriptConfiguration.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - TypoScript configuration",
+                        "abstract": "How to configure Fluid-Form's TypoScript",
+                        "keywords": "TYPO3, extension, Fluid Form, TypoScript",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - TypoScript configuration"
+                    }
+                },
+                {
+                    "title": "Field options and validators",
+                    "markdown": "Configuration/FieldOptionsAndValidators.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Field options and validators",
+                        "abstract": "How to configure Fluid-Form's field options and validators",
+                        "keywords": "TYPO3, extension, Fluid Form, Field options, validators",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Field options and validators"
+                    }
+                },
+                {
+                    "title": "Backend Module",
+                    "markdown": "Configuration/BackendModule.en.md",
+                    "meta": {
+                        "description": "Backend Module",
+                        "abstract": "How to configure the Fluid-Form backend module",
+                        "keywords": "TYPO3, extension, fluid form, backend module",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Configuration of the backend module"
+                    }
+                },
+                {
+                    "title": "Configuration of the database finisher",
+                    "markdown": "Configuration/DatabaseFinisher.en.md",
+                    "meta": {
+                        "description": "Configuration of the database finisher",
+                        "abstract": "How to configure Fluid-Form's database finisher",
+                        "keywords": "TYPO3, extension, fluid form, database finisher",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Configuration of the database finisher"
+                    }
+                },
+                {
+                    "title": "JavaScript-Events",
+                    "markdown": "Configuration/JavaScriptEvents.en.md",
+                    "meta": {
+                        "description": "JavaScript-Events",
+                        "abstract": "How to include JavaScript events with TypoScript",
+                        "keywords": "TYPO3, extension, Fluid Form, JavaScript, include",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Embed JavaScript events with TypoScript"
+                    }
+                },
+                {
+                    "title": "Configuration of the mail finisher",
+                    "markdown": "Configuration/MailFinisher.en.md",
+                    "meta": {
+                        "description": "Configuration of the mail finisher",
+                        "abstract": "How to configure Fluid-Form's mail finisher.",
+                        "keywords": "TYPO3, extension, Fluid Form, mail, finisher",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Configuration of the mail finisher"
+                    }
+                },
+                {
+                    "title": "Reporting",
+                    "markdown": "Configuration/Reporting.en.md",
+                    "meta": {
+                        "description": "Reporting",
+                        "abstract": "How to configure Fluid-Form's scheduler.",
+                        "keywords": "TYPO3, extension, Fluid Form, Reporting, Scheduler",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Configuration of the scheduler"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "HowTo",
+            "pages": [
+                {
+                    "title": "Attach a dynamic PDF to Email",
+                    "markdown": "HowTo/AttachPdfInEmail.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Attach a dynamic PDF to an email",
+                        "abstract": "How to attach a dynamic PDF to an email",
+                        "keywords": "TYPO3, extension, Fluid Form, email",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Attach a dynamic PDF to an email"
+                    }
+                },
+                {
+                    "title": "Create a simple form",
+                    "markdown": "HowTo/CreateASimpleForm.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Create a simple form",
+                        "abstract": "How to create a simple form",
+                        "keywords": "TYPO3, extension, Fluid Form, form",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Create a simple form"
+                    }
+                },
+                {
+                    "title": "Delete all records of a form from database",
+                    "markdown": "HowTo/DeleteAllRecordsByFormKey.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Delete all records of a form from database",
+                        "abstract": "How to delete all records of a form from database",
+                        "keywords": "TYPO3, extension, Fluid Form, form key, delete",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Delete all records of a form from database"
+                    }
+                },
+                {
+                    "title": "Include Fluid-Forms by using TypoScript",
+                    "markdown": "HowTo/IncludeFluidFormsByUsingTypoScript.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Include Fluid-Forms by using TypoScript",
+                        "abstract": "How to delete an all records by form key.",
+                        "keywords": "TYPO3, extension, Fluid Form, TypoScript, include",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Include Fluid-Forms by using TypoScript"
+                    }
+                },
+                {
+                    "title": "Divergent recipients",
+                    "markdown": "HowTo/DivergentRecipients.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Configure divergent recipients",
+                        "abstract": "How to configure different recipients.",
+                        "keywords": "TYPO3, extension, Fluid Form, recipients, divergent",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Configure divergent recipients"
+                    }
+                },
+                {
+                    "title": "Add or remove forms",
+                    "markdown": "HowTo/SelectableForms.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Add or remove forms",
+                        "abstract": "Wie man Formulare hinzufügt oder entfernt.",
+                        "keywords": "TYPO3, extension, Fluid Form, forms, add, remove",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Add or remove forms"
+                    }
+                },
+                {
+                    "title": "Integrate a captcha",
+                    "markdown": "HowTo/IntegrateCaptcha.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Integrate a captcha",
+                        "abstract": "How to integrate a captcha.",
+                        "keywords": "TYPO3, extension, Fluid Form, captcha, integrate",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Integrate a captcha"
+                    }
+                },
+                {
+                    "title": "Integrate a honeypot",
+                    "markdown": "HowTo/IntegrateHoneypot.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Integrate a honeypot",
+                        "abstract": "How to integrate a honeypot.",
+                        "keywords": "TYPO3, extension, Fluid Form, Honeypot, integrate",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Integrate a honeypot"
+                    }
+                },
+                {
+                    "title": "Add CSS stylesheets",
+                    "markdown": "HowTo/AddStylesheetsQuickly.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Add CSS stylesheets",
+                        "abstract": "How to CSS stylesheets.",
+                        "keywords": "TYPO3, extension, Fluid Form, CSS, stylesheets",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Add CSS stylesheets"
+                    }
+                },
+                {
+                    "title": "Bootstrap4 Migration",
+                    "markdown": "HowTo/MigrateToBootstrap4.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Migration to bootstrap 4",
+                        "abstract": "How to migrate to Bootstrap 4.",
+                        "keywords": "TYPO3, extension, Fluid Form, bootstrap, migration",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Migration to bootstrap 4"
+                    }
+                },
+                {
+                    "title": "Prefill hidden field with News-Title or similar data",
+                    "markdown": "HowTo/PrefillHiddenFieldWithNewsTitle.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Prefill hidden field with News-Title or similar data",
+                        "abstract": "How to prefill a hidden field with News-Title or similar data.",
+                        "keywords": "TYPO3, extension, Fluid Form, title, data, prefill",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Prefill hidden field with News-Title or similar data"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Faq",
+            "pages": [
+                {
+                    "title": "Calling Google-Analytics throws",
+                    "markdown": "Faq/CallingGoogleAnalyticsThrows.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Calling Google Analytics throws errors",
+                        "abstract": "If the call to Google Analytics throws a reference error",
+                        "keywords": "TYPO3, extension, Fluid Form, google, analytics, error",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Calling Google Analytics throws errors"
+                    }
+                },
+                {
+                    "title": "Receiving emails failed (For example by using Hosteurope as Hoster)",
+                    "markdown": "Faq/ReceivingFailedEmails.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Receiving failed email",
+                        "abstract": "How to fix failed email reception",
+                        "keywords": "TYPO3, extension, Fluid Form, E-mail, reception, failed",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Receiving failed email"
+                    }
+                },
+                {
+                    "title": "Sending the form ends in a 404 error",
+                    "markdown": "Faq/FormEndsIn404Error.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - Submitting the form ends with a 404 error",
+                        "abstract": "How to fix a 404 error when submitting the form",
+                        "keywords": "TYPO3, extension, Fluid Form, Form, submit, 404, error",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - Submitting the form ends with a 404 error"
+                    }
+                },
+                {
+                    "title": "After sending the form the received JSON is shown",
+                    "markdown": "Faq/ShowsReceivedJsonAfterSendingForm.en.md",
+                    "meta": {
+                        "description": "TYPO3 Fluid Form - After submitting the form, the received JSON is displayed",
+                        "abstract": "How to fix displaying JSON after form submission",
+                        "keywords": "TYPO3, extension, Fluid Form, Form, submit, JSON",
+                        "og:title": "TYPO3 Fluid Form",
+                        "og:description": "TYPO3 Fluid Form - After submitting the form, the received JSON is displayed"
+                    }
+                }
+            ]
+        }
+    ]
+}

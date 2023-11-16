@@ -1,0 +1,130 @@
+plugin.tx_fluidform {
+	view {
+		templateRootPaths {
+			200 = EXT:fluid_form/Resources/Private/Templates/
+			300 = {$themes.resourcesPrivatePath}Extensions/FluidForm/Templates/
+			350 = {$plugin.tx_fluidform.view.templateRootPath}
+			400 = {$themes.configuration.extension.fluid_form.view.templateRootPath}
+		}
+		partialRootPaths {
+			200 = EXT:fluid_form/Resources/Private/Partials/
+			300 = {$themes.resourcesPrivatePath}Extensions/FluidForm/Partials/
+			350 = {$plugin.tx_fluidform.view.partialRootPath}
+			400 = {$themes.configuration.extension.fluid_form.view.partialRootPath}
+		}
+		layoutRootPaths {
+			200 = EXT:fluid_form/Resources/Private/Layouts/
+			300 = {$themes.resourcesPrivatePath}Extensions/FluidForm/Layouts/
+			350 = {$plugin.tx_fluidform.view.layoutRootPath}
+			400 = {$themes.configuration.extension.fluid_form.view.layoutRootPath}
+		}
+	}
+	persistence {
+		storagePid = {$plugin.tx_fluidform.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+		# Skip default arguments from urls
+		skipDefaultArguments = 0
+	}
+	settings {
+		forms {
+			# each key a form setup
+		}
+	}
+	# Presets for forms, fieldsets, fields, finisher
+	presets {
+		# Form preset (basic setup for new forms)
+		forms {
+			default {
+				debug = 0
+				configuration {
+					# Send by AJAX 0/1
+					ajax = 1
+					# If set, the ajax request is send to this page uid
+					ajaxActionPid = 0
+				}
+				# Messages
+				messages {
+					# This messages are fetched and used by the related fields.
+					# The Frontend gets only messages in "message.ok" and "message.error"!
+					# -> $this->form['messages']['ok']
+					# -> $this->form['messages']['error']
+					successfullySent {
+						title = Form data successfully sent!
+						message = We will contact you soon.
+					}
+					validationFailed {
+						title = Form validation failed!
+						message = Please fill in all fields.
+					}
+					uploadFileSuccessful {
+						title = File successfully uploaded!!
+						message =
+					}
+					uploadFileFailed {
+						title = File upload failed! (code: 1)
+						message =
+					}
+					validating_unique_id_failed {
+						title = File upload failed! (code: 2)
+						message =
+					}
+					upload_file_name_already_exists {
+						title = File upload failed! (code: 3)
+						message =
+					}
+					upload_file_empty {
+						title = File upload failed! (code: 4)
+						message =
+					}
+					please_select_an_upload_file_storage {
+						title = File upload failed! (code: 5)
+						message =
+					}
+					please_select_a_valid_upload_file_storage {
+						title = File upload failed! (code: 6)
+						message =
+					}
+					please_select_a_valid_upload_folder_from_storage {
+						title = File upload failed! (code: 7)
+						message =
+					}
+					validating_field_unique_id_structure_failed {
+						title = File upload failed! (code: 8)
+						message =
+					}
+					validating_field_unique_id_length_failed {
+						title = File upload failed! (code: 9)
+						message =
+					}
+				}
+				css {
+					class {
+						# CSS classes for the form tag
+						#form = form-horizontal
+					}
+					# Inline styles
+					style {
+						#form = color: #f00
+					}
+				}
+			}
+		}
+	}
+}
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fluid_form/Configuration/TypoScript/Library/" extensions="typoscript">
+
+# Insert JavaScript
+page {
+	includeJSFooter {
+		fluidForm = EXT:fluid_form/Resources/Public/JavaScript/FluidForm.js
+		fluidForm {
+			external = 0
+			disableCompression = 0
+			excludeFromConcatenation = 0
+		}
+	}
+}

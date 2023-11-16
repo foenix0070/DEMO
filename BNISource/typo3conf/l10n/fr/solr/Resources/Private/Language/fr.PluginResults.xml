@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+      <label index="searchUnavailable">La recherche est indisponible.</label>
+      <label index="searchFailed">Nous sommes désolé. Votre requête ne peut aboutir.</label>
+      <label index="searchWord">Mot clé</label>
+      <label index="didYouMean">Voulez-vous dire</label>
+      <label index="submit">Recherche</label>
+      <label index="sorting_sortBy">Trier par</label>
+      <label index="faceting_narrowSearch">Recherche filtrée</label>
+      <label index="faceting_resultsNarrowedBy">Filtrer la recherche par</label>
+      <label index="faceting_showMore">Afficher plus</label>
+      <label index="faceting_showFewer">Afficher moins</label>
+      <label index="faceting_removeAllFilters">Retirer tous les filtres</label>
+      <label index="results_range">Afficher les résultats@resultsFrom à @resultsTo sur @resultsTotal.</label>
+      <label index="results_found">@resultsTotal résultats trouvés en @resultsTime milliseconds.</label>
+      <label index="results_searched_for">Recherche de "@searchWord".</label>
+      <label index="no_results_nothing_found">Aucun résultat pour "@searchWord".</label>
+      <label index="no_results_showing_results_suggestion">Afficher les résultats pour "@suggestedWord"</label>
+      <label index="no_results_search_for_original">Rechercher "@searchWord".</label>
+      <label index="lastSearches">Dernières recherches</label>
+      <label index="frequentSearches">Recherches fréquentes</label>
+      <label index="relevance">Pertinence</label>
+      <label index="sponsored">Sponsorisé</label>
+      <label index="file_mimetype">Type de fichier</label>
+      <label index="file_referenced">Référencé à</label>
+      <label index="results_per_page">Résultats par page :</label>
+      <label index="error_errors">Nous sommes désolé, il y a des erreurs :</label>
+      <label index="error_emptyQuery">Merci d'indiquer votre mot clé dans le champ ci-dessus.</label>
+      <label index="pagebrowser_first">Premier</label>
+      <label index="pagebrowser_prev">Précédent</label>
+      <label index="pagebrowser_next">Suivant</label>
+      <label index="pagebrowser_last">Dernier</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

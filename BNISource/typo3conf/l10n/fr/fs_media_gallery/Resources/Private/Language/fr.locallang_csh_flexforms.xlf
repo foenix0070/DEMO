@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-29T12:00:00Z" product-name="fs_media_gallery" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="settings.startingpoint.description" xml:space="preserve" approved="yes">
+				<source>Define the pages/sysfolders which hold the album records.</source>
+			<target state="translated">Définir les pages/dossiers qui vont contenir les enregistrements des albums.</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Définir les pages/dossiers qui vont contenir les enregistrements des albums</target></alt-trans></trans-unit>
+			<trans-unit id="settings.recursive.description" xml:space="preserve" approved="yes">
+				<source>Select the recursion level of the startingpoint.</source>
+			<target state="translated">Sélectionnez le niveau de récursion du point de départ.</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Sélectionnez le niveau de récursion du point de départ</target></alt-trans></trans-unit>
+			<trans-unit id="settings.random.targetPid.description" xml:space="preserve" approved="yes">
+				<source>Target page the random assets should link to. Select the page on which the full album is shown.</source>
+			<target state="translated">Cibler la page vers laquelle les photos doivent pointer. Sélectionner la page où l'album entier est affiché.</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Cibler la page vers laquelle les albums doivent pointer. Sélectionner la page où l'album entier est afficher</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Cible la page vers laquelle les albums doivent pointer. Sélectionner la page où l'album entier est afficher</target></alt-trans></trans-unit>
+		</body>
+	</file>
+</xliff>

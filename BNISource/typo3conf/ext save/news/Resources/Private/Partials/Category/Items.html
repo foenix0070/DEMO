@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<!-- categories -->
+<span class="news-list-category">
+	<f:for each="{categories}" as="category">
+		<f:if condition="{category.shortcut}">
+			<f:then>
+				<f:link.typolink parameter="{category.shortcut}">
+					{category.title}
+				</f:link.typolink>
+			</f:then>
+			<f:else>
+				{category.title}
+			</f:else>
+		</f:if>
+	</f:for>
+</span>
+</html>
+
+
+
+<!-- 
+<div class="col-md-3">
+	
+
+	<div class="aside-block">
+	<h3 class="aside-title">Catégories</h3>
+	<ul class="aside-links list-unstyled">
+		<f:for each="{categories}" as="category">
+			<li>
+				<f:if condition="{category.shortcut}">
+					<f:then>
+						<f:link.typolink parameter="{category.shortcut}">
+							{category.title}
+						</f:link.typolink>
+					</f:then>
+					<f:else>
+						{category.title}
+					</f:else>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+	</div>
+	<div class="aside-block">
+		<h3 class="aside-title">Tags</h3>
+		<ul class="aside-tags list-unstyled">
+			<f:if condition="{newsItem.tags}">
+				<!-- Tags -->
+				<span class="news-list-tags" itemprop="keywords">
+					<f:for each="{newsItem.tags}" as="tag">
+						<li>{tag.title}</li>
+					</f:for>
+				</span>
+			</f:if>
+		</ul>
+	</div>
+</div> -->

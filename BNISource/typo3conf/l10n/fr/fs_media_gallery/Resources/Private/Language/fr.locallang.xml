@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="date_format">d.m.Y</label>
+			<label index="media_album">Album média</label>
+			<label index="media_albums">Albums média</label>
+			<label index="asset">Image / média</label>
+			<label index="assets">Images / médias</label>
+			<label index="no_albums_found">Aucun album trouvé</label>
+			<label index="no_album_found">Album introuvable</label>
+			<label index="no_assets_found">Aucune image ou média trouvé</label>
+			<label index="back_to_album">Retour à l'album</label>
+			<label index="back_to_%s">Retour à %s</label>
+			<label index="back_to_albums_list">Retour à la liste des albums</label>
+			<label index="lightbox_current">image {current} sur {total}</label>
+			<label index="link_to_album">Afficher l'album '%s'</label>
+			<label index="widget.pagination.ellipsis"/>
+			<label index="widget.pagination.previous"/>
+			<label index="widget.pagination.next"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

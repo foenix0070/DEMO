@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-07T14:14:17Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for plugin &quot;tx_dftabs_plugin1&quot;</description>
+			<generator>LFEditor</generator>
+			<authorName>Stefan Galinski</authorName>
+			<authorEmail>stefan.galinski@gmail.com</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="flexform.sheets.general.autoPlayInterval">
+				<source><![CDATA[Autoplay Interval in Milliseconds]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.autoPlayInterval.description">
+				<source><![CDATA[Sets the interval for the automatic tab-switching in milliseconds (e.g. entering the value 7000 switches the tabs every 7 seconds). Is ignored if Autoplay is disabled.]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.data">
+				<source><![CDATA[Pages and Content That Shall be Rendered as Tabs]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.data.description">
+				<source><![CDATA[If the selection is not empty, "Combined" mode is forced.]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableAutoPlayInterval">
+				<source><![CDATA[Enable Autoplay]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableAutoPlayInterval.description">
+				<source><![CDATA[When Autoplay is enabled, the page will automatically switch between the tabs from left to right in the interval specified below. When the last tab is reached, the animation starts over with the first tab. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableMouseOver">
+				<source><![CDATA[Enable MouseOver Navigation]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.enableMouseOver.description">
+				<source><![CDATA[If not enabled, users need to click on a tab to open it. If enabled, the tabs will switch when the user hovers over them. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.hash">
+				<source><![CDATA[Hash]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.hash.description">
+				<source><![CDATA[Name that is used to implement history and direct linking functionality. Available for the Website-Base as an additional feature. More information at www.sgalinski.de/typo3-produkte-webentwicklung/die-website-base/]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode">
+				<source><![CDATA[Mode]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.combined">
+				<source><![CDATA[Combined (Show elements chosen below, one tab each)]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.pages">
+				<source><![CDATA[Show every subpage of this page one tab each]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.mode.tt_content">
+				<source><![CDATA[Show every content element of the current page as one tab each]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.titles">
+				<source><![CDATA[Override Tab Titles]]></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheets.general.titles.description">
+				<source><![CDATA[Separation of the tab headings by line break, i.e. one title per line must be entered. If a title is not to be overwritten, simply insert a blank line or the keyword "DEFAULT". In order to override other titles, the first tab's title has to be overridden because empty lines at the beginning are ignored.]]></source>
+			</trans-unit>
+			<trans-unit id="frontend.buttonLabelMore">
+				<source><![CDATA[More]]></source>
+			</trans-unit>
+			<trans-unit id="noContentFound">
+				<source><![CDATA[Didn't found any content for rendering of the tabs. Please check your plugin configuration.]]></source>
+			</trans-unit>
+			<trans-unit id="plugin1_plus_wiz_description">
+				<source><![CDATA[Show pages or content elements like tabs.]]></source>
+			</trans-unit>
+			<trans-unit id="plugin1_title">
+				<source><![CDATA[Pages/Content Elements In Tabs]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_plugin1">
+				<source><![CDATA[[ContentTabs] Pages/Content Elements In Tabs]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

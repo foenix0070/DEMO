@@ -1,0 +1,7 @@
+#
+# PageTS for Fluid New Site BNI
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_new_site_bni/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_new_site_bni/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_new_site_bni/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_new_site_bni/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">

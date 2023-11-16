@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-08-22T12:21:59Z" product-name="modules">
+		<header/>
+		<body>
+			<trans-unit id="tx_modules_extensionmanager.module_frontend_user_disable">
+				<source>Disable frontend user backend module (after disable/enable you need to refresh the backend!)</source>
+				<target>Frontenduser Backendmodul deaktivieren (nach dem aktivieren/deaktivieren müssen Sie das Backend neu laden!)</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_extensionmanager.module_frontend_user_allow_non_admin_users_to_login_as_frontend_user">
+				<source>Allow non admin users to login as frontend user</source>
+				<target>Nicht Admin-Benutzern erlauben sich als Frontend-Benutzer einzuloggen</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_extensionmanager.module_backend_user_disable">
+				<source>Disable backend user backend module (after disable/enable you need to refresh the backend!)</source>
+				<target>Backenduser Backendmodul deaktivieren (nach dem aktivieren/deaktivieren müssen Sie das Backend neu laden!)</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_extensionmanager.loglevel">
+				<source>Log level</source>
+				<target>Log-Level</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

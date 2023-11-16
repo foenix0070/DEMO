@@ -1,0 +1,9 @@
+
+plugin.tx_nitsanhellobar {	
+	persistence {
+		# cat=plugin.tx_nitsanhellobar//a; type=string; label= Your Hellobar Code: Fetch your Hellobar code from www.hellobar.com and paste it below.
+		addscript = 
+		# cat=plugin.tx_nitsanhellobar//b; type=options[Header,Footer]; label= Load Hellobar in your site's : Header (before </head>) : Footer (before </body>)
+		position = Header
+	}
+}

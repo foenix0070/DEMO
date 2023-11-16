@@ -1,0 +1,48 @@
+<!--  
+<div class="left-static-menu">
+    <div class="flex-grow-1">
+        <ul class="nav flex-column">
+            <f:for each="{LeftNavigation}" as="LeftNavigationContent">
+                <a class="left-static-menu-link" href="{LeftNavigationContent.data.header_link}">
+                    <li class="left-static-menu-item nav-item p-3 px-5 border border-end-0 text-center d-flex align-items-start">
+                        <i class="left-menu-static-icon {LeftNavigationContent.data.subheader} fa-2x me-2 mt-1"></i>
+                        <h5 class="left-menu-static-title mt-2 text-dark">{LeftNavigationContent.data.header}</h5>
+                    </li>
+                </a>
+            </f:for>
+        </ul>
+    </div>
+</div>
+-->
+
+<div class="left-static-menu" id="left-internal-sidebar">
+    <div class="flex-grow-1">
+        <ul class="nav flex-column">
+            <a class="left-static-menu-link" href="/reseau-bni">
+                <li class="nav-item p-3 px-5 border border-end-0 text-left d-flex align-items-start">
+                    <i class="left-menu-static-icon fa-solid fa-map-location-dot fa-2x me-3 mt-2"></i>
+                    <h5 class="left-menu-static-title mt-3 text-dark">Réseau BNI</h5>
+                </li>
+            </a>
+            <a class="left-static-menu-link" href="/bni-applications">
+                <li class="left-static-menu-item nav-item p-2 px-5 border border-end-0 text-left d-flex align-items-start">
+                    <i class="left-menu-static-icon fa-solid fa-user-tie fa-2x me-3 mt-2"></i>
+                    <h5 class="left-menu-static-title mt-2 text-dark">Plateformes associées BNI</h5>
+                </li>
+            </a>
+            <a class="left-static-menu-link" href="https://bnifidelisation.activactions.net/" target="_blank">
+                <li class="nav-item p-2 px-5 border border-end-0 text-left d-flex align-items-start">
+                    <i class="left-menu-static-icon fa-solid fa-user fa-2x me-3 mt-2"></i>
+                    <h5 class="left-menu-static-title mt-2 text-dark">Programme de Fidélité</h5>
+                </li>
+            </a>
+            <a class="left-static-menu-link" href="/faq">
+                <li class="nav-item p-3 px-5 border border-end-0 text-left d-flex align-items-start">
+                    <i class="left-menu-static-icon fa-solid fa-briefcase fa-2x me-3"></i>
+                    <h5 class="left-menu-static-title mt-2 text-dark">FAQ</h5>
+                </li>
+            </a>
+            
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Close script, used in particular by FormEngine to close the current edit window -->
+    <!-- TYPO3 Script ID: typo3/sysext/backend/Resources/Public/Html/Close.html -->
+    <meta charset="utf-8"/>
+    <title>Close</title>
+    <script type="text/javascript">
+        if (window.opener) {
+            self.close();
+            window.opener.location.reload(true);
+        }
+        else {
+            if (window.frameElement) {
+                var dialog = parent.TYPO3.jQuery(window.frameElement).closest(".modal");
+                if (dialog.length > 0) {
+                    dialog.modal("hide");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

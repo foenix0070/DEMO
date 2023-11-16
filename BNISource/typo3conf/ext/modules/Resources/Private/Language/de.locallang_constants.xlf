@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-08-22T12:21:59Z" product-name="modules">
+		<header/>
+		<body>
+
+			<!--=== Container ===-->
+			<trans-unit id="tx_modules_constants.subcategory_container">
+				<source>Frontend user Container</source>
+				<target>Frontend-Benutzercontainer</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.container_frontend_user">
+				<source>Frontend user</source>
+				<target>Frontend-Benutzer</target>
+			</trans-unit>
+
+			<!--=== Pages ===-->
+			<trans-unit id="tx_modules_constants.subcategory_pages">
+				<source>Frontend user Pages</source>
+				<target>Frontend-Benutzerseiten</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_registration">
+				<source>Registration</source>
+				<target>Registrierung</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_profile">
+				<source>Profile</source>
+				<target>Profil</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_terms">
+				<source>Terms</source>
+				<target>Bedingungen</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_login">
+				<source>Login</source>
+				<target>Login</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_privacy">
+				<source>Privacy protection</source>
+				<target>Datenschutz</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.pages_disclaimer">
+				<source>Disclaimer</source>
+				<target>Haftungsausschluss</target>
+			</trans-unit>
+
+			<!--=== Templates ===-->
+			<trans-unit id="tx_modules_constants.subcategory_view">
+				<source>Fluid Templates for modules (Registration, Profile, ...)</source>
+				<target>Fluid Templates für Modules (Anmeldung, Profil, ...)</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.view_template_root_path">
+				<source>Fluid Templates</source>
+				<target>Fluid Templates</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.view_partial_root_path">
+				<source>Fluid Partials</source>
+				<target>Fluid Partials</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.view_layout_root_path">
+				<source>Fluid Layouts</source>
+				<target>Fluid Layouts</target>
+			</trans-unit>
+
+
+			<!--=== Registration ===-->
+			<trans-unit id="tx_modules_constants.subcategory_registration">
+				<source>Registration</source>
+				<target>Registrierung</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_as_username">
+				<source>Disables the username field and use email as username</source>
+				<target>Deaktiviert das Benutzernamenfeld und verwendet E-Mail als Benutzernamen</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_username_min_length">
+				<source>Registration username minimum length</source>
+				<target>Mindestlänge des Registrierungs-Benutzernamens</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_password_min_length">
+				<source>Registration password minimum length</source>
+				<target>Mindestlänge des Registrierungspassworts</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_password_encryption">
+				<source>Password encryption: default (uses the system setting, usually Argon2i), none, md5, sha1 or saltedpasswords</source>
+				<target>Passwortverschlüsselung: default (verwendet die Systemeinstellung, normalerweise Argon2i), none, md5, sha1 oder saltedpasswords</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_enable_admin_confirmation">
+				<source>Enable admin confirmation</source>
+				<target>Admin-Bestätigung aktivieren</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_subject">
+				<source>Registration mail subject</source>
+				<target>Registrierungsmail: Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_from_email">
+				<source>Registration mail sender mail</source>
+				<target>Registrierungsmail: E-Mail des Absenders</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_from_name">
+				<source>Registration mail sender name</source>
+				<target>Registrierungsmail: Name des Absenders</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_bcc_email">
+				<source>Registration mail blind copy email</source>
+				<target>Registrierungsmail: Blindkopie per E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_template">
+				<source>Registration mail template</source>
+				<target>Registrierungsmail: Vorlage</target>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_active">
+				<source>Send an email on account activation to the user?</source>
+				<target>Eine E-Mail bei Aktivierung des Accounts an den Benutzer?</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_subject">
+				<source>Activation mail subject</source>
+				<target>Aktivierungsmail: Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_from_email">
+				<source>Activation mail sender mail</source>
+				<target>Aktivierungsmail: E-Mail des Absenders</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_from_name">
+				<source>Activation mail sender name</source>
+				<target>Aktivierungsmail: Name des Absenders</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_bcc_email">
+				<source>Activation mail blind copy email</source>
+				<target>Aktivierungsmail Blindkopie-E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_on_activation_template">
+				<source>Activation mail template</source>
+				<target>Aktivierungsmail: E-Mail-Vorlage</target>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_constants.registration_email_admin_activation_subject">
+				<source>Admin activation mail subject</source>
+				<target>Admin-Aktivierungsmail: Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_activation_from_email">
+				<source>Admin activation mail sender mail</source>
+				<target>Admin-Aktivierungsmail: E-Mail-Absender</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_activation_to_email">
+				<source>Admin activation mail receiver mail</source>
+				<target>Admin-Aktivierungsmail: Empfänger-E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_activation_bcc_email">
+				<source>Admin activation mail blind copy email</source>
+				<target>Admin-Aktivierungsmail: Blindkopie-E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_activation_template">
+				<source>Admin activation mail template</source>
+				<target>Admin-Aktivierungsmail: E-Mail-Vorlage</target>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_constants.registration_email_admin_confirmation_subject">
+				<source>Admin confirmation mail subject</source>
+				<target>Admin-Bestätigungsmail: Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_confirmation_from_email">
+				<source>Admin confirmation mail sender mail</source>
+				<target>Admin-Bestätigungsmail: Absender</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_confirmation_from_name">
+				<source>Admin confirmation mail sender name</source>
+				<target>Admin-Bestätigungsmail: Name des Absenders</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_confirmation_bcc_email">
+				<source>Admin confirmation mail blind copy email</source>
+				<target>Admin-Bestätigungsmail: Blindkopie-E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_confirmation_template">
+				<source>Admin confirmation mail template</source>
+				<target>Admin-Bestätigungsmail: Vorlage</target>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_constants.registration_email_admin_rejection_subject">
+				<source>Admin rejection mail subject</source>
+				<target>Admin-Ablehnungsmail: Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_rejection_from_email">
+				<source>Admin rejection mail sender mail</source>
+				<target>Admin-Ablehnungsmail: E-Mail-Absender</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_rejection_from_name">
+				<source>Admin rejection mail sender name</source>
+				<target>Admin-Ablehnungsmail: Absendername</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_rejection_bcc_email">
+				<source>Admin rejection mail blind copy email</source>
+				<target>Admin-Ablehnungsmail: Blindkopie-E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_email_admin_rejection_template">
+				<source>Admin rejection mail template</source>
+				<target>Admin-Ablehnungsmail: E-Mail-Vorlage</target>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_constants.registration_fronted_user_groups">
+				<source>Frontend user groups for new registered users: Multiple groups must be comma separated. Groups must be contained in frontendUser-Container!</source>
+				<target>Frontend-Benutzergruppen für neu registrierte Benutzer: Mehrere Gruppen müssen durch Komma getrennt werden. Gruppen müssen im frontendUser-Container enthalten sein!</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_record_type">
+				<source>Frontend user record type</source>
+				<target>Datensatztyp des Front-End-Benutzers</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_professions">
+				<source>Profession</source>
+				<target>Beruf</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_marital_status">
+				<source>Marital status</source>
+				<target>Familienstand</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_gender">
+				<source>Gender</source>
+				<target>Geschlecht</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_accounting_type">
+				<source>Account type</source>
+				<target>Konto Typ</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.registration_min_age">
+				<source>User must have at least an age of:</source>
+				<target>Der Benutzer muss mindestens folgendes Alter haben:</target>
+			</trans-unit>
+
+			<!--=== Profile ===-->
+			<trans-unit id="tx_modules_constants.subcategory_profile">
+				<source>Profile</source>
+				<target>Profil</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_active">
+				<source>Send an email on profile updates by user?</source>
+				<target>Eine E-Mail zu Profilaktualisierungen durch den Benutzer senden?</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_subject">
+				<source>Profile update mail subject</source>
+				<target>Betreff der Profilaktualisierungsmail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_from_email">
+				<source>Profile update mail sender mail</source>
+				<target>Profilaktualisierungs-E-Mail: Absender-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_from_name">
+				<source>Profile update mail sender name</source>
+				<target>Profilaktualisierungsmail: Absendername</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_to_email">
+				<source>Profile update mail receiver mail</source>
+				<target>Profil-Update-E-Mail: Empfänger-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_to_name">
+				<source>Profile update mail receiver name</source>
+				<target>Profilaktualisierung: Name des E-Mail-Empfängers</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_constants.profile_email_on_user_update_bcc_email">
+				<source>Profile update mail blind copy email</source>
+				<target>Profil-Update-Mail: Blindkopie-E-Mail</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

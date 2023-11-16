@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Index File d'attente</label>
+			<label index="mlang_labels_tablabel">Permet de vérifier l'état de la file d'attente de l'index</label>
+			<label index="mlang_labels_tabdescr">Ce module vous permet de vérifier l'état de la file d'attente de l'index et des éléments de la file d'attente.</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

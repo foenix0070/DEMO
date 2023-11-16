@@ -1,0 +1,136 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main">
+        <div class="container  p-0">
+            <section id="main-head" class="banner-container">
+                <div class="d-flex">
+
+                    <f:render partial="LeftNavigation" arguments="{_all}" />
+                    
+                    <f:for each="{Slider}" as="sliderContentElement">
+                        <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                            <div class="bg-overlay"></div>
+                            <div class="banner-title">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <f:render partial="breadcumbs" arguments="{_all}" />
+                                            <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>              
+            </section>
+        </div>
+
+        
+            <section id="main-contact" class="section section-height-3 pt-4 m-0 mb-5 lazyloaded" style="background-size: cover; background-position: center center; background-image:url(/fileadmin{BniLocalisationContent.BniLocalisationBackground.0.originalFile.identifier});">
+                <div class="container p-0 py-4">
+                    <div class="row box-shadow-4 mx-3 mx-xl-0 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" style="animation-delay: 300ms;">
+                        <f:for each="{BniLocalisation}" as="BniLocalisationContent">
+                            <div class="col-lg-6 px-0">
+                                <div class="bg-white h-100">
+                                    <div class="d-flex flex-column justify-content-center p-5 h-100 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                                        
+                                            <div class="pb-5 mb-4 mt-5 mt-lg-0">
+                                                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pe-lg-4">
+                                                    <div class="animated-icon animated fadeIn svg-fill-color-primary mb-4 mb-md-0">
+                                                        <i class="contact-location-icon fa-solid fa-location-dot fa-5x"></i>
+                                                    </div>
+                                                    <div class="text-center text-md-start ps-md-3">
+                                                        
+                                                            <h2 class="fw-bold text-6 mb-1">BNI Siège</h2>
+                                                            <f:format.html>{BniLocalisationContent.data.bodytext}</f:format.html>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mb-5 mb-lg-0">
+                                                <div class="col-auto text-center ms-xl-auto mb-4 mb-xl-0">
+                                                    <h3 class="contact-location-title text-color-primary mb-0">SUPPORT</h3>
+                                                    <div class="d-flex">
+                                                        <div class="animated-icon animated fadeIn svg-fill-color-primary">
+                                                            <i class="contact-location-icon fa-solid fa-phone-volume fa-2x"></i>
+                                                        </div>
+                                                        <a href="tel:+2252720303030" class="contact-location-link text-color-hover-primary ms-2">{BniLocalisationContent.data.header}</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto text-center me-xl-auto">
+                                                    <h3 class="contact-location-title text-color-primary mb-0">ENVOYER UN MAIL</h3>
+                                                    <div class="d-flex">
+                                                        <div class="animated-icon animated fadeIn svg-fill-color-primary">
+                                                            <i class="contact-location-icon fa-solid fa-phone-volume fa-2x"></i>
+                                                        </div>
+                                                        <a href="mailto:contact@bni.ci" class="contact-location-link text-color-hover-primary ms-2">{BniLocalisationContent.data.subheader}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </f:for>
+                        <div class="col-lg-6 px-0">
+                            <div class="bg-dark h-100">
+                                <div class="text-center text-md-start p-5 h-100 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" style="animation-delay: 750ms;">
+                                    <h2 class="text-light font-weight-medium mb-4 mt-5 mt-lg-0">Nous joindre </h2>
+                                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+
+        <section id="main-category" class="mb-5">
+            <div class="container p-0">
+                <div class="row heading-block border-bottom-0 mb-2 center">
+                    <div class="col-lg-12">
+                        <h2 class="text-left text-5">Où nous trouver?</h2>
+                    </div>
+                </div>
+                <div class="row heading-block border-bottom-0 mb-5 center">
+                    <div class="col-lg-6 pb-4 pb-lg-0 mt-4 ">
+
+                        <p class="text-4-5 pe-lg-2 text-dark font-weight-bold">Avez-vous subi un préjudice financier ?</p>
+                        <ul class="list list-unstyled">
+                            <li class="d-flex align-items-center mb-3">
+                                <a href="https://res.bnici.net/" target="_blank" class="btn btn-success rounded-pill text-white px-4 py-2 h-op-09 op-ts">Réclamations</a>
+                            </li>
+                        </ul>
+
+                        <hr class="my-5">
+
+                        <p class="text-4-5 pe-lg-2 text-dark font-weight-bold">Désirez-vous exprimer une insatisfaction ou obtenir une information ?</p>
+                        <ul class="list list-unstyled">
+                            <li class="d-flex align-items-center mb-3">
+                                <a href="#" class="btn btn-success rounded-pill text-white px-4 py-2 h-op-09 op-ts">Plaintes et Suggestions</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 pb-4 pb-lg-0">
+                        <div class="card-map-wrapper p-0 mb-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15890.407566597612!2d-4.039348119777101!3d5.324636097567279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebba800c8475%3A0xdda7f1e756e1d56a!2simmeuble+sciam!5e0!3m2!1sfr!2sfr!4v1505051959359" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </div><!-- End Main -->
+
+    
+
+</f:section>
+</html>

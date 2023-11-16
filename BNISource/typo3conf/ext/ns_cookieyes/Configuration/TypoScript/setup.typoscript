@@ -1,0 +1,11 @@
+page.headerData {
+    1 = COA
+    1 {
+        10 = TEXT
+        10 {
+            value (
+                {$plugin.tx_nscookieyes_nscookieyes.settings.cookieapiscript}
+            )
+        }
+    }
+}

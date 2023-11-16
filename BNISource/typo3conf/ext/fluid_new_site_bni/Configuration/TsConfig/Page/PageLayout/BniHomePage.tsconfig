@@ -1,0 +1,78 @@
+mod.web_layout.BackendLayouts {
+    BniHomePage {
+        title = Bni Home Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 8
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LeftHomeMainNav
+                                colPos = 100
+                            }
+                            2 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = CategorySectionTitle
+                                colspan = 3
+                                colPos = 3
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = ProductServiceCard
+                                colPos = 4
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = MobileDescription
+                                colPos = 7
+                            }
+                            2 {
+                                name = MobileIconDesc
+                                colPos = 15
+                            }
+                            3 {
+                                name = MobileStoreLink
+                                colPos = 16
+                            }
+                            4 {
+                                name = MobilePic
+                                colPos = 8
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = NewsSectionTitle
+                                colPos = 9
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = PopupImage
+                                colPos = 10
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

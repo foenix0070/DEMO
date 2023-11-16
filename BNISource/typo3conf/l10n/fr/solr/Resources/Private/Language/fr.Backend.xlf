@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-04-19T01:40:12Z" product-name="solr" target-language="fr">
+    <header/>
+    <body>
+      <trans-unit id="module_indexinspector" xml:space="preserve" approved="yes">
+        <source>Search Index Inspector</source>
+      <target state="translated">Inspecteur de l'index de recherche</target><alt-trans xml:space="preserve" origin="oli4"><target>Inspecteur de l'index de recherche</target></alt-trans></trans-unit>
+      <trans-unit id="plugin_results" xml:space="preserve" approved="yes">
+        <source>Search</source>
+      <target state="translated">Rechercher</target><alt-trans xml:space="preserve" origin="oli4"><target>Rechercher</target></alt-trans></trans-unit>
+      <trans-unit id="plugin_results_description" xml:space="preserve" approved="yes">
+        <source>A search form and results list.</source>
+      <target state="translated">Formulaire de recherche et liste de résultats.</target><alt-trans xml:space="preserve" origin="oli4"><target>Formulaire de recherche et liste de résultats.</target></alt-trans></trans-unit>
+    </body>
+  </file>
+</xliff>

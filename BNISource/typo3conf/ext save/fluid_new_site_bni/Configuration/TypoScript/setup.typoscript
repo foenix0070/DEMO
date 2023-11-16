@@ -1,0 +1,547 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+
+################
+#### HELPER ####
+################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_new_site_bni/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+    shortcutIcon = EXT:fluid_new_site_bni/Resources/Public/Images/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+        # Template names will be generated automatically by converting the applied
+        # backend_layout, there is no explicit mapping necessary anymore.
+        #
+        # BackendLayout Key
+        # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        #
+        # Backend Record
+        # uid: 1 -> 1.html
+        #
+        # Database Entry
+        # value: -1 -> None.html
+        # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+        templateRootPaths {
+            0 = EXT:fluid_new_site_bni/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:fluid_new_site_bni/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:fluid_new_site_bni/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            # 15 = Brightside\PaginatedProcessor\DataProcessing\PaginatedDatabaseQueryProcessor
+            # 15 {
+            #     # Basic settings you use in DatabaseQueryProcessor
+            #     # Additionally you need this section:
+            #     paginate {
+            #         activate = 1
+            #         itemsPerPage = 5
+            #         insertAbove = 1
+            #         insertBelow = 0
+            #         parameterIndex = tx_myrecords
+            #     }
+            # }
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                levels = 5
+                expandAll = 1
+                includeSpacer = 1
+                as = mainnavigation
+            }
+            21 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            21 {
+                table = sys_category
+                pidInList = root
+                selectFields = sys_category.*
+                recursive = 99
+                as = categories
+            }
+            22 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            22 {
+                table = sys_category
+                selectFields = sys_category.uid, sys_category.title
+                pidInList = root
+                join = sys_category_record_mm ON sys_category.uid = sys_category_record_mm.uid_local
+                where.dataWrap = sys_category_record_mm.tablenames = 'pages' AND sys_category_record_mm.fieldname = 'categories' AND sys_category_record_mm.uid_foreign = {FIELD:uid}
+                as = pageCategories
+            }
+            25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            25 {
+                as = breadcrumbMenu
+                special = rootline
+            }
+            30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            30 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 18
+                as = SubHeader
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            40 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 100
+                as = LeftHomeMainNav
+            }
+            50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            50 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 1
+                as = Slider
+                dataProcessing {
+                    51 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    51 {
+                        as = BackgroundImages
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            60 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 3
+                as = CategorySectionTitle
+            }
+            70 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            70 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 4
+                as = ProductServiceCard
+            }
+            80 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            80 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 5
+                as = SecondCard
+            }
+            90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            90 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 6
+                as = ThirdCard
+            }
+            100 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            100 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 7
+                as = MobileDescription
+            }
+            102 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            102 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 15
+                as = MobileIconDesc
+            }
+            104 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            104 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 16
+                as = MobileStoreLink
+                dataProcessing {
+                    105 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    105 {
+                        as = MobileStoreImage
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            110 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            110 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 8
+                as = MobilePic
+                dataProcessing {
+                    111 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    111 {
+                        as = MobileBackground
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            120 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            120 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 9
+                as = NewsSectionTitle
+            }
+            130 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            130 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 10
+                as = PopupImage
+                dataProcessing {
+                    131 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    131 {
+                        as = PopupBackgroundImage
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            140 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            140 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 11
+                as = FooterContactItems
+            }
+            150 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            150 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 12
+                as = FooterUsefullLink
+            }
+            160 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            160 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 13
+                as = FooterNewsLetter
+            }
+            170 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            170 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 14
+                as = FooterSocialIcons
+            }
+            200 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            200 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 20
+                as = LeftNavigation
+            }
+            210 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            210 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 22
+                as = MainSectionTitle
+            }
+            215 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            215 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 29
+                as = ArticleSectionTitle
+            }
+            220 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            220 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 23
+                as = ArticleSectionText
+                dataProcessing {
+                    221 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    221 {
+                        as = ArticleImages
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            230 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            230 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 24
+                as = ArticleSectionImage
+                dataProcessing {
+                    231 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    231 {
+                        as = ArticleImage
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            240 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            240 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 25
+                as = BniLocalisation
+                dataProcessing {
+                    241 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    241 {
+                        as = BniLocalisationBackground
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            250 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            250 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 26
+                as = BniContactFrm
+            }
+            260 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            260 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 27
+                as = BniRequestFrm
+            }
+            270 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            270 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 28
+                as = BniMap
+            }
+            280 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            280 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 31
+                as = TabOne
+                dataProcessing {
+                    281 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    281 {
+                        as = TabOneBackground
+                        references.fieldName = image
+                        references.table = tt_content
+                        sorting = title
+                        sorting.direction = descending
+                    }
+                }
+            }
+            290 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            290 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 32
+                as = TabTwo
+            }
+            300 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            300 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 33
+                as = TabThree
+            }
+        }
+    }
+
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+        description = {$page.meta.description}
+        description {
+            override.field = description
+        }
+        author = {$page.meta.author}
+        author {
+            override.field = author
+        }
+        keywords = {$page.meta.keywords}
+        keywords {
+            override.field = keywords
+        }
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        # OpenGraph Tags
+        og:title {
+            attribute = property
+            field = title
+        }
+        og:site_name {
+            attribute = property
+            data = TSFE:tmpl|setup|sitetitle
+        }
+        og:description = {$page.meta.description}
+        og:description {
+            attribute = property
+            field = description
+        }
+        og:image {
+            attribute = property
+            stdWrap.cObject = FILES
+            stdWrap.cObject {
+                references {
+                    data = levelfield:-1, media, slide
+                }
+                maxItems = 1
+                renderObj = COA
+                renderObj {
+                    10 = IMG_RESOURCE
+                    10 {
+                        file {
+                            import.data = file:current:uid
+                            treatIdAsReference = 1
+                            width = 1280c
+                            height = 720c
+                        }
+                        stdWrap {
+                            typolink {
+                                parameter.data = TSFE:lastImgResourceInfo|3
+                                returnLast = url
+                                forceAbsoluteUrl = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    includeCSS {
+        normalizet = EXT:fluid_new_site_bni/Resources/Public/Css/normalize.css
+        fluid_new_site_bni_layout = EXT:fluid_new_site_bni/Resources/Public/Css/layout.min.css
+        font = EXT:fluid_new_site_bni/Resources/Public/Vendor/fontawesome-free/css/all.min.css
+        bootstrap5 = https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+        bootstrap5.external = 1
+        bni_default_layout = EXT:fluid_new_site_bni/Resources/Public/Css/default.css
+        theme = EXT:fluid_new_site_bni/Resources/Public/Vendor/bootstrap/css/theme.min.css
+        magnific_popup = https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css
+        magnific_popup.external = 1
+    }
+
+    includeCSSLibs {
+       colorbox_layout = EXT:fluid_new_site_bni/Resources/Public/Vendor/colorbox/colorbox.css
+    }
+
+    includeJSLibs {
+        
+    }
+
+    includeJS {
+        
+    }
+
+    includeJSFooterlibs {
+        # jquery = EXT:fluid_new_site_bni/Resources/Public/Vendor/jquery/1.9.1/jquery.min.js
+        jquery=//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+        jquery.external = 1
+        colorbox_scripts = https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js
+        colorbox_scripts.external = 1
+        magnific_popup=https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
+        magnific_popup.external = 1
+        bootstrap5 = https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js
+        bootstrap5.external = 1
+        paginationjs = https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.5.0/pagination.min.js
+        paginationjs.external = 1
+        isotope3 = https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js
+        isotope3.external = 1
+        fluid_new_site_bni_scripts = EXT:fluid_new_site_bni/Resources/Public/JavaScript/Dist/scripts.js
+        jquery_cookie = https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+        jquery_cookie.external = 1
+    }
+
+    includeJSFooter {
+        cookiesalert_scripts = EXT:fluid_new_site_bni/Resources/Public/JavaScript/Dist/cookiealert.js
+    }
+}
+
+
+################
+#### CONFIG ####
+################
+config {
+    absRefPrefix = auto
+    no_cache = {$config.no_cache}
+    uniqueLinkVars = 1
+    pageTitleFirst = 1
+    linkVars = L
+    prefixLocalAnchors = {$config.prefixLocalAnchors}
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = {$config.removeDefaultJS}
+    inlineStyle2TempFile = 1
+    admPanel = {$config.admPanel}
+    debug = 0
+    cache_period = 86400
+    sendCacheHeaders = {$config.sendCacheHeaders}
+    intTarget =
+    extTarget =
+    disablePrefixComment = 1
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    headerComment = {$config.headerComment}
+    contentObjectExceptionHandler = 0
+
+    // Disable Image Upscaling
+    noScaleUp = 1
+
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}

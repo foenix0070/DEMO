@@ -1,0 +1,147 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-input form-field-input-{field.inputType}" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+				<f:render section="{field.inputType}" arguments="{_all}" />
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="text">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" readonly="1"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="email">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="email" readonly="1"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="email"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="integer">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="number" additionalAttributes="{step: '1'}"
+								  readonly="1"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="number" additionalAttributes="{step: '1'}"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="float">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="number" additionalAttributes="{step: '0.01'}"
+								  readonly="1" class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="number" additionalAttributes="{step: '0.01'}"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="currency">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="text"
+								  readonly="1" class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="text"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="percent">
+
+		<f:form.textfield value="{field.value}" name="{fieldKey}" />
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}-display" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="text"
+								  readonly="1" class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}-display" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="text"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+	<f:section name="tel">
+
+		<f:if condition="{field.readonly}">
+			<f:then>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="tel" readonly="1"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:then>
+			<f:else>
+				<f:form.textfield placeholder="{field.placeholder}" value="{field.value}"
+								  name="{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20" type="tel"
+								  class="{field.css.class.field}" style="{field.css.style.field}" />
+			</f:else>
+		</f:if>
+
+	</f:section>
+
+</div>

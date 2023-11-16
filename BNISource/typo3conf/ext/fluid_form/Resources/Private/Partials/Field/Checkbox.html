@@ -1,0 +1,28 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-checkbox" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			
+			<label class="{field.css.class.label}" style="{field.css.style.label}">
+				<f:if condition="{field.htmlSpecialChars}==0">
+					<f:then><f:format.raw>{field.label}</f:format.raw></f:then>
+					<f:else>{field.label}</f:else>
+				</f:if>
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+				<f:form.checkbox value="{field.value}"
+								 name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								 class="{field.css.class.field}" style="{field.css.style.field}" />
+				<label class="{field.css.class.checkboxLabel}" style="{field.css.style.checkboxLabel}" for="form-{formUid}-{fieldsetKey}-{fieldKey}">
+					<f:format.raw>{field.checkboxLabel}</f:format.raw>
+				</label>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice"><f:format.raw>{field.notice}</f:format.raw></small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message"></div>
+			</div>
+
+		</div>
+	</f:section>
+</div>

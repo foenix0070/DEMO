@@ -1,0 +1,36 @@
+# customcategory=form=form
+themes.configuration.extension.fluid_form {
+	# customsubcategory=form_basic=Contact basic form
+	contactBasic {
+		mail {
+			# cat=form/form_basic/1010; type=options[0,1]; label= Activate sending mails in
+			active = 1
+			# cat=form/form_basic/1020; type=string; label= Mail subject
+			subject = Fluid-Form: Kontakt-Anfrage
+			from {
+				# cat=form/form_basic/1030; type=string; label= Mail from: Name from the sender
+				name = Fluid-Form
+				# cat=form/form_basic/1040; type=string; label= Mail from: Email from the sender
+				email = fluid-form@t3co.de
+			}
+			to {
+				0 {
+					# cat=form/form_basic/1050; type=string; label= Mail to: Name from the first receiver
+					name = Fluid form
+					# cat=form/form_basic/1060; type=string; label= Mail to: Email from the first receiver
+					email = fluid-form-to0@t3co.de
+				}
+			}
+		}
+		database {
+			# cat=form/form_basic/2010; type=options[0,1]; label= Activate saving mails in database
+			active = 0
+			# cat=form/form_basic/2020; type=int+; label= Storage container mails in database
+			storagePid = 0
+		}
+		upload {
+			# cat=form/form_basic/3010; type=options[0,1]; label= Activate upload finisher (only required when you're using file uploads)
+			active = 0
+		}
+	}
+}

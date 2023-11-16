@@ -1,0 +1,273 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+		<!--  <langChildren>1</langChildren> !-->
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.flex_form_title_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--information>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.support</label>
+							<config>
+								<type>user</type>
+								<userFunc>CodingMs\Openimmo\Tca\InformationRow->renderField</userFunc>
+								<extensionKey>openimmo</extensionKey>
+							</config>
+						</TCEforms>
+					</information>-->
+					<settings.profile.headline>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.headline</label>
+							<config>
+								<type>input</type>
+								<size>40</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.profile.headline>
+
+					<settings.profile.displayFields>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_fields</label>
+							<config>
+								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
+								<maxitems>99</maxitems>
+								<size>10</size>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_gender</numIndex>
+										<numIndex index="1">gender</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_email</numIndex>
+										<numIndex index="1">email</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_name</numIndex>
+										<numIndex index="1">name</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_first_name</numIndex>
+										<numIndex index="1">first_name</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_last_name</numIndex>
+										<numIndex index="1">last_name</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_address</numIndex>
+										<numIndex index="1">address</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_zip</numIndex>
+										<numIndex index="1">zip</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_city</numIndex>
+										<numIndex index="1">city</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_telephone</numIndex>
+										<numIndex index="1">telephone</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_fax</numIndex>
+										<numIndex index="1">fax</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_mobile</numIndex>
+										<numIndex index="1">mobile</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_profession</numIndex>
+										<numIndex index="1">profession</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_marital_status</numIndex>
+										<numIndex index="1">marital_status</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_children</numIndex>
+										<numIndex index="1">children</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_birthday</numIndex>
+										<numIndex index="1">birthday</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_year_of_birth</numIndex>
+										<numIndex index="1">year_of_birth</numIndex>
+									</numIndex>
+									<numIndex index="16" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_company</numIndex>
+										<numIndex index="1">company</numIndex>
+									</numIndex>
+									<numIndex index="17" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_owner_name</numIndex>
+										<numIndex index="1">bank_account_owner_name</numIndex>
+									</numIndex>
+									<numIndex index="18" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_bank_name</numIndex>
+										<numIndex index="1">bank_account_bank_name</numIndex>
+									</numIndex>
+									<numIndex index="19" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_bic</numIndex>
+										<numIndex index="1">bank_account_bic</numIndex>
+									</numIndex>
+									<numIndex index="20" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_iban</numIndex>
+										<numIndex index="1">bank_account_iban</numIndex>
+									</numIndex>
+									<numIndex index="21" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_accounting_type</numIndex>
+										<numIndex index="1">accounting_type</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_vat_number</numIndex>
+										<numIndex index="1">vat_number</numIndex>
+									</numIndex>
+									<numIndex index="23" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_country</numIndex>
+										<numIndex index="1">country</numIndex>
+									</numIndex>
+									<numIndex index="24" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_newsletter</numIndex>
+										<numIndex index="1">newsletter</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.profile.displayFields>
+					<settings.profile.mandatoryFields>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_mandatory_fields</label>
+							<config>
+								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
+								<maxitems>99</maxitems>
+								<size>10</size>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_gender</numIndex>
+										<numIndex index="1">gender</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_email</numIndex>
+										<numIndex index="1">email</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_name</numIndex>
+										<numIndex index="1">name</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_first_name</numIndex>
+										<numIndex index="1">first_name</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_last_name</numIndex>
+										<numIndex index="1">last_name</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_address</numIndex>
+										<numIndex index="1">address</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_zip</numIndex>
+										<numIndex index="1">zip</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_city</numIndex>
+										<numIndex index="1">city</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_telephone</numIndex>
+										<numIndex index="1">telephone</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_fax</numIndex>
+										<numIndex index="1">fax</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_mobile</numIndex>
+										<numIndex index="1">mobile</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_profession</numIndex>
+										<numIndex index="1">profession</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_marital_status</numIndex>
+										<numIndex index="1">marital_status</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_children</numIndex>
+										<numIndex index="1">children</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_birthday</numIndex>
+										<numIndex index="1">birthday</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_year_of_birth</numIndex>
+										<numIndex index="1">year_of_birth</numIndex>
+									</numIndex>
+									<numIndex index="16" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_company</numIndex>
+										<numIndex index="1">company</numIndex>
+									</numIndex>
+									<numIndex index="17" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_owner_name</numIndex>
+										<numIndex index="1">bank_account_owner_name</numIndex>
+									</numIndex>
+									<numIndex index="18" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_bank_name</numIndex>
+										<numIndex index="1">bank_account_bank_name</numIndex>
+									</numIndex>
+									<numIndex index="19" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_bic</numIndex>
+										<numIndex index="1">bank_account_bic</numIndex>
+									</numIndex>
+									<numIndex index="20" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_bank_account_iban</numIndex>
+										<numIndex index="1">bank_account_iban</numIndex>
+									</numIndex>
+									<numIndex index="21" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_accounting_type</numIndex>
+										<numIndex index="1">accounting_type</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_vat_number</numIndex>
+										<numIndex index="1">vat_number</numIndex>
+									</numIndex>
+									<numIndex index="23" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_country</numIndex>
+										<numIndex index="1">country</numIndex>
+									</numIndex>
+									<numIndex index="24" type="array">
+										<numIndex index="0">LLL:EXT:modules/Resources/Private/Language/locallang_db.xlf:tx_modules_flexform_profile.profile_field_newsletter</numIndex>
+										<numIndex index="1">newsletter</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.profile.mandatoryFields>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-10-08T18:50:41Z" product-name="fluid_form">
+		<header/>
+		<body>
+
+			<!--=== General ===-->
+			<trans-unit id="tx_fluidform_label.contains_mails">
+				<source>Fluid Form mails</source>
+			</trans-unit>
+
+			<!--=====
+				Model
+				=====-->
+
+			<!--=== Model: Form ===-->
+			<trans-unit id="tx_fluidform_domain_model_form">
+				<source>Fluid Form</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_form.form_key">
+				<source>Form key</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_form.form_uid">
+				<source>Form uid</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_form.unique_id">
+				<source>Unique id</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_form.fields">
+				<source>Form fields</source>
+			</trans-unit>
+
+			<!--=== Model: Form field ===-->
+			<trans-unit id="tx_fluidform_domain_model_field">
+				<source>Fluid Form Field</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_type">
+				<source>Field type</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_label">
+				<source>Field label</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_key">
+				<source>Field key</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_upload">
+				<source>Field upload</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_value">
+				<source>Field value</source>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_domain_model_field.field_text">
+				<source>Field text</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,143 @@
+config.tx_extbase {
+	persistence {
+		classes {
+			CodingMs\FluidForm\Domain\Model\FileReference {
+				mapping {
+					tableName = sys_file_reference
+					columns {
+						uid_local.mapOnProperty = originalFileIdentifier
+						downloadname.mapOnProperty = downloadFilename
+					}
+				}
+			}
+			CodingMs\FluidForm\Domain\Model\Form {
+				mapping {
+					tableName = tx_fluidform_domain_model_form
+					columns {
+						crdate.mapOnProperty = creationDate
+					}
+				}
+			}
+		}
+		objects {
+			TYPO3\CMS\Extbase\Domain\Model\FileReference.className = CodingMs\FluidForm\Domain\Model\FileReference
+		}
+		updateReferenceIndex = 1
+	}
+}
+#
+# Module configuration
+module.tx_fluidform {
+	view {
+		templateRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Templates/
+			400 = EXT:fluid_form/Resources/Private/Backend/Templates/
+		}
+		partialRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Partials/
+			400 = EXT:fluid_form/Resources/Private/Backend/Partials/
+		}
+		layoutRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Layouts/
+			400 = EXT:fluid_form/Resources/Private/Backend/Layouts/
+		}
+	}
+	settings {
+		lists {
+			mails {
+				id = mails
+				table = tx_fluidform_domain_model_form
+				module = web_FluidFormFluidform
+				plugin = FluidForm
+				sortingField = formKey
+				sortingOrder = asc
+				limit = 50
+				fields {
+					formKey {
+						format = Plain
+						sortable = 1
+					}
+					applicationAs {
+						format = Form/Field
+						sortable = 1
+					}
+					name {
+						format = Form/Field
+						sortable = 1
+					}
+					firstnameLastname {
+						format = Form/Field
+						sortable = 1
+					}
+					firstname {
+						format = Form/Field
+						sortable = 1
+					}
+					lastname {
+						format = Form/Field
+						sortable = 1
+					}
+					phone {
+						format = Form/Field
+						sortable = 1
+					}
+					email {
+						format = Form/Field
+						sortable = 1
+					}
+					creationDate {
+						format = DateTime
+						sortable = 1
+						dateFormat = d.m.Y H:i
+					}
+				}
+				actions {
+					edit {
+						action = Edit
+					}
+					delete {
+						action = Delete
+						subjectField = formKey
+					}
+				}
+			}
+		}
+	}
+	# Language values for modules list
+	_LOCAL_LANG {
+		default {
+			tx_modules_label.list_mails_header = Mails
+			tx_modules_label.list_mails_no_entries = No mails found
+			tx_modules_label.list_mails_col_form_key = Form
+			tx_modules_label.list_mails_col_application_as = Application as
+			tx_modules_label.list_mails_col_name = Name
+			tx_modules_label.list_mails_col_firstname_lastname = Name
+			tx_modules_label.list_mails_col_firstname = Firstname
+			tx_modules_label.list_mails_col_lastname = Lastname
+			tx_modules_label.list_mails_col_phone = Phone
+			tx_modules_label.list_mails_col_email = Email
+			tx_modules_label.list_mails_col_creation_date = Date
+			tx_modules_label.list_mails_action_edit = Edit mail
+			tx_modules_label.list_mails_action_delete_title = Delete this mail?
+			tx_modules_label.list_mails_action_delete_content = Are you sure you want to delete the mail '%1$s'?
+			tx_modules_label.list_mails_action_delete_cancel = Cancel
+		}
+		de {
+			tx_modules_label.list_mails_header = Mails
+			tx_modules_label.list_mails_no_entries = Keine Mails gefunden
+			tx_modules_label.list_mails_col_form_key = Form
+			tx_modules_label.list_mails_col_application_as = Bewerbung als
+			tx_modules_label.list_mails_col_name = Name
+			tx_modules_label.list_mails_col_firstname_lastname = Name
+			tx_modules_label.list_mails_col_firstname = Vorname
+			tx_modules_label.list_mails_col_lastname = Nachname
+			tx_modules_label.list_mails_col_phone = Telefon
+			tx_modules_label.list_mails_col_email = Email
+			tx_modules_label.list_mails_col_creation_date = Datum
+			tx_modules_label.list_mails_action_edit = Mail bearbeiten
+			tx_modules_label.list_mails_action_delete_title = Mail löschen?
+			tx_modules_label.list_mails_action_delete_content = Möchten Sie die Mail '%1$s' wirklich löschen?
+			tx_modules_label.list_mails_action_delete_cancel = Abbrechen
+		}
+	}
+}

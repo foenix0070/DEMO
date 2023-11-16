@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+      <label index="module_indexinspector">Inspecteur de l'index de recherche</label>
+      <label index="plugin_results">Rechercher</label>
+      <label index="plugin_results_description">Formulaire de recherche et liste de résultats.</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-13T17:08:58Z" product-name="additional_tca">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_additionaltca_domain_model_example">
+				<source>Additional-TCA Example- &amp; Testing-Record</source>
+			</trans-unit>
+
+
+			<!-- Defaults -->
+			<trans-unit id="tx_additionaltca_domain_model_example.tab_defaults">
+				<source>Defaults</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.string">
+				<source>Field type: string</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.int">
+				<source>Field type: int</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.email">
+				<source>Field type: email</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.color">
+				<source>Field type: color</source>
+			</trans-unit>
+
+
+			<!-- Custom ones -->
+			<trans-unit id="tx_additionaltca_domain_model_example.tab_custom">
+				<source>Custom</source>
+			</trans-unit>
+
+			<trans-unit id="tx_additionaltca_domain_model_example.currency_db_int">
+				<source>Field type: currency</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.currency_db_int_description">
+				<source>This field is internally an integer and saves the currency value in cent.</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.currency_db_float">
+				<source>Field type: currency</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.currency_db_float_description">
+				<source>This field is internally a float/double. (1 cent to a value of 0.01).</source>
+			</trans-unit>
+
+			<trans-unit id="tx_additionaltca_domain_model_example.percent_db_int">
+				<source>Field type: percent</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.percent_db_int_description">
+				<source>This field is internally an integer (1 corresponds to a percentage of 0.01)</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.percent_db_float">
+				<source>Field type: percent</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.percent_db_float_description">
+				<source>This field is internally a float.</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.badge_suggested">
+				<source>Field type: badgeSuggested</source>
+			</trans-unit>
+
+
+			<!-- Date times -->
+			<trans-unit id="tx_additionaltca_domain_model_example.tab_date_times">
+				<source>Date &amp; times</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.date_db_timestamp">
+				<source>Field type: date</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.date_db_timestamp_description">
+				<source>This field is internally an integer in seconds (UNIX timestamp).</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.date_db_date">
+				<source>Field type: date</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.date_db_date_description">
+				<source>This field is internally a date field (YYYY-MM-DD).</source>
+			</trans-unit>
+
+			<trans-unit id="tx_additionaltca_domain_model_example.datetime_db_timestamp">
+				<source>Field type: dateTime</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.datetime_db_timestamp_description">
+				<source>This field is internally an integer in seconds (UNIX timestamp).</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.datetime_db_date">
+				<source>Field type: dateTime</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.datetime_db_date_description">
+				<source>This field is internally a date field (YYYY-MM-DD HH:II).</source>
+			</trans-unit>
+
+			<trans-unit id="tx_additionaltca_domain_model_example.duration">
+				<source>Field type: duration</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.duration_description">
+				<source>This field is internally an integer in seconds.</source>
+			</trans-unit>
+
+
+
+
+			<!-- Expandable textarea -->
+			<trans-unit id="tx_additionaltca_domain_model_example.tab_expandable">
+				<source>Expandable</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_open">
+				<source>Field type: expandableTextarea</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_open_description">
+				<source>This textarea is initially open.</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_closed">
+				<source>Field type: expandableTextarea</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_closed_description">
+				<source>This textarea is initially closed.</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_small_open">
+				<source>Field type: expandableTextarea</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_small_open_description">
+				<source>This textarea is smaller and initially open.</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_small_closed">
+				<source>Field type: expandableTextarea</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.expandable_textarea_small_closed_description">
+				<source>This textarea is smaller and initially closed.</source>
+			</trans-unit>
+
+
+			<!-- Notice variations -->
+			<trans-unit id="tx_additionaltca_domain_model_example.tab_notices">
+				<source>Notices</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_domain_model_example.notice_lll_text">
+				<source>This example text comes from a LLL: translation key!</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

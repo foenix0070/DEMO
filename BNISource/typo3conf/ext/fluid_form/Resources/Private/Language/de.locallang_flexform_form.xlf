@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-01-01T12:51:59Z" product-name="fluid_form">
+		<header/>
+		<body>
+
+			<!--=== Tab: General ===-->
+			<trans-unit id="tx_fluidform_flexform_form.title_general">
+				<source>General</source>
+				<target>Allgemein</target>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_flexform_form.form">
+				<source>Form</source>
+				<target>Formular</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
