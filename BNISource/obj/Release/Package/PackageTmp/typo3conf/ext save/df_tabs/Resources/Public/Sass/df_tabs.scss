@@ -1,0 +1,125 @@
+// ###############################################################################
+// ## Styles adjustments for the df_tabs element.                               ##
+// ## The major part of the styling is achieved by using the Bootstrap classes. ##
+// ###############################################################################
+// scss-lint:disable SelectorFormat
+
+$nav-tabs-border: #ddd;
+$nav-tabs-color: #555;
+$white-base: #FFF;
+$base-transition-timing-fast: 0.2;
+$background-color: #FFF;
+$foreground-color: #000;
+$secondary-background-color: #000;
+$foreground-hover: #555;
+$boxshadow-color: #555;
+$link-hover: #fff;
+
+.tx-dftabs-tabMenu {
+	margin-bottom: 15px;
+}
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabTitle,
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabContent {
+	display: none;
+}
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabMenu,
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabContentSelected {
+	display: block;
+}
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabContentSelected {
+	overflow: hidden;
+}
+
+// scss-lint:disable QualifyingElement
+.nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a,
+.nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a:focus,
+.nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a:hover {
+	color: $nav-tabs-color;
+	cursor: default;
+	background-color: $white-base;
+	border: 1px solid $nav-tabs-border;
+	border-bottom-color: transparent;
+}
+
+
+.m-tabs {
+	&__tablist {
+		margin-bottom: 15px;
+		display: flex;
+		background-color: $background-color;
+	}
+
+	.responsive-tab-more,
+	&__tab {
+		padding: 12px 15px;
+		border: 0;
+		background-color: $background-color;
+		color: $foreground-color;
+		white-space: nowrap;
+		position: relative;
+		transition: background-color $base-transition-timing-fast;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: $secondary-background-color;
+			transform: translateY(100%);
+			opacity: 0;
+			transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+		}
+
+		&:hover {
+			background-color: $foreground-hover;
+			color: $link-hover;
+		}
+
+		&[aria-selected='true'] {
+			background-color: $background-color;
+			color: $foreground-color;
+		}
+
+		&:hover,
+		&:focus {
+			outline: 0;
+
+			&::after {
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+
+	.responsive-tab-more {
+		padding-right: 35px;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%) translateY(-1px);
+		}
+	}
+
+	.responsive-tabs-off-screen {
+		text-align: left;
+		box-shadow: 0 1px 3px rgba($boxshadow-color, 0.12),
+		0 1px 2px rgba($boxshadow-color, 0.24);
+	}
+
+	&__panel--closed {
+		display: none;
+	}
+}

@@ -1,0 +1,74 @@
+.tx-dftabs-tabMenu {
+  margin-bottom: 15px; }
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabTitle, .tx-dftabs-plugin1-hasJS .tx-dftabs-tabContent {
+  display: none; }
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabMenu, .tx-dftabs-plugin1-hasJS .tx-dftabs-tabContentSelected {
+  display: block; }
+
+.tx-dftabs-plugin1-hasJS .tx-dftabs-tabContentSelected {
+  overflow: hidden; }
+
+.nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a, .nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a:focus, .nav-tabs > li.tx-dftabs-tabMenuEntrySelected > a:hover {
+  color: #555;
+  cursor: default;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent; }
+
+.m-tabs__tablist {
+  margin-bottom: 15px;
+  display: flex;
+  background-color: #FFF; }
+.m-tabs .responsive-tab-more, .m-tabs__tab {
+  padding: 12px 15px;
+  border: 0;
+  background-color: #FFF;
+  color: #000;
+  white-space: nowrap;
+  position: relative;
+  transition: background-color 0.2; }
+.m-tabs .responsive-tab-more::after, .m-tabs__tab::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #F39B40;
+  /*background-color: #000;*/
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+.m-tabs .responsive-tab-more:hover, .m-tabs__tab:hover {
+  color: #F39B40; }
+.m-tabs .responsive-tab-more[aria-selected='true'], .m-tabs__tab[aria-selected='true'] {
+  background-color: #FFF;
+  color: #F39B40; 
+  border-bottom: 3px solid #F39B40;
+  border-top-color: transparent!important;
+}
+.m-tabs .responsive-tab-more:hover, .m-tabs .responsive-tab-more:focus, .m-tabs__tab:hover, .m-tabs__tab:focus {
+  outline: 0; }
+.m-tabs .responsive-tab-more:hover::after, .m-tabs .responsive-tab-more:focus::after, .m-tabs__tab:hover::after, .m-tabs__tab:focus::after {
+  transform: none;
+  opacity: 1; }
+.m-tabs .responsive-tab-more {
+  padding-right: 35px;
+  position: relative; }
+.m-tabs .responsive-tab-more::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%) translateY(-1px); }
+.m-tabs .responsive-tabs-off-screen {
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(85, 85, 85, 0.12), 0 1px 2px rgba(85, 85, 85, 0.24); }
+.m-tabs__panel--closed {
+  display: none; }

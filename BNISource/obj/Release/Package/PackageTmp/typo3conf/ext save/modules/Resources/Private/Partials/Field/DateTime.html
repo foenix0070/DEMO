@@ -1,0 +1,94 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-datetime" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}" id="date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}"
+				 data-format="" data-locale="de"
+				 data-target-input="nearest">
+				<f:form.textfield placeholder="{field.placeholder}"
+								  value="{field.value}"
+								  name="{fieldKey}-display"
+								  id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20"
+								  class="{field.css.class.field}"
+								  style="{field.css.style.field}"
+								  data="{target: '#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}'}" />
+				<f:form.hidden value="{field.value}" name="{fieldKey}" />
+				<div class="input-group-append" data-target="#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}" data-toggle="datetimepicker">
+					<div class="input-group-text">
+						<i class="{field.css.class.icon.calendar}"></i>
+					</div>
+				</div>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="Date">
+		<div class="{field.css.class.wrapper} form-field-date" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}" id="date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}"
+				 data-format="{field.format}" data-locale="{field.locale}"
+				 data-target-input="nearest">
+				<f:form.textfield placeholder="{field.placeholder}"
+								  value="{field.value}"
+								  name="{fieldKey}-display"
+								  id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20"
+								  class="{field.css.class.field}"
+								  style="{field.css.style.field}"
+								  data="{target: '#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}'}" />
+				<f:form.hidden value="{field.value}" name="{fieldKey}" />
+				<div class="input-group-append" data-target="#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}" data-toggle="datetimepicker">
+					<div class="input-group-text">
+						<i class="{field.css.class.icon.calendar}"></i>
+					</div>
+				</div>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="Time">
+		<div class="{field.css.class.wrapper} form-field-time" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}" id="date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}"
+				 data-format="LT" data-locale="de"
+				 data-target-input="nearest">
+				<f:form.textfield placeholder="{field.placeholder}"
+								  value="{field.value}"
+								  name="{fieldKey}-display"
+								  id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+								  size="20"
+								  class="{field.css.class.field}"
+								  style="{field.css.style.field}"
+								  data="{target: '#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}'}"  />
+				<f:form.hidden value="{field.value}" name="{fieldKey}" />
+				<div class="input-group-append" data-target="#date-time-picker-{formUid}-{fieldsetKey}-{fieldKey}" data-toggle="datetimepicker">
+					<div class="input-group-text">
+						<i class="{field.css.class.icon.clock}"></i>
+					</div>
+				</div>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+			</div>
+		</div>
+	</f:section>
+
+</div>

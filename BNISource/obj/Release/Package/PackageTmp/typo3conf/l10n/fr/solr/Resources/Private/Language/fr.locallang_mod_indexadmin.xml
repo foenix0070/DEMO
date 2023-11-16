@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Administration Index</label>
+			<label index="mlang_labels_tablabel">Administration de solr</label>
+			<label index="mlang_labels_tabdescr">Ce module vous permet d'effectuer des opérations d'administration sur l'index (par exemple, effacer la file d'attente de l'index ou effacer le serveur solr).</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-08-22T12:21:59Z" product-name="modules">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_modules_label.ok_headline">
+				<source>Notice</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.warning_headline">
+				<source>Warning</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.error_headline">
+				<source>Error</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.ok">
+				<source>Ok</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.columns">
+				<source>Columns</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.boolean_true">
+				<source>yes</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.boolean_false">
+				<source>no</source>
+			</trans-unit>
+
+
+
+			<!--===============
+				Backend modules
+				===============-->
+			<trans-unit id="tx_modules_label.list_frontend_user">
+				<source>Frontend user list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.new_frontend_user">
+				<source>New frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_refresh">
+				<source>Refresh frontenduser list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_export">
+				<source>Export frontenduser list as CSV</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_bookmark">
+				<source>Frontenduser list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_no_entries">
+				<source>No frontend user found - please select another container or create new frontend user!</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_header">
+				<source>Frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups">
+				<source>Frontend user group list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_no_entries">
+				<source>No frontend user groups found - please select another container or create new frontend user groups!</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_header">
+				<source>Frontend user groups</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_manage_invitation_codes">
+				<source>Invitation codes management</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_import_invitation_codes">
+				<source>Invitation codes import</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.new_frontend_user_group">
+				<source>New frontend user group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_refresh">
+				<source>Refresh frontenduser group list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_bookmark">
+				<source>Frontenduser group list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter_search_word">
+				<source>Search word</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter_disabled">
+				<source>Disabled only</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter_submit">
+				<source>refresh</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter_usergroup">
+				<source>User group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_filter_usergroup_all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.backend_import_file_upload">
+				<source>Import file upload</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_csv_file">
+				<source>CSV file</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_separator">
+				<source>CSV Separator</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_separator.semicolon">
+				<source>Semicolon (Default)</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_separator.comma">
+				<source>Comma</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_separator.tab">
+				<source>Tab Stop</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_character_set_hint">
+				<source>Note: For the correct display of special characters, the CSV file must be submitted in UTF-8 format.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.button_upload_import_file">
+				<source>Upload file for preview</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_invitation_codes_refresh">
+				<source>Refresh invitation codes list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_invitation_codes_bookmark">
+				<source>Invitation code list</source>
+			</trans-unit>
+
+			<!-- Frontend user table header columns -->
+			<trans-unit id="tx_modules_label.list_frontend_user_col_username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_usergroup">
+				<source>Group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_disable">
+				<source>Disabled</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_creation_date">
+				<source>Created</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_modification_date">
+				<source>Modified</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_actions">
+				<source>Actions</source>
+			</trans-unit>
+
+			<!-- Frontend user table actions -->
+			<trans-unit id="tx_modules_label.list_frontend_user_action_edit">
+				<source>Edit frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_disable">
+				<source>Disable frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_enable">
+				<source>Enable frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_login_as">
+				<source>Login as frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_delete_title">
+				<source>Delete this frontend user?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_delete_content">
+				<source>Are you sure you want to delete the frontend user '%1$s'?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_action_delete_cancel">
+				<source>Cancel</source>
+			</trans-unit>
+
+			<!-- Frontend user groups table header columns -->
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_col_title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_col_hidden">
+				<source>Disabled</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_col_actions">
+				<source>Actions</source>
+			</trans-unit>
+
+			<!-- Frontend user groups table actions -->
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_edit">
+				<source>Edit frontend user group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_hide">
+				<source>Disable frontend user group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_show">
+				<source>Enable frontend user group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_delete_title">
+				<source>Delete this frontend user group?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_delete_content">
+				<source>Are you sure you want to delete the frontend user group '%1$s'?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_groups_action_delete_cancel">
+				<source>Cancel</source>
+			</trans-unit>
+
+			<!-- Frontend user invitation codes -->
+			<trans-unit id="tx_modules_label.list_invitation_codes">
+				<source>Invitation code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_no_entries">
+				<source>No invitation codes found</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_header">
+				<source>Invitation codes</source>
+			</trans-unit>
+
+			<!-- Invitation code import -->
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_code">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_usergroups">
+				<source>Usergroups</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_starttime">
+				<source>Starttime</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_endtime">
+				<source>Endtime</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_already_in_database">
+				<source>Code already in database saved</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_not_found_usergroups_prefix">
+				<source>Not found:</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_valid_rows_found">
+				<source>%1$d valid rows found.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_row_without_code_found">
+				<source>Rows without code found: %1$s</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_row_with_duplicate_code_in_file_found">
+				<source>Rows with duplicate code in import file found: %1$s</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_not_imported">
+				<source>%1$d codes could not be imported.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_successfully_imported">
+				<source>%1$d codes successfully imported.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_delete_row_button">
+				<source>Delete this row</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_cancel_button">
+				<source>Cancel</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_import_now_button">
+				<source>Import now!</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_col_used">
+				<source>Used</source>
+			</trans-unit>
+
+			<!-- Invitation code table actions -->
+			<trans-unit id="tx_modules_label.list_invitation_codes_action_edit">
+				<source>Edit invitation code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_action_delete_title">
+				<source>Delete this invitation code?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_action_delete_content">
+				<source>Are you sure you want to delete the invitation code '%1$s'?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_invitation_codes_action_delete_cancel">
+				<source>Cancel</source>
+			</trans-unit>
+
+			<!-- Backend User List -->
+			<trans-unit id="tx_modules_label.list_backend_user">
+				<source>Backend user list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.new_backend_user">
+				<source>New backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_refresh">
+				<source>Refresh backenduser list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_bookmark">
+				<source>Backenduser list</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_no_entries">
+				<source>No backend user found - please create new backend user!</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_header">
+				<source>Backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.backend_user_group_header">
+				<source>Backend Usergroup Management</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.backend_user_header">
+				<source>Backend User Management</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.backend_user_add_user_title">
+				<source>Add backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.backend_user_delete_user_title">
+				<source>Delete backend user</source>
+			</trans-unit>
+
+			<trans-unit id="tx_modules_authorization.frontend_user_header">
+				<source>Frontend User Management</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_add_user_title">
+				<source>Add frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_delete_user_title">
+				<source>Delete frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_export_user_title">
+				<source>Export frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_group_header">
+				<source>Frontend Usergroup Management</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_group_add_group_title">
+				<source>Add frontend usergroup</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_group_delete_group_title">
+				<source>Delete frontend usergroup</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_group_list_groups_title">
+				<source>View list of frontend usergroup</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_invitation_code_header">
+				<source>Frontend user invitation codes</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_invitation_code_manage_invitation_codes_title">
+				<source>Manage invitation codes</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_authorization.frontend_user_invitation_code_import_invitation_codes_title">
+				<source>Import invitation codes</source>
+			</trans-unit>
+
+			<!-- Backend User table header columns -->
+			<trans-unit id="tx_modules_label.list_backend_user_col_username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_real_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_usergroup">
+				<source>Group</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_disable">
+				<source>Disabled</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_creation_date">
+				<source>Created</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_modification_date">
+				<source>Modified</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_col_actions">
+				<source>Actions</source>
+			</trans-unit>
+
+			<!-- Backend User table actions -->
+			<trans-unit id="tx_modules_label.list_backend_user_action_edit">
+				<source>Edit backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_action_disable">
+				<source>Disable backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_action_enable">
+				<source>Enable backend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_action_delete_title">
+				<source>Delete this backend user?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_action_delete_content">
+				<source>Are you sure you want to delete the backend user '%1$s'?</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_backend_user_action_delete_cancel">
+				<source>Cancel</source>
+			</trans-unit>
+
+			<!--============
+				Registration
+				============-->
+
+			<trans-unit id="tx_registration_label.registration_field_gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_gender_male">
+				<source>Male</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_gender_female">
+				<source>Female</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_gender_family">
+				<source>Family</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_gender_diverse">
+				<source>Diverse</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_gender_required">
+				<source>Please select your gender!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_username_required">
+				<source>Please enter an username!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_username_already_exists">
+				<source>A user with that username already exists!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_username_too_short">
+				<source>Please enter an username with at least %1$d characters!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_password_required">
+				<source>Please enter a password!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_password_too_short">
+				<source>Please enter a password with at least %1$d characters!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_password_unequal">
+				<source>The given passwords are not equal!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_password_repeat">
+				<source>Repeat password</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_email_invalid">
+				<source>Please enter a valid email address!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_email_required">
+				<source>Please enter an email address!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_name_required">
+				<source>Please enter a name!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_first_name_required">
+				<source>Please enter a first name!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_last_name_required">
+				<source>Please enter a last name!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_company_required">
+				<source>Please enter your company name!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_address_required">
+				<source>Please enter your address!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_zip">
+				<source>Postal code</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_zip_required">
+				<source>Please enter your postal code!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_city_required">
+				<source>Please enter your city!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_telephone_required">
+				<source>Please enter your phone number!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_fax_required">
+				<source>Please enter your fax number!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_mobile_required">
+				<source>Please enter your mobile number!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_terms_confirmed">
+				<source><![CDATA[Accept the <a href="%1$s" target="_blank" title="Show the terms">terms</a>.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_terms_confirmed_required">
+				<source>Please accept our terms!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_privacy_confirmed">
+				<source><![CDATA[Accept the <a href="%1$s" target="_blank" title="Show the privacy protection">privacy protection</a>.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_privacy_confirmed_required">
+				<source>Please accept our privacy protection!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_profession_employed">
+				<source>Employed</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_profession_officer">
+				<source>Officer</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_profession_self_employed">
+				<source>Self employed</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_profession_pensioner">
+				<source>Pensioner</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_marital_status">
+				<source>Marital status</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_marital_status_single">
+				<source>Single</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_marital_status_married">
+				<source>Married</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_children">
+				<source>Children</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_birthday_required">
+				<source>Please enter your birthday.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_birthday_too_young">
+				<source>You are not old enough for registering on our page. You must be at least %1$s years old.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_year_of_birth">
+				<source>Year of birth</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_year_of_birth_required">
+				<source>Please select your day of birth.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_year_of_birth_too_young">
+				<source>You are not old enough for registering on our page. You must be at least %1$s years old.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_owner_name">
+				<source>Bank account owner name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_owner_name_required">
+				<source>Please enter the owner name of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_bank_name">
+				<source>Bank account bank name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_bank_name_required">
+				<source>Please enter the bank name of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_bic">
+				<source>Bank account BIC</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_bic_required">
+				<source>Please enter the BIC of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_iban">
+				<source>Bank account IBAN</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_bank_account_iban_required">
+				<source>Please enter the IBAN of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_accounting_type">
+				<source>Accounting</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_accounting_type_debit">
+				<source>Debit</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_accounting_type_accounting">
+				<source>Accounting</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_vat_number">
+				<source>VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_vat_number_required">
+				<source>Please enter your VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_country_required">
+				<source>Please enter your county name</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_disclaimer_confirmed">
+				<source><![CDATA[Accept the <a href="%1$s" target="_blank" title="Show the disclaimer">disclaimer</a>.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_disclaimer_confirmed_required">
+				<source>Please accept the disclaimer!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_field_newsletter">
+				<source>Subscribe to Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.registration_mandatory_fields">
+				<source>* Mandatory fields</source>
+			</trans-unit>
+
+			<!--=== Registration buttons ===-->
+			<trans-unit id="tx_registration_label.button_registration_send_label">
+				<source>Register</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.button_registration_send_title">
+				<source>Send registration</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.button_login_label">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_label.button_login_title">
+				<source>Go to login page</source>
+			</trans-unit>
+
+			<!--=== Registration messages ===-->
+			<trans-unit id="tx_registration_message.ok_registration_successful_title">
+				<source>Registration successful!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.ok_registration_successful_body">
+				<source>Your registration was successful. Please check your mailbox for our confirmation mail and click the confirmation link in order activate your account.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_registration_validation_failed_title">
+				<source>Registration validation failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_registration_validation_failed_body">
+				<source>The registration failed - please fill out all fields correctly.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_registration_failed_title">
+				<source>Registration failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_registration_failed_body">
+				<source>The registration failed - please contact the administrator of this page.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_invitation_code_invalid">
+				<source>The invitation code is invalid.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.ok_activation_successful_title">
+				<source>Activation successful!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.ok_activation_successful_body">
+				<source>The activation of your registration was successful - now you you can log in.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_activation_failed_title">
+				<source>Activation failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.error_activation_failed_body">
+				<source>The activation of your registration failed - please contact the administrator of this page.</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.request_sent_to_admin_title">
+				<source>Activation request was sent to the site administrator!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.request_sent_to_admin_body">
+				<source>You will be notified when the administrator has unlocked your account!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_confirmation_success_title">
+				<source>The user account was successfully activated!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_confirmation_success_body">
+				<source>The user will be notified by email!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_confirmation_error_title">
+				<source>Activation failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_confirmation_error_body">
+				<source>An error occurred while activating the user account!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_rejection_success_title">
+				<source>The registration was successfully rejected!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_rejection_success_body">
+				<source>The user will be notified by email!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_rejection_error_title">
+				<source>Rejection failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_registration_message.admin_rejection_error_body">
+				<source>An error occurred while rejecting the registration!</source>
+			</trans-unit>
+
+
+			<!--============
+				Profile
+				============-->
+
+			<trans-unit id="tx_profile_label.profile_field_gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_gender_male">
+				<source>Male</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_gender_female">
+				<source>Female</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_gender_family">
+				<source>Family</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_gender_diverse">
+				<source>Diverse</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_gender_required">
+				<source>Please select your gender!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_email_invalid">
+				<source>Please enter a valid email address!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_email_required">
+				<source>Please enter an email address!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_name_required">
+				<source>Please enter a name!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_first_name_required">
+				<source>Please enter a first name!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_last_name_required">
+				<source>Please enter a last name!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_company_required">
+				<source>Please enter your company name!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_address_required">
+				<source>Please enter your address!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_zip">
+				<source>Postal code</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_zip_required">
+				<source>Please enter your postal code!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_city_required">
+				<source>Please enter your city!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_telephone_required">
+				<source>Please enter your phone number!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_fax_required">
+				<source>Please enter your fax number!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_mobile_required">
+				<source>Please enter your mobile number!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_profession_employed">
+				<source>Employed</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_profession_officer">
+				<source>Officer</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_profession_self_employed">
+				<source>Self employed</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_profession_pensioner">
+				<source>Pensioner</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_marital_status">
+				<source>Marital status</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_marital_status_single">
+				<source>Single</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_marital_status_married">
+				<source>Married</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_children">
+				<source>Children</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_birthday_required">
+				<source>Please enter your birthday.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_birthday_too_young">
+				<source>You are not old enough for registering on our page. You must be at least %1$s years old.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_year_of_birth">
+				<source>Year of birth</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_year_of_birth_required">
+				<source>Please select your day of birth.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_year_of_birth_too_young">
+				<source>You are not old enough for registering on our page. You must be at least %1$s years old.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_owner_name">
+				<source>Bank account owner name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_owner_name_required">
+				<source>Please enter the owner name of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_bank_name">
+				<source>Bank account bank name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_bank_name_required">
+				<source>Please enter the bank name of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_bic">
+				<source>Bank account BIC</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_bic_required">
+				<source>Please enter the BIC of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_iban">
+				<source>Bank account IBAN</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_bank_account_iban_required">
+				<source>Please enter the IBAN of the bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_accounting_type">
+				<source>Accounting</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_accounting_type_debit">
+				<source>Debit</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_accounting_type_accounting">
+				<source>Accounting</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_vat_number">
+				<source>VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_vat_number_required">
+				<source>Please enter your VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_country_required">
+				<source>Please enter your county name</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_field_newsletter">
+				<source>Subscribe to Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.profile_mandatory_fields">
+				<source>* Mandatory fields</source>
+			</trans-unit>
+
+			<!--=== Profile buttons ===-->
+			<trans-unit id="tx_profile_label.button_profile_save_label">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.button_profile_save_title">
+				<source>Save profile</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.button_profile_reset_label">
+				<source>Reset</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_label.button_profile_reset_title">
+				<source>Reset form changes</source>
+			</trans-unit>
+
+			<!--=== Registration messages ===-->
+			<trans-unit id="tx_profile_message.error_profile_please_login_title">
+				<source>Can't load user profile!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_message.error_profile_please_login_body">
+				<source>Please login in order to edit your profile.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_message.error_profile_validation_failed_title">
+				<source>Profile validation failed!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_message.error_profile_validation_failed_body">
+				<source>Saving your profile failed - please fill out all fields correctly.</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_message.ok_editing_successful_title">
+				<source>Modification successful!</source>
+			</trans-unit>
+			<trans-unit id="tx_profile_message.ok_editing_successful_body">
+				<source>The modification of your profile was successful.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

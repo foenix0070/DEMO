@@ -1,0 +1,182 @@
+
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftHomeNavigation" arguments="{_all}" />
+                
+                <!-- <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title ms-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div id="slider-contain" class=" col-lg-6">
+                                        <h2 class="display-2 text-white">{sliderContentElement.data.header}</h2>
+                                        <p class="text-white py-3">{sliderContentElement.data.subheader}</p>
+                                        <a href="" title="" class="btn btn-warning rounded-pill text-white px-4 py-2 h-op-09 op-ts">En savoir Plus <i class="fa-solid fa-arrow-right-long" style="margin-left: 8px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for> -->
+
+                
+                    <div id="BannerSlider" class="carousel slide carousel-fade slider-element" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <f:for each="{Slider}" as="sliderContentElement">
+                                <div class="carousel-item {sliderContentElement.data.subheader}">
+                                    <img src="fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}" class="d-block w-100" alt="{sliderContentElement.data.header}">
+                                </div>
+                            </f:for>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#BannerSlider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#BannerSlider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                
+            </div>              
+        </section>
+
+        <!-- Product Category -->
+        <section id="produits-services" class="bni_prd-bg-grey mb-5">
+            <div class="container">
+                <div class="heading-block border-bottom-0 mt-1 text-center">
+                    <f:for each="{CategorySectionTitle}" as="categoryContentElement">
+                        <h2>{categoryContentElement.data.header}</h2>
+                        <span>{categoryContentElement.data.subheader}</span>
+                    </f:for>
+                </div>
+                <div id="card-category" class="bni_prd-cards">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <f:for each="{ProductServiceCard}" as="ProductServiceContent">
+                            <div class="col px-5 mt-3">
+                                <a href="{ProductServiceContent.data.header_link}" class="card bni_card shadow bni_prd-cards_card bni_prd-cards-{ProductServiceContent.data.header}" alt="{ProductServiceContent.data.header}">
+                                    <div class="bni_prdcards-card-container">
+                                        <div class="bni_card_img mt-4 ms-4">
+                                            <i class="{ProductServiceContent.data.subheader} fa-5x"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">{ProductServiceContent.data.header}</h5>
+                                            <p class="bni_card-text"><f:format.html>{ProductServiceContent.data.bodytext}</f:format.html></p>
+                                        </div>
+                                        <div class="bni-card-actions m-3 text-right">
+                                            <button type="button" class="btn rounded-pill">En Savoir plus</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </f:for>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Access -->
+        <section id="mobile-access">
+            <div class="container-fluid">
+                <i class="fa-solid fa-calendar-clock fa-5x"></i>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 col-lg-6">
+                        <f:for each="{MobileDescription}" as="MobileDescriptionContentElement">
+                            <h1 class="stl_title stl_title--2 p-3 mt-4 text-white">{MobileDescriptionContentElement.data.header}</h1>
+                        </f:for>
+                        <div class="container bni_grid_row--application-sg">
+                            <div class="row row-cols-2 bni_grid-application">
+                                <f:for each="{MobileIconDesc}" as="MobileIconDescContentElement">
+                                    <div class="col mb-4 col-xs-12 col-sm-6">
+                                        <div class="content__application-sg">
+                                            <i class="{MobileIconDescContentElement.data.subheader} fa-lg me-2"></i>
+                                            <p>{MobileIconDescContentElement.data.header}</p>
+                                        </div>
+                                    </div>
+                                </f:for>
+                            </div>
+                            <div class="row align-items-start mt-5">
+                                <f:for each="{MobileStoreLink}" as="MobileStoreLinkContentElement">
+                                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                                        <a href="{MobileStoreLinkContentElement.data.header_link}" target="_blank" alt="{MobileStoreLinkContentElement.data.header}">
+                                            <img src="fileadmin{MobileStoreLinkContentElement.MobileStoreImage.0.originalFile.identifier}"  alt="">
+                                        </a>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-lg-6">
+                        <f:for each="{MobilePic}" as="MobilePicContentElement">
+                            <img src="fileadmin{MobilePicContentElement.MobileBackground.0.originalFile.identifier}" class="img-fluid" alt="BNI Mobile" />
+                        </f:for>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Campagne -->
+        <section class="campagne_section m-5">
+            <div class="container bg-white shadow mx-auto mx-5 p-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="heading-block">
+                        <h2 class="mb-3">Campagne de Fiabilisation des  données Bancaires</h2>
+                        <div class="d-flex flex-column">
+                          <div class="card shadow mb-3">
+                            <div class="card-body">
+                              <h3 class="card-title">Accès au formulaire de mise à jour</h3>
+                              <a href="https://pcdc.bnici.net/" target="_blank" class="btn btn-success">Accéder au formulaire</a>
+                            </div>
+                          </div>
+                          <div class="card shadow">
+                            <div class="card-body">
+                              <h3 class="card-title">Accès au guide de connexion</h3>
+                              <a href="/publications/telechargements" class="btn btn-success">Accéder au guide</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZPrmGEzManI?rel=0" width="200px"></iframe>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section id="popup-start">
+            <f:for each="{PopupImage}" as="PopupImageContent">
+                <div class="col mb-5">
+                    <f:if condition="{PopupImageContent.data.header_link}">
+                        <f:then>
+                            <a href="{f:uri.image(src:'{PopupImageContent.data.header_link}', treatIdAsReference: 1)}" data-imglink="fileadmin{PopupImageContent.PopupBackgroundImage.0.originalFile.identifier}" class="bni-popup-start" alt="{PopupImageContent.data.header}"> </a>
+                        </f:then>
+                        <f:else>
+                            <a href="" data-imglink="fileadmin{PopupImageContent.PopupBackgroundImage.0.originalFile.identifier}" class="bni-popup-start" alt="{PopupImageContent.data.header}"> </a>
+                        </f:else>
+                    </f:if> 
+                </div>
+            </f:for>
+          </section>
+
+    </div><!-- End Main -->
+
+     <!--
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+    -->
+
+    <script src="https://cdn.popupsmart.com/bundle.js" data-id="72418" async defer></script>
+    
+</f:section>

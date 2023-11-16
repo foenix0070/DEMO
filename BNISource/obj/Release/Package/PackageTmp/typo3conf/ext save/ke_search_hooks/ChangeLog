@@ -1,0 +1,75 @@
+ChangeLog for ke_search_hooks
+
+Version 4.2.0, September 2022
+[FEATURE] Add example for hook modifyFieldValuesBeforeStoring, in this case index "keywords" of EXT:filemetadata
+[FEATURE] Add example for custom filter renderer
+
+Version 4.1.0, February 2022
+[!!!]     This version drops support for TYPO3 9
+[TASK]    Make extension compatible with TYPO3 11
+[TASK]    Move icons to Resources/Public/Icons
+[TASK]    Encapsulate code in ext_localconf.php in Closure
+[BUGFIX]  Fix PHP 8 issues
+
+Version 4.0.0, October 2021
+[!!!]     This is the version for ke_search version 4. (The namespace of ke_search has changed in version 4.)
+[TASK]    Change namespace (for composer to tpwd, for classes to Tpwd)
+[TASK]    Require ke_search 4.0.0
+[TASK]    Use tpwd namespace for ke_search classes
+[TASK]    Update dependencies in composer.json
+
+Version 3.4.0, September 2021
+[!!!]     The namespace of ke_search has changed in version 4. Please use tpwd/ke_search_hooks if you use ke_search version 4 or higher.
+[TASK]    Mark extension as abandoned in composer.json.
+[TASK]    Disable registering additional fields in ext_localconf.php since it will lead to errors if not every indexer is setting values for the additional fields.
+[TASK]    Add example how to use the "getOrdering" hook
+[TASK]    Add extension key to composer.json
+
+Version 3.3.0, April 2021
+[TASK]    Add example for hook additionalResultMarker
+[TASK]    Add example for adding a custom sorting option
+
+Version 3.2.0, November 2020
+[TASK]    Add example for hook contentElementShouldBeIndexed
+[TASK]    Fix link in documentation
+[TASK]    Extend ExampleIndexer from IndexerBase. See https://github.com/teaminmedias-pluswerk/ke_search/issues/358
+[TASK]    Require ke_search 3.1.6 because the instantiation of custom indexer classes changed
+[TASK]    Add example for custom autosuggest provider (ke_search_premium feature)
+[TASK]    Use constant as indexer configuration key
+[TASK]    Remove restrictions in database query
+[TASK]    Simplify message after indexing
+
+Version 3.1.0, June 2020
+[TASK]    Respect multiple sysfolders in example indexer. Thanks to crohelt. https://github.com/teaminmedias-pluswerk/ke_search_hooks/issues/12
+[TASK]    Make extension compatible with TYPO3 10
+[TASK]    Increase version number to match git tag and ext_emconf.php version
+[TASK]    Code Cleanup
+[TASK]    Make extension compatible with TYPO3 9. Thanks to Robert Wildling. https://github.com/teaminmedias-pluswerk/ke_search_hooks/pull/6 and https://github.com/teaminmedias-pluswerk/ke_search_hooks/pull/7.
+
+Version 2.0.1, November 2018
+[TASK]    Add an example on how to index more fields from the tt_content table by adding the "subheader" field to the index.
+
+Version 2.0.0, October 2017
+[FEATURE] Make extension compatible to TYPO3 8
+[FEATURE] Add example for custom indexer as a namespaced class
+[TASK]    remove examples for additional result list marker and custom filter renderer, since they do not work with the current version of ke_search (2.6.0).
+
+Version 1.2.2
+
+Version 1.2.1, October 2014
+* feature: show images from pages set in page properties -> resources -> media (using FAL reference).
+
+Version 1.2, October 2014
+* task: Set compatibility to TYPO3 6.2.
+* task: add demo of image rendering for ext:news search results.
+
+Version 1.1, August 2012
+* Needs ke_search version 1.2.0.
+* Adjusted the custom filter renderer example to work with the current version of ke_search 1.2.0.
+* Added example how to modify the result list. In this example images from news (tt_news) are displayed in the result list (hook "additionalResultMarker").
+
+Version 1.0
+* upgraded version number to 1.0
+
+Version 0.0.1
+* initial version

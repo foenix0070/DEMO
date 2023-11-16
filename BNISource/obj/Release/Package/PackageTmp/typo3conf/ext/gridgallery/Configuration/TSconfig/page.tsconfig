@@ -1,0 +1,20 @@
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		gridgallery_gallery {
+			iconIdentifier = ext-gridgallery-gallery
+			title = LLL:EXT:gridgallery/Resources/Private/Language/Tca.xlf:gridgallery_gallery.wizard.title
+			description = LLL:EXT:gridgallery/Resources/Private/Language/Tca.xlf:gridgallery_gallery.wizard.description
+			tt_content_defValues {
+				CType = gridgallery_gallery
+			}
+		}
+	}
+
+	show := addToList(gridgallery_gallery)
+}
+
+TCEFORM.tt_content {
+	image_zoom.types.gridgallery_gallery.disabled = 0
+	imagewidth.types.gridgallery_gallery.disabled = 0
+	imageheight.types.gridgallery_gallery.disabled = 0
+}

@@ -1,0 +1,48 @@
+mod.web_layout.BackendLayouts {
+    BniSubProductPage {
+        title = Bni Product Corporate Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = MainSectionTitle
+                                colspan = 3
+                                colPos = 22
+                            }
+                        }
+                    }
+                     3 {
+                        columns {
+                            1 {
+                                name = ArticleSectionTitle
+                                colPos = 29
+                                colspan = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = ArticleSectionText
+                                colPos = 23
+                                colspan = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

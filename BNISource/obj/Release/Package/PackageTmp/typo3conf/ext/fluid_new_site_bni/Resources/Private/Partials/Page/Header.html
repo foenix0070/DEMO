@@ -1,0 +1,90 @@
+<header id="header">
+    <div class="header-body">
+        <div class="header-top header-top-default header-top-borders border-bottom-0">
+            <div class="container p-0">
+                <div class="header-row">
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <div class="header-nav-top d-inline-flex flex-wrap ps-5">
+                                <div class="d-flex custom-header-top-nav-background">
+                                    <div class="nav-item flex-fill me-2 p-1">
+                                        <form class="d-flex border-bottom ms-3" id="bni-search" action="/search" method="get">
+                                            <div class="input-group">
+                                                <input class="form-control border-0" id="forminput" type="search" autocomplete="off" name="tx_kesearch_pi1[sword]" placeholder="Recherche..." aria-label="Search" style="color: rgb(255, 255, 255);">
+                                                <button class="btn btn-outline-light border-0" id="btnsearch" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <nav class="navbar navbar-expand-md flex-fill p-0">	
+                                        <div class="container-fluid">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                                <i class="fas fa-bars"></i>
+                                            </button>
+                                            <div class="collapse navbar-collapse" id="navbarNav">
+                                                <ul class="nav nav-pills d-inline-flex flex-wrap">
+                                                    <!-- <li class="nav-item flex-grow-1 me-4"></li>											 -->
+                                                    <li class="nav-item nav-item-left-border nav-item-left-border-sm-show py-2 d-inline-flex pe-3 flex-grow-1 flex-md-grow-0" style="z-index:2;">													
+                                                        <span class="ws-nowrap text-light text-decoration-none"><i class="fas fa-envelope"></i>  info@bni.ci  </span>												
+                                                    </li>
+                                                    <li class="nav-item nav-item-anim-icon d-md-block" style="z-index:2;">													
+                                                        <span class="nav-link ps-0 text-light text-decoration-none"><i class="fas fa-phone"></i>  (+225) 27 20 20 98 00  </span>												
+                                                    </li>
+                                                    <li class="nav-item dropdown nav-item-left-border d-md-block py-2">
+                                                        <ul class="header-social-icons social-icons d-inline-flex">
+                                                            <li class="social-icons-facebook"><a href="https://www.facebook.com/BNI.Cotedivoire/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li class="social-icons-twitter"><a href="https://twitter.com/bni_ci" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                                            <li class="social-icons-instagram"><a href="https://www.instagram.com/bni.ci/?utm_source=ig_profile_share&igshid=v930zf6gmi4z" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/national-bank-of-investment-bni---c-te-d'ivoire-/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                            <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCTofLuAx-ZOagpPl0hOfWkg" target="_blank" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-item nav-item-anim-icon ms-3 flex-grow-1 flex-md-grow-0" style="z-index:2;">												
+                                                        <span class="nav-link ps-0 text-light text-decoration-none" id="today_date"></span>	
+                                                    </li>
+                                                </ul>	
+                                            </div>
+                                        </div>									
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main mt-3">
+            <div class="container p-0">
+                <div class="header-row flex-column flex-lg-row justify-content-center justify-content-lg-start">
+                    <div class="header-column">
+                        <div id="logo" class="ms-5">
+                            <!-- <f:link.page pageUid="{1}"><f:image src="EXT:fluid_new_site_bni/Resources/Public/Images/logo.jpeg" alt="BNI Logo" /></f:link.page> -->
+                            <a href="/"><f:image src="EXT:fluid_new_site_bni/Resources/Public/Images/logo.jpeg" alt="BNI Logo" /></a>
+                        </div>
+                    </div>
+                    <div class="header-column">
+                        <div class="header-row d-flex bd-highlight">
+                            <div class="header-misc w-100 bd-highlight">
+                                <div class="w-100 text-right">
+                                    <a href="https://bni.activactions.net/pages/login.aspx" target="_blank" class="btn btn-warning btn-sm rounded-pill text-white"><i class="fa fa-hand-holding-dollar"></i>  Crédit en ligne</a>
+                                    <a href="https://www.bnionline.ci/FR/index.html" target="_blank" class="btn btn-outline-success btn-sm rounded-pill ms-2"><i class="fa-solid fa-user"></i>  Devenir Client</a>
+                                    <a href="https://www.bnionline.ci/FR/public/connexion.awp" target="_blank" class="btn btn-outline-success btn-sm rounded-pill ms-2"><i class="fa-solid fa-user"></i>  Accès à mes comptes</a>
+                                    <a href="#" target="_blank" class="btn btn-outline-success btn-sm rounded-pill ms-2"><i class="fa fa-address-book"></i>  Prise de rendez-vous</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-row">
+                            <div class="d-block w-100">
+                                <div class="p-0">
+                                    <f:render partial="MainNavigation" arguments="{_all}" /> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+

@@ -58,12 +58,12 @@
     0 => 
     array (
       'pluginSignature' => 'faq_faq',
-      'path' => 'FILE:EXT:faq/Configuration/FlexForms/Faq.xml',
+      'path' => 'FILE:EXT:faq/Configuration/FlexForms/faq.html.html.xml',
     ),
     1 => 
     array (
       'pluginSignature' => 'faq_faqsinglecategory',
-      'path' => 'FILE:EXT:faq/Configuration/FlexForms/FaqSingleCategory.xml',
+      'path' => 'FILE:EXT:faq/Configuration/FlexForms/faq.html.htmlSingleCategory.xml',
     ),
     2 => 
     array (

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1427832976" source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-02-07T20:22:32Z"
+		  product-name="gridgallery">
+		<header/>
+		<body>
+			<trans-unit id="gridgallery_gallery">
+				<source>Grid Gallery</source>
+				<target>Raster-Galerie</target>
+			</trans-unit>
+			<trans-unit id="gridgallery_gallery.wizard.title">
+				<source>Grid Gallery</source>
+				<target>Raster-Galerie</target>
+			</trans-unit>
+			<trans-unit id="gridgallery_gallery.wizard.description">
+				<source>Adds a grid gallery to the page</source>
+				<target>Moderne Bilder-Galerie mit Raster-Darstellung.</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.imageheight">
+				<source>Row height (pixel)</source>
+				<target>Zeilenhöhe (Pixel)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.imagewidth">
+				<source>Margins (pixel)</source>
+				<target>Abstände zwischen Bilder (Pixel)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform">
+				<source>Additional Options</source>
+				<target>Zusätzliche Optionen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.captions">
+				<source>Show captions on mouseover</source>
+				<target>Zeige Beschreibung bei Mouseover</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.randomize">
+				<source>Randomize the image-order</source>
+				<target>Zufällige Bildreihenfolge</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row">
+				<source>Last row</source>
+				<target>Letzte Zeile</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.nojustify">
+				<source>No justify</source>
+				<target>Nicht ausrichten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.justify">
+				<source>Justify</source>
+				<target>Ausrichten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.hide">
+				<source>Hide</source>
+				<target>Ausblenden</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.center">
+				<source>Align center</source>
+				<target>Zentrieren</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.last_row.right">
+				<source>Align right</source>
+				<target>Rechts ausrichten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.gridgallery_gallery.pi_flexform.border">
+				<source>Space around content element</source>
+				<target>Abstand um das Inhaltselement</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

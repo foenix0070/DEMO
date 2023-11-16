@@ -1,0 +1,6 @@
+
+# cat=general/finisher/30; type=string; label= BCC for all emails
+emailBcc =
+
+# cat=general/finisher/40; type=string; label= Email alert on uploaded files
+emailOnUpload = 

@@ -1,0 +1,217 @@
+{
+    "title": "TYPO3 Additional-TCA",
+    "subtitle": "Diese Erweiterung hilft Dir dabei, das TCA übersichtlich und leicht wartbar zu halten.",
+    "logo": "../Resources/Public/Icons/Extension.svg",
+    "markdown": "../Readme.de.md",
+    "features": [
+        "Stellt Methoden für Tab-Beschriftungen bereit",
+        "Stellt Methoden für oft verwendete Felder wie sys_language_uid, hidden und mehr bereit (siehe Dokumentation)",
+        "Bietet Konfigurationsvoreinstellungen für den Markdown-t3editor",
+        "Form-Engine Feld für die Eingabe von Währungen",
+        "Form-Engine Feld für die Eingabe von Prozentwerten",
+        "Form-Engine Feld für die Eingabe von Uhrzeiten",
+        "Form-Engine Feld für die Anzeige erweiterter Hinweise und Beschreibungen",
+        "Erweiterte Funktionen für das Datums Form-Engine Feld",
+        "Erweiterte Funktionen für das Datums/Uhrzeit Form-Engine Feld",
+        "Form-Engine Feld mit Bagdes mit dem man schnell wiederkehrende Begriffe auswählen kann",
+        "Ein- und ausklappbare Textarea, um Inhalte bei Bedarf zu verstecken"
+    ],
+    "meta": {
+        "description": "TYPO3 Additional-TCA - Diese Erweiterung hilft Dir dabei, das TCA übersichtlich und leicht wartbar zu halten.",
+        "abstract": "Additional TCA fields and tools",
+        "keywords": "TYPO3, extension, TCA, Fields",
+        "og:title": "TYPO3 Additional-TCA",
+        "og:description": "TYPO3 Additional-TCA - Diese Erweiterung hilft Dir dabei, das TCA übersichtlich und leicht wartbar zu halten."
+    },
+    "links": {
+        "product": {
+            "link": "https://www.coding.ms/typo3-extensions/typo3-additional-tca/",
+            "name": "TYPO3 Additional-TCA"
+        },
+        "download": {
+            "link": "https://extensions.typo3.org/extension/additional_tca/",
+            "name": "TYPO3 Additional TCA Extension Download"
+        }
+    },
+    "pages": [
+        {
+            "title": "Verwendung",
+            "originalTitle": "Usage",
+            "pages": [
+                {
+                    "title": "Vollständige Konfiguration",
+                    "originalTitle": "Full configuration",
+                    "markdown": "Usage/FullConfiguration.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für eine vollständige Konfiguration der Extension.",
+                        "abstract": "Vollständige Konfiguration von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, Konfiguration",
+                        "og:title": "TYPO3 Additional-TCA - Vollständige Konfigurationen",
+                        "og:description": "Codebeispiel für eine vollständige Konfiguration der Extension."
+                    }
+                },
+                {
+                    "title": "Label",
+                    "originalTitle": "Label",
+                    "markdown": "Usage/Label.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für eine Konfiguration der Label.",
+                        "abstract": "Codebeispiel für eine Konfiguration der Label von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, Konfiguration, Label",
+                        "og:title": "TYPO3 Additional-TCA - Label",
+                        "og:description": "Codebeispiel für eine Konfiguration der Label."
+                    }
+                },
+                {
+                    "title": "Feld Konfiguration",
+                    "originalTitle": "Field configuration",
+                    "markdown": "Usage/FieldConfiguration.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für die Verwendung der Feldkonfiguration.",
+                        "abstract": "Codebeispiel für die Verwendung der Feldkonfiguration von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, Verwendung, Feldkonfiguration",
+                        "og:title": "TYPO3 Additional-TCA - Feld Konfiguration",
+                        "og:description": "Codebeispiel für die Verwendung der Feldkonfiguration."
+                    }
+                },
+                {
+                    "title": "Benutzerdefinierte Feld Konfiguration",
+                    "originalTitle": "Custom field configuration",
+                    "markdown": "Usage/CustomFieldConfiguration.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für die Verwendung der benutzerdefinierten Feldkonfiguration.",
+                        "abstract": "Codebeispiel für die Verwendung der benutzerdefinierten Feldkonfiguration von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, Verwendung, Feldkonfiguration, benutzerdefiniert",
+                        "og:title": "TYPO3 Additional-TCA - Benutzerdefinierte Feld Konfiguration",
+                        "og:description": "Codebeispiel für die Verwendung der benutzerdefinierten Feldkonfiguration."
+                    }
+                },
+                {
+                    "title": "Informations Feld",
+                    "originalTitle": "Information field",
+                    "markdown": "Usage/InformationField.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für die Verwendung des Informationsfeldes.",
+                        "abstract": "Codebeispiel für die Verwendung des Informationsfeldes von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, Verwendung, Informationsfeld",
+                        "og:title": "TYPO3 Additional-TCA - Informations Feld",
+                        "og:description": "Codebeispiel für die Verwendung des Informationsfeldes."
+                    }
+                },
+                {
+                    "title": "Beispiel TCA",
+                    "originalTitle": "Example TCA",
+                    "markdown": "Usage/ExampleTca.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Codebeispiel für eine einfache TCA-Datei.",
+                        "abstract": "Codebeispiel für eine einfache TCA-Datei von TYPO3 Additional-TCA",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA",
+                        "og:title": "TYPO3 Additional-TCA - Beispiel TCA",
+                        "og:description": "Codebeispiel für eine einfache TCA-Datei."
+                    }
+                },
+                {
+                    "title": "Migrations-Aufgaben",
+                    "originalTitle": "Migration tasks",
+                    "markdown": "Usage/MigrationTasks.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Auflistung der Migrations-Aufgaben.",
+                        "abstract": "Auflistung der Migrations-Aufgaben",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Migration, Aufgaben",
+                        "og:title": "TYPO3 Additional-TCA - Migrations-Aufgaben",
+                        "og:description": "Auflistung der Migrations-Aufgaben."
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Zusätzliche Felder",
+            "originalTitle": "Additional fields",
+            "pages": [
+                {
+                    "title": "Input mit Vorschlägen als Badges",
+                    "originalTitle": "Badge suggested",
+                    "markdown": "AdditionalFields/BadgeSuggested.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Anklickbare Vorschläge werden als Badges unterhalb des Input-Feldes dargestellt.",
+                        "abstract": "Input mit Vorschlägen als Badges",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Badges, Vorschläge",
+                        "og:title": "TYPO3 Additional-TCA - Input mit Vorschlägen als Badges",
+                        "og:description": "Anklickbare Vorschläge werden als Badges unterhalb des Input-Feldes dargestellt."
+                    }
+                },
+                {
+                    "title": "Währungs/Preis-Feld",
+                    "originalTitle": "Currency field",
+                    "markdown": "AdditionalFields/Currency.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichtung eines Input-Feldes für die Darstellung von Preisen/Währung anhand eines Beispiels.",
+                        "abstract": "Input für Preise",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Preise, Währung",
+                        "og:title": "TYPO3 Additional-TCA - Währungs/Preis-Feld",
+                        "og:description": "Einrichtung eines Input-Feldes für die Darstellung von Preisen anhand eines Beispiels."
+                    }
+                },
+                {
+                    "title": "Prozent-Feld",
+                    "originalTitle": "Percent field",
+                    "markdown": "AdditionalFields/Percent.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichtung eines Input-Feldes für die Darstellung von Prozentwerten/Steuersätze anhand eines Beispiels.",
+                        "abstract": "Input-Feld für Prozentwerte",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Prozentwerte, Steuersatz",
+                        "og:title": "TYPO3 Additional-TCA - Input-Feld für Prozentwerte",
+                        "og:description": "Einrichtung eines Input-Feldes für die Darstellung von Prozentwerten/Steuersätze anhand eines Beispiels."
+                    }
+                },
+                {
+                    "title": "Uhrzeit/Stunden-Feld",
+                    "originalTitle": "Duration/time field",
+                    "markdown": "AdditionalFields/Duration.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichtung eines Input-Feldes für die Darstellung von Uhrzeit oder Stunden anhand eines Beispiels.",
+                        "abstract": "Input-Feld für Uhrzeit oder Stunden",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Uhrzeit, Stunden",
+                        "og:title": "TYPO3 Additional-TCA - Input-Feld für Uhrzeit oder Stunden",
+                        "og:description": "Einrichtung eines Input-Feldes für die Darstellung von Uhrzeit oder Stunden anhand eines Beispiels."
+                    }
+                },
+                {
+                    "title": "Erweitertes Datums-Feld",
+                    "originalTitle": "Extended date field",
+                    "markdown": "AdditionalFields/Date.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichtung eines Input-Feldes für die Darstellung eines Datums anhand eines Beispiels.",
+                        "abstract": "Input-Feld für ein Datum",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Datum, erweitert",
+                        "og:title": "TYPO3 Additional-TCA - Erweitertes Datums-Feld",
+                        "og:description": "Einrichtung eines Input-Feldes für die Darstellung eines Datums anhand eines Beispiels."
+                    }
+                },
+                {
+                    "title": "Erweitertes Datum/Uhrzeit-Feld",
+                    "originalTitle": "Extended date/time field",
+                    "markdown": "AdditionalFields/DateTime.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichtung eines Input-Feldes für die Darstellung eines Datums oder einer Uhrzeit anhand eines Beispiels.",
+                        "abstract": "Input-Feld für Datum/Uhrzeit",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Datum, Uhrzeit",
+                        "og:title": "TYPO3 Additional-TCA - Erweitertes Datum/Uhrzeit-Feld",
+                        "og:description": "Einrichtung eines Input-Feldes für die Darstellung eines Datums oder einer Uhrzeit anhand eines Beispiels."
+                    }
+                },
+                {
+                    "title": "Erweiterbarer Textbereich",
+                    "markdown": "AdditionalFields/ExpandableTextarea.de.md",
+                    "meta": {
+                        "description": "TYPO3 Additional-TCA - Einrichten eines Eingabefelds zum Anzeigen von Textfeldern mit Erweiterungs-/Reduzierungsfunktion.",
+                        "abstract": "Erweiterbares Textfeld",
+                        "keywords": "TYPO3, extension, Additional-TCA, TCA, Input, Text, Erweitern, Zusammenbruch",
+                        "og:title": "TYPO3 Additional-TCA - Erweiterbares Textfeld",
+                        "og:description": "Einrichten eines Eingabefeldes zum Anzeigen von Textareas anhand eines Beispiels."
+                    }
+                }
+            ]
+        }
+    ]
+}

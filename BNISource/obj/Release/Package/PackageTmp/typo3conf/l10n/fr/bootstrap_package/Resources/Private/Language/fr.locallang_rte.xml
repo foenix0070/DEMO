@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+            <label index="class.text-left">Texte : gauche</label>
+            <label index="class.text-right">Texte : droite</label>
+            <label index="class.text-center">Texte : centré</label>
+            <label index="class.text-justify">Texte : justifié</label>
+
+            <label index="class.lead">Texte : Accroche</label>
+
+            <label index="class.active">Contextuel : Actif</label>
+            <label index="class.danger">Contextuel : Danger</label>
+            <label index="class.info">Contextuel : Info</label>
+            <label index="class.success">Contextuel : Succès</label>
+            <label index="class.warning">Contextuel : Attention</label>
+
+            <label index="class.visible-lg">Visibilité : grand périphérique</label>
+            <label index="class.visible-md">Visibilité : périphérique moyen</label>
+            <label index="class.visible-print">Visibilité : Impression</label>
+            <label index="class.visible-sm">Visibilité : petit périphérique</label>
+            <label index="class.visible-xs">Visibilité : écrans très petits (xs)</label>
+
+            <label index="class.table-striped">Table: rangées zébrées</label>
+            <label index="class.table-bordered">Tableau : tableau avec bordures</label>
+            <label index="class.table-hover">Table: rangées en surbrillance</label>
+            <label index="class.table-condensed">Table: condensée</label>
+
+            <label index="class.list-unstyled">Listes : aucun style</label>
+            <label index="class.list-inline">Listes : en ligne</label>
+
+            <label index="class.btn">Boutons : base</label>
+            <label index="class.btn-default">Boutons : défaut</label>
+            <label index="class.btn-primary">Bouton : primaire</label>
+            <label index="class.btn-success">Boutons : succès</label>
+            <label index="class.btn-warning">Boutons : avertissement</label>
+            <label index="class.btn-danger">Boutons : danger</label>
+            <label index="class.btn-link">Boutons : lien</label>
+            <label index="class.btn-block">Boutons : block</label>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

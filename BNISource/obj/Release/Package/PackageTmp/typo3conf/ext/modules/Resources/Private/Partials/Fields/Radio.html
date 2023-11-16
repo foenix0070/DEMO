@@ -1,0 +1,30 @@
+<div class="form-group" data-type="radio-label">
+	<label for="{prefix}_{field.key}">{field.label}
+		<f:if condition="{field.required}"><span>*</span></f:if>
+	</label>
+</div>
+<div class="form-group {f:if(condition: field.error, then: 'is-invalid')}" data-type="radio-options">
+	<f:for each="{field.options}" as="radioOption" key="radioOptionKey">
+		<div class="form-check form-check-inline">
+			<f:if condition="{field.value} == {radioOptionKey}">
+				<f:then>
+					<f:form.radio class="form-check-input"
+								  name="{field.key}"
+								  id="{prefix}_{field.key}_{radioOptionKey}"
+								  value="{radioOptionKey}"
+								  checked="checked" />
+				</f:then>
+				<f:else>
+					<f:form.radio class="form-check-input"
+								  name="{field.key}"
+								  id="{prefix}_{field.key}_{radioOptionKey}"
+								  value="{radioOptionKey}" />
+				</f:else>
+			</f:if>
+			<label class="form-check-label">{radioOption}</label>
+		</div>
+	</f:for>
+	<f:if condition="{field.error}">
+		<div class="invalid-feedback">{field.error}</div>
+	</f:if>
+</div>

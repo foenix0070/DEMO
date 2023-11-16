@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+			<label index="cache_initialize_solr_connections">Initialisation de la connexion Solr</label>
+
+		
+			<label index="solr.backend.index_administration.description">Le module d'administration d'index est responsable de vider les noyaux (suppression de documents) sur le serveur Solr et les files d'attente d'index dans TYPO3 CMS.</label>
+
+			<label index="solr.backend.index_administration.index_emptied_all">Index vidé pour Site "%s" (%s).</label>
+
+			<label index="solr.backend.index_administration.success.queue_emptied">File d'attente vidée pour les "%s" du site.</label>
+
+			<label index="solr.backend.index_administration.error.on_empty_index">Une erreur s'est produite lors de la suppression de documents de l'index : %s</label>
+		
+
+
+		
+			<label index="module_indexinspector">Inspecteur de l'index de recherche</label>
+			<label index="plugin_results">Rechercher</label>
+			<label index="plugin_results_description">Formulaire de recherche et liste de résultats.</label>
+
+		
+			
+			<label index="siteselector_switched_successfully">Passage réussi sur le site "%s".</label>
+
+			<label index="siteselector_switched_to_first_available_site">Le Site "%s" précédemment sélectionné n'existe pas ou l'indexation de ce Site a été désactivée. Passage à "%s", le premier disponible.</label>
+
+			<label index="siteselector_site_does_not_exist_anymore">Impossible d'aller sur le Site "%s". Ce site n'existe plus ou l'indexation de ce site a été désactivée. Commutation sur le premier site disponible "%s".</label>
+
+			
+			<label index="coreselector_switched_to_default_core">Le noyau "%s" précédemment sélectionné n'est pas disponible sur le site "%s", c'est pourquoi le noyau par défaut "%s".</label>
+
+			<label index="coreselector_switched_successfully">Passage réussi au "%s" de noyau.</label>
+		
+
+			
+			<label index="mlang_labels_tablabel">Apache Solr Search Administration</label>
+			<label index="mlang_labels_tabdescr">Vous permet de gérer Apache Solr depuis TYPO3. &lt;br /&gt;&lt;em&gt;Accès aux utilisateurs administrateurs seulement !&lt;/em&gt;</label>
+			<label index="mlang_tabs_tab">Rechercher</label>
+
+			
+			<label index="index_title">Apache Solr Index</label>
+			<label index="index_description">Afficher le nombre de documents et de champs dans votre index.</label>
+			<label index="statistics_title">Statistiques Apache Solr</label>
+			<label index="statistics_description">Fournit plusieurs statistiques d'utilisation de Solr</label>
+
+			
+			<label index="reindex_title">Indexation forcé d'un site</label>
+			<label index="reindex_description">Purge l'index Solr et initialise la file d'attente d'index d'un site.</label>
+			<label index="indexqueueworker_title">Indice de file d'attente</label>
+			<label index="indexqueueworker_description">Ajoute des éléments dans la file d'attente de l'index et les envoyer à Solr.</label>
+			<label index="indexqueueworker_field_documentsToIndexLimit">Nombre de documents à indexer</label>
+			<label index="indexqueueworker_field_forcedWebRoot">Racine forcée (nécessaire uniquement lorsque la racine n'est pas PATH_site)</label>
+			<label index="field_host">Hôte Solr</label>
+			<label index="field_port">Port Solr</label>
+			<label index="field_path">Chemin Solr</label>
+			<label index="field_server">Serveur Solr</label>
+			<label index="field_site">Site</label>
+
+			
+			<label index="searchUnavailable">La fonction de recherche n'est pas disponible actuellement.</label>
+			<label index="searchFailed">Ajoute des éléments dans la file d'attente de l'index et les envoyer à Solr.</label>
+			<label index="searchWord">Terme de recherche</label>
+			<label index="didYouMean">Voulez-vous dire</label>
+			<label index="submit">Voulez-vous dire... ?</label>
+			<label index="sorting_sortBy">Trier par</label>
+			<label index="faceting_narrowSearch">Affiner la recherche</label>
+			<label index="faceting_resultsNarrowedBy">Recherche affinée par</label>
+			<label index="faceting_showMore">Afficher plus</label>
+			<label index="faceting_showFewer">Afficher moins</label>
+			<label index="faceting_removeAllFilters">Enlever tous les filtres</label>
+			<label index="faceting_filter">Filtre</label>
+			<label index="results_range">Afficher les résultats @resultsFrom à @resultsTo de @resultsTotal.</label>
+			<label index="results_found">Trier par</label>
+			<label index="results_found.singular">A trouvé 1 résultat en @resultsTime millisecondes.</label>
+			<label index="results_searched_for">Recherché pour "@searchWord".</label>
+			<label index="no_results_nothing_found">Aucun résultat trouvé pour "@searchWord".</label>
+			<label index="no_results_showing_results_suggestion">Afficher les résultats pour "@suggestedWord".</label>
+			<label index="no_results_search_for_original">Cherchez plutôt "@searchWord".</label>
+			<label index="lastSearches">Dernières recherches :</label>
+			<label index="frequentSearches">Recherches fréquentes</label>
+			<label index="relevance">Pertinence</label>
+			<label index="sponsored">Sponsorisé</label>
+			<label index="file_mimetype">Type de fichier</label>
+			<label index="file_referenced">Référencé à</label>
+			<label index="results_per_page">Résultats par page</label>
+			<label index="error_errors">Nous sommes désolés, il y a eu quelques erreurs:</label>
+			<label index="error_emptyQuery">Veuillez entrer votre terme de recherche dans la case ci-dessus.</label>
+			<label index="pagebrowser_first">Premier</label>
+			<label index="pagebrowser_prev">Précédent</label>
+			<label index="pagebrowser_next">Suivant</label>
+			<label index="pagebrowser_last">Dernier</label>
+			<label index="suggest_header">Meilleurs Résultats</label>
+			
+			<label index="solr.backend.index_queue_module.description">L'Index Queue gère l'indexation du contenu. Le contenu entre dans la file d'attente de l'index par initialisation ci-dessous ou lors de la création d'un nouveau contenu en fonction de la configuration. Les éléments de la file d'attente de l'index sont indexés en premier jusqu'à ce que tous les éléments de la file d'attente aient été indexés.</label>
+			<label index="solr.backend.index_queue_module.errors.reset_button">Reset des erreurs</label>
+			<label index="solr.backend.index_queue_module.errors.headline">Erreurs d'indexation</label>
+			<label index="solr.backend.index_queue_module.errors.id">ID</label>
+			<label index="solr.backend.index_queue_module.errors.item_type">Type d'objet</label>
+			<label index="solr.backend.index_queue_module.errors.item_uid">UID élément</label>
+			<label index="solr.backend.index_queue_module.errors.show_button">Afficher les erreurs</label>
+			<label index="solr.backend.index_queue_module.flashmessage.error.index_manual">Une erreur s'est produite lors de l'indexation manuelle à partir du backend.</label>
+			<label index="solr.backend.index_queue_module.flashmessage.error.reset_errors">Une erreur s'est produite lors de la réinitialisation du journal des erreurs dans la file d'attente d'index.</label>
+			<label index="solr.backend.index_queue_module.flashmessage.error.single_item_not_requeued">L'élément unique n'a pas été remis en file d'attente</label>
+			<label index="solr.backend.index_queue_module.flashmessage.initialize.no_selection">Aucune configuration d'indexation sélectionnée.</label>
+
+			<label index="solr.backend.index_queue_module.flashmessage.initialize.success">Configurations d'indexation initialisées : %s</label>
+			<label index="solr.backend.index_queue_module.flashmessage.initialize.title">Index File d'attente initialisée</label>
+			<label index="solr.backend.index_queue_module.flashmessage.not_initialized.title">Index File d'attente non initialisée</label>
+			<label index="solr.backend.index_queue_module.flashmessage.success.reset_errors">Toutes les erreurs ont été réinitialisées.</label>
+			<label index="solr.backend.index_queue_module.flashmessage.success.index_manual">L'indexation à partir du backend s'est conclue avec succès.</label>
+			<label index="solr.backend.index_queue_module.flashmessage.success.single_item_was_requeued">Un seul élément a été marqué avec succès pour la réindexation.</label>
+			<label index="solr.backend.index_queue_module.flashmessage.title">Index File d'attente</label>
+			<label index="solr.backend.index_queue_module.flashmessage.index_manual">Indexation manuelle</label>
+			<label index="solr.backend.index_queue_module.help">L'initialisation de la file d'attente d'index est le moyen le plus complet de forcer la réindexation ou de construire la file d'attente d'index pour la première fois. La tâche du planificateur Index Queue Worker indexera ensuite les éléments listés dans la file d'attente index.</label>
+			<label index="solr.backend.index_queue_module.status.errors">Erreurs</label>
+			<label index="solr.backend.index_queue_module.status.header">Progression de l'indexation</label>
+			<label index="solr.backend.index_queue_module.status.indexed">Indexé</label>
+			<label index="solr.backend.index_queue_module.status.pending">En attente</label>
+			<label index="solr.backend.index_queue_module.header_init">Initialisation File d'attente Index</label>
+			<label index="solr.backend.index_queue_module.header_status">Statut de la file d'attente de l'index</label>
+			<label index="solr.backend.index_queue_module.button.clear_index_queue">Effacer la file d'attente de l'index</label>
+			<label index="solr.backend.index_queue_module.back">Retour</label>
+			<label index="solr.backend.index_queue_module.flashmessage.error.no_queue_item_for_queue_error">Aucun élément de file d'attente valide n'a été passé pour afficher les informations d'erreur!</label>
+			<label index="solr.backend.index_queue_module.error_details">Détails d'erreur pour l'élément de la file d'attente</label>
+			<label index="solr.backend.index_queue_module.index_now">Indexer maintenant</label>
+
+			
+			<label index="tt_content.list_type_pi_frequentsearches">Rechercher : Recherches fréquentes</label>
+			<label index="tt_content.list_type_pi_results">Recherche : Formulaire, résultat, composants supplémentaires</label>
+			<label index="tt_content.list_type_pi_search">Recherche : Formulaire</label>
+
+			<label index="solr.backend.search_statistics_module.item_phrase">Phrase</label>
+			<label index="solr.backend.search_statistics_module.item_count">Nombre de requêtes</label>
+			<label index="solr.backend.search_statistics_module.results">Nombre de résultats (moyenne)</label>
+			<label index="solr.backend.search_statistics_module.percentage">Pourcentage</label>
+			<label index="solr.backend.search_statistics_module.no_records_found">Aucun enregistrement trouvé. Avez-vous activé 'plugin.tx_solr.statistics = 1' dans la configuration typoscript de votre site ?</label>
+			<label index="solr.backend.search_statistics_module.top_search_phrases">Top 5 Phrases de recherche</label>
+			<label index="solr.backend.search_statistics_module.top_search_phrases_without_hits">Top 5 Phrases de recherche sans occurrences</label>
+			<label index="solr.backend.search_statistics_module.search_phrases_header">Statistiques sur les phrases recherchées</label>
+
+		</languageKey>
+  </data>
+</T3locallangExt>

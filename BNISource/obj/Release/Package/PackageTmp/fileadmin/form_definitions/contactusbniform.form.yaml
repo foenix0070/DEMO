@@ -1,0 +1,91 @@
+
+renderingOptions:
+  submitButtonLabel: Envoyer
+type: Form
+identifier: contactUsBNIForm
+label: 'Contact Us BNI Form'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Messsage from  {text-1}'
+      recipients:
+        fawaz@groupeimaya.net: ''
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      message: 'Le message est envoyé avec succès !'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Nom & Prénom(s)'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1221560718
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1347992400
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1347992453
+              message: 'Prière de remplire ce champ'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: Email
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1221560718
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1347992400
+              message: 'Prière de remplire ce champ'
+            -
+              code: 1347992453
+              message: 'Prière de remplire ce champ'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message

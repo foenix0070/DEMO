@@ -1,5 +1,5 @@
 {
-  "name": "lochmueller/faq",
+  "name": "lochmueller/faq.html",
   "type": "typo3-cms-extension",
   "description": "Basic FAQ (Frequently Asked Questions) extension in a clean extbase/fluid structure. Questions and Question categroies with a smart plugin structure.",
   "autoload": {
@@ -30,12 +30,12 @@
     "typo3/cms-core": "^11.5"
   },
   "replace": {
-    "typo3-ter/faq": "self.version"
+    "typo3-ter/faq.html": "self.version"
   },
-  "homepage": "https://github.com/lochmueller/faq",
+  "homepage": "https://github.com/lochmueller/faq.html",
   "license": "GPL-2.0+",
   "support": {
-    "issues": "https://github.com/lochmueller/faq/issues"
+    "issues": "https://github.com/lochmueller/faq.html/issues"
   },
   "require-dev": {
     "typo3/testing-framework": "^6.2",

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-23T10:35:41Z" product-name="solr" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="searchUnavailable" xml:space="preserve" approved="yes">
+				<source>Search is currently not available.</source>
+			<target state="translated">La recherche est indisponible</target></trans-unit>
+			<trans-unit id="searchFailed" xml:space="preserve" approved="yes">
+				<source>We're sorry. The request you tried to make could not be processed.</source>
+			<target state="translated">Nous sommes désolé, Votre requête ne peux aboutir. </target></trans-unit>
+			<trans-unit id="searchWord" xml:space="preserve" approved="yes">
+				<source>Search Term</source>
+			<target state="translated">Mot clé</target></trans-unit>
+			<trans-unit id="didYouMean" xml:space="preserve" approved="yes">
+				<source>Did you mean</source>
+			<target state="translated">Voulez-vous dire</target></trans-unit>
+			<trans-unit id="submit" xml:space="preserve" approved="yes">
+				<source>Search</source>
+			<target state="translated">Recherche</target></trans-unit>
+			<trans-unit id="sorting_sortBy" xml:space="preserve" approved="yes">
+				<source>Sort by</source>
+			<target state="translated">Trier par</target></trans-unit>
+			<trans-unit id="faceting_narrowSearch" xml:space="preserve" approved="yes">
+				<source>Narrow Search</source>
+			<target state="translated">Recherche filtrée</target></trans-unit>
+			<trans-unit id="faceting_resultsNarrowedBy" xml:space="preserve" approved="yes">
+				<source>Search narrowed by</source>
+			<target state="translated">Recherche filtrée par</target></trans-unit>
+			<trans-unit id="faceting_showMore" xml:space="preserve" approved="yes">
+				<source>Show more</source>
+			<target state="translated">Afficher plus</target></trans-unit>
+			<trans-unit id="faceting_showFewer" xml:space="preserve" approved="yes">
+				<source>Show fewer</source>
+			<target state="translated">Afficher moins</target></trans-unit>
+			<trans-unit id="faceting_removeAllFilters" xml:space="preserve" approved="yes">
+				<source>Remove all filters</source>
+			<target state="translated">Retirer tous les filtres</target></trans-unit>
+			<trans-unit id="results_range" xml:space="preserve" approved="yes">
+				<source>Displaying results @resultsFrom to @resultsTo of @resultsTotal.</source>
+			<target state="translated">Afficher les résultats @resultsFrom de @resultsTo sur @resultsTotal.</target></trans-unit>
+			<trans-unit id="results_found" xml:space="preserve" approved="yes">
+				<source>Found @resultsTotal results in @resultsTime milliseconds.</source>
+			<target state="translated">@resultsTotal resultats trouvés en @resultsTime millisecondes.</target></trans-unit>
+			<trans-unit id="results_searched_for" xml:space="preserve" approved="yes">
+				<source>Searched for "@searchWord".</source>
+			<target state="translated">Recherche de "@searchWord".</target></trans-unit>
+			<trans-unit id="no_results_nothing_found" xml:space="preserve" approved="yes">
+				<source>Nothing found for "@searchWord".</source>
+			<target state="translated">Aucun résultat pour "@searchWord".</target></trans-unit>
+			<trans-unit id="no_results_showing_results_suggestion" xml:space="preserve" approved="yes">
+				<source>Showing results for "@suggestedWord"</source>
+			<target state="translated">Afficher les résultats pour "@suggestedWord"</target></trans-unit>
+			<trans-unit id="no_results_search_for_original" xml:space="preserve" approved="yes">
+				<source>Search instead for "@searchWord".</source>
+			<target state="translated">Cherchez plutôt "@searchWord".</target></trans-unit>
+			<trans-unit id="lastSearches" xml:space="preserve" approved="yes">
+				<source>Last searches</source>
+			<target state="translated">Dernières recherches</target></trans-unit>
+			<trans-unit id="frequentSearches" xml:space="preserve" approved="yes">
+				<source>Frequent searches</source>
+			<target state="translated">Recherches fréquentes</target></trans-unit>
+			<trans-unit id="relevance" xml:space="preserve" approved="yes">
+				<source>Relevance</source>
+			<target state="translated">Pertinence</target></trans-unit>
+			<trans-unit id="sponsored" xml:space="preserve" approved="yes">
+				<source>Sponsored</source>
+			<target state="translated">Sponsorisé</target></trans-unit>
+			<trans-unit id="file_mimetype" xml:space="preserve" approved="yes">
+				<source>File type</source>
+			<target state="translated">Type de fichier</target></trans-unit>
+			<trans-unit id="file_referenced" xml:space="preserve" approved="yes">
+				<source>Referenced at</source>
+			<target state="translated">Référencé à</target></trans-unit>
+			<trans-unit id="results_per_page" xml:space="preserve" approved="yes">
+				<source>Results per page:</source>
+			<target state="translated">Résultats par page :</target></trans-unit>
+			<trans-unit id="error_errors" xml:space="preserve" approved="yes">
+				<source>We're sorry, there were some errors:</source>
+			<target state="translated">Nous sommes désolé, il y a des erreurs :</target></trans-unit>
+			<trans-unit id="error_emptyQuery" xml:space="preserve" approved="yes">
+				<source>Please enter your search term in the box above.</source>
+			<target state="translated">Merci d'indiquer votre mot clé dans le champ ci-dessus</target></trans-unit>
+			<trans-unit id="pagebrowser_first" xml:space="preserve" approved="yes">
+				<source>First</source>
+			<target state="translated">Premier</target></trans-unit>
+			<trans-unit id="pagebrowser_prev" xml:space="preserve" approved="yes">
+				<source>Previous</source>
+			<target state="translated">Précédent</target></trans-unit>
+			<trans-unit id="pagebrowser_next" xml:space="preserve" approved="yes">
+				<source>Next</source>
+			<target state="translated">Suivant</target></trans-unit>
+			<trans-unit id="pagebrowser_last" xml:space="preserve" approved="yes">
+				<source>Last</source>
+			<target state="translated">Dernier</target></trans-unit>
+		</body>
+	</file>
+</xliff>

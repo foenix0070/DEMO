@@ -1,0 +1,11 @@
+# Available forms
+TCEFORM.tt_content.pi_flexform.fluidform_form.sDEF {
+	settings\.form {
+		addItems {
+			contactBasic = Contact basic
+			callBack = Call back
+			jobApplication = Job application
+			fileUpload = File upload
+		}
+	}
+}

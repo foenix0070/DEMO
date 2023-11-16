@@ -1,0 +1,12 @@
+
+
+    <ul class="breadcumbs d-block text-center">
+        <f:for each="{breadcrumbMenu}" as="item" iteration="iterator">
+            <li class="breadcrumb-item ">
+                <a href="{item.link}" title="{item.title}">
+                    <f:if condition="{item.isNews}"><i class="fas fa-newspaper"></i></f:if>
+                    &nbsp;&nbsp;{item.title} 
+                </a>
+            </li>
+        </f:for>
+    </ul>

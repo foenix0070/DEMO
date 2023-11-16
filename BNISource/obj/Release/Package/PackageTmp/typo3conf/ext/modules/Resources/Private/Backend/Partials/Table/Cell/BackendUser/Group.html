@@ -1,0 +1,18 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+<td>
+	<f:if condition="{f:count(subject: listItem.backendUserGroups)}">
+		<f:then>
+			<f:for each="{listItem.backendUserGroups}" as="group" iteration="groupIterator">
+				<f:if condition="{groupIterator.isLast}">
+					<f:then>
+						<nobr>{group.title}</nobr>
+					</f:then>
+					<f:else>
+						<nobr>{group.title}, </nobr>
+					</f:else>
+				</f:if>
+			</f:for>
+		</f:then>
+		<f:else>none</f:else>
+	</f:if>
+</td>

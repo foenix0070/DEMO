@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+            <label index="pageTs.disablePageTsRTE">Désactiver le RTE : si cette option est activée, la configuration pour le RTE ne sera pas chargée automatiquement. Ajouter "FILE:EXT:bootstrap_package/Configuration/TsConfig/Page/RTE.tsconfig" dans la configuration TS de la page pour charger la configuration manuellement.</label>
+            <label index="pageTs.disablePageTsTCEFORM">Désactiver TCEFORM : si cette option est activée, la configuration pour TCEFORM ne sera pas chargée automatiquement. Ajouter "FILE:EXT:bootstrap_package/Configuration/TsConfig/Page/TCEFORM.tsconfig" dans la configuration TS de la page pour charger la configuration manuellement.</label>
+            <label index="pageTs.disablePageTsTCEMAIN">Désactiver TCEMAIN : si cette option est activée, la configuration pour TCEMAIN ne sera pas chargée automatiquement. Ajouter "FILE:EXT:bootstrap_package/Configuration/TsConfig/Page/TCEMAIN.tsconfig" dans la configuration TS de la page pour charger la configuration manuellement.</label>
+            <label index="pageTs.disablePageTsBackendLayouts">Désactiver l'agencement backend : si cette option est activée, l'agencement backend ne sera pas chargée automatiquement. Ajouter "FILE:EXT:bootstrap_package/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig" dans la configuration TS de la page pour charger la configuration manuellement.</label>
+            <label index="pageTs.disablePageTsContentElements">Désactiver la configuration TS de la page pour les éléments de contenu : si cette option est activée, la configuration des éléments de contenu ne sera pas chargée automatiquement. Ajouter "FILE:EXT:bootstrap_package/Configuration/TsConfig/Page/ContentElement/All.tsconfig" dans la configuration TS de la page pour charger la configuration manuellement.</label>
+
+            <label index="feature.disableCssProcessing">Désactiver le traitement des fichiers LESS/Scss : ATTENTION : si cette option est activée, aucun traitement des fichiers LESS/Scss ne sera effectué automatiquement dans le frontend. Vous devrez alors fournir des fichiers CSS ou bien traiter vous-même les fichiers LESS/Scss.</label>
+            <label index="feature.disableGoogleFontCaching">Désactiver le cache local des polices Google. Si cette option est activée, les polices Google ne seront pas mise en cache sur le serveur.</label>
+            <label index="feature.disableFontLoader">Désactiver le chargeur des polices web. Si cette option est activée, il n'y aura pas de traitement supplémentaire des police web.</label>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

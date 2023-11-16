@@ -1,0 +1,9 @@
+{namespace fpdf=CodingMs\FluidFpdf\ViewHelpers}
+<f:if condition="{debug}">
+	<fpdf:variable.set name="debugText">================================================================================
+		DEBUGGING:
+		================================================================================
+		{debugText}</fpdf:variable.set>
+	<fpdf:setFont family="Courier" style="{textFontStyle}" size="{textFontSize}" />
+	<fpdf:multiCell width="{contentWidth}" height="4" text="{debugText}" border="{debug}" />
+</f:if>

@@ -1,0 +1,15 @@
+
+<div class="left-static-menu">
+    <div class="flex-grow-1">
+        <ul class="nav flex-column">
+            <f:for each="{LeftHomeMainNav}" as="LeftHomeContentMainNav">
+                <a class="left-static-menu-link" href="{LeftHomeContentMainNav.data.header_link}">
+                    <li class="left-static-menu-item nav-item p-3 px-5 border border-end-0 text-center d-block">
+                        <i class="left-menu-static-icon {LeftHomeContentMainNav.data.subheader} fa-3x"></i>
+                        <h5 class="left-menu-static-title mt-2 text-dark">{LeftHomeContentMainNav.data.header}</h5>
+                    </li>
+                </a>
+            </f:for>
+        </ul>
+    </div>
+</div>

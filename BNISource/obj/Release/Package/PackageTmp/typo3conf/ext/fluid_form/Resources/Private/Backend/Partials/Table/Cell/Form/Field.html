@@ -1,0 +1,7 @@
+<td>
+	<f:for each="{listItem.fields}" as="formField">
+		<f:if condition="{formField.fieldKey} == {field}">
+			<nobr>{formField.fieldValue}</nobr>
+		</f:if>
+	</f:for>
+</td>

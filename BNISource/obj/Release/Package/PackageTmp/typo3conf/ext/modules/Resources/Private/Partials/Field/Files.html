@@ -1,0 +1,126 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+
+		<div class="{field.css.class.wrapper} form-field-files" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+
+			<f:if condition="{field.label}">
+				<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">
+					{field.label} <f:if condition="{field.required} == 1"><span class="required">*</span></f:if>
+				</label>
+			</f:if>
+
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+
+				<div class="row">
+					<f:if condition="{f:count(subject: field.files)} > 0">
+						<f:then>
+							<f:for each="{field.files}" as="file">
+								<f:render section="FileRow" arguments="{_all}" />
+							</f:for>
+						</f:then>
+						<f:else>
+
+							<f:if condition="{field.required} == 1">
+								<f:then>
+									<div class="col-sm-12">
+										<div class="alert alert-danger">
+											<f:format.printf arguments="{0: field.file.min}"
+															 value="{field.additionalMessages.noFilesFoundButRequired}" />
+										</div>
+									</div>
+								</f:then>
+								<f:else>
+									<div class="col-sm-12">
+										<div class="alert alert-info">{field.additionalMessages.noFilesFound}</div>
+									</div>
+								</f:else>
+							</f:if>
+
+						</f:else>
+					</f:if>
+
+					<div class="col-sm-12">
+						<f:if condition="{f:count(subject: field.files)} < {field.file.max}">
+							<f:then>
+								<div class="custom-file">
+									<f:form.upload name="{fieldKey}-upload" multiple="1" class="custom-file-input"
+												   additionalAttributes="{data-upload-notification: field.additionalMessages.uploadNotification}"
+												   id="form-{formUid}-{fieldsetKey}-{fieldKey}-upload" />
+									<label class="custom-file-label" for="form-{formUid}-{fieldsetKey}-{fieldKey}-upload">{field.additionalLabel.upload}</label>
+								</div>
+							</f:then>
+							<f:else>
+								<f:if condition="{field.additionalMessages.maxFilesReachedUploadDisabled}">
+									<small class="text-muted">{field.additionalMessages.maxFilesReachedUploadDisabled}</small>
+								</f:if>
+							</f:else>
+						</f:if>
+					</div>
+
+				</div>
+
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message">{field.messages.error}</div>
+
+			</div>
+		</div>
+	</f:section>
+	<f:section name="FileRow">
+
+		<div class="col-sm-3">
+			<f:image image="{file}" height="{field.preview.height}" width="{field.preview.width}"
+					 treatIdAsReference="1" class="img-fluid" />
+		</div>
+		<div class="col-sm-9">
+
+			<div class="row">
+				<f:for each="{field.subFields}" key="subFieldKey" as="subField">
+
+					<f:if condition="{subFieldKey} == 'title' && {subField.active} == '1'">
+						<div class="col-lg-4 col-sm-12">
+							<span>{subField.label}<f:if condition="{subField.required} == '1'"> *</f:if></span>
+						</div>
+						<div class="col-lg-8 col-sm-12">
+							<f:form.textfield value="{file.originalResource.title}"
+											  name="{fieldKey}-title-{file.uid}"
+											  id="form-{formUid}-{fieldsetKey}-{fieldKey}-title-{file.uid}"
+											  class="form-control mb-1"/>
+						</div>
+					</f:if>
+					<f:if condition="{subFieldKey} == 'alternative' && {subField.active} == '1'">
+						<div class="col-lg-4 col-sm-12">
+							<span>{subField.label}<f:if condition="{subField.required} == '1'"> *</f:if></span>
+						</div>
+						<div class="col-lg-8 col-sm-12">
+							<f:form.textfield value="{file.originalResource.alternative}"
+											  name="{fieldKey}-alternative-{file.uid}"
+											  id="form-{formUid}-{fieldsetKey}-{fieldKey}-alternative-{file.uid}"
+											  class="form-control mb-1"/>
+						</div>
+					</f:if>
+					<f:if condition="{subFieldKey} == 'description' && {subField.active} == '1'">
+						<div class="col-lg-4 col-sm-12">
+							<span>{subField.label}<f:if condition="{subField.required} == '1'"> *</f:if></span>
+						</div>
+						<div class="col-lg-8 col-sm-12">
+							<f:form.textarea name="{fieldKey}-description-{file.uid}"
+											 value="{file.originalResource.description}"
+											 id="form-{formUid}-{fieldsetKey}-{fieldKey}-description-{file.uid}"
+											 class="form-control mb-1"/>
+						</div>
+					</f:if>
+				</f:for>
+			</div>
+		</div>
+		<div class="col-sm-12 mb-3 border-bottom">
+			<f:form.checkbox value="1" name="{fieldKey}-delete-{file.uid}"
+							 id="form-{formUid}-{fieldsetKey}-{fieldKey}-delete-{file.uid}"
+							 class="{field.css.class.field}" style="{field.css.style.field}"/>
+			<label class="{field.css.class.checkboxLabel}"
+				   style="{field.css.style.checkboxLabel}"
+				   for="form-{formUid}-{fieldsetKey}-{fieldKey}-delete-{file.uid}">{field.additionalLabel.delete}</label>
+		</div>
+
+	</f:section>
+</div>

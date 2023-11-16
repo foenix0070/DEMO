@@ -1,0 +1,27 @@
+{
+  "name": "sgalinski/df-tabs",
+  "type": "typo3-cms-extension",
+  "description": "Tabbed Content and Pages - Create tab based content elements and pages easily and flexible with configurable mouseover handling, animations and autoplay features! It requires jquery.",
+  "homepage": "https://www.sgalinski.de",
+  "license": ["GPL-2.0-or-later"],
+  "version": "8.1.1",
+  "support": {
+    "issues": "https://gitlab.sgalinski.de/typo3/df_tabs/issues"
+  },
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11.5"
+    },
+  "replace": {
+    "sgalinski/df_tabs": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "df_tabs"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "SGalinski\\DfTabs\\": "Classes/"
+    }
+  }
+}

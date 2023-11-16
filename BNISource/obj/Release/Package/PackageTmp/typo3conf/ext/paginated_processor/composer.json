@@ -1,0 +1,39 @@
+{
+  "name": "spooner-web/paginated-processor",
+  "description": "Pagination as TYPO3 DataProcessor",
+  "type": "typo3-cms-extension",
+  "homepage": "https://git.spooner.io/spooner-web/paginated-processor",
+  "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://git.spooner.io/spooner-web/paginated-processor/issues",
+    "source": "https://git.spooner.io/spooner-web/paginated-processor"
+  },
+  "keywords": [
+    "TYPO3",
+    "DataProcessor",
+    "DataProcessing",
+    "Pagination"
+  ],
+  "authors": [
+    {
+      "name": "Thomas Löffler",
+      "email": "loeffler@spooner-web.de",
+      "homepage": "https://spooner-web.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5",
+    "typo3/cms-fluid": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpoonerWeb\\PaginatedProcessor\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "paginated_processor"
+    }
+  }
+}

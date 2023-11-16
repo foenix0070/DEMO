@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-08-22T12:21:59Z" product-name="modules">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_modules_label.frontend_user_page_type">
+				<source>Website user</source>
+			</trans-unit>
+
+			<!--=====
+				Model
+				=====-->
+
+			<!--=== Model: Frontend user ===-->
+			<trans-unit id="tx_modules_domain_model_frontenduser">
+				<source>FrontendUser Modules</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.crdate">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.tstamp">
+				<source>Modification date</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.gender_male">
+				<source>Male</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.gender_female">
+				<source>Female</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.gender_other">
+				<source>Other</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.hash">
+				<source>Action hash</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_personal_data">
+				<source>Personal data</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_address_data">
+				<source>Address data</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_contact_data">
+				<source>Contact data</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.tab_confirm_access">
+				<source>Access &amp; Confirmations</source>
+				<target>Zugriff &amp; Bestätigungen</target>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_confirmations">
+				<source>Confirmations</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.terms_confirmed">
+				<source>Terms confirmed</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.privacy_confirmed">
+				<source>Privacy confirmed</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.disclaimer_confirmed">
+				<source>Disclaimer confirmed</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.newsletter">
+				<source>Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.profession_employed">
+				<source>Employed</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.profession_officer">
+				<source>Officer</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.profession_self_employed">
+				<source>Self employed</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.profession_pensioner">
+				<source>Pensioner</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.marital_status">
+				<source>Marital status</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.marital_status_single">
+				<source>Single</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.marital_status_married">
+				<source>Married</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.children">
+				<source>Children</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_bank_account">
+				<source>Bank account</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.bank_account_owner_name">
+				<source>Owner name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.bank_account_bank_name">
+				<source>Bank name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.bank_account_bic">
+				<source>BIC</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.bank_account_iban">
+				<source>IBAN</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.accounting_type">
+				<source>Accounting type</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.accounting_type_debit">
+				<source>Debit</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.accounting_type_accounting">
+				<source>Accounting</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.palette_business_data">
+				<source>Business data</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_frontenduser.vat_number">
+				<source>VAT number</source>
+			</trans-unit>
+
+			<!--=== Model: Invitation code ===-->
+			<trans-unit id="tx_modules_domain_model_invitationcode">
+				<source>Invitation code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.code">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.code_description">
+				<source>Code which needs to be provided for a registration.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.used">
+				<source>Used</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.used_at">
+				<source>Used at</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.usergroups">
+				<source>User groups</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.usergroups_description">
+				<source>User groups which must be assigned during registration.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.defaults_information">
+				<source>This fields will be transferred while registration into the new user.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.first_name">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.last_name">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.starttime">
+				<source>Start time</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.starttime_endtime_information">
+				<source>This start- and endtime controls a period of usage. If no time period is selected, the user account is not time-limited.</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.endtime">
+				<source>End time</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_domain_model_invitationcode.tab_defaults">
+				<source>Defaults</source>
+			</trans-unit>
+
+
+			<!--========
+				FlexForm
+				========-->
+
+			<!--=== Registration ===-->
+			<trans-unit id="tx_modules_flexform_registration.flex_form_title_general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.headline">
+				<source>Headline</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_fields">
+				<source>Registration fields</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_mandatory_fields">
+				<source>Mandatory fields</source>
+			</trans-unit>
+			<!--=== Registration: Fields ===-->
+			<trans-unit id="tx_modules_flexform_registration.registration_field_gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_zip">
+				<source>Postal code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_terms_confirmed">
+				<source>Terms checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_privacy_confirmed">
+				<source>Privacy protection checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_marital_status">
+				<source>Marital status</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_children">
+				<source>Children</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_year_of_birth">
+				<source>Year of birth</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_bank_account_owner_name">
+				<source>Bank account owner name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_bank_account_bank_name">
+				<source>Bank account bank name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_bank_account_bic">
+				<source>Bank account BIC</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_bank_account_iban">
+				<source>Bank account IBAN</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_accounting_type">
+				<source>Accounting type</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_vat_number">
+				<source>VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_disclaimer_confirmed">
+				<source>Disclaimer checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_newsletter">
+				<source>Newsletter checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_registration.registration_field_invitation_code">
+				<source>Invitation code</source>
+			</trans-unit>
+
+			<!--=== Profile ===-->
+			<trans-unit id="tx_modules_flexform_profile.flex_form_title_general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.headline">
+				<source>Headline</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_fields">
+				<source>Profile fields</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_mandatory_fields">
+				<source>Mandatory fields</source>
+			</trans-unit>
+			<!--=== Profile: Fields ===-->
+			<trans-unit id="tx_modules_flexform_profile.profile_field_gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_zip">
+				<source>Postal code</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_marital_status">
+				<source>Marital status</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_children">
+				<source>Children</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_year_of_birth">
+				<source>Year of birth</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_bank_account_owner_name">
+				<source>Bank account owner name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_bank_account_bank_name">
+				<source>Bank account bank name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_bank_account_bic">
+				<source>Bank account BIC</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_bank_account_iban">
+				<source>Bank account IBAN</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_accounting_type">
+				<source>Accounting type</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_vat_number">
+				<source>VAT number</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_flexform_profile.profile_field_newsletter">
+				<source>Newsletter</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

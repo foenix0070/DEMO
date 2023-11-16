@@ -1,0 +1,11 @@
+.typo3-fluid-form .panel-filter .panel-body {
+	padding-top: 0;
+}
+.typo3-fluid-form .form-filter > div > label {
+	margin-top: 16px;
+}
+.typo3-fluid-form .form-filter select.form-control,
+.typo3-fluid-form .form-filter input.form-control,
+.typo3-fluid-form .form-filter input.btn.btn-default {
+	width: 100%;
+}

@@ -478,7 +478,7 @@ $output0 .= '
                           <div class="card shadow">
                             <div class="card-body">
                               <h3 class="card-title">Accès au guide de connexion</h3>
-                              <a href="/publications/telechargements" class="btn btn-success">Accéder au guide</a>
+                              <a href="/publications/telechargements.html.html" class="btn btn-success">Accéder au guide</a>
                             </div>
                           </div>
                         </div>
@@ -1197,7 +1197,7 @@ $output103 .= '
                           <div class="card shadow">
                             <div class="card-body">
                               <h3 class="card-title">Accès au guide de connexion</h3>
-                              <a href="/publications/telechargements" class="btn btn-success">Accéder au guide</a>
+                              <a href="/publications/telechargements.html.html" class="btn btn-success">Accéder au guide</a>
                             </div>
                           </div>
                         </div>

@@ -1,0 +1,952 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="bootstrap_package" target-language="fr">
+        <header/>
+        <body>
+
+            <trans-unit id="theme_name" approved="yes">
+                <source>Bootstrap Package</source>
+            <target state="translated">Paquet Bootstrap</target></trans-unit>
+
+            <trans-unit id="pages.nav_icon" approved="yes">
+                <source>Navigation Icon</source>
+            <target state="translated">Icône de navigation</target></trans-unit>
+            <trans-unit id="pages.thumbnail" approved="yes">
+                <source>Thumbnail</source>
+            <target state="translated">Vignette</target></trans-unit>
+
+            <trans-unit id="backend_layout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="backend_layout.simple" approved="yes">
+                <source>Simple</source>
+            <target state="translated">Simple</target></trans-unit>
+            <trans-unit id="backend_layout.2_columns" approved="yes">
+                <source>2 Columns</source>
+            <target state="translated">2 colonnes</target></trans-unit>
+            <trans-unit id="backend_layout.2_columns_25_75" approved="yes">
+                <source>2 Columns 25/75</source>
+            <target state="translated">2 colonnes 25/75</target></trans-unit>
+            <trans-unit id="backend_layout.2_columns_50_50" approved="yes">
+                <source>2 Columns 50/50</source>
+            <target state="translated">2 colonnes 50/50</target></trans-unit>
+            <trans-unit id="backend_layout.2_columns_offset_right" approved="yes">
+                <source>2 Columns, Offset Right</source>
+            <target state="translated">2 colonnes, décalage à droite</target></trans-unit>
+            <trans-unit id="backend_layout.3_columns" approved="yes">
+                <source>3 Columns</source>
+            <target state="translated">3 colonnes</target></trans-unit>
+            <trans-unit id="backend_layout.subnavigation_right" approved="yes">
+                <source>Subnavigation Right</source>
+            <target state="translated">Sous-navigation à droite</target></trans-unit>
+            <trans-unit id="backend_layout.subnavigation_right_2_columns" approved="yes">
+                <source>Subnavigation Right and 2 Columns</source>
+            <target state="translated">Sous-navigation à droite et 2 colonnes</target></trans-unit>
+            <trans-unit id="backend_layout.subnavigation_left" approved="yes">
+                <source>Subnavigation Left</source>
+            <target state="translated">Sous-navigation à gauche</target></trans-unit>
+            <trans-unit id="backend_layout.subnavigation_left_2_columns" approved="yes">
+                <source>Subnavigation Left and 2 Columns</source>
+            <target state="translated">Sous-navigation à gauche et 2 colonnes</target></trans-unit>
+            <trans-unit id="backend_layout.special_start" approved="yes">
+                <source>Special Startpage</source>
+            <target state="translated">Page de démarrage spéciale</target></trans-unit>
+            <trans-unit id="backend_layout.special_feature" approved="yes">
+                <source>Special Feature</source>
+            <target state="translated">Fonctionnalité particulière</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.subnav" approved="yes">
+                <source>Sub Navigation (NOEDIT)</source>
+            <target state="translated">Sous-navigation (PAS D'ÉDITION)</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="backend_layout.column.normal" approved="yes">
+                <source>Normal</source>
+            <target state="translated">Normale</target></trans-unit>
+            <trans-unit id="backend_layout.column.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+            <trans-unit id="backend_layout.column.border" approved="yes">
+                <source>Border</source>
+            <target state="translated">Bordure</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.middle1" approved="yes">
+                <source>Middle: Left</source>
+            <target state="translated">Milieu : gauche</target></trans-unit>
+            <trans-unit id="backend_layout.column.middle2" approved="yes">
+                <source>Middle: Center</source>
+            <target state="translated">Milieu : centre</target></trans-unit>
+            <trans-unit id="backend_layout.column.middle3" approved="yes">
+                <source>Middle: Right</source>
+            <target state="translated">Milieu : droite</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.main2" approved="yes">
+                <source>Normal 2</source>
+            <target state="translated">Normale 2</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.contentbefore" approved="yes">
+                <source>Before Content</source>
+            <target state="translated">Avant le contenu</target></trans-unit>
+            <trans-unit id="backend_layout.column.contentafter" approved="yes">
+                <source>After Content</source>
+            <target state="translated">Après le contenu</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.special1" approved="yes">
+                <source>Special 1</source>
+            <target state="translated">Spéciale 1</target></trans-unit>
+            <trans-unit id="backend_layout.column.special2" approved="yes">
+                <source>Special 2</source>
+            <target state="translated">Spéciale 2</target></trans-unit>
+            <trans-unit id="backend_layout.column.special3" approved="yes">
+                <source>Special 3</source>
+            <target state="translated">Spéciale 3</target></trans-unit>
+            <trans-unit id="backend_layout.column.special4" approved="yes">
+                <source>Special 4</source>
+            <target state="translated">Spéciale 4</target></trans-unit>
+            <trans-unit id="backend_layout.column.special5" approved="yes">
+                <source>Special 5</source>
+            <target state="translated">Spécial 5</target></trans-unit>
+            <trans-unit id="backend_layout.column.special6" approved="no">
+                <source>Special 6</source>
+            <target state="needs-translation">Spécial 6</target></trans-unit>
+            <trans-unit id="backend_layout.column.special7" approved="no">
+                <source>Special 7</source>
+            <target state="needs-translation">Spécial 7</target></trans-unit>
+            <trans-unit id="backend_layout.column.special8" approved="no">
+                <source>Special 8</source>
+            <target state="needs-translation">Spéciale 8</target></trans-unit>
+            <trans-unit id="backend_layout.column.special9" approved="yes">
+                <source>Special 9</source>
+            <target state="translated">Spéciale 9</target></trans-unit>
+            <trans-unit id="backend_layout.column.special10" approved="yes">
+                <source>Special 10</source>
+            <target state="translated">Spéciale 10</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.footer1" approved="yes">
+                <source>Footer: Left</source>
+            <target state="translated">Pied de page : gauche</target></trans-unit>
+            <trans-unit id="backend_layout.column.footer2" approved="yes">
+                <source>Footer: Center</source>
+            <target state="translated">Pied de page : centre</target></trans-unit>
+            <trans-unit id="backend_layout.column.footer3" approved="yes">
+                <source>Footer: Right</source>
+            <target state="translated">Pied de page : droite</target></trans-unit>
+
+            <trans-unit id="menu.card_dir" approved="yes">
+                <source>Cards of subpages</source>
+            <target state="translated">Cartes de sous-pages</target></trans-unit>
+            <trans-unit id="menu.card_dir.description" approved="yes">
+                <source>Insert menu to display subpages as cards</source>
+            <target state="translated">Affichage d'un menu de sous-pages sous forme de cartes</target></trans-unit>
+            <trans-unit id="menu.card_list" approved="yes">
+                <source>Cards</source>
+            <target state="translated">Cartes</target></trans-unit>
+            <trans-unit id="menu.card_list.description" approved="no">
+                <source>Insert menu to display selected pages as cards</source>
+            <target state="needs-translation">Affichage d'un menu de pages sélectionnées sous forme de cartes</target></trans-unit>
+
+            <trans-unit id="menu.card.options" approved="yes">
+                <source>Options</source>
+            <target state="translated">Options</target></trans-unit>
+            <trans-unit id="menu.card.columns" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="menu.card.align" approved="yes">
+                <source>Alignment</source>
+            <target state="translated">Alignement</target></trans-unit>
+            <trans-unit id="menu.card.align.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="menu.card.align.center" approved="yes">
+                <source>Center</source>
+            <target state="translated">Au centre</target></trans-unit>
+            <trans-unit id="menu.card.align.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+
+            <trans-unit id="menu.thumbnail_dir" approved="yes">
+                <source>Thumbnails of subpages</source>
+            <target state="translated">Vignettes de sous-pages</target></trans-unit>
+            <trans-unit id="menu.thumbnail_dir.description" approved="no">
+                <source>Insert menu to display subpages as thumbnail</source>
+            <target state="needs-translation">Affichage d'un menu de sous-pages sous forme de vignettes</target></trans-unit>
+            <trans-unit id="menu.thumbnail_list" approved="yes">
+                <source>Thumbnails</source>
+            <target state="translated">Vignettes</target></trans-unit>
+            <trans-unit id="menu.thumbnail_list.description" approved="no">
+                <source>Insert menu to display selected pages as thumbnail</source>
+            <target state="needs-translation">Affichage d'un menu de pages sélectionnées sous forme de vignettes</target></trans-unit>
+
+            <trans-unit id="menu.thumbnail.options" approved="yes">
+                <source>Options</source>
+            <target state="translated">Options</target></trans-unit>
+            <trans-unit id="menu.thumbnail.columns" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="menu.thumbnail.align" approved="yes">
+                <source>Alignment</source>
+            <target state="translated">Alignement</target></trans-unit>
+            <trans-unit id="menu.thumbnail.align.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="menu.thumbnail.align.center" approved="yes">
+                <source>Center</source>
+            <target state="translated">Au centre</target></trans-unit>
+            <trans-unit id="menu.thumbnail.align.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+
+            <trans-unit id="content_group.interactive" approved="yes">
+                <source>Interactive</source>
+            <target state="translated">Interactif</target></trans-unit>
+            <trans-unit id="content_group.media" approved="yes">
+                <source>Media</source>
+            <target state="translated">Media</target></trans-unit>
+            <trans-unit id="content_group.data" approved="yes">
+                <source>Data</source>
+            <target state="translated">Données</target></trans-unit>
+            <trans-unit id="content_group.text" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="content_group.social_media" approved="yes">
+                <source>Social Media</source>
+            <target state="translated">Réseaux sociaux</target></trans-unit>
+
+            <trans-unit id="content_element.csv" approved="yes">
+                <source>CSV</source>
+            <target state="translated">CSV</target></trans-unit>
+            <trans-unit id="content_element.csv.description" approved="yes">
+                <source>Render a table from a CSV file.</source>
+            <target state="translated">Afficher une table à partir d'un fichier CSV.</target></trans-unit>
+
+            <trans-unit id="content_element.media" approved="yes">
+                <source>Media</source>
+            <target state="translated">Media</target></trans-unit>
+            <trans-unit id="content_element.media.description" approved="yes">
+                <source>Any number of youtube and vimeo videos in columns and rows with a caption.</source>
+            <target state="translated">Un certain nombre de vidéos youtube et vimeo dans des lignes et des colonnes avec une légende.</target></trans-unit>
+
+            <trans-unit id="content_element.audio" approved="yes">
+                <source>Audio</source>
+            <target state="translated">Audio</target></trans-unit>
+            <trans-unit id="content_element.audio.description" approved="yes">
+                <source>Insert Audio files</source>
+            <target state="translated">Ajouter des fichiers Audio</target></trans-unit>
+
+            <trans-unit id="content_element.panel" approved="yes">
+                <source>Panel</source>
+            <target state="translated">Panneau</target></trans-unit>
+            <trans-unit id="content_element.panel.description" approved="yes">
+                <source>Insert Panelelement with simple text</source>
+            <target state="translated">Ajouter un élément de type panneau avec du texte simple</target></trans-unit>
+
+            <trans-unit id="content_element.carousel" approved="yes">
+                <source>Carousel</source>
+            <target state="translated">Carrousel</target></trans-unit>
+            <trans-unit id="content_element.carousel.description" approved="yes">
+                <source>Insert Carouselelement with different contents (header / text with image / pure HTML)</source>
+            <target state="translated">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</target></trans-unit>
+
+            <trans-unit id="content_element.carousel_small" approved="yes">
+                <source>Carousel Small</source>
+            <target state="translated">Petit carrousel</target></trans-unit>
+            <trans-unit id="content_element.carousel_small.description" approved="yes">
+                <source>Insert Carouselelement with different contents (header / text with image / pure HTML)</source>
+            <target state="translated">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</target></trans-unit>
+
+            <trans-unit id="content_element.carousel_fullscreen" approved="yes">
+                <source>Carousel Fullscreen</source>
+            <target state="translated">Carrousel en plein écran</target></trans-unit>
+            <trans-unit id="content_element.carousel_fullscreen.description" approved="yes">
+                <source>Insert Carouselelement with different contents (header / text with image / pure HTML)</source>
+            <target state="translated">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</target></trans-unit>
+
+            <trans-unit id="content_element.textcolumn" approved="yes">
+                <source>Text in Columns</source>
+            <target state="translated">Texte dans des colonnes</target></trans-unit>
+            <trans-unit id="content_element.textcolumn.description" approved="yes">
+                <source>Insert Text in Columns</source>
+            <target state="translated">Ajouter du texte dans les colonnes</target></trans-unit>
+
+            <trans-unit id="content_element.textteaser" approved="yes">
+                <source>Text with Teaser</source>
+            <target state="translated">Texte avec un extrait</target></trans-unit>
+            <trans-unit id="content_element.textteaser.description" approved="yes">
+                <source>Insert Text with Teaser</source>
+            <target state="translated">Ajouter du texte avec un extrait</target></trans-unit>
+
+            <trans-unit id="content_element.texticon" approved="yes">
+                <source>Text and Icon</source>
+            <target state="translated">Texte avec une Icône</target></trans-unit>
+            <trans-unit id="content_element.texticon.description" approved="yes">
+                <source>Insert Bootstrap Icon with Text</source>
+            <target state="translated">Ajouter une Icône Bootstrap avec du Texte</target></trans-unit>
+
+            <trans-unit id="content_element.accordion" approved="yes">
+                <source>Accordion</source>
+            <target state="translated">Accordéon</target></trans-unit>
+            <trans-unit id="content_element.accordion.description" approved="yes">
+                <source>Insert several Accordionelement(s) with headline and text</source>
+            <target state="translated">Ajouter plusieurs éléments de type accordéon avec un gros titre et un texte</target></trans-unit>
+
+            <trans-unit id="content_element.tab" approved="yes">
+                <source>Tab</source>
+            <target state="translated">Onglet</target></trans-unit>
+            <trans-unit id="content_element.tab.description" approved="yes">
+                <source>Insert several Tabelement(s) with headline and text</source>
+            <target state="translated">Ajouter plusieurs éléments de tableau avec un gros titre et un texte</target></trans-unit>
+
+            <trans-unit id="content_element.card_group" approved="yes">
+                <source>Card Group</source>
+            <target state="translated">Groupe de carte</target></trans-unit>
+            <trans-unit id="content_element.card_group.description" approved="yes">
+                <source>Insert a element with several content cards</source>
+            <target state="translated">Ajouter un élément avec plusieurs contenus de type carte</target></trans-unit>
+            <trans-unit id="content_element.card_group.options" approved="yes">
+                <source>Options</source>
+            <target state="translated">Options</target></trans-unit>
+            <trans-unit id="content_element.card_group.columns" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="content_element.card_group.align" approved="yes">
+                <source>Alignment</source>
+            <target state="translated">Alignement</target></trans-unit>
+            <trans-unit id="content_element.card_group.align.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="content_element.card_group.align.center" approved="yes">
+                <source>Center</source>
+            <target state="translated">Au centre</target></trans-unit>
+            <trans-unit id="content_element.card_group.align.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+
+            <trans-unit id="card_group_item" approved="yes">
+                <source>Card</source>
+            <target state="translated">Carte</target></trans-unit>
+            <trans-unit id="card_group_item.tt_content" approved="yes">
+                <source>Card Group</source>
+            <target state="translated">Groupe de carte</target></trans-unit>
+            <trans-unit id="card_group_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="card_group_item.subheader" approved="yes">
+                <source>Subheader</source>
+            <target state="translated">Sous-titre</target></trans-unit>
+            <trans-unit id="card_group_item.image" approved="yes">
+                <source>Image</source>
+            <target state="translated">Image</target></trans-unit>
+            <trans-unit id="card_group_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="card_group_item.link" approved="yes">
+                <source>Link</source>
+            <target state="translated">Lien</target></trans-unit>
+            <trans-unit id="card_group_item.link_title" approved="yes">
+                <source>Title</source>
+            <target state="translated">Titre</target></trans-unit>
+            <trans-unit id="card_group_item.link_icon" approved="yes">
+                <source>Icon</source>
+            <target state="translated">Icône</target></trans-unit>
+            <trans-unit id="card_group_item.link_class" approved="yes">
+                <source>Color</source>
+            <target state="translated">Couleur</target></trans-unit>
+
+            <trans-unit id="content_element.icon_group" approved="yes">
+                <source>Icon Group</source>
+            <target state="translated">Group d'icône</target></trans-unit>
+            <trans-unit id="content_element.icon_group.description" approved="yes">
+                <source>Insert a element with several icons</source>
+            <target state="translated">Ajouter un élément avec plusieurs icônes</target></trans-unit>
+            <trans-unit id="content_element.icon_group.options" approved="yes">
+                <source>Options</source>
+            <target state="translated">Options</target></trans-unit>
+            <trans-unit id="content_element.icon_group.columns" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="content_element.icon_group.columns.auto" approved="yes">
+                <source>Automatic</source>
+            <target state="translated">Automatique</target></trans-unit>
+            <trans-unit id="content_element.icon_group.align" approved="yes">
+                <source>Alignment</source>
+            <target state="translated">Alignement</target></trans-unit>
+            <trans-unit id="content_element.icon_group.align.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="content_element.icon_group.align.center" approved="yes">
+                <source>Center</source>
+            <target state="translated">Au centre</target></trans-unit>
+            <trans-unit id="content_element.icon_group.align.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position" approved="yes">
+                <source>Icon Position</source>
+            <target state="translated">Position de l'icône</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.left-top" approved="yes">
+                <source>Left: Top</source>
+            <target state="translated">À gauche en haut</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.left-center" approved="yes">
+                <source>Left: Center</source>
+            <target state="translated">À gauche, à mi-hauteur</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.right-top" approved="yes">
+                <source>Right: Top</source>
+            <target state="translated">À droite en haut</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.right-center" approved="yes">
+                <source>Right: Center</source>
+            <target state="translated">À droite, à mi-hauteur</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.above" approved="yes">
+                <source>Above</source>
+            <target state="translated">Au-dessus</target></trans-unit>
+            <trans-unit id="content_element.icon_group.icon_position.below" approved="yes">
+                <source>Below</source>
+            <target state="translated">En-dessous</target></trans-unit>
+
+            <trans-unit id="content_element.listgroup" approved="yes">
+                <source>List Group</source>
+            <target state="translated">Group de liste</target></trans-unit>
+            <trans-unit id="content_element.listgroup.description" approved="yes">
+                <source>Insert simple Listgroupelement</source>
+            <target state="translated">Ajouter un élément simple de groupe de liste</target></trans-unit>
+
+            <trans-unit id="content_element.external_media" approved="yes">
+                <source>External Media</source>
+            <target state="translated">Media externe</target></trans-unit>
+            <trans-unit id="content_element.external_media.description" approved="yes">
+                <source>Insert external media from YouTube or Vimeo</source>
+            <target state="translated">Insert un media externe depuis YouTube ou Vimeo</target></trans-unit>
+
+            <trans-unit id="content_element.textmedia" approved="yes">
+                <source>Text &amp; Media</source>
+            <target state="translated">Texte &amp; Media</target></trans-unit>
+
+            <trans-unit id="content_element.quote" approved="yes">
+                <source>Quote</source>
+            <target state="translated">Citation</target></trans-unit>
+            <trans-unit id="content_element.quote.description" approved="yes">
+                <source>Insert Quotation</source>
+            <target state="translated">Ajouter une citation</target></trans-unit>
+
+            <trans-unit id="quote.text" approved="yes">
+                <source>Quote Text</source>
+            <target state="translated">Citer un texte</target></trans-unit>
+            <trans-unit id="quote.link" approved="yes">
+                <source>Quote Link</source>
+            <target state="translated">Citer un lien</target></trans-unit>
+            <trans-unit id="quote.source" approved="yes">
+                <source>Quote Source</source>
+            <target state="translated">Citer une source</target></trans-unit>
+
+            <trans-unit id="content_element.social_links" approved="yes">
+                <source>Social Links</source>
+            <target state="translated">Liens réseaux sociaux</target></trans-unit>
+            <trans-unit id="content_element.social_links.description" approved="yes">
+                <source>Insert a element to display configured social media channels</source>
+            <target state="translated">Ajouter un élément pour afficher les réseaux sociaux configurés</target></trans-unit>
+
+            <trans-unit id="content_element.timeline" approved="yes">
+                <source>Timeline</source>
+            <target state="translated">Chronologie</target></trans-unit>
+            <trans-unit id="content_element.timeline.description" approved="yes">
+                <source>Insert a element to display a timeline</source>
+            <target state="translated">Ajouter un élément pour afficher une chronologie</target></trans-unit>
+
+            <trans-unit id="carousel.options" approved="yes">
+                <source>Carousel Options</source>
+            <target state="translated">Options du carrousel</target></trans-unit>
+            <trans-unit id="carousel.interval" approved="yes">
+                <source>Interval in ms</source>
+            <target state="translated">Intervalle en ms</target></trans-unit>
+            <trans-unit id="carousel.transition" approved="yes">
+                <source>Transition</source>
+            <target state="translated">Transition</target></trans-unit>
+            <trans-unit id="carousel.transition.slide" approved="yes">
+                <source>Slide</source>
+            <target state="translated">Diapositive</target></trans-unit>
+            <trans-unit id="carousel.transition.fade" approved="yes">
+                <source>Fade</source>
+            <target state="translated">Disparition graduelle</target></trans-unit>
+            <trans-unit id="carousel.wrap" approved="yes">
+                <source>Wrap</source>
+            <target state="translated">Enveloppe</target></trans-unit>
+            <trans-unit id="carousel.wrap.description" approved="yes">
+                <source>Start the Carousel from the beginning once it has arrived at the end.</source>
+            <target state="translated">Relancer le Carrousel du début une fois arrivé à la fin.</target></trans-unit>
+            <trans-unit id="carousel.show_nav_title" approved="yes">
+                <source>Show Navigation Title</source>
+            <target state="translated">Afficher le titre de navigation</target></trans-unit>
+            <trans-unit id="carousel.show_nav_title.description" approved="yes">
+                <source>Show the navigation title of the records instead of the bubbles.</source>
+            <target state="translated">Afficher le titre de navigation des enregistrements au lieu des bulles.</target></trans-unit>
+
+            <trans-unit id="carousel_item" approved="yes">
+                <source>Carousel Item</source>
+            <target state="translated">Item de Carrousel</target></trans-unit>
+            <trans-unit id="carousel_item.tt_content" approved="yes">
+                <source>Carousel</source>
+            <target state="translated">Carrousel</target></trans-unit>
+            <trans-unit id="carousel_item.link" approved="yes">
+                <source>Link</source>
+            <target state="translated">Lien</target></trans-unit>
+            <trans-unit id="carousel_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="carousel_item.header_layout" approved="yes">
+                <source>Header Layout</source>
+            <target state="translated">Disposition de l'en-tête</target></trans-unit>
+            <trans-unit id="carousel_item.header_class" approved="yes">
+                <source>Header Class</source>
+            <target state="translated">Class d'en-tête</target></trans-unit>
+            <trans-unit id="carousel_item.header_position" approved="yes">
+                <source>Header Position</source>
+            <target state="translated">Position de l'en-tête</target></trans-unit>
+            <trans-unit id="carousel_item.header_position.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="carousel_item.header_position.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="carousel_item.header_position.center" approved="yes">
+                <source>Center</source>
+            <target state="translated">Au centre</target></trans-unit>
+            <trans-unit id="carousel_item.header_position.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+            <trans-unit id="carousel_item.subheader" approved="yes">
+                <source>Subheader</source>
+            <target state="translated">Sous-titre</target></trans-unit>
+            <trans-unit id="carousel_item.subheader_layout" approved="yes">
+                <source>Subheader Layout</source>
+            <target state="translated">Disposition du sous-titre</target></trans-unit>
+            <trans-unit id="carousel_item.subheader_class" approved="yes">
+                <source>Subheader Class</source>
+            <target state="translated">Classe du sous-titre</target></trans-unit>
+            <trans-unit id="carousel_item.nav_title" approved="yes">
+                <source>Navigation Title</source>
+            <target state="translated">Titre de navigation</target></trans-unit>
+            <trans-unit id="carousel_item.button_text" approved="yes">
+                <source>Button Text</source>
+            <target state="translated">Bouton texte</target></trans-unit>
+            <trans-unit id="carousel_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="carousel_item.text_color" approved="yes">
+                <source>Text Color</source>
+            <target state="translated">Couleur du texte</target></trans-unit>
+            <trans-unit id="carousel_item.image" approved="yes">
+                <source>Image</source>
+            <target state="translated">Image</target></trans-unit>
+            <trans-unit id="carousel_item.background_color" approved="yes">
+                <source>Background Color</source>
+            <target state="translated">Couleur d'arrière-plan</target></trans-unit>
+            <trans-unit id="carousel_item.background_image" approved="yes">
+                <source>Background Image</source>
+            <target state="translated">Image d'arrière-plan</target></trans-unit>
+            <trans-unit id="carousel_item.background_image_options" approved="yes">
+                <source>Background Image Options</source>
+            <target state="translated">Options des images d'arrière-plan</target></trans-unit>
+
+            <trans-unit id="carousel_item.item_type.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.text" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.calltoaction" approved="yes">
+                <source>Call to Action</source>
+            <target state="translated">Appel à une action</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.image" approved="yes">
+                <source>Image</source>
+            <target state="translated">Image</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.textandimage" approved="yes">
+                <source>Text and Image</source>
+            <target state="translated">Texte et Image</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.backgroundimage" approved="yes">
+                <source>Background Image</source>
+            <target state="translated">Image d'arrière-plan</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.html" approved="yes">
+                <source>HTML</source>
+            <target state="translated">HTML</target></trans-unit>
+
+            <trans-unit id="accordion.options" approved="yes">
+                <source>Accordion Options</source>
+            <target state="translated">Options de l'accordéon</target></trans-unit>
+            <trans-unit id="accordion.default_element" approved="yes">
+                <source>Default Element</source>
+            <target state="translated">Élément par défaut</target></trans-unit>
+
+            <trans-unit id="accordion_item" approved="yes">
+                <source>Accordion Item</source>
+            <target state="translated">Item d'accordéon</target></trans-unit>
+            <trans-unit id="accordion_item.tt_content" approved="yes">
+                <source>Accordion</source>
+            <target state="translated">Accordéon</target></trans-unit>
+            <trans-unit id="accordion_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="accordion_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="accordion_item.media" approved="yes">
+                <source>Media</source>
+            <target state="translated">Média</target></trans-unit>
+            <trans-unit id="accordion_item.mediaposition" approved="yes">
+                <source>Media position</source>
+            <target state="translated">Position du média</target></trans-unit>
+            <trans-unit id="accordion_item.imagecols" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="accordion_item.image_zoom" approved="yes">
+                <source>Enlarge on Click</source>
+            <target state="translated">Cliquer pour agrandir</target></trans-unit>
+            <trans-unit id="accordion_item.mediaorient" approved="yes">
+                <source>Orientation</source>
+            <target state="translated">Orientation</target></trans-unit>
+            <trans-unit id="accordion_item.mediaorient.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="accordion_item.mediaorient.top" approved="yes">
+                <source>Top</source>
+            <target state="translated">En-haut</target></trans-unit>
+            <trans-unit id="accordion_item.mediaorient.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">À droite</target></trans-unit>
+            <trans-unit id="accordion_item.mediaorient.bottom" approved="yes">
+                <source>Bottom</source>
+            <target state="translated">En-bas</target></trans-unit>
+
+            <trans-unit id="tab.options" approved="yes">
+                <source>Tab Options</source>
+            <target state="translated">Options des onglets</target></trans-unit>
+            <trans-unit id="tab.default_tab" approved="yes">
+                <source>Default Tab</source>
+            <target state="translated">Onglet par défaut</target></trans-unit>
+
+            <trans-unit id="tab_item" approved="yes">
+                <source>Tab Item</source>
+            <target state="translated">Item de tabulation</target></trans-unit>
+            <trans-unit id="tab_item.tt_content" approved="yes">
+                <source>Tab</source>
+            <target state="translated">Onglet</target></trans-unit>
+            <trans-unit id="tab_item.active" approved="yes">
+                <source>Set as default</source>
+            <target state="translated">Définir comme mode par défaut</target></trans-unit>
+            <trans-unit id="tab_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="tab_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="tab_item.media" approved="yes">
+                <source>Media</source>
+            <target state="translated">Média</target></trans-unit>
+            <trans-unit id="tab_item.mediaposition" approved="yes">
+                <source>Media position</source>
+            <target state="translated">Position du média</target></trans-unit>
+            <trans-unit id="tab_item.imagecols" approved="yes">
+                <source>Columns</source>
+            <target state="translated">Colonnes</target></trans-unit>
+            <trans-unit id="tab_item.image_zoom" approved="yes">
+                <source>Enlarge on Click</source>
+            <target state="translated">Clicker pour agrandir</target></trans-unit>
+            <trans-unit id="tab_item.mediaorient" approved="yes">
+                <source>Orientation</source>
+            <target state="translated">Orientation</target></trans-unit>
+            <trans-unit id="tab_item.mediaorient.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="tab_item.mediaorient.top" approved="yes">
+                <source>Top</source>
+            <target state="translated">En-haut</target></trans-unit>
+            <trans-unit id="tab_item.mediaorient.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+            <trans-unit id="tab_item.mediaorient.bottom" approved="yes">
+                <source>Bottom</source>
+            <target state="translated">En-bas</target></trans-unit>
+
+            <trans-unit id="timeline.options" approved="yes">
+                <source>Timeline Options</source>
+            <target state="translated">Options de la chronologie</target></trans-unit>
+            <trans-unit id="timeline.sorting" approved="yes">
+                <source>Sorting</source>
+            <target state="translated">Trier</target></trans-unit>
+            <trans-unit id="timeline.sorting.asc" approved="yes">
+                <source>Ascending</source>
+            <target state="translated">Ascendant</target></trans-unit>
+            <trans-unit id="timeline.sorting.desc" approved="yes">
+                <source>Descending</source>
+            <target state="translated">Descendant</target></trans-unit>
+
+            <trans-unit id="timeline_item" approved="yes">
+                <source>Timeline Item</source>
+            <target state="translated">Item de chronologie</target></trans-unit>
+            <trans-unit id="timeline_item.tt_content" approved="yes">
+                <source>Timeline</source>
+            <target state="translated">Chronologie</target></trans-unit>
+            <trans-unit id="timeline_item.date" approved="yes">
+                <source>Date</source>
+            <target state="translated">Date</target></trans-unit>
+            <trans-unit id="timeline_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="timeline_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="timeline_item.icon_file" approved="yes">
+                <source>Icon File</source>
+            <target state="translated">Fichier d'icône</target></trans-unit>
+            <trans-unit id="timeline_item.image" approved="yes">
+                <source>Image</source>
+            <target state="translated">Image</target></trans-unit>
+
+            <trans-unit id="icon_group_item" approved="yes">
+                <source>Icon Group Item</source>
+            <target state="translated">Élément du group d'icônes</target></trans-unit>
+            <trans-unit id="icon_group_item.tt_content" approved="yes">
+                <source>Icon Group</source>
+            <target state="translated">Group d'icone</target></trans-unit>
+            <trans-unit id="icon_group_item.header" approved="yes">
+                <source>Header</source>
+            <target state="translated">En-tête</target></trans-unit>
+            <trans-unit id="icon_group_item.subheader" approved="yes">
+                <source>Subheader</source>
+            <target state="translated">Sous-titre</target></trans-unit>
+            <trans-unit id="icon_group_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Texte</target></trans-unit>
+            <trans-unit id="icon_group_item.link" approved="yes">
+                <source>Link</source>
+            <target state="translated">Lien</target></trans-unit>
+            <trans-unit id="icon_group_item.icon_file" approved="yes">
+                <source>Icon File</source>
+            <target state="translated">Fichier d'icône</target></trans-unit>
+
+            <trans-unit id="field.panel_class" approved="yes">
+                <source>Panel Class</source>
+            <target state="translated">Class du panneau</target></trans-unit>
+
+            <trans-unit id="external_media" approved="yes">
+                <source>External Media</source>
+            <target state="translated">Media externe</target></trans-unit>
+            <trans-unit id="field.external_media_source" approved="yes">
+                <source>External Media Source</source>
+            <target state="translated">Media de source externe</target></trans-unit>
+            <trans-unit id="field.external_media_ratio" approved="yes">
+                <source>Ratio</source>
+            <target state="translated">Proportions</target></trans-unit>
+
+            <trans-unit id="field.icon" approved="yes">
+                <source>Icon</source>
+            <target state="translated">Icône</target></trans-unit>
+            <trans-unit id="field.icon_set" approved="yes">
+                <source>Icon Set</source>
+            <target state="translated">Groupe d'icônes</target></trans-unit>
+            <trans-unit id="field.icon_file" approved="yes">
+                <source>Icon File</source>
+            <target state="translated">Fichier d'icône</target></trans-unit>
+            <trans-unit id="field.icon_position" approved="yes">
+                <source>Position</source>
+            <target state="translated">Position</target></trans-unit>
+            <trans-unit id="field.icon_type" approved="yes">
+                <source>Type</source>
+            <target state="translated">Type</target></trans-unit>
+            <trans-unit id="field.icon_size" approved="yes">
+                <source>Size</source>
+            <target state="translated">Taille</target></trans-unit>
+            <trans-unit id="field.icon_background" approved="yes">
+                <source>Background</source>
+            <target state="translated">Arrière-plan</target></trans-unit>
+            <trans-unit id="field.icon_color" approved="yes">
+                <source>Color</source>
+            <target state="translated">Couleur</target></trans-unit>
+            <trans-unit id="field.icon_background" approved="yes">
+                <source>Background</source>
+            <target state="translated">Arrière-plan</target></trans-unit>
+
+            <trans-unit id="field.background_color_class" approved="yes">
+                <source>Background Color</source>
+            <target state="translated">Couleur d'arrière-plan</target></trans-unit>
+            <trans-unit id="field.background_image" approved="yes">
+                <source>Background Image</source>
+            <target state="translated">Image d'arrière-plan</target></trans-unit>
+            <trans-unit id="field.background_image_options" approved="yes">
+                <source>Background Image Options</source>
+            <target state="translated">Option des images d'arrière-plan</target></trans-unit>
+
+            <trans-unit id="field.teaser" approved="yes">
+                <source>Teaser</source>
+            <target state="translated">Extrait</target></trans-unit>
+            <trans-unit id="field.file_folder" approved="yes">
+                <source>File Folder</source>
+            <target state="translated">Dossier de fichiers</target></trans-unit>
+
+            <trans-unit id="field.imageorient.125" approved="yes">
+                <source>Beside Text, Centered Right</source>
+           <target state="translated">À côté du texte, centré à droite</target></trans-unit>
+            <trans-unit id="field.imageorient.126" approved="yes">
+                <source>Beside Text, Centered Left</source>
+            <target state="translated">À côté du texte, centré à gauche</target></trans-unit>
+
+            <trans-unit id="option.background_image.parallax" approved="yes">
+                <source>Parallax</source>
+            <target state="translated">Parallaxe</target></trans-unit>
+            <trans-unit id="option.background_image.parallax.description" approved="yes">
+                <source>Enable Parallax effect</source>
+            <target state="translated">Autoriser l'effet Parallaxe</target></trans-unit>
+            <trans-unit id="option.background_image.fade" approved="yes">
+                <source>Fade</source>
+            <target state="translated">Disparition graduelle</target></trans-unit>
+            <trans-unit id="option.background_image.fade.description" approved="yes">
+                <source>Enable Fade effect</source>
+            <target state="translated">Autoriser l'effet de disparition graduelle</target></trans-unit>
+            <trans-unit id="option.background_image.filter" approved="yes">
+                <source>Filter</source>
+            <target state="translated">Filtrer</target></trans-unit>
+            <trans-unit id="option.background_image.filter.none" approved="yes">
+                <source>None</source>
+            <target state="translated">Aucun</target></trans-unit>
+            <trans-unit id="option.background_image.filter.blur" approved="yes">
+                <source>Blur</source>
+            <target state="translated">Estomper</target></trans-unit>
+            <trans-unit id="option.background_image.filter.grayscale" approved="yes">
+                <source>Grayscale</source>
+            <target state="translated">Niveau de gris</target></trans-unit>
+            <trans-unit id="option.background_image.filter.sepia" approved="yes">
+                <source>Sepia</source>
+            <target state="translated">Sépia</target></trans-unit>
+
+            <trans-unit id="option.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="option.none" approved="yes">
+                <source>None</source>
+            <target state="translated">Aucune</target></trans-unit>
+            <trans-unit id="option.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Gauche</target></trans-unit>
+            <trans-unit id="option.top" approved="yes">
+                <source>Top</source>
+            <target state="translated">En-haut</target></trans-unit>
+            <trans-unit id="option.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Droite</target></trans-unit>
+            <trans-unit id="option.bottom" approved="yes">
+                <source>Bottom</source>
+            <target state="translated">En-bas</target></trans-unit>
+            <trans-unit id="option.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="option.square" approved="yes">
+                <source>Square</source>
+            <target state="translated">Carré</target></trans-unit>
+            <trans-unit id="option.circle" approved="yes">
+                <source>Circle</source>
+            <target state="translated">Cercle</target></trans-unit>
+            <trans-unit id="option.extrasmall" approved="yes">
+                <source>Extra Small</source>
+            <target state="translated">Très petit</target></trans-unit>
+            <trans-unit id="option.small" approved="yes">
+                <source>Small</source>
+            <target state="translated">Petit</target></trans-unit>
+            <trans-unit id="option.medium" approved="yes">
+                <source>Medium</source>
+            <target state="translated">Moyen</target></trans-unit>
+            <trans-unit id="option.large" approved="yes">
+                <source>Large</source>
+            <target state="translated">Grand</target></trans-unit>
+            <trans-unit id="option.awesome" approved="yes">
+                <source>Awesome</source>
+            <target state="translated">Fabuleux</target></trans-unit>
+            <trans-unit id="option.primary" approved="yes">
+                <source>Primary</source>
+            <target state="translated">Primaire</target></trans-unit>
+            <trans-unit id="option.success" approved="yes">
+                <source>Success</source>
+            <target state="translated">Succès</target></trans-unit>
+            <trans-unit id="option.info" approved="yes">
+                <source>Info</source>
+            <target state="translated">Info</target></trans-unit>
+            <trans-unit id="option.warning" approved="yes">
+                <source>Warning</source>
+            <target state="translated">Attention</target></trans-unit>
+            <trans-unit id="option.danger" approved="yes">
+                <source>Danger</source>
+            <target state="translated">Danger</target></trans-unit>
+
+            <trans-unit id="ratio.16_9" approved="yes">
+                <source>16:9</source>
+            <target state="translated">16:9</target></trans-unit>
+            <trans-unit id="ratio.4_3" approved="yes">
+                <source>4:3</source>
+            <target state="translated">4:3</target></trans-unit>
+            <trans-unit id="ratio.1_1" approved="yes">
+                <source>1:1</source>
+            <target state="translated">1:1</target></trans-unit>
+            <trans-unit id="ratio.free" approved="yes">
+                <source>Free</source>
+            <target state="translated">Libre</target></trans-unit>
+
+            <trans-unit id="tablelayout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="tablelayout.basic" approved="yes">
+                <source>Basic</source>
+            <target state="translated">Basique</target></trans-unit>
+            <trans-unit id="tablelayout.striped">
+                <source>Striped rows</source>
+            <target></target></trans-unit>
+            <trans-unit id="tablelayout.bordered">
+                <source>Bordered table</source>
+            <target></target></trans-unit>
+            <trans-unit id="tablelayout.hover" approved="yes">
+                <source>Hover rows</source>
+            <target state="translated">Survol des lignes</target></trans-unit>
+            <trans-unit id="tablelayout.condensed">
+                <source>Condensed table</source>
+            <target></target></trans-unit>
+
+            <trans-unit id="uploadslayout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Par défaut</target></trans-unit>
+            <trans-unit id="uploadslayout.icons" approved="yes">
+                <source>Display Icons</source>
+            <target state="translated">Afficher les icônes</target></trans-unit>
+            <trans-unit id="uploadslayout.iconsandpreview" approved="yes">
+                <source>Display Icons and Preview Images</source>
+            <target state="translated">Afficher les icônes et les vignettes de prévisualisation</target></trans-unit>
+
+            <trans-unit id="field.assets" approved="yes">
+                <source>Media elements</source>
+            <target state="translated">Élément média</target></trans-unit>
+
+            <trans-unit id="tabs.background" approved="yes">
+                <source>Background</source>
+            <target state="translated">Arrière-plan</target></trans-unit>
+            <trans-unit id="tabs.icon" approved="yes">
+                <source>Icon</source>
+            <target state="translated">Icône</target></trans-unit>
+
+            <trans-unit id="colorpicker" approved="yes">
+                <source>Colorpicker</source>
+            <target state="translated">Pipette à couleur</target></trans-unit>
+
+            <trans-unit id="advanced" approved="yes">
+                <source>Advanced</source>
+            <target state="translated">Avancé</target></trans-unit>
+            <trans-unit id="settings" approved="yes">
+                <source>Settings</source>
+            <target state="translated">Paramètres</target></trans-unit>
+
+            <trans-unit id="palette.alignment" approved="yes">
+                <source>Alignment</source>
+            <target state="translated">Alignement</target></trans-unit>
+
+            <trans-unit id="field.readmore_label" approved="yes">
+                <source>Read More Label</source>
+            <target state="translated">Label en savoir plus</target></trans-unit>
+
+        </body>
+    </file>
+</xliff>

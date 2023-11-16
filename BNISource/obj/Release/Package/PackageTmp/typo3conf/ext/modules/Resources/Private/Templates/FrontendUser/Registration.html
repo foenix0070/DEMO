@@ -1,0 +1,106 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"email.subject
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers">
+<f:layout name="Default" />
+<f:section name="main">
+
+	<div class="modules-registration">
+		<div class="card">
+			<div class="card-body">
+
+				<h2 id="registration-form-anchor">{settings.registration.headline}</h2>
+				<f:flashMessages />
+
+				<f:if condition="{processHash}">
+					<f:then>
+
+						<f:if condition="{settings.pages.login}">
+							<f:link.page pageUid="{settings.pages.login}" class="btn btn-primary"
+										 title="{f:translate(key: 'tx_registration_label.button_login_title')}">
+								<f:translate key="tx_registration_label.button_login_label" />
+							</f:link.page>
+						</f:if>
+
+					</f:then>
+					<f:else>
+
+						<f:if condition="{finishingSuccessful}">
+							<f:then>
+
+								<f:if condition="{settings.pages.login}">
+									<f:link.page pageUid="{settings.pages.login}" class="btn btn-primary"
+												 title="{f:translate(key: 'tx_registration_label.button_login_title')}">
+										<f:translate key="tx_registration_label.button_login_label" />
+									</f:link.page>
+								</f:if>
+
+							</f:then>
+							<f:else>
+								<f:form section="registration-form-anchor">
+									<f:for each="{settings.registration.fields}" as="field">
+										<f:switch expression="{field.type}">
+											<f:case value="input">
+												<f:render partial="Fields/Textfield"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="date">
+												<f:render partial="Fields/Date"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="year">
+												<f:render partial="Fields/Year"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="email">
+												<f:render partial="Fields/Email"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="select">
+												<f:render partial="Fields/Select"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="radio">
+												<f:render partial="Fields/Radio"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="password">
+												<f:render partial="Fields/Password"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="checkbox">
+												<f:render partial="Fields/Checkbox"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+											<f:case value="invitationCode">
+												<f:render partial="Fields/InvitationCode"
+														  arguments="{field: field, prefix: 'registration'}" />
+											</f:case>
+										</f:switch>
+									</f:for>
+									<div class="form-group mandatory-notice">
+										<f:translate key="tx_registration_label.registration_mandatory_fields" />
+									</div>
+									<div class="form-group" data-type="actions">
+										<f:form.submit class="btn btn-success"
+													   value="{f:translate(key: 'tx_registration_label.button_registration_send_label')}"
+													   title="{f:translate(key: 'tx_registration_label.button_registration_send_title')}" />
+										<f:if condition="{settings.pages.login}">
+											<f:link.page pageUid="{settings.pages.login}" class="btn btn-primary"
+														 title="{f:translate(key: 'tx_registration_label.button_login_title')}">
+												<f:translate key="tx_registration_label.button_login_label" />
+											</f:link.page>
+										</f:if>
+									</div>
+								</f:form>
+							</f:else>
+						</f:if>
+
+					</f:else>
+				</f:if>
+
+			</div>
+		</div>
+	</div>
+
+</f:section>
+</div>

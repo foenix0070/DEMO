@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-notice" style="{field.css.style.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+				<span class="{field.css.class.field}" style="{field.css.style.field}">
+					<f:if condition="{field.htmlSpecialChars}==0">
+						<f:then><f:format.raw>{field.value}</f:format.raw></f:then>
+						<f:else>{field.value}</f:else>
+					</f:if>
+				</span>
+			</div>
+		</div>
+	</f:section>
+</div>

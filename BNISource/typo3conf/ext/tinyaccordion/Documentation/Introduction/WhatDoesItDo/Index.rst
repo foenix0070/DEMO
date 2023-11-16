@@ -29,7 +29,7 @@ By default every template can be used with TinyAccordion or jQuery UI Accordion 
 Could be used for FAQs. It uses the TinyAccordion-JavaScript file from a website, that does not exist anymore.
 You find a demo here:
 
-`www.quizpalme.de/faq <https://www.quizpalme.de/faq>`_
+`www.quizpalme.de/faq.html <https://www.quizpalme.de/faq.html>`_
 
 Thanks to...
 ------------

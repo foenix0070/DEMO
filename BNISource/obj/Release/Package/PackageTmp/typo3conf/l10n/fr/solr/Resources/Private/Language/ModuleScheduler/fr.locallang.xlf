@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-23T10:38:14Z" product-name="solr" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="reindex_title" xml:space="preserve" approved="yes">
+				<source>Force Re-Indexing of a site</source>
+			<target state="translated">Force l'indexation d'un site</target></trans-unit>
+			<trans-unit id="reindex_description" xml:space="preserve" approved="yes">
+				<source>Purges the Solr Index and initializes the Index Queue of a site.</source>
+			<target state="translated">Purge l'index Solr et initialise la file d'attente d'un site</target></trans-unit>
+			<trans-unit id="indexqueueworker_title" xml:space="preserve" approved="yes">
+				<source>Index Queue Worker</source>
+			<target state="translated">Index fil d'attente</target></trans-unit>
+			<trans-unit id="indexqueueworker_description" xml:space="preserve" approved="yes">
+				<source>Processes the items in the Index Queue and sends them to Solr.</source>
+			<target state="translated">Ajoute les éléments dans l'index et les envoie à Solr</target></trans-unit>
+			<trans-unit id="indexqueueworker_field_documentsToIndexLimit" xml:space="preserve" approved="yes">
+				<source>Number of documents to index</source>
+			<target state="translated">Nombre de documents à indexer</target></trans-unit>
+			<trans-unit id="field_host" xml:space="preserve" approved="yes">
+				<source>Solr Host</source>
+			<target state="translated">Hôte Solr</target></trans-unit>
+			<trans-unit id="field_port" xml:space="preserve" approved="yes">
+				<source>Solr Port</source>
+			<target state="translated">Port Solr</target></trans-unit>
+			<trans-unit id="field_path" xml:space="preserve" approved="yes">
+				<source>Solr Path</source>
+			<target state="translated">Chemin Solr</target></trans-unit>
+			<trans-unit id="field_server" xml:space="preserve" approved="yes">
+				<source>Solr Server</source>
+			<target state="translated">Serveur Solr</target></trans-unit>
+			<trans-unit id="field_site" xml:space="preserve" approved="yes">
+				<source>Site</source>
+			<target state="translated">Site</target></trans-unit>
+		</body>
+	</file>
+</xliff>

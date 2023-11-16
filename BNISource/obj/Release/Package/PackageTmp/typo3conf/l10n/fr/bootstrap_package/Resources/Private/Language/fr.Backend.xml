@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+            <label index="theme_name">Paquet Bootstrap</label>
+
+            <label index="pages.nav_icon">Icône de navigation</label>
+            <label index="pages.thumbnail">Vignette</label>
+
+            <label index="backend_layout.default">Par défaut</label>
+            <label index="backend_layout.simple">Simple</label>
+            <label index="backend_layout.2_columns">2 colonnes</label>
+            <label index="backend_layout.2_columns_25_75">2 colonnes 25/75</label>
+            <label index="backend_layout.2_columns_50_50">2 colonnes 50/50</label>
+            <label index="backend_layout.2_columns_offset_right">2 colonnes, décalage à droite</label>
+            <label index="backend_layout.3_columns">3 colonnes</label>
+            <label index="backend_layout.subnavigation_right">Sous-navigation à droite</label>
+            <label index="backend_layout.subnavigation_right_2_columns">Sous-navigation à droite et 2 colonnes</label>
+            <label index="backend_layout.subnavigation_left">Sous-navigation à gauche</label>
+            <label index="backend_layout.subnavigation_left_2_columns">Sous-navigation à gauche et 2 colonnes</label>
+            <label index="backend_layout.special_start">Page de démarrage spéciale</label>
+            <label index="backend_layout.special_feature">Fonctionnalité particulière</label>
+
+            <label index="backend_layout.column.subnav">Sous-navigation (PAS D'ÉDITION)</label>
+
+            <label index="backend_layout.column.left">Gauche</label>
+            <label index="backend_layout.column.normal">Normale</label>
+            <label index="backend_layout.column.right">Droite</label>
+            <label index="backend_layout.column.border">Bordure</label>
+
+            <label index="backend_layout.column.middle1">Milieu : gauche</label>
+            <label index="backend_layout.column.middle2">Milieu : centre</label>
+            <label index="backend_layout.column.middle3">Milieu : droite</label>
+
+            <label index="backend_layout.column.main2">Normale 2</label>
+
+            <label index="backend_layout.column.contentbefore">Avant le contenu</label>
+            <label index="backend_layout.column.contentafter">Après le contenu</label>
+
+            <label index="backend_layout.column.special1">Spéciale 1</label>
+            <label index="backend_layout.column.special2">Spéciale 2</label>
+            <label index="backend_layout.column.special3">Spéciale 3</label>
+            <label index="backend_layout.column.special4">Spéciale 4</label>
+            <label index="backend_layout.column.special5">Spécial 5</label>
+            <label index="backend_layout.column.special6">Spécial 6</label>
+            <label index="backend_layout.column.special7">Spécial 7</label>
+            <label index="backend_layout.column.special8">Spéciale 8</label>
+            <label index="backend_layout.column.special9">Spéciale 9</label>
+            <label index="backend_layout.column.special10">Spéciale 10</label>
+
+            <label index="backend_layout.column.footer1">Pied de page : gauche</label>
+            <label index="backend_layout.column.footer2">Pied de page : centre</label>
+            <label index="backend_layout.column.footer3">Pied de page : droite</label>
+
+            <label index="menu.card_dir">Cartes de sous-pages</label>
+            <label index="menu.card_dir.description">Affichage d'un menu de sous-pages sous forme de cartes</label>
+            <label index="menu.card_list">Cartes</label>
+            <label index="menu.card_list.description">Affichage d'un menu de pages sélectionnées sous forme de cartes</label>
+
+            <label index="menu.card.options">Options</label>
+            <label index="menu.card.columns">Colonnes</label>
+            <label index="menu.card.align">Alignement</label>
+            <label index="menu.card.align.left">Gauche</label>
+            <label index="menu.card.align.center">Au centre</label>
+            <label index="menu.card.align.right">Droite</label>
+
+            <label index="menu.thumbnail_dir">Vignettes de sous-pages</label>
+            <label index="menu.thumbnail_dir.description">Affichage d'un menu de sous-pages sous forme de vignettes</label>
+            <label index="menu.thumbnail_list">Vignettes</label>
+            <label index="menu.thumbnail_list.description">Affichage d'un menu de pages sélectionnées sous forme de vignettes</label>
+
+            <label index="menu.thumbnail.options">Options</label>
+            <label index="menu.thumbnail.columns">Colonnes</label>
+            <label index="menu.thumbnail.align">Alignement</label>
+            <label index="menu.thumbnail.align.left">Gauche</label>
+            <label index="menu.thumbnail.align.center">Au centre</label>
+            <label index="menu.thumbnail.align.right">Droite</label>
+
+            <label index="content_group.interactive">Interactif</label>
+            <label index="content_group.media">Media</label>
+            <label index="content_group.data">Données</label>
+            <label index="content_group.text">Texte</label>
+            <label index="content_group.social_media">Réseaux sociaux</label>
+
+            <label index="content_element.csv">CSV</label>
+            <label index="content_element.csv.description">Afficher une table à partir d'un fichier CSV.</label>
+
+            <label index="content_element.media">Media</label>
+            <label index="content_element.media.description">Un certain nombre de vidéos youtube et vimeo dans des lignes et des colonnes avec une légende.</label>
+
+            <label index="content_element.audio">Audio</label>
+            <label index="content_element.audio.description">Ajouter des fichiers Audio</label>
+
+            <label index="content_element.panel">Panneau</label>
+            <label index="content_element.panel.description">Ajouter un élément de type panneau avec du texte simple</label>
+
+            <label index="content_element.carousel">Carrousel</label>
+            <label index="content_element.carousel.description">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</label>
+
+            <label index="content_element.carousel_small">Petit carrousel</label>
+            <label index="content_element.carousel_small.description">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</label>
+
+            <label index="content_element.carousel_fullscreen">Carrousel en plein écran</label>
+            <label index="content_element.carousel_fullscreen.description">Ajouter un élément de carrousel avec différents contenus (en-tête / texte avec image / HTML pur)</label>
+
+            <label index="content_element.textcolumn">Texte dans des colonnes</label>
+            <label index="content_element.textcolumn.description">Ajouter du texte dans les colonnes</label>
+
+            <label index="content_element.textteaser">Texte avec un extrait</label>
+            <label index="content_element.textteaser.description">Ajouter du texte avec un extrait</label>
+
+            <label index="content_element.texticon">Texte avec une Icône</label>
+            <label index="content_element.texticon.description">Ajouter une Icône Bootstrap avec du Texte</label>
+
+            <label index="content_element.accordion">Accordéon</label>
+            <label index="content_element.accordion.description">Ajouter plusieurs éléments de type accordéon avec un gros titre et un texte</label>
+
+            <label index="content_element.tab">Onglet</label>
+            <label index="content_element.tab.description">Ajouter plusieurs éléments de tableau avec un gros titre et un texte</label>
+
+            <label index="content_element.card_group">Groupe de carte</label>
+            <label index="content_element.card_group.description">Ajouter un élément avec plusieurs contenus de type carte</label>
+            <label index="content_element.card_group.options">Options</label>
+            <label index="content_element.card_group.columns">Colonnes</label>
+            <label index="content_element.card_group.align">Alignement</label>
+            <label index="content_element.card_group.align.left">Gauche</label>
+            <label index="content_element.card_group.align.center">Au centre</label>
+            <label index="content_element.card_group.align.right">Droite</label>
+
+            <label index="card_group_item">Carte</label>
+            <label index="card_group_item.tt_content">Groupe de carte</label>
+            <label index="card_group_item.header">En-tête</label>
+            <label index="card_group_item.subheader">Sous-titre</label>
+            <label index="card_group_item.image">Image</label>
+            <label index="card_group_item.bodytext">Texte</label>
+            <label index="card_group_item.link">Lien</label>
+            <label index="card_group_item.link_title">Titre</label>
+            <label index="card_group_item.link_icon">Icône</label>
+            <label index="card_group_item.link_class">Couleur</label>
+
+            <label index="content_element.icon_group">Group d'icône</label>
+            <label index="content_element.icon_group.description">Ajouter un élément avec plusieurs icônes</label>
+            <label index="content_element.icon_group.options">Options</label>
+            <label index="content_element.icon_group.columns">Colonnes</label>
+            <label index="content_element.icon_group.columns.auto">Automatique</label>
+            <label index="content_element.icon_group.align">Alignement</label>
+            <label index="content_element.icon_group.align.left">Gauche</label>
+            <label index="content_element.icon_group.align.center">Au centre</label>
+            <label index="content_element.icon_group.align.right">Droite</label>
+            <label index="content_element.icon_group.icon_position">Position de l'icône</label>
+            <label index="content_element.icon_group.icon_position.left-top">À gauche en haut</label>
+            <label index="content_element.icon_group.icon_position.left-center">À gauche, à mi-hauteur</label>
+            <label index="content_element.icon_group.icon_position.right-top">À droite en haut</label>
+            <label index="content_element.icon_group.icon_position.right-center">À droite, à mi-hauteur</label>
+            <label index="content_element.icon_group.icon_position.above">Au-dessus</label>
+            <label index="content_element.icon_group.icon_position.below">En-dessous</label>
+
+            <label index="content_element.listgroup">Group de liste</label>
+            <label index="content_element.listgroup.description">Ajouter un élément simple de groupe de liste</label>
+
+            <label index="content_element.external_media">Media externe</label>
+            <label index="content_element.external_media.description">Insert un media externe depuis YouTube ou Vimeo</label>
+
+            <label index="content_element.textmedia">Texte &amp; Media</label>
+
+            <label index="content_element.quote">Citation</label>
+            <label index="content_element.quote.description">Ajouter une citation</label>
+
+            <label index="quote.text">Citer un texte</label>
+            <label index="quote.link">Citer un lien</label>
+            <label index="quote.source">Citer une source</label>
+
+            <label index="content_element.social_links">Liens réseaux sociaux</label>
+            <label index="content_element.social_links.description">Ajouter un élément pour afficher les réseaux sociaux configurés</label>
+
+            <label index="content_element.timeline">Chronologie</label>
+            <label index="content_element.timeline.description">Ajouter un élément pour afficher une chronologie</label>
+
+            <label index="carousel.options">Options du carrousel</label>
+            <label index="carousel.interval">Intervalle en ms</label>
+            <label index="carousel.transition">Transition</label>
+            <label index="carousel.transition.slide">Diapositive</label>
+            <label index="carousel.transition.fade">Disparition graduelle</label>
+            <label index="carousel.wrap">Enveloppe</label>
+            <label index="carousel.wrap.description">Relancer le Carrousel du début une fois arrivé à la fin.</label>
+            <label index="carousel.show_nav_title">Afficher le titre de navigation</label>
+            <label index="carousel.show_nav_title.description">Afficher le titre de navigation des enregistrements au lieu des bulles.</label>
+
+            <label index="carousel_item">Item de Carrousel</label>
+            <label index="carousel_item.tt_content">Carrousel</label>
+            <label index="carousel_item.link">Lien</label>
+            <label index="carousel_item.header">En-tête</label>
+            <label index="carousel_item.header_layout">Disposition de l'en-tête</label>
+            <label index="carousel_item.header_class">Class d'en-tête</label>
+            <label index="carousel_item.header_position">Position de l'en-tête</label>
+            <label index="carousel_item.header_position.default">Par défaut</label>
+            <label index="carousel_item.header_position.left">Gauche</label>
+            <label index="carousel_item.header_position.center">Au centre</label>
+            <label index="carousel_item.header_position.right">Droite</label>
+            <label index="carousel_item.subheader">Sous-titre</label>
+            <label index="carousel_item.subheader_layout">Disposition du sous-titre</label>
+            <label index="carousel_item.subheader_class">Classe du sous-titre</label>
+            <label index="carousel_item.nav_title">Titre de navigation</label>
+            <label index="carousel_item.button_text">Bouton texte</label>
+            <label index="carousel_item.bodytext">Texte</label>
+            <label index="carousel_item.text_color">Couleur du texte</label>
+            <label index="carousel_item.image">Image</label>
+            <label index="carousel_item.background_color">Couleur d'arrière-plan</label>
+            <label index="carousel_item.background_image">Image d'arrière-plan</label>
+            <label index="carousel_item.background_image_options">Options des images d'arrière-plan</label>
+
+            <label index="carousel_item.item_type.header">En-tête</label>
+            <label index="carousel_item.item_type.text">Texte</label>
+            <label index="carousel_item.item_type.calltoaction">Appel à une action</label>
+            <label index="carousel_item.item_type.image">Image</label>
+            <label index="carousel_item.item_type.textandimage">Texte et Image</label>
+            <label index="carousel_item.item_type.backgroundimage">Image d'arrière-plan</label>
+            <label index="carousel_item.item_type.html">HTML</label>
+
+            <label index="accordion.options">Options de l'accordéon</label>
+            <label index="accordion.default_element">Élément par défaut</label>
+
+            <label index="accordion_item">Item d'accordéon</label>
+            <label index="accordion_item.tt_content">Accordéon</label>
+            <label index="accordion_item.header">En-tête</label>
+            <label index="accordion_item.bodytext">Texte</label>
+            <label index="accordion_item.media">Média</label>
+            <label index="accordion_item.mediaposition">Position du média</label>
+            <label index="accordion_item.imagecols">Colonnes</label>
+            <label index="accordion_item.image_zoom">Cliquer pour agrandir</label>
+            <label index="accordion_item.mediaorient">Orientation</label>
+            <label index="accordion_item.mediaorient.left">Gauche</label>
+            <label index="accordion_item.mediaorient.top">En-haut</label>
+            <label index="accordion_item.mediaorient.right">À droite</label>
+            <label index="accordion_item.mediaorient.bottom">En-bas</label>
+
+            <label index="tab.options">Options des onglets</label>
+            <label index="tab.default_tab">Onglet par défaut</label>
+
+            <label index="tab_item">Item de tabulation</label>
+            <label index="tab_item.tt_content">Onglet</label>
+            <label index="tab_item.active">Définir comme mode par défaut</label>
+            <label index="tab_item.header">En-tête</label>
+            <label index="tab_item.bodytext">Texte</label>
+            <label index="tab_item.media">Média</label>
+            <label index="tab_item.mediaposition">Position du média</label>
+            <label index="tab_item.imagecols">Colonnes</label>
+            <label index="tab_item.image_zoom">Clicker pour agrandir</label>
+            <label index="tab_item.mediaorient">Orientation</label>
+            <label index="tab_item.mediaorient.left">Gauche</label>
+            <label index="tab_item.mediaorient.top">En-haut</label>
+            <label index="tab_item.mediaorient.right">Droite</label>
+            <label index="tab_item.mediaorient.bottom">En-bas</label>
+
+            <label index="timeline.options">Options de la chronologie</label>
+            <label index="timeline.sorting">Trier</label>
+            <label index="timeline.sorting.asc">Ascendant</label>
+            <label index="timeline.sorting.desc">Descendant</label>
+
+            <label index="timeline_item">Item de chronologie</label>
+            <label index="timeline_item.tt_content">Chronologie</label>
+            <label index="timeline_item.date">Date</label>
+            <label index="timeline_item.header">En-tête</label>
+            <label index="timeline_item.bodytext">Texte</label>
+            <label index="timeline_item.icon_file">Fichier d'icône</label>
+            <label index="timeline_item.image">Image</label>
+
+            <label index="icon_group_item">Élément du group d'icônes</label>
+            <label index="icon_group_item.tt_content">Group d'icone</label>
+            <label index="icon_group_item.header">En-tête</label>
+            <label index="icon_group_item.subheader">Sous-titre</label>
+            <label index="icon_group_item.bodytext">Texte</label>
+            <label index="icon_group_item.link">Lien</label>
+            <label index="icon_group_item.icon_file">Fichier d'icône</label>
+
+            <label index="field.panel_class">Class du panneau</label>
+
+            <label index="external_media">Media externe</label>
+            <label index="field.external_media_source">Media de source externe</label>
+            <label index="field.external_media_ratio">Proportions</label>
+
+            <label index="field.icon">Icône</label>
+            <label index="field.icon_set">Groupe d'icônes</label>
+            <label index="field.icon_file">Fichier d'icône</label>
+            <label index="field.icon_position">Position</label>
+            <label index="field.icon_type">Type</label>
+            <label index="field.icon_size">Taille</label>
+            <label index="field.icon_background">Arrière-plan</label>
+            <label index="field.icon_color">Couleur</label>
+            <label index="field.icon_background">Arrière-plan</label>
+
+            <label index="field.background_color_class">Couleur d'arrière-plan</label>
+            <label index="field.background_image">Image d'arrière-plan</label>
+            <label index="field.background_image_options">Option des images d'arrière-plan</label>
+
+            <label index="field.teaser">Extrait</label>
+            <label index="field.file_folder">Dossier de fichiers</label>
+
+            <label index="field.imageorient.125">À côté du texte, centré à droite</label>
+            <label index="field.imageorient.126">À côté du texte, centré à gauche</label>
+
+            <label index="option.background_image.parallax">Parallaxe</label>
+            <label index="option.background_image.parallax.description">Autoriser l'effet Parallaxe</label>
+            <label index="option.background_image.fade">Disparition graduelle</label>
+            <label index="option.background_image.fade.description">Autoriser l'effet de disparition graduelle</label>
+            <label index="option.background_image.filter">Filtrer</label>
+            <label index="option.background_image.filter.none">Aucun</label>
+            <label index="option.background_image.filter.blur">Estomper</label>
+            <label index="option.background_image.filter.grayscale">Niveau de gris</label>
+            <label index="option.background_image.filter.sepia">Sépia</label>
+
+            <label index="option.default">Par défaut</label>
+            <label index="option.none">Aucune</label>
+            <label index="option.left">Gauche</label>
+            <label index="option.top">En-haut</label>
+            <label index="option.right">Droite</label>
+            <label index="option.bottom">En-bas</label>
+            <label index="option.default">Par défaut</label>
+            <label index="option.square">Carré</label>
+            <label index="option.circle">Cercle</label>
+            <label index="option.extrasmall">Très petit</label>
+            <label index="option.small">Petit</label>
+            <label index="option.medium">Moyen</label>
+            <label index="option.large">Grand</label>
+            <label index="option.awesome">Fabuleux</label>
+            <label index="option.primary">Primaire</label>
+            <label index="option.success">Succès</label>
+            <label index="option.info">Info</label>
+            <label index="option.warning">Attention</label>
+            <label index="option.danger">Danger</label>
+
+            <label index="ratio.16_9">16:9</label>
+            <label index="ratio.4_3">4:3</label>
+            <label index="ratio.1_1">1:1</label>
+            <label index="ratio.free">Libre</label>
+
+            <label index="tablelayout.default">Par défaut</label>
+            <label index="tablelayout.basic">Basique</label>
+            <label index="tablelayout.striped"/>
+            <label index="tablelayout.bordered"/>
+            <label index="tablelayout.hover">Survol des lignes</label>
+            <label index="tablelayout.condensed"/>
+
+            <label index="uploadslayout.default">Par défaut</label>
+            <label index="uploadslayout.icons">Afficher les icônes</label>
+            <label index="uploadslayout.iconsandpreview">Afficher les icônes et les vignettes de prévisualisation</label>
+
+            <label index="field.assets">Élément média</label>
+
+            <label index="tabs.background">Arrière-plan</label>
+            <label index="tabs.icon">Icône</label>
+
+            <label index="colorpicker">Pipette à couleur</label>
+
+            <label index="advanced">Avancé</label>
+            <label index="settings">Paramètres</label>
+
+            <label index="palette.alignment">Alignement</label>
+
+            <label index="field.readmore_label">Label en savoir plus</label>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

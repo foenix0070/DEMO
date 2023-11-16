@@ -61,7 +61,7 @@
 			<source>Enable schema.org Header</source>
 		</trans-unit>
 		<trans-unit id="flexform.addSchemaOrgHeader.description">
-            <source>For details see https://schema.org/FAQPage"</source>
+            <source>For details see https://schema.org/faq.html.htmlPage"</source>
         </trans-unit>
 		<trans-unit id="flexform.enablePagination">
             <source>Enable Pagination</source>

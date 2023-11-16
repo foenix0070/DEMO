@@ -1,0 +1,311 @@
+plugin.tx_fluidform.settings.forms.jobApplication < plugin.tx_fluidform.presets.forms.default
+plugin.tx_fluidform.settings.forms.jobApplication {
+	configuration {
+		# Send by AJAX 0/1
+		ajax = 1
+		# Add query string to target url
+		addQueryString = 0
+		# PDF settings
+		pdf {
+			receiver {
+				fontPath = {$themes.configuration.extension.fluid_form.pdf.receiver.fontPath}
+				imagePath = {$themes.configuration.extension.fluid_form.pdf.receiver.imagePath}
+				background = {$themes.configuration.extension.fluid_form.pdf.receiver.background}
+				partialRootPath = {$themes.configuration.extension.fluid_form.pdf.receiver.partialRootPath}
+				templateRootPath = {$themes.configuration.extension.fluid_form.pdf.receiver.templateRootPath}
+			}
+			sender {
+				fontPath = {$themes.configuration.extension.fluid_form.pdf.sender.fontPath}
+				imagePath = {$themes.configuration.extension.fluid_form.pdf.sender.imagePath}
+				background = {$themes.configuration.extension.fluid_form.pdf.sender.background}
+				partialRootPath = {$themes.configuration.extension.fluid_form.pdf.sender.partialRootPath}
+				templateRootPath = {$themes.configuration.extension.fluid_form.pdf.sender.templateRootPath}
+			}
+		}
+	}
+	fieldsets {
+		complete < plugin.tx_fluidform.presets.fieldsets.normalWithoutLabel
+		complete {
+			fields {
+				selectFoundBy < plugin.tx_fluidform.presets.fields.select
+				selectFoundBy {
+					label = Wie sind Sie auf uns aufmerksam geworden?
+					required = 1
+					options {
+						Zeitung = Zeitung
+						Arbeitsamt = Arbeitsamt/Jobcenter
+						Sonstiges = Sonstiges
+						Internet = Internet
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				applicationAs < plugin.tx_fluidform.presets.fields.select
+				applicationAs {
+					label = Ich bewerbe mich als …
+					required = 1
+					options {
+						WebEntwickler = Web-Entwickler/in
+						FassadenbaumonteurIn = Fassadenbaumonteur/in
+						MetallbauerIn_oder_SchlosserIn = Metallbauer/in oder Schlosser/in
+						SchweisserIn = Schweißer/in
+						MaschinenbedienerIn = Maschinenbediener/in
+						KaufmaennischeR_AngestellteR = Kaufmännische/r Angestellte/r
+						TechnischeR_AngestellteR = Technische/r Angestellte/r
+						AuszubildendeR_MetallbauerIn_der_Konstruktionstechnik = Auszubildende/r: Metallbauer/in der Konstruktionstechnik
+						AuszubildendeR_TechnischeR_SystemplanerIn = Auszubildende/r: Technische/r Systemplaner/in
+						AuszubildendeR_Industriekaufmann-frau = Auszubildende/r: Industriekaufmann/-frau
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				initiative < plugin.tx_fluidform.presets.fields.checkbox
+				initiative {
+					label >
+					required = 0
+					checkboxLabel = Initiativbewerbung
+					css {
+						style {
+							label = display:none
+						}
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				earliestStart < plugin.tx_fluidform.presets.fields.date
+				earliestStart {
+					label = Mein frühstmöglicher Eintrittstermin ist der …
+					required = 1
+					placeholder = 01.05.2018
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				photo < plugin.tx_fluidform.presets.fields.upload
+				photo {
+					label = Foto
+					notice = Bitte Bewerbungsfoto in einem gängigen Bildformat von Ihrem Rechner auswählen und hochladen
+					upload {
+						allowedFileTypes = jpg,jpeg,png
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				spacerNotice < plugin.tx_fluidform.presets.fields.notice
+				spacerNotice {
+					value =
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				gender < plugin.tx_fluidform.presets.fields.selectGender
+				gender {
+					required = 1
+				}
+				firstnameLastname < plugin.tx_fluidform.presets.fields.inputFirstnameLastname
+				firstnameLastname {
+					required = 1
+				}
+				streetHousenumber < plugin.tx_fluidform.presets.fields.inputStreetHousenumber
+				streetHousenumber {
+					required = 1
+				}
+				postalCodeCity < plugin.tx_fluidform.presets.fields.inputPostalCodeCity
+				postalCodeCity {
+					required = 1
+				}
+				phone < plugin.tx_fluidform.presets.fields.inputPhone
+				phone {
+					required = 1
+				}
+				email < plugin.tx_fluidform.presets.fields.inputEmail
+				email {
+					required = 1
+				}
+				message < plugin.tx_fluidform.presets.fields.textarea
+				message {
+					label = Anmerkungen
+					required = 0
+				}
+				uploadsNotice < plugin.tx_fluidform.presets.fields.notice
+				uploadsNotice {
+					value = Nachfolgend haben Sie die Möglichkeit, Bewerbungsschreiben und Lebenslauf sowie die letzten Arbeits- und Abschlusszeugnisse als PDF hochzuladen. Die Dateien sollten jeweils nicht größer als 10MB sein. Je nach Dateigröße Ihrer Bewerbungsdokumente kann der Upload-Protess einige Zeit in Anspruch nehmen.
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				coverLetter < plugin.tx_fluidform.presets.fields.upload
+				coverLetter {
+					label = Anschreiben
+					notice = Bitte Anschreiben im PDF-Format von Ihrem Rechner auswählen und hochladen
+					upload {
+						storage = 1
+						folder = fluid_form_upload
+						allowedFileTypes = pdf
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				curriculumVitae < plugin.tx_fluidform.presets.fields.upload
+				curriculumVitae {
+					label = Lebenslauf
+					notice = Bitte Lebenslauf im PDF-Format von Ihrem Rechner auswählen und hochladen
+					upload {
+						allowedFileTypes = pdf
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				otherDocuments < plugin.tx_fluidform.presets.fields.upload
+				otherDocuments {
+					label = Weitere Dokumente
+					notice = Bitte weitere Dokumente (Zeugnisse, Zertifikate, etc.) im PDF-Format von Ihrem Rechner auswählen und hochladen
+					upload {
+						allowedFileTypes = pdf
+					}
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				dataRelease < plugin.tx_fluidform.presets.fields.checkbox
+				dataRelease {
+					label = Datenfreigabe
+					required = 1
+					checkboxLabel = Ich willige einer weitergehenden Speicherung, Verarbeitung und Nutzung meiner persönlichen Daten über eine konkrete Stelle hinaus in dem Bewerberpool ein. Ich bin jederzeit berechtigt, meine Einwilligung zu widerrufen.
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+					validation {
+						NotEmpty = Bitte willigen Sie der Speicherung Ihrer Daten ein.
+					}
+				}
+				dataReleaseDelete < plugin.tx_fluidform.presets.fields.checkbox
+				dataReleaseDelete {
+					label >
+					required = 0
+					checkboxLabel = Ich möchte, daß meine Daten nach dem aktuellen Bewerbungsverfahren gelöscht werden.
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+						style {
+							label = display:none
+						}
+					}
+				}
+				privacy < plugin.tx_fluidform.presets.fields.checkbox
+				privacy {
+					label = Datenschutzerklärung
+					required = 1
+					checkboxLabel = Ich habe die Erklärung zum Datenschutz gelesen und willige in die Speicherung, Verarbeitung und Verwendung meiner persönlichen Daten gemäß dieser Datenschutzerklärung ein.
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+					validation {
+						NotEmpty = Bitte akzeptieren Sie unsere Datenschutzerklärung.
+					}
+				}
+			}
+		}
+		buttons < plugin.tx_fluidform.presets.fieldsets.buttons
+		buttons {
+			fields {
+				submit < plugin.tx_fluidform.presets.fields.submit
+			}
+		}
+	}
+	finisher {
+		upload < plugin.tx_fluidform.presets.finisher.upload
+		upload {
+			active = {$themes.configuration.extension.fluid_form.jobApplication.upload.active}
+		}
+		database < plugin.tx_fluidform.presets.finisher.database
+		database {
+			active = {$themes.configuration.extension.fluid_form.jobApplication.database.active}
+			storagePid = {$themes.configuration.extension.fluid_form.jobApplication.database.storagePid}
+		}
+		pdf < plugin.tx_fluidform.presets.finisher.pdf
+		mail < plugin.tx_fluidform.presets.finisher.mail
+		mail {
+			active = {$themes.configuration.extension.fluid_form.jobApplication.mail.active}
+			subject = {$themes.configuration.extension.fluid_form.jobApplication.mail.subject}
+			message {
+				introduction (
+					<p>
+						Hallo,<br />
+						das ist eine Bewerbung.<br />
+						<br />
+						<b>Ausgefüllte Felder:</b>
+					</p>
+				)
+				conclusion (
+					<p>Vielen Dank für Ihre Aufmerksamkeit</p>
+				)
+			}
+			from {
+				name = {$themes.configuration.extension.fluid_form.jobApplication.mail.from.name}
+				email = {$themes.configuration.extension.fluid_form.jobApplication.mail.from.email}
+			}
+			to {
+				0 {
+					name = {$themes.configuration.extension.fluid_form.jobApplication.mail.to.0.name}
+					email = {$themes.configuration.extension.fluid_form.jobApplication.mail.to.0.email}
+				}
+				#1 {
+				#	name = Fluid form
+				#	email = fluid-form-to-1@t3co.de
+				#}
+			}
+			cc {
+				#0 {
+				#	name = Fluid form
+				#	email = fluid-form-cc@t3co.de
+				#}
+			}
+			bcc {
+				#0 {
+				#	name = Fluid form
+				#	email = fluid-form-bcc@t3co.de
+				#}
+			}
+		}
+	}
+	messages {
+		successfullySent {
+			title = Ihre Bewerbung wurde erfolgreich verschickt!
+			message = Wir werden uns in Kürze mit Ihnen in Verbindung setzen.
+		}
+		validationFailed {
+			title = Ihre Bewerbung konnte nicht verschickt werden!
+			message = Bitte füllen Sie alle erforderlichen Felder aus.
+		}
+	}
+}

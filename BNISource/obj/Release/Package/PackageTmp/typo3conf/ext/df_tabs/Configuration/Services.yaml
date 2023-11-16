@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SGalinski\DfTabs\:
+    resource: '../Classes/*'
+
+  SGalinski\DfTabs\Preview\PreviewRenderer:
+    public: true

@@ -1,0 +1,18 @@
+plugin.tx_modules {
+	_CSS_DEFAULT_STYLE (
+		.modules-registration .typo3-messages,
+		.modules-profile .typo3-messages {
+			padding-left: 0;
+		}
+		.modules-registration .typo3-messages li,
+		.modules-profile .typo3-messages li {
+			list-style: none;
+   			margin: 0;
+		}
+		.modules-registration .invalid-feedback,
+		.modules-profile .invalid-feedback {
+			width: 100%;
+			display: inline-block;
+		}
+	)
+}

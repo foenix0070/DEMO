@@ -1,0 +1,6 @@
+plugin.tx_nscookieyes_nscookieyes {
+    settings {
+        # cat=plugin.tx_nscookieyes//a; type=string; label=API Script
+        cookieapiscript =
+    }
+}

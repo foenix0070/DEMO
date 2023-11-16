@@ -1,0 +1,12 @@
+<f:layout name="SystemEmail" />
+<f:section name="Subject"><f:format.raw>{subject}</f:format.raw></f:section>
+<f:section name="Title">{subject}</f:section>
+<f:section name="Main">
+	<p>
+		Hi {frontendUser.username},<br />
+		site administrator has rejected your registration - please contact the site administrator.<br />
+	</p>
+	<p>
+		Thank you for your attention
+	</p>
+</f:section>

@@ -1,0 +1,284 @@
+config.tx_extbase.persistence {
+	classes {
+		CodingMs\Modules\Domain\Model\FrontendUser.mapping {
+			tableName = fe_users
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+				disable.mapOnProperty = disable
+				tx_modules_gender.mapOnProperty = gender
+				tx_modules_birthday.mapOnProperty = birthday
+				tx_modules_mobile.mapOnProperty = mobile
+				tx_modules_hash.mapOnProperty = hash
+				tx_modules_terms_confirmed.mapOnProperty = termsConfirmed
+				tx_modules_privacy_confirmed.mapOnProperty = privacyConfirmed
+				tx_modules_disclaimer_confirmed.mapOnProperty = disclaimerConfirmed
+				tx_modules_newsletter.mapOnProperty = newsletter
+				tx_modules_profession.mapOnProperty = profession
+				tx_modules_marital_status.mapOnProperty = maritalStatus
+				tx_modules_children.mapOnProperty = children
+				tx_modules_bank_account_owner_name.mapOnProperty = bankAccountOwnerName
+				tx_modules_bank_account_bank_name.mapOnProperty = bankAccountBankName
+				tx_modules_bank_account_bic.mapOnProperty = bankAccountBic
+				tx_modules_bank_account_iban.mapOnProperty = bankAccountIban
+				tx_modules_accounting_type.mapOnProperty = accountingType
+				tx_modules_vat_number.mapOnProperty = vatNumber
+				tx_extbase_type.mapOnProperty = recordType
+			}
+		}
+		CodingMs\Modules\Domain\Model\FrontendUserGroup.mapping {
+			tableName = fe_groups
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+			}
+		}
+		CodingMs\Modules\Domain\Model\BackendUser.mapping {
+			tableName = be_users
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+				disable.mapOnProperty = disable
+			}
+		}
+	}
+	objects {
+		TYPO3\CMS\Extbase\Domain\Model\FrontendUserRepository.className = CodingMs\Modules\Domain\Model\FrontendUserRepository
+		TYPO3\CMS\Beuser\Domain\Repository\BackendUserRepository.className = CodingMs\Modules\Domain\Model\BackendUserRepository
+	}
+	#updateReferenceIndex = 1
+}
+
+plugin.tx_modules {
+	settings {
+		container {
+			frontendUser = {$themes.configuration.container.frontendUser}
+		}
+	}
+}
+
+frontend_user_login = PAGE
+frontend_user_login {
+	config {
+		debug = 0
+		no_cache = 1
+		admPanel = 0
+	}
+	typeNum = 1586608761
+	10 < tt_content.list.20.modules_loginfrombackend
+}
+
+# Module configuration
+module.tx_modules {
+	view {
+		templateRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Templates/
+		}
+		partialRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Partials/
+		}
+		layoutRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Layouts/
+		}
+	}
+	settings {
+		lists {
+			frontendUser {
+				id = frontendUser
+				table = fe_users
+				module = web_ModulesFrontenduser
+				plugin = Modules
+				sortingField = username
+				sortingOrder = asc
+				limit = 20
+				columnSelector = 1
+				columnDefault = username, name, email, usergroup, disable
+				fields {
+					username {
+						format = Plain
+						sortable = 1
+					}
+					name {
+						format = Plain
+						sortable = 1
+					}
+					email {
+						format = Email
+						sortable = 1
+					}
+					usergroup {
+						format = FrontendUser/Group
+						sortable = 1
+					}
+					disable {
+						format = Boolean
+						sortable = 1
+					}
+					creationDate {
+						format = DateTime
+						sortable = 1
+						dateFormat = d.m.Y H:i
+					}
+					modificationDate {
+						format = DateTime
+						sortable = 1
+						dateFormat = d.m.Y H:i
+					}
+				}
+				actions {
+					edit {
+						action = Edit
+					}
+					frontendUserLogin {
+						action = FrontendUserLogin
+					}
+					disableEnable {
+						action = DisableEnable
+					}
+					delete {
+						action = Delete
+						# Data field of the record, where a label is store.
+						# This label is used for the security question in the modal.
+						subjectField = username
+					}
+				}
+			}
+			frontendUserGroups {
+				id = frontendUserGroups
+				table = fe_groups
+				module = web_ModulesFrontenduser
+				plugin = Modules
+				sortingField = title
+				sortingOrder = asc
+				limit = 20
+				columnSelector = 1
+				fields {
+					title {
+						format = Plain
+						sortable = 1
+					}
+					hidden {
+						format = Boolean
+						sortable = 1
+					}
+				}
+				actions {
+					edit {
+						action = Edit
+					}
+					hideShow {
+						action = HideShow
+					}
+					delete {
+						action = Delete
+						# Data field of the record, where a label is store.
+						# This label is used for the security question in the modal.
+						subjectField = title
+					}
+				}
+			}
+			invitationCodes {
+				id = invitationCodes
+				table = tx_modules_domain_model_invitationcode
+				module = web_ModulesFrontenduser
+				plugin = Modules
+				sortingField = code
+				sortingOrder = asc
+				limit = 20
+				columnSelector = 1
+				fields {
+					code {
+						format = Plain
+						sortable = 1
+					}
+					used {
+						format = Boolean
+						sortable = 1
+					}
+					company {
+						format = Plain
+						sortable = 1
+					}
+					firstName {
+						format = Plain
+						sortable = 1
+					}
+					lastName {
+						format = Plain
+						sortable = 1
+					}
+				}
+				actions {
+					edit {
+						action = Edit
+					}
+					delete {
+						action = Delete
+						# Data field of the record, where a label is store.
+						# This label is used for the security question in the modal.
+						subjectField = code
+					}
+				}
+			}
+			backendUser {
+				id = backendUser
+				table = be_users
+				module = system_ModulesBackenduser
+				plugin = Modules
+				sortingField = username
+				sortingOrder = asc
+				limit = 20
+				columnSelector = 1
+				fields {
+					username {
+						format = Plain
+						sortable = 1
+					}
+					realName {
+						format = Plain
+						sortable = 1
+					}
+					email {
+						format = Email
+						sortable = 1
+					}
+					usergroup {
+						format = BackendUser/Group
+						sortable = 1
+					}
+					disable {
+						format = Boolean
+						sortable = 1
+					}
+					creationDate {
+						format = DateTime
+						sortable = 1
+						dateFormat = d.m.Y H:i
+					}
+					modificationDate {
+						format = DateTime
+						sortable = 1
+						dateFormat = d.m.Y H:i
+					}
+				}
+				actions {
+					edit {
+						action = Edit
+					}
+					disableEnable {
+						action = DisableEnableRoot
+					}
+					delete {
+						action = Delete
+						# Data field of the record, where a label is store.
+						# This label is used for the security question in the modal.
+						subjectField = username
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section id="tab-section" class="mb-5">
+            <div class="container py-4">
+                <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                    <div class="heading-block border-bottom-0 text-center mb-0">
+                        <h2>{ArticleSectionTextContent.data.header}</h2>
+                        <span>{ArticleSectionTextContent.data.subheader}</span>
+                    </div>
+                    <div class="fw-light"><f:format.html>{ArticleSectionTextContent.data.bodytext}</f:format.html></div>
+                </f:for>
+                <div class="row">
+                    <div class="col">
+                         <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div><!-- End Main -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.m-tabs__panel').find('header').hide();
+        });
+
+    </script>
+
+</f:section>
+
+
+
+<!-- <button class="m-tabs__tab nav-item" role="tab" aria-controls="panel-578-0" id="tab-578-0" aria-selected="true" data-width="118"> Présentation </button>
+<button class="m-tabs__tab nav-item" role="tab" aria-controls="panel-579-1" id="tab-579-1" aria-selected="false" data-width="89">Création</button>
+<button class="m-tabs__tab nav-item" role="tab" aria-controls="panel-580-2" id="tab-580-2" aria-selected="false" data-width="90">
+    Missions
+</button> -->

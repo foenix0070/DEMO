@@ -1,0 +1,672 @@
+page.includeCSS {
+	tempusDominus = EXT:modules/Resources/Public/Contrib/TempusDominus/tempusdominus-bootstrap-4.min.css
+}
+page.includeJSFooterlibs {
+	numberFormat = EXT:modules/Resources/Public/JavaScript/NumberFormat.js
+	modules = EXT:modules/Resources/Public/JavaScript/Modules.js
+	moment = EXT:modules/Resources/Public/Contrib/Moment/moment-with-locales.min.js
+	moment.forceOnTop = 1
+	tempusDominus = EXT:modules/Resources/Public/Contrib/TempusDominus/tempusdominus-bootstrap-4.min.js
+}
+
+plugin.tx_modules {
+	presets {
+		fields {
+			input {
+				label = Name
+				placeholder =
+				type = Input
+				inputType = text
+				section = Default
+				required = 0
+				readonly = 0
+				# Inserts this value, in case of an empty value
+				valueIfEmpty =
+				validation {
+					NotEmpty = Please enter your text
+				}
+				css {
+					class {
+						wrapper = form-group
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+
+
+			inputCurrency < plugin.tx_modules.presets.fields.input
+			inputCurrency {
+				label = Currency
+				section = Default
+				inputType = currency
+			}
+			inputPercent < plugin.tx_modules.presets.fields.input
+			inputPercent {
+				label = Percent
+				section = Default
+				inputType = percent
+			}
+
+
+			inputDateTime < plugin.tx_modules.presets.fields.input
+			inputDateTime {
+				label = Date time
+				type = DateTime
+				section = Default
+				# Parameter type for getter/setter
+				# string: is default and saves a timestamp
+				# DateTime: is a DateTime object
+				parameterType = string
+				css {
+					class {
+						fieldWrapper = input-group date
+						field = form-control datetimepicker-input
+						icon.calendar = fa fa-calendar
+					}
+				}
+			}
+			inputTime < plugin.tx_modules.presets.fields.inputDateTime
+			inputTime {
+				label = Time
+				type = DateTime
+				section = Time
+			}
+			inputDate < plugin.tx_modules.presets.fields.inputDateTime
+			inputDate {
+				label = Date
+				type = DateTime
+				section = Date
+				# German format
+				locale = de
+				format =  DD.MM.YYYY
+				placeholder = DD.MM.YYYY
+				# English format
+				locale = en
+				format =  YYYY-MM-DD
+				placeholder = YYYY-MM-DD
+			}
+
+
+
+			inputEmail < plugin.tx_modules.presets.fields.input
+			inputEmail {
+				label = Email
+				placeholder = mail@domain.com
+				inputType = email
+				validation {
+					NotEmpty = Please enter your email address
+					Email = Please enter a valid email address
+				}
+			}
+			inputSlug < plugin.tx_modules.presets.fields.input
+			inputSlug {
+				label = Slug
+				placeholder = /address-segment
+				table = tx_bookings_domain_model_bookingobject
+				required = 1
+				notice = Only alpha-numeric characters and dashes, starting with /
+				validation {
+					NotEmpty = Please enter a slug
+					Slug = Please enter a valid slug
+					SlugUnique = This slug is already in use - please choose another
+				}
+			}
+			textarea {
+				label = Description
+				placeholder = Please enter your description
+				type = Textarea
+				section = Default
+				required = 0
+				cols = 30
+				rows = 5
+				stripTags = 1
+				# Max length of contained text - 0 means no limit
+				maxLength = 0
+				validation {
+					NotEmpty = Please enter your text
+					MaxLength = Please enter a shorter text
+				}
+				css {
+					class {
+						wrapper = form-group
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			checkbox {
+				label = Checkbox
+				type = Checkbox
+				section = Default
+				required = 0
+				checkboxLabel = Checkbox description
+				value = 1
+				htmlSpecialChars = 1
+				validation {
+					NotEmpty = Please check this field
+				}
+				options {
+					# Value that should be saved by unchecked checkbox
+					0 = 0
+					# Value that should be saved by checked checkbox
+					1 = 1
+					# Use case if yes/no should be saved in field
+					# 0 = no
+					# 1 = yes
+				}
+				css {
+					class {
+						wrapper = form-group
+						label =
+						checkboxLabel = form-check-label
+						fieldWrapper = form-check
+						field = form-check-input
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						checkboxLabel =
+						fieldWrapper =
+						field =
+						notice = margin-top: 0
+						message =
+					}
+				}
+			}
+			checkboxHidden < plugin.tx_modules.presets.fields.checkbox
+			checkboxHidden {
+				label = Active
+				checkboxLabel = Published
+				# Invert options
+				options {
+					0 = 1
+					1 = 0
+				}
+			}
+			checkboxes {
+				label = Checkboxes
+				type = Checkboxes
+				section = Default
+				required = 0
+				optionsTable {
+					repository = CodingMs\Bookings\Domain\Repository\BookingObjectTagRepository
+					label = title
+					value = uid
+					# For adding a single relation to the object
+					addMethod = addTag
+					# For setting the relations in the object (used for reset)
+					setMethod = setTags
+					# For resetting the relations in the object
+					getMethod = getTags
+				}
+				options {
+					# Values must be provided by options table
+				}
+				css {
+					class {
+						wrapper = form-group
+						label =
+						checkboxLabel = form-check-label
+						fieldWrapper = form-check
+						field = form-check-input
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						checkboxLabel =
+						fieldWrapper = max-height: 200px; overflow-y: scroll;border: 1px solid #ced4da; padding: 10px 20px; border-radius: .25rem;
+						field =
+						notice = margin-top: 0
+						message =
+					}
+				}
+			}
+			select {
+				label = Selection
+				type = Select
+				section = Default
+				required = 0
+				# Sort options: none or abc
+				optionsSorting = none
+				validation {
+					#0 = NotEmpty
+				}
+				# Select box filled by a relation table
+				#optionsTable {
+				#	repository = CodingMs\Bookings\Domain\Repository\BookingObjectCategoryRepository
+				#	label = title
+				#	value = uid
+				#	#
+				#	# Database relation is single or multiple
+				#	#
+				#	# Example for multiple
+				#	relationType = multiple
+				#	# For adding a single relation to the object
+				#	addMethod = addTag
+				#	# For setting the relations in the object (used for reset)
+				#	setMethod = setTags
+				#	###
+				#	#
+				#	# Example for single
+				#	relationType = single
+				#	# For adding a single relation to the object
+				#	setMethod = setTag
+				#	###
+				#}
+				# Attention: Don't initialize an empty options node!
+				#options {
+					# Static values for selection
+					#empty = bitte wählen
+					#option1 = option 1
+					#option2 = option 2
+					#option3 = option 3
+				#}
+				css {
+					class {
+						wrapper = form-group
+						label =
+						fieldWrapper =
+						field = form-control
+						notice = form-text
+						message = invalid-feedback
+					}
+					style {
+						wrapper =
+						label =
+						fieldWrapper =
+						field =
+						notice =
+						message =
+					}
+				}
+			}
+			files {
+				#label = Files
+				type = Files
+				section = Default
+				#
+				# Relation is 1:1 or 1:n
+				# Object property uses an ObjectStorage for multiple files -> 1
+				# Object property stores file directly in FileReference -> 0
+				multiple = 1
+				#
+				# Methods on object model
+				# set'Files' -> like field name
+				# get'Files' -> like field name
+				#
+				# For adding a single file relation to the object
+				addMethod = addFile
+				#
+				# For removing a single file relation from the object
+				removeMethod = removeFile
+				#
+				# In case of using an own file reference, you need to override this value!
+				fileReference = TYPO3\CMS\Extbase\Domain\Model\FileReference
+				preview {
+					height = 0
+					width = 150
+				}
+				# If required, file.min must be at least min=1
+				required = 1
+				validation {
+					FileType = Please select only jpeg or png files
+					FileSize = Please select files lower than 1MB
+				}
+				additionalLabel {
+					delete = Delete?
+					upload = Choose file
+				}
+				additionalMessages {
+					noFilesFound = No Files found!
+					# Browser notification when a file was selected by the user.
+					# If empty no alert will be triggered!
+					uploadNotification = Please press save for uploading your file!
+					noFilesFoundButRequired = No files found - please add at least %1$d file!
+					maxFilesReachedUploadDisabled = Max amount of files reached - upload is disabled!
+				}
+				notice = Please select 1-10 jpeg or png files
+				file {
+					min = 1
+					max = 10
+					types {
+						jpeg = image/jpeg
+						png = image/png
+					}
+					# Max file size in MB
+					maxSize = 1
+					# First parameter %1$d is object->uid
+					# Second parameter %2$s is field key
+					# Third parameter %3$d is parentObject->uid (if available)
+					folder = 1:modules/booking_objekt/%1$d/%2$s/
+				}
+				subFields {
+					title {
+						label = Title
+						active = 1
+						required = 1
+					}
+					alternative {
+						label = Alternative
+						active = 1
+						required = 1
+					}
+					description {
+						label = Description
+						active = 1
+						required = 1
+					}
+				}
+			}
+			htmlTitle < plugin.tx_modules.presets.fields.input
+			htmlTitle {
+				label = HTML-Title
+				placeholder = HTML-Title...
+				notice = This is the Browser window title when your object is displayed
+				required = 1
+				maxLength = 65
+				validation {
+					NotEmpty = Please enter a HTML title
+					MaxLength = Please enter a shorter HTML title
+				}
+			}
+			metaDescription < plugin.tx_modules.presets.fields.textarea
+			metaDescription {
+				label = Meta description
+				placeholder = A short description ...
+				notice = Describe your object with maximum 255 chars
+				required = 1
+				rows = 4
+				maxLength = 255
+				validation {
+					NotEmpty = Please enter a description
+					MaxLength = Please enter a shorter description
+				}
+			}
+			metaAbstract < plugin.tx_modules.presets.fields.textarea
+			metaAbstract {
+				label = Meta abstract
+				placeholder = An abstract ...
+				notice = Short abstract summary of your object
+				required = 1
+				rows = 4
+				maxLength = 255
+				validation {
+					NotEmpty = Please enter an abstract text
+					MaxLength = Please enter a shorter abstract text
+				}
+			}
+			metaKeywords < plugin.tx_modules.presets.fields.input
+			metaKeywords {
+				label = Meta keywords
+				placeholder = Keyword, Another keyword, ...
+				notice = Describe your object with comma separated keywords
+				required = 1
+				maxLength = 255
+				validation {
+					NotEmpty = Please enter some describing keywords
+					MaxLength = Please enter less keywords
+				}
+			}
+			submit {
+				label = Save
+				type = Submit
+				section = Default
+				title = Daten jetzt senden
+				css {
+					class {
+						wrapper = form-group form-input-submit pull-left mr-1
+						label =
+						fieldWrapper =
+						field = btn btn-primary
+						notice = form-text
+					}
+				}
+			}
+			cancelAndBackToListButton {
+				label = Cancel
+				type = Button
+				section = Default
+				title = Cancel and back to list
+				action = list
+				css {
+					class {
+						wrapper = form-group form-input-button pull-left mr-1
+						label =
+						fieldWrapper =
+						field = btn btn-primary
+						notice = form-text
+					}
+				}
+			}
+			divider {
+				type = Divider
+				section = Default
+				css {
+					class {
+						wrapper = form-group
+						hr =
+					}
+					style {
+						wrapper = float: left; width: 100%;
+						hr =
+					}
+				}
+			}
+			notice {
+				type = Notice
+				section = Default
+				value = * Bitte beachten Sie...
+				htmlSpecialChars = 1
+				css {
+					class {
+						wrapper = form-group
+						label =
+						fieldWrapper = alert alert-info
+						field =
+					}
+					style {
+						wrapper =
+						label = display: none;
+						fieldWrapper = margin-top:0
+						field =
+					}
+				}
+			}
+		}
+		fieldsets {
+			normal {
+				label = Screenreader label
+				type = Normal
+				section = Default
+				css {
+					class {
+						fieldset = card mb-5
+						fieldsetInner = card-body
+						legend = card-header
+					}
+					style {
+						fieldset =
+						fieldsetInner =
+						legend =
+					}
+				}
+			}
+			fullWidth  < plugin.tx_modules.presets.fieldsets.normal
+			fullWidth {
+				type = FullWidth
+			}
+			buttons {
+				label = Screenreader label
+				type = Button
+				section = Default
+				css {
+					class {
+						fieldset =
+						fieldsetInner = row
+						legend = sr-only
+					}
+					style {
+						fieldset =
+						fieldsetInner =
+						legend =
+					}
+				}
+			}
+		}
+	}
+}
+
+[siteLanguage("locale") == "de_DE.UTF-8"]
+
+	plugin.tx_modules.presets.fields {
+		input {
+			label = Name
+			validation {
+				NotEmpty = Bitte füllen Sie dieses Feld aus
+			}
+		}
+		inputEmail {
+			label = E-Mail
+			placeholder = mail@domain.com
+			validation {
+				NotEmpty = Bitte geben Sie Ihre E-Mailadresse ein
+				Email = Bitte geben Sie eine gültige E-Mailadresse ein
+			}
+		}
+		inputSlug {
+			label = Sprechende URL
+			placeholder = /adress-segment
+			notice = Nur alpha-numerische Zeichen und Bindestriche erlaubt, start mit einem /
+			validation {
+				NotEmpty = Bitte geben Sie eine sprechende URL ein
+				Slug = Bitte geben Sie eine gültige sprechende URL ein
+				SlugUnique = Diese sprechende URL ist bereits in Verwendung - bitte wählen Sie einen andere
+			}
+		}
+		textarea {
+			label = Beschreibung
+			placeholder = Geben Sie hier Ihre Beschreibung ein
+			validation {
+				NotEmpty = Bitte füllen Sie dieses Feld aus
+				MaxLength = Bitte geben Sie einen kürzeren Text ein
+			}
+		}
+		checkbox {
+			label = Checkbox
+			checkboxLabel = Checkbox-Beschreibung
+			validation {
+				NotEmpty = Bitte haken Sie dieses Feld an
+			}
+		}
+		checkboxHidden {
+			label = Aktiv
+			checkboxLabel = Veröffentlicht
+		}
+		checkboxes {
+			label = Checkboxen
+		}
+		select {
+			label = Auswahl
+		}
+		files {
+			validation {
+				FileType = Bitte wählen sie ausschließlich Jpeg oder Png Dateien aus
+				FileSize = Bitte wählen Sie Bilder mit maximal 1MB Größe aus
+			}
+			additionalLabel {
+				delete = Löschen?
+				upload = Datei auswählen
+			}
+			additionalMessages {
+				noFilesFound = Keine Dateien vorhanden!
+				uploadNotification = Bitte klicken Sie Speichern um die ausgewählten Dateien hochzuladen!
+				noFilesFoundButRequired = Keine Dateien vorhanden - Bitte wählen Sie mindestens %1$d Datei aus!
+			}
+			notice = Bitte wählen Sie 1-10 Jpeg oder Png Bilder aus
+			subFields {
+				title {
+					label = Titel
+				}
+				alternative {
+					label = Alternativtext
+				}
+				description {
+					label = Beschreibung
+				}
+			}
+		}
+		htmlTitle {
+			label = HTML-Titel
+			placeholder = HTML-Titel...
+			notice = Dies ist der Browserfenster-Titel wenn Ihr Objekt angezeigt wird
+			validation {
+				NotEmpty = Bitte geben Sie einen HTML-Titel ein
+				MaxLength = Bitte geben Sie einen kürzeren HTML-Titel ein
+			}
+		}
+		metaDescription {
+			label = Meta Beschreibung
+			placeholder = Eine kurze Beschreibung ...
+			notice = Beschreiben Sie Ihr Objekt mit maximal 255 Zeichen
+			validation {
+				NotEmpty = Bitte geben Sie eine Beschreibung ein
+				MaxLength = Bitte geben Sie eine kürzere Beschreibung ein
+			}
+		}
+		metaAbstract {
+			label = Meta Abstrakt
+			placeholder = Eine abstrakte Zusammenfassung ...
+			notice = Eine kurze abstrakte Zusammenfassung Ihres Objektes
+			validation {
+				NotEmpty = Bitte geben Sie einen abstrakten Text ein
+				MaxLength = Bitte geben Sie einen kürzeren abstrakten Text ein
+			}
+		}
+
+		metaKeywords {
+			label = Meta Keywords
+			placeholder = Keyword, Keyword, ...
+			notice = Beschreiben Sie Ihr Objekt mit komma-separierten Keywords
+			validation {
+				NotEmpty = Bitte geben Sie Keywords ein
+				MaxLength = Bitte geben Sie weniger Keywords ein
+			}
+		}
+		submit {
+			label = Speichern
+			title = Daten jetzt speichern
+		}
+		cancelAndBackToListButton {
+			label = Abbrechen
+			title = Abbrechen und zurück zur Liste
+		}
+	}
+
+[END]

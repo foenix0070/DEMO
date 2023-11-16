@@ -1,0 +1,62 @@
+mod.web_layout.BackendLayouts {
+    BniNews {
+        title = Bni News 
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = subheader
+                                colspan = 3
+                                colPos = 18
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = LeftNavigation                               
+                                colPos = 20
+                            }
+                            2 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = normal
+                                colPos = 0
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = ContactItems
+                                colPos = 5
+                            }
+                            2 {
+                                name = UsefullLink
+                                colPos = 6
+                            }
+                            3 {
+                                name = NewsLetter
+                                colPos = 7
+                            }
+                            4 {
+                                name = SocialIcons
+                                colPos = 8
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

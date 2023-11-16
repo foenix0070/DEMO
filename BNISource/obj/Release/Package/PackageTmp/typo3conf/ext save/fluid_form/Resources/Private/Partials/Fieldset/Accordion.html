@@ -1,0 +1,28 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<f:if condition="{fieldset.type} == 'accordion'">
+			<div class="panel panel-default">
+				<div id="form-{formUid}-heading-{fieldsetKey}" role="tab" class="panel-heading">
+					<h2 class="panel-title">
+						<a aria-controls="form-{formUid}-collapse-{fieldsetKey}" aria-expanded="false" href="#form-{formUid}-collapse-{fieldsetKey}"
+						   data-parent="#form-{formUid}-inner" data-toggle="collapse" class="collapsed">
+							{fieldset.label} <i class="fa fa-angle-down"></i> <i class="fa fa-angle-up"></i>
+						</a>
+					</h2>
+				</div>
+				<div aria-expanded="true" aria-labelledby="form-{formUid}-heading-{fieldsetKey}" role="tabpanel"
+					 class="panel-collapse collapse" id="form-{formUid}-collapse-{fieldsetKey}">
+					<div class="panel-body two-column">
+		
+						<f:for each="{fieldset.fields}" as="field" key="fieldKey">
+							<f:render partial="field/{field.type}" arguments="{fieldset: fieldset, fieldsetKey: fieldsetKey, 
+							field: field, fieldKey: fieldKey, settings: settings}" />
+						</f:for>
+		
+					</div>
+				</div>
+			</div>
+		</f:if>
+	</f:section>
+</div>

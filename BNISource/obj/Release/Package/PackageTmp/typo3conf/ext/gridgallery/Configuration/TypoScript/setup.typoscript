@@ -1,0 +1,75 @@
+lib.contentElement {
+  templateRootPaths {
+    1549449507 = EXT:gridgallery/Resources/Private/Templates/
+    1549449508 = {$plugin.tx_gridgallery.view.templateRootPath}
+  }
+
+  partialRootPaths {
+    1549449507 = EXT:gridgallery/Resources/Private/Partials/
+    1549449508 = {$plugin.tx_gridgallery.view.partialRootPath}
+  }
+}
+
+lib.gridGallery {
+  lightboxCssClass = TEXT
+  lightboxCssClass {
+    value < lib.contentElement.settings.lightbox.cssClass
+    override = {$styles.content.textmedia.linkWrap.lightboxCssClass}
+    override.insertData = 1
+    override.if.isTrue = {$styles.content.textmedia.linkWrap.lightboxCssClass}
+  }
+
+  lightboxRelAttribute < .lightboxCssClass
+  lightboxRelAttribute {
+    value < lib.contentElement.settings.lightbox.prefix
+    override = {$styles.content.textmedia.linkWrap.lightboxRelAttribute}
+    override.insertData = 1
+    override.if.isTrue = {$styles.content.textmedia.linkWrap.lightboxRelAttribute}
+  }
+}
+
+tt_content {
+  gridgallery_gallery =< lib.contentElement
+  gridgallery_gallery {
+    templateName = GridGallery
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      10 {
+        references.fieldName = assets
+      }
+    }
+
+    settings {
+      gridgallery {
+        defaultRowHeight = {$plugin.tx_gridgallery.defaultRowHeight}
+        defaultRenderFactor = {$plugin.tx_gridgallery.defaultRenderFactor}
+        defaultMargins = {$plugin.tx_gridgallery.defaultMargins}
+        defaultCaptions = {$plugin.tx_gridgallery.defaultCaptions}
+        defaultRandomize = {$plugin.tx_gridgallery.defaultRandomize}
+        defaultLastRow = {$plugin.tx_gridgallery.defaultLastRow}
+        defaultBorder = {$plugin.tx_gridgallery.defaultBorder}
+
+        thumbnailCropVariant = {$plugin.tx_gridgallery.thumbnailCropVariant}
+        lightboxCropVariant = {$plugin.tx_gridgallery.lightboxCropVariant}
+
+        captionFields = {$plugin.tx_gridgallery.captionFields}
+      }
+    }
+  }
+}
+
+page {
+  includeCSS {
+    tx_gridgallery = EXT:gridgallery/Resources/Public/Libraries/justifiedGallery/justifiedGallery.min.css
+  }
+
+  includeJSFooter {
+    tx_gridgallery_jquery = EXT:gridgallery/Resources/Public/Libraries/jquery-3.4.1/jquery-3.4.1.min.js
+    tx_gridgallery_jquery.if.isTrue = {$plugin.tx_gridgallery.enableJquery}
+
+    tx_gridgallery_lib = EXT:gridgallery/Resources/Public/Libraries/justifiedGallery/jquery.justifiedGallery.min.js
+
+    tx_gridgallery = EXT:gridgallery/Resources/Public/JavaScript/GridGallery.min.js
+    tx_gridgallery.async = 1
+  }
+}

@@ -1,0 +1,70 @@
+mod.web_layout.BackendLayouts {
+    BniPartnerPage {
+        title = Bni Partner Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = SubHeader
+                                colspan = 3
+                                colPos = 18
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = LeftNavigation                               
+                                colPos = 20
+                            }
+                            2 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = MainSectionTitle
+                                colspan = 3
+                                colPos = 22
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = TabOne
+                                colPos = 31
+                                colspan = 2
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = TabTwo
+                                colPos = 32
+                                colspan = 3
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = TabThree
+                                colPos = 33
+                                colspan = 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

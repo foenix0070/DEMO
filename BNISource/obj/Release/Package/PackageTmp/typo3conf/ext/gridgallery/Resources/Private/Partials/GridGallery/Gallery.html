@@ -1,0 +1,49 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:lo="http://typo3.org/ns/Lavitto/Gridgallery/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:if condition="{files}">
+	<f:for each="{files}" as="file">
+		<f:variable name="caption" value="{lo:caption(properties: file.properties, fields: settings.gridgallery.captionFields)}"/>
+		<f:if condition="{file.link}">
+			<f:then>
+				<f:link.typolink parameter="{file.link}" title="{file.title}">
+					<f:render partial="GridGallery/Gallery/Image"
+							  arguments="{file: file, dimensions: {height: rowHeight, margins: margins}, settings: settings}"/>
+					<f:render partial="GridGallery/Gallery/Caption"
+							  arguments="{caption: caption, captionsEnabled: captionsEnabled}"/>
+				</f:link.typolink>
+			</f:then>
+			<f:else>
+				<f:if condition="{data.image_zoom}">
+					<f:then>
+						<a href="{f:uri.image(image: file, width: settings.media.popup.width, height: settings.media.popup.height, cropVariant: settings.gridgallery.lightboxCropVariant)}"
+						   class="{f:cObject(typoscriptObjectPath: 'lib.gridGallery.lightboxCssClass')}"
+						   data-fancybox="{f:cObject(typoscriptObjectPath: 'lib.gridGallery.lightboxRelAttribute')}-{data.uid}"
+						   data-caption="{caption}"
+						   data-lightbox-caption="{caption}"
+						   data-lightbox-height="{lo:lastImageInfo(property: 'height')}"
+						   data-lightbox-width="{lo:lastImageInfo(property: 'width')}"
+						   rel="{f:cObject(typoscriptObjectPath: 'lib.gridGallery.lightboxRelAttribute')}-{data.uid}"
+						   title="{file.title}">
+							<f:render partial="GridGallery/Gallery/Image"
+									  arguments="{file: file, dimensions: {height: rowHeight, margins: margins}, settings: settings}"/>
+							<f:render partial="GridGallery/Gallery/Caption"
+									  arguments="{caption: caption, captionsEnabled: captionsEnabled}"/>
+						</a>
+					</f:then>
+					<f:else>
+						<div>
+							<f:render partial="GridGallery/Gallery/Image"
+									  arguments="{file: file, dimensions: {height: rowHeight, margins: margins}, settings: settings}"/>
+							<f:render partial="GridGallery/Gallery/Caption"
+									  arguments="{caption: caption, captionsEnabled: captionsEnabled}"/>
+						</div>
+					</f:else>
+				</f:if>
+			</f:else>
+		</f:if>
+	</f:for>
+</f:if>
+
+</html>

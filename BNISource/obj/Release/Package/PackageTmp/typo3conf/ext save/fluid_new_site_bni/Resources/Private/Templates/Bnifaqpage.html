@@ -1,0 +1,88 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+
+        <section id="faq-section" class="mb-5">
+            <div class="container py-4" id="isote-product">
+                <f:for each="{ArticleSectionTitle}" as="MainSectionTitleContent">
+                    <div class="heading-block border-bottom-0 text-center mb-5">
+                        <h2>{MainSectionTitleContent.data.header}</h2>
+                        <span>{MainSectionTitleContent.data.subheader}</span>
+                    </div>
+                </f:for>
+
+                <!--<span class="d-block text-2">Filtre Isotope</span>-->
+                <div class="row">
+                    <div class="filtering col-sm-12 text-center">
+                        <span data-filter="*" class="active">All</span>
+                        <f:for each="{ArticleSectionText}" as="ArticleSectionTextContent">
+                            <span data-filter=".{ArticleSectionTextContent.data.subheader}" class="">{ArticleSectionTextContent.data.header}</span>
+                        </f:for>
+                    </div>
+                </div>
+
+                <div class="justify-content-center mb-5" id="main-news">
+                    <div class="" id="news-row">
+                        <div class="row accordion accordion-style gallery" id="accordion">
+                            
+                                <f:for each="{ProductServiceCard}" as="ProductServiceCardContent" iteration="iterator">
+                                    <div class="card mb-3 {ProductServiceCardContent.data.subheader}">
+                                        <div class="accordion" id="innerAccordion">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="innerHeadingOne">
+                                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#innerCollapse{iterator.index}" aria-expanded="false" aria-controls="innerCollapseOne">
+                                                        {ProductServiceCardContent.data.header}
+                                                    </button>
+                                                </h2>
+                                                <div id="innerCollapse{iterator.index}" class="accordion-collapse collapse" aria-labelledby="innerHeadingOne" data-bs-parent="#innerAccordion">
+                                                    <div class="card-body">
+                                                        <f:format.html>{ProductServiceCardContent.data.bodytext}</f:format.html>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </f:for>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        
+        
+    </div><!-- End Main -->
+
+
+</f:section>

@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-03-30T11:42:09Z" target-language="fr">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+
+			<trans-unit id="cache_initialize_solr_connections" xml:space="preserve" approved="yes">
+				<source>Initialize Solr connections</source>
+			<target state="translated">Initialisation de la connexion Solr</target></trans-unit>
+
+		<!-- Index Administration -->
+			<trans-unit id="solr.backend.index_administration.description" xml:space="preserve" approved="yes">
+				<source>The Index Administration Module is responsible for emptying the cores(deleting documents) on Solr Server and index queues in TYPO3 CMS. </source>
+			<target state="translated">Le module d'administration d'index est responsable de vider les noyaux (suppression de documents) sur le serveur Solr et les files d'attente d'index dans TYPO3 CMS.</target></trans-unit>
+
+			<trans-unit id="solr.backend.index_administration.index_emptied_all" xml:space="preserve" approved="yes">
+				<source>Index emptied for Site "%s" (%s).</source>
+			<target state="translated">Index vidé pour Site "%s" (%s).</target></trans-unit>
+
+			<trans-unit id="solr.backend.index_administration.success.queue_emptied" xml:space="preserve" approved="yes">
+				<source>Index Queue emptied for Site "%s".</source>
+			<target state="translated">File d'attente vidée pour les "%s" du site.</target><alt-trans xml:space="preserve" origin="oli4"><target>Index File d'attente vidée pour les "%s" du site.</target></alt-trans></trans-unit>
+
+			<trans-unit id="solr.backend.index_administration.error.on_empty_index" xml:space="preserve" approved="yes">
+				<source>An error occurred while trying to delete documents from the index: %s</source>
+			<target state="translated">Une erreur s'est produite lors de la suppression de documents de l'index : %s</target></trans-unit>
+		<!-- End: Index Maintenance -->
+
+
+		<!-- From Backend/locallang.xlf //-->
+			<trans-unit id="module_indexinspector" xml:space="preserve" approved="yes">
+				<source>Search Index Inspector</source>
+			<target state="translated">Inspecteur de l'index de recherche</target></trans-unit>
+			<trans-unit id="plugin_results" xml:space="preserve" approved="yes">
+				<source>Search</source>
+			<target state="translated">Rechercher</target></trans-unit>
+			<trans-unit id="plugin_results_description" xml:space="preserve" approved="yes">
+				<source>A search form and results list.</source>
+			<target state="translated">Formulaire de recherche et liste de résultats.</target></trans-unit>
+
+		<!-- Backend Components -->
+			<!-- SiteSelector -->
+			<trans-unit id="siteselector_switched_successfully" xml:space="preserve" approved="yes">
+				<source>Successfully switched to Site "%s".</source>
+			<target state="translated">Passage réussi sur le site "%s".</target></trans-unit>
+
+			<trans-unit id="siteselector_switched_to_first_available_site" xml:space="preserve" approved="yes">
+				<source>The previously selected Site "%s" does not exist or the indexing for that Site was disabled. Switched to "%s", which was the first available one.</source>
+			<target state="translated">Le Site "%s" précédemment sélectionné n'existe pas ou l'indexation de ce Site a été désactivée. Passage à "%s", le premier disponible.</target></trans-unit>
+
+			<trans-unit id="siteselector_site_does_not_exist_anymore" xml:space="preserve" approved="yes">
+				<source>Couldn't switch to the Site "%s". This site does not exist anymore or the indexing for that Site was disabled. Switched to the first available Site "%s".</source>
+			<target state="translated">Impossible d'aller sur le Site "%s". Ce site n'existe plus ou l'indexation de ce site a été désactivée. Commutation sur le premier site disponible "%s".</target><alt-trans xml:space="preserve" origin="oli4"><target>Impossible de passer au Site "%s". Ce site n'existe plus ou l'indexation de ce site a été désactivée. Commutation sur le premier site disponible "%s".</target></alt-trans></trans-unit>
+
+			<!-- CoreSelector -->
+			<trans-unit id="coreselector_switched_to_default_core" xml:space="preserve" approved="yes">
+				<source>The previously selected core "%s" is not available in "%s" site, therefore switched to default core "%s".</source>
+			<target state="translated">Le noyau "%s" précédemment sélectionné n'est pas disponible sur le site "%s", c'est pourquoi le noyau par défaut "%s".</target><alt-trans xml:space="preserve" origin="oli4"><target>Le noyau "%s" précédemment sélectionné n'est pas disponible sur le site "%s", c'est pourquoi le noyau par défaut "%s".</target></alt-trans></trans-unit>
+
+			<trans-unit id="coreselector_switched_successfully" xml:space="preserve" approved="yes">
+				<source>Successfully switched to core "%s".</source>
+			<target state="translated">Passage réussi au "%s" de noyau.</target><alt-trans xml:space="preserve" origin="oli4"><target>Passage réussi au "%s" de noyau.</target></alt-trans></trans-unit>
+		<!-- End: Backend Components -->
+
+			<!-- From ModuleAdministration/locallang.xlf //-->
+			<trans-unit id="mlang_labels_tablabel" xml:space="preserve" approved="yes">
+				<source>Apache Solr Search Administration</source>
+			<target state="translated">Apache Solr Search Administration</target></trans-unit>
+			<trans-unit id="mlang_labels_tabdescr" xml:space="preserve" approved="yes">
+				<source>Allows you to manage Apache Solr from TYPO3.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
+			<target state="translated">Vous permet de gérer Apache Solr depuis TYPO3. &lt;br /&gt;&lt;em&gt;Accès aux utilisateurs administrateurs seulement !&lt;/em&gt;</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Vous permet de gérer Apache Solr depuis TYPO3. &lt;br /&gt;&lt;em&gt;Accès aux utilisateurs administrateurs seulement !&lt;/em&gt;</target></alt-trans></trans-unit>
+			<trans-unit id="mlang_tabs_tab" xml:space="preserve" approved="yes">
+				<source>Search</source>
+			<target state="translated">Rechercher</target></trans-unit>
+
+			<!-- From ModuleReports/locallang.xlf //-->
+			<trans-unit id="index_title" xml:space="preserve" approved="yes">
+				<source>Apache Solr Index</source>
+			<target state="translated">Apache Solr Index</target></trans-unit>
+			<trans-unit id="index_description" xml:space="preserve" approved="yes">
+				<source>View the number of documents and fields in your index</source>
+			<target state="translated">Afficher le nombre de documents et de champs dans votre index.</target></trans-unit>
+			<trans-unit id="statistics_title" xml:space="preserve" approved="yes">
+				<source>Apache Solr Statistics</source>
+			<target state="translated">Statistiques Apache Solr</target></trans-unit>
+			<trans-unit id="statistics_description" xml:space="preserve" approved="yes">
+				<source>Provides several Solr usage statistics</source>
+			<target state="translated">Fournit plusieurs statistiques d'utilisation de Solr</target></trans-unit>
+
+			<!-- From ModuleScheduler/locallang.xlf //-->
+			<trans-unit id="reindex_title" xml:space="preserve" approved="yes">
+				<source>Force Re-Indexing of a site</source>
+			<target state="translated">Indexation forcé d'un site</target><alt-trans xml:space="preserve" origin="oli4"><target>Re-Indexage forcé d'un site</target></alt-trans></trans-unit>
+			<trans-unit id="reindex_description" xml:space="preserve" approved="yes">
+				<source>Purges the Solr Index and initializes the Index Queue of a site.</source>
+			<target state="translated">Purge l'index Solr et initialise la file d'attente d'index d'un site.</target></trans-unit>
+			<trans-unit id="indexqueueworker_title" xml:space="preserve" approved="yes">
+				<source>Index Queue Worker</source>
+			<target state="translated">Indice de file d'attente</target><alt-trans xml:space="preserve" origin="oli4"><target>Travailleur Indice de file d'attente</target></alt-trans></trans-unit>
+			<trans-unit id="indexqueueworker_description" xml:space="preserve" approved="yes">
+				<source>Processes the items in the Index Queue and sends them to Solr.</source>
+			<target state="translated">Ajoute des éléments dans la file d'attente de l'index et les envoyer à Solr.</target><alt-trans xml:space="preserve" origin="oli4"><target>Procéder des éléments de la file d'attente de l'index et les envoyer à Solr.</target></alt-trans></trans-unit>
+			<trans-unit id="indexqueueworker_field_documentsToIndexLimit" xml:space="preserve" approved="yes">
+				<source>Number of documents to index</source>
+			<target state="translated">Nombre de documents à indexer</target></trans-unit>
+			<trans-unit id="indexqueueworker_field_forcedWebRoot" xml:space="preserve" approved="yes">
+				<source>Forced webroot (only needed when webroot is not PATH_site)</source>
+			<target state="translated">Racine forcée (nécessaire uniquement lorsque la racine n'est pas PATH_site)</target></trans-unit>
+			<trans-unit id="field_host" xml:space="preserve" approved="yes">
+				<source>Solr Host</source>
+			<target state="translated">Hôte Solr</target></trans-unit>
+			<trans-unit id="field_port" xml:space="preserve" approved="yes">
+				<source>Solr Port</source>
+			<target state="translated">Port Solr</target></trans-unit>
+			<trans-unit id="field_path" xml:space="preserve" approved="yes">
+				<source>Solr Path</source>
+			<target state="translated">Chemin Solr</target></trans-unit>
+			<trans-unit id="field_server" xml:space="preserve" approved="yes">
+				<source>Solr Server</source>
+			<target state="translated">Serveur Solr</target></trans-unit>
+			<trans-unit id="field_site" xml:space="preserve" approved="yes">
+				<source>Site</source>
+			<target state="translated">Site</target></trans-unit>
+
+			<!-- From PluginResults|PluginSearch|PluginFrequentSearches/locallang.xlf -->
+			<trans-unit id="searchUnavailable" xml:space="preserve" approved="yes">
+				<source>Search is currently not available.</source>
+			<target state="translated">La fonction de recherche n'est pas disponible actuellement.</target></trans-unit>
+			<trans-unit id="searchFailed" xml:space="preserve" approved="yes">
+				<source>We're sorry. The request you tried to make could not be processed.</source>
+			<target state="translated">Ajoute des éléments dans la file d'attente de l'index et les envoyer à Solr.</target><alt-trans xml:space="preserve" origin="oli4"><target>Nous nous excusons. La demande que vous avez essayé de faire n'a pas pu être traitée.</target></alt-trans></trans-unit>
+			<trans-unit id="searchWord" xml:space="preserve" approved="yes">
+				<source>Search Term</source>
+			<target state="translated">Terme de recherche</target></trans-unit>
+			<trans-unit id="didYouMean" xml:space="preserve" approved="yes">
+				<source>Did you mean</source>
+			<target state="translated">Voulez-vous dire</target><alt-trans xml:space="preserve" origin="oli4"><target>Vouliez-vous dire... ?</target></alt-trans></trans-unit>
+			<trans-unit id="submit" xml:space="preserve" approved="yes">
+				<source>Search</source>
+			<target state="translated">Voulez-vous dire... ?</target><alt-trans xml:space="preserve" origin="oli4"><target>Rechercher</target></alt-trans></trans-unit>
+			<trans-unit id="sorting_sortBy" xml:space="preserve" approved="yes">
+				<source>Sort by</source>
+			<target state="translated">Trier par</target><alt-trans xml:space="preserve" origin="oli4"><target>Trier par</target></alt-trans></trans-unit>
+			<trans-unit id="faceting_narrowSearch" xml:space="preserve" approved="yes">
+				<source>Narrow Search</source>
+			<target state="translated">Affiner la recherche</target></trans-unit>
+			<trans-unit id="faceting_resultsNarrowedBy" xml:space="preserve" approved="yes">
+				<source>Search narrowed by</source>
+			<target state="translated">Recherche affinée par</target></trans-unit>
+			<trans-unit id="faceting_showMore" xml:space="preserve" approved="yes">
+				<source>Show more</source>
+			<target state="translated">Afficher plus</target></trans-unit>
+			<trans-unit id="faceting_showFewer" xml:space="preserve" approved="yes">
+				<source>Show fewer</source>
+			<target state="translated">Afficher moins</target></trans-unit>
+			<trans-unit id="faceting_removeAllFilters" xml:space="preserve" approved="yes">
+				<source>Remove all filters</source>
+			<target state="translated">Enlever tous les filtres</target></trans-unit>
+			<trans-unit id="faceting_filter" xml:space="preserve" approved="yes">
+				<source>Filter</source>
+			<target state="translated">Filtre</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Filtre</target></alt-trans></trans-unit>
+			<trans-unit id="results_range" xml:space="preserve" approved="yes">
+				<source>Displaying results @resultsFrom to @resultsTo of @resultsTotal.</source>
+			<target state="translated">Afficher les résultats @resultsFrom à @resultsTo de @resultsTotal.</target></trans-unit>
+			<trans-unit id="results_found" xml:space="preserve" approved="yes">
+				<source>Found @resultsTotal results in @resultsTime milliseconds.</source>
+			<target state="translated">Trier par</target><alt-trans xml:space="preserve" origin="oli4"><target>Trouvé @resultsRésultatsTotal des résultats en @resultsTime millisecondes.</target></alt-trans></trans-unit>
+			<trans-unit id="results_found.singular" xml:space="preserve" approved="yes">
+				<source>Found 1 result in @resultsTime milliseconds.</source>
+			<target state="translated">A trouvé 1 résultat en @resultsTime millisecondes.</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Trouvé 1 résultat en @resultsTime millisecondes.</target></alt-trans></trans-unit>
+			<trans-unit id="results_searched_for" xml:space="preserve" approved="yes">
+				<source>Searched for "@searchWord".</source>
+			<target state="translated">Recherché pour "@searchWord".</target></trans-unit>
+			<trans-unit id="no_results_nothing_found" xml:space="preserve" approved="yes">
+				<source>Nothing found for "@searchWord".</source>
+			<target state="translated">Aucun résultat trouvé pour "@searchWord".</target></trans-unit>
+			<trans-unit id="no_results_showing_results_suggestion" xml:space="preserve" approved="yes">
+				<source>Showing results for "@suggestedWord".</source>
+			<target state="translated">Afficher les résultats pour "@suggestedWord".</target><alt-trans xml:space="preserve" origin="oli4"><target>Afficher les résultats pour "@suggestedWord".</target></alt-trans></trans-unit>
+			<trans-unit id="no_results_search_for_original" xml:space="preserve" approved="yes">
+				<source>Search instead for "@searchWord".</source>
+			<target state="translated">Cherchez plutôt "@searchWord".</target><alt-trans xml:space="preserve" origin="oli4"><target>Cherchez plutôt "@searchWord".</target></alt-trans></trans-unit>
+			<trans-unit id="lastSearches" xml:space="preserve" approved="yes">
+				<source>Last searches</source>
+			<target state="translated">Dernières recherches :</target></trans-unit>
+			<trans-unit id="frequentSearches" xml:space="preserve" approved="yes">
+				<source>Frequent searches</source>
+			<target state="translated">Recherches fréquentes</target></trans-unit>
+			<trans-unit id="relevance" xml:space="preserve" approved="yes">
+				<source>Relevance</source>
+			<target state="translated">Pertinence</target></trans-unit>
+			<trans-unit id="sponsored" xml:space="preserve" approved="yes">
+				<source>Sponsored</source>
+			<target state="translated">Sponsorisé</target></trans-unit>
+			<trans-unit id="file_mimetype" xml:space="preserve" approved="yes">
+				<source>File type</source>
+			<target state="translated">Type de fichier</target></trans-unit>
+			<trans-unit id="file_referenced" xml:space="preserve" approved="yes">
+				<source>Referenced at</source>
+			<target state="translated">Référencé à</target></trans-unit>
+			<trans-unit id="results_per_page" xml:space="preserve" approved="yes">
+				<source>Results per page:</source>
+			<target state="translated">Résultats par page</target></trans-unit>
+			<trans-unit id="error_errors" xml:space="preserve" approved="yes">
+				<source>We're sorry, there were some errors:</source>
+			<target state="translated">Nous sommes désolés, il y a eu quelques erreurs:</target></trans-unit>
+			<trans-unit id="error_emptyQuery" xml:space="preserve" approved="yes">
+				<source>Please enter your search term in the box above.</source>
+			<target state="translated">Veuillez entrer votre terme de recherche dans la case ci-dessus.</target></trans-unit>
+			<trans-unit id="pagebrowser_first" xml:space="preserve" approved="yes">
+				<source>First</source>
+			<target state="translated">Premier</target></trans-unit>
+			<trans-unit id="pagebrowser_prev" xml:space="preserve" approved="yes">
+				<source>Previous</source>
+			<target state="translated">Précédent</target></trans-unit>
+			<trans-unit id="pagebrowser_next" xml:space="preserve" approved="yes">
+				<source>Next</source>
+			<target state="translated">Suivant</target></trans-unit>
+			<trans-unit id="pagebrowser_last" xml:space="preserve" approved="yes">
+				<source>Last</source>
+			<target state="translated">Dernier</target></trans-unit>
+			<trans-unit id="suggest_header" xml:space="preserve" approved="yes">
+				<source>Top Results</source>
+			<target state="translated">Meilleurs Résultats</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Meilleurs Résultats</target></alt-trans></trans-unit>
+			<!-- From locallang.xlf -->
+			<trans-unit id="solr.backend.index_queue_module.description" xml:space="preserve" approved="yes">
+				<source>The Index Queue manages content indexing. Content enters the Index Queue by initialization below or when new content is created based on configuration. Items in the Index Queue are indexed newest changes first until all items in the queue have been indexed.</source>
+			<target state="translated">L'Index Queue gère l'indexation du contenu. Le contenu entre dans la file d'attente de l'index par initialisation ci-dessous ou lors de la création d'un nouveau contenu en fonction de la configuration. Les éléments de la file d'attente de l'index sont indexés en premier jusqu'à ce que tous les éléments de la file d'attente aient été indexés.</target><alt-trans xml:space="preserve" origin="oli4"><target>L'Index Queue gère l'indexation du contenu. Le contenu entre dans la file d'attente de l'index par initialisation ci-dessous ou lors de la création d'un nouveau contenu en fonction de la configuration. Les éléments de la file d'attente de l'index sont indexés en premier jusqu'à ce que tous les éléments de la file d'attente aient été indexés.</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.reset_button" xml:space="preserve" approved="yes">
+				<source>Reset errors</source>
+			<target state="translated">Reset des erreurs</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.headline" xml:space="preserve" approved="yes">
+				<source>Indexing Errors</source>
+			<target state="translated">Erreurs d'indexation</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.id" xml:space="preserve" approved="yes">
+				<source>ID</source>
+			<target state="translated">ID</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.item_type" xml:space="preserve" approved="yes">
+				<source>Item Type</source>
+			<target state="translated">Type d'objet</target><alt-trans xml:space="preserve" origin="oli4"><target>type d'objet</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.item_uid" xml:space="preserve" approved="yes">
+				<source>Item UID</source>
+			<target state="translated">UID élément</target><alt-trans xml:space="preserve" origin="oli4"><target>N° d'article UID</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.errors.show_button" xml:space="preserve" approved="yes">
+				<source>Show error</source>
+			<target state="translated">Afficher les erreurs</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.error.index_manual" xml:space="preserve" approved="yes">
+				<source>An error occurred while indexing manual from the backend.</source>
+			<target state="translated">Une erreur s'est produite lors de l'indexation manuelle à partir du backend.</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.error.reset_errors" xml:space="preserve" approved="yes">
+				<source>An error occurred while resetting the error log in the index queue.</source>
+			<target state="translated">Une erreur s'est produite lors de la réinitialisation du journal des erreurs dans la file d'attente d'index.</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.error.single_item_not_requeued" xml:space="preserve" approved="yes">
+				<source>Single item was not requeued.</source>
+			<target state="translated">L'élément unique n'a pas été remis en file d'attente</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.initialize.no_selection" xml:space="preserve" approved="yes">
+				<source>No indexing configurations selected.</source>
+			<target state="translated">Aucune configuration d'indexation sélectionnée.</target></trans-unit>
+
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.initialize.success" xml:space="preserve" approved="yes">
+				<source>Initialized indexing configurations: %s</source>
+			<target state="translated">Configurations d'indexation initialisées : %s</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.initialize.title" xml:space="preserve" approved="yes">
+				<source>Index Queue initialized</source>
+			<target state="translated">Index File d'attente initialisée</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.not_initialized.title" xml:space="preserve" approved="yes">
+				<source>Index Queue not initialized</source>
+			<target state="translated">Index File d'attente non initialisée</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.success.reset_errors" xml:space="preserve" approved="yes">
+				<source>All errors have been reset.</source>
+			<target state="translated">Toutes les erreurs ont été réinitialisées.</target><alt-trans xml:space="preserve" origin="oli4"><target>outes les erreurs ont été effacées.</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.success.index_manual" xml:space="preserve" approved="yes">
+				<source>Indexing from the backend was successfully finished.</source>
+			<target state="translated">L'indexation à partir du backend s'est conclue avec succès.</target><alt-trans xml:space="preserve" origin="oli4"><target>L'indexation à partir du backend s'est conclue avec succès.</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.success.single_item_was_requeued" xml:space="preserve">
+				<source>Single item was successfully marked for reindexing.</source>
+			<target>Un seul élément a été marqué avec succès pour la réindexation.</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.title" xml:space="preserve" approved="yes">
+				<source>Index Queue</source>
+			<target state="translated">Index File d'attente</target><alt-trans xml:space="preserve" origin="apiveteau"><target>File d'indexation</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.index_manual" xml:space="preserve" approved="yes">
+				<source>Manual Indexing</source>
+			<target state="translated">Indexation manuelle</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.help" xml:space="preserve" approved="yes">
+				<source>Initializing the Index Queue is the most complete way to force re-indexing, or to build the Index Queue for the first time. The Index Queue Worker scheduler task will then index the items listed in the Index Queue.</source>
+			<target state="translated">L'initialisation de la file d'attente d'index est le moyen le plus complet de forcer la réindexation ou de construire la file d'attente d'index pour la première fois. La tâche du planificateur Index Queue Worker indexera ensuite les éléments listés dans la file d'attente index.</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.status.errors" xml:space="preserve" approved="yes">
+				<source> Errors</source>
+			<target state="translated">Erreurs</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.status.header" xml:space="preserve" approved="yes">
+				<source>Indexing Progress</source>
+			<target state="translated">Progression de l'indexation</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.status.indexed" xml:space="preserve" approved="yes">
+				<source> Indexed</source>
+			<target state="translated">Indexé</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.status.pending" xml:space="preserve" approved="yes">
+				<source> Pending</source>
+			<target state="translated">En attente</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.header_init" xml:space="preserve" approved="yes">
+				<source>Index Queue Initialization</source>
+			<target state="translated">Initialisation File d'attente Index</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Initialisation de la file d'indexation</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.header_status" xml:space="preserve" approved="yes">
+				<source>Index Queue Status</source>
+			<target state="translated">Statut de la file d'attente de l'index</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Statut de la file d'indexation</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.button.clear_index_queue" xml:space="preserve" approved="yes">
+				<source>Clear Index Queue</source>
+			<target state="translated">Effacer la file d'attente de l'index</target><alt-trans xml:space="preserve" origin="apiveteau"><target>Effacer la file d'indexation</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.back" xml:space="preserve" approved="yes">
+				<source>Go back</source>
+			<target state="translated">Retour</target><alt-trans xml:space="preserve" origin="oli4"><target>Revenir</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.flashmessage.error.no_queue_item_for_queue_error" xml:space="preserve" approved="yes">
+				<source>No valid queue item passed to show the error information!</source>
+			<target state="translated">Aucun élément de file d'attente valide n'a été passé pour afficher les informations d'erreur!</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.error_details" xml:space="preserve" approved="yes">
+				<source>Error details for queue item</source>
+			<target state="translated">Détails d'erreur pour l'élément de la file d'attente</target></trans-unit>
+			<trans-unit id="solr.backend.index_queue_module.index_now" xml:space="preserve" approved="yes">
+				<source>Index now</source>
+			<target state="translated">Indexer maintenant</target></trans-unit>
+
+			<!-- From locallang_db.xlf -->
+			<trans-unit id="tt_content.list_type_pi_frequentsearches" xml:space="preserve" approved="yes">
+				<source>Search: Frequent Searches</source>
+			<target state="translated">Rechercher : Recherches fréquentes</target></trans-unit>
+			<trans-unit id="tt_content.list_type_pi_results" xml:space="preserve" approved="yes">
+				<source>Search: Form, Result, Additional Components</source>
+			<target state="translated">Recherche : Formulaire, résultat, composants supplémentaires</target><alt-trans xml:space="preserve" origin="oli4"><target>Recherche : Forme, résultat, composants supplémentaires</target></alt-trans></trans-unit>
+			<trans-unit id="tt_content.list_type_pi_search" xml:space="preserve" approved="yes">
+				<source>Search: Form only</source>
+			<target state="translated">Recherche : Formulaire</target></trans-unit>
+
+			<trans-unit id="solr.backend.search_statistics_module.item_phrase" xml:space="preserve" approved="yes">
+				<source>Phrase</source>
+			<target state="translated">Phrase</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.item_count" xml:space="preserve" approved="yes">
+				<source>Number of Queries</source>
+			<target state="translated">Nombre de requêtes</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.results" xml:space="preserve" approved="yes">
+				<source>Number of Results (Average)</source>
+			<target state="translated">Nombre de résultats (moyenne)</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.percentage" xml:space="preserve" approved="yes">
+				<source>Percentage</source>
+			<target state="translated">Pourcentage</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.no_records_found" xml:space="preserve" approved="yes">
+				<source>No records found. Did you enabled 'plugin.tx_solr.statistics = 1' in the typoscript configuration of your site?</source>
+			<target state="translated">Aucun enregistrement trouvé. Avez-vous activé 'plugin.tx_solr.statistics = 1' dans la configuration typoscript de votre site ?</target><alt-trans xml:space="preserve" origin="oli4"><target>Aucun enregistrement trouvé. Avez-vous activé'plugin.tx_solr.statistics = 1' dans la configuration typoscript de votre site ?</target></alt-trans></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.top_search_phrases" xml:space="preserve" approved="yes">
+				<source>Top 5 Search Phrases</source>
+			<target state="translated">Top 5 Phrases de recherche</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.top_search_phrases_without_hits" xml:space="preserve" approved="yes">
+				<source>Top 5 Search Phrases Without Hits</source>
+			<target state="translated">Top 5 Phrases de recherche sans occurrences</target></trans-unit>
+			<trans-unit id="solr.backend.search_statistics_module.search_phrases_header" xml:space="preserve" approved="yes">
+				<source>Search Phrase Statistics</source>
+			<target state="translated">Statistiques sur les phrases recherchées</target></trans-unit>
+
+		</body>
+	</file>
+</xliff>

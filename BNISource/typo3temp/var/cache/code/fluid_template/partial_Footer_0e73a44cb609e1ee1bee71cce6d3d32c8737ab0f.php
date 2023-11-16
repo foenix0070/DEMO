@@ -84,19 +84,19 @@ $output0 .= '<section id="bourse-container">
                 <div class="col-lg-3 col-md-6 col-12">
                     <h3 class="font-weight-bold mb-3">Infos Générales</h3>
                     <ul class="footer-menu text-muted">
-                        <li class="mb-1"><a href="/groupe-bni/mot-du-directeur-general" >Mot du Directeur Général</a></li>
-                        <li class="mb-1"><a href="/groupe-bni/historique-de-la-bni">Historique de la BNI</a></li>
-                        <li class="mb-1"><a href="/groupe-bni/informations-generales/la-bni-en-bref" >BNI en bref</a></li>
-                        <li class="mb-1"><a href="/groupe-bni/la-gestion-des-fonds-nationaux" >Gestion des fonds</a></li>
-                        <li class="mb-1"><a href="/groupe-bni/parteariats">Partenariats</a></li>
-                        <li class="mb-1"><a href="/reseaux-bni">Agences et GAB </a></li>                        
+                        <li class="mb-1"><a href="/groupe-bni/mot-du-directeur-general.html" >Mot du Directeur Général</a></li>
+                        <li class="mb-1"><a href="/groupe-bni/historique-de-la-bni.html">Historique de la BNI</a></li>
+                        <li class="mb-1"><a href="/groupe-bni/informations-generales/la-bni-en-bref.html" >BNI en bref</a></li>
+                        <li class="mb-1"><a href="/groupe-bni/la-gestion-des-fonds-nationaux.html" >Gestion des fonds</a></li>
+                        <li class="mb-1"><a href="/groupe-bni/parteariats.html">Partenariats</a></li>
+                        <li class="mb-1"><a href="/reseau-bni.html">Agences et GAB </a></li>                        
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <h3 class="font-weight-bold mb-3">Produits et services</h3>
                     <ul class="footer-menu text-muted">
-                        <li class="mb-1"><a href="/produits-services/particuliers" >Particuliers</a></li>
-                        <li class="mb-1"><a href="/produits-services/entreprises">Entreprises/Professionnels</a></li>
+                        <li class="mb-1"><a href="/produits-services/particuliers.html" >Particuliers</a></li>
+                        <li class="mb-1"><a href="/produits-services/entreprises.html">Entreprises/Professionnels</a></li>
                     </ul>
                     <h3 class="font-weight-bold mb-2">Accès rapides</h3>
                     <ul class="footer-menu text-muted">
@@ -132,7 +132,7 @@ $output0 .= '<section id="bourse-container">
                     </div>
                     <div class="footer-apps">
                         <h3 class="mb-3">Applications utiles:</h3>
-                            <a href="/convertisseur-de-devise" data-bs-toggle="tooltip" data-bs-placement="top" title="CONVERTISSEUR DE DEVISE" class="text-decoration-none">';
+                            <a href="/convertisseur-de-devise.html" data-bs-toggle="tooltip" data-bs-placement="top" title="CONVERTISSEUR DE DEVISE" class="text-decoration-none">';
 // Rendering ViewHelper TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper
 $renderChildrenClosure2 = function() use ($renderingContext, $self) {
 return NULL;
@@ -224,7 +224,7 @@ $arguments3['class'] = 'simulateur';
 $output0 .= TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper::renderStatic($arguments3, $renderChildrenClosure4, $renderingContext);
 
 $output0 .= '</a>
-                            <a href="/entreprise-citoyenne" data-bs-toggle="tooltip" data-bs-placement="top" title="ENTREPRISE CITOYENNE" class="text-decoration-none">';
+                            <a href="/entreprise-citoyenne.html.html" data-bs-toggle="tooltip" data-bs-placement="top" title="ENTREPRISE CITOYENNE" class="text-decoration-none">';
 // Rendering ViewHelper TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper
 $renderChildrenClosure6 = function() use ($renderingContext, $self) {
 return NULL;
@@ -270,7 +270,7 @@ $arguments5['class'] = 'citoyenne';
 $output0 .= TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper::renderStatic($arguments5, $renderChildrenClosure6, $renderingContext);
 
 $output0 .= '</a>
-                            <a href="/faq" data-bs-toggle="tooltip" data-bs-placement="top" title="DICTIONNAIRE BANCAIRE" class="text-decoration-none">';
+                            <a href="/faq.html" data-bs-toggle="tooltip" data-bs-placement="top" title="DICTIONNAIRE BANCAIRE" class="text-decoration-none">';
 // Rendering ViewHelper TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper
 $renderChildrenClosure8 = function() use ($renderingContext, $self) {
 return NULL;

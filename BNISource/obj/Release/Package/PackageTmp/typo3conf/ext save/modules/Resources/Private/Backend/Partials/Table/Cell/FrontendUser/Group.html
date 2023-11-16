@@ -1,0 +1,21 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+<td>
+	<f:comment>
+		TYPO3 8.7 bug: usergroup are not available?!
+	</f:comment>
+	<f:if condition="{f:count(subject: listItem.usergroup)}">
+		<f:then>
+			<f:for each="{listItem.usergroup}" as="group" iteration="groupIterator">
+				<f:if condition="{groupIterator.isLast}">
+					<f:then>
+						<nobr>{group.title}</nobr>
+					</f:then>
+					<f:else>
+						<nobr>{group.title}, </nobr>
+					</f:else>
+				</f:if>
+			</f:for>
+		</f:then>
+		<f:else>none</f:else>
+	</f:if>
+</td>

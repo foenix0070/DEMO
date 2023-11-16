@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+      <label index="tt_content.list_type_pi_frequentsearches">Recherche : Recherches fréquentes</label>
+      <label index="tt_content.list_type_pi_results">Recherche : Formulaire, résultat, composants supplémentaires</label>
+      <label index="tt_content.list_type_pi_search">Recherche : Formulaire seulement</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

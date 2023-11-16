@@ -1,0 +1,75 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modules/Configuration/TypoScript/setup.typoscript">
+config.tx_extbase.persistence {
+	classes {
+		CodingMs\Modules\Domain\Model\FrontendUser.mapping {
+			tableName = fe_users
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+				disable.mapOnProperty = disable
+				tx_modules_gender.mapOnProperty = gender
+				tx_modules_birthday.mapOnProperty = birthday
+				tx_modules_mobile.mapOnProperty = mobile
+				tx_modules_hash.mapOnProperty = hash
+				tx_modules_terms_confirmed.mapOnProperty = termsConfirmed
+				tx_modules_privacy_confirmed.mapOnProperty = privacyConfirmed
+				tx_modules_disclaimer_confirmed.mapOnProperty = disclaimerConfirmed
+				tx_modules_newsletter.mapOnProperty = newsletter
+				tx_modules_profession.mapOnProperty = profession
+				tx_modules_marital_status.mapOnProperty = maritalStatus
+				tx_modules_children.mapOnProperty = children
+				tx_modules_bank_account_owner_name.mapOnProperty = bankAccountOwnerName
+				tx_modules_bank_account_bank_name.mapOnProperty = bankAccountBankName
+				tx_modules_bank_account_bic.mapOnProperty = bankAccountBic
+				tx_modules_bank_account_iban.mapOnProperty = bankAccountIban
+				tx_modules_accounting_type.mapOnProperty = accountingType
+				tx_modules_vat_number.mapOnProperty = vatNumber
+				tx_extbase_type.mapOnProperty = recordType
+			}
+		}
+		CodingMs\Modules\Domain\Model\FrontendUserGroup.mapping {
+			tableName = fe_groups
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+			}
+		}
+		CodingMs\Modules\Domain\Model\BackendUser.mapping {
+			tableName = be_users
+			columns {
+				crdate.mapOnProperty = creationDate
+				tstamp.mapOnProperty = modificationDate
+				cruser.mapOnProperty = creationUser
+				disable.mapOnProperty = disable
+			}
+		}
+	}
+	objects {
+		TYPO3\CMS\Extbase\Domain\Model\FrontendUserRepository.className = CodingMs\Modules\Domain\Model\FrontendUserRepository
+		TYPO3\CMS\Beuser\Domain\Repository\BackendUserRepository.className = CodingMs\Modules\Domain\Model\BackendUserRepository
+	}
+}
+
+module.tx_belog {
+	settings {
+		selectableActions {
+			999 = Modules
+		}
+	}
+	_LOCAL_LANG {
+		default {
+			type_999 = Modules
+			action_1000_10 = Authorization
+		}
+		de {
+			type_999 = Modules
+			action_1000_10 = Authorization
+		}
+		en {
+			type_999 = Modules
+			action_1000_10 = Authorization
+		}
+	}
+}

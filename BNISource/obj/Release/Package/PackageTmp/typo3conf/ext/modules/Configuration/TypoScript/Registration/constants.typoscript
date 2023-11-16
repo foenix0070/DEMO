@@ -1,0 +1,155 @@
+# customcategory=pages=pages
+# customcategory=container=container
+# customcategory=modules=modules
+themes.configuration {
+	container {
+		# cat=container//010; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.container_frontend_user
+		frontendUser = 0
+	}
+	pages {
+		# cat=pages//010; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_registration
+		registration = 0
+		# cat=pages//011; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_profile
+		profile = 0
+		# cat=pages//020; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_terms
+		terms = 0
+		# cat=pages//030; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_login
+		login = 0
+		# cat=pages//040; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_privacy
+		privacy = 0
+		# cat=pages//050; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.pages_disclaimer
+		disclaimer = 0
+	}
+	extension {
+		modules {
+
+			# customsubcategory=modules_view=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.subcategory_view
+			view {
+				# cat=modules/modules_view/800; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.view_template_root_path
+				templateRootPath = EXT:modules/Resources/Private/Templates/
+				# cat=modules/modules_view/800; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.view_partial_root_path
+				partialRootPath = EXT:modules/Resources/Private/Partials/
+				# cat=modules/modules_view/800; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.view_layout_root_path
+				layoutRootPath = EXT:modules/Resources/Private/Layouts/
+			}
+
+			# customsubcategory=modules_registration=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.subcategory_registration
+			registration {
+				# cat=modules/modules_registration/400; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_as_username
+				emailAsUsername = 0
+				# cat=modules/modules_registration/405; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_username_min_length
+				usernameMinLength = 6
+				# cat=modules/modules_registration/406; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_password_min_length
+				passwordMinLength = 10
+				# cat=modules/modules_registration/407; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_password_encryption
+				passwordEncryption = default
+				# cat=modules/modules_registration/408; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_enable_admin_confirmation
+				enableAdminConfirmation = 0
+				email {
+					# cat=modules/modules_registration/420; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_subject
+					subject = Registrierung
+
+					# cat=modules/modules_registration/430; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_from_email
+					fromEmail = mail@domain.com
+
+					# cat=modules/modules_registration/440; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_from_name
+					fromName = Registration
+
+					# cat=modules/modules_registration/440; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_bcc_email
+					bccEmail =
+				}
+				emailOnActivation {
+					# cat=modules/modules_registration/445; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_on_activation_active
+					active = 0
+					# cat=modules/modules_registration/450; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_on_activation_subject
+					subject = Activation
+
+					# cat=modules/modules_registration/460; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_on_activation_from_email
+					fromEmail = mail@domain.com
+
+					# cat=modules/modules_registration/470; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_on_activation_from_name
+					fromName = Registration
+
+					# cat=modules/modules_registration/480; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_on_activation_bcc_email
+					bccEmail =
+				}
+				emailAdminActivation {
+					# cat=modules/modules_registration/500; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_activation_subject
+					subject = Activation
+
+					# cat=modules/modules_registration/510; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_activation_from_email
+					fromEmail = mail@domain.com
+
+					# cat=modules/modules_registration/520; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_activation_to_email
+					toEmail = mail@domain.com
+
+					# cat=modules/modules_registration/530; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_activation_bcc_email
+					bccEmail =
+				}
+				emailAdminConfirmation {
+					# cat=modules/modules_registration/550; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_confirmation_subject
+					subject = Activation Confirmation
+
+					# cat=modules/modules_registration/560; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_confirmation_from_email
+					fromEmail = mail@domain.com
+
+					# cat=modules/modules_registration/570; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_confirmation_from_name
+					fromName = Registration
+
+					# cat=modules/modules_registration/580; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_confirmation_bcc_email
+					bccEmail =
+				}
+				emailAdminRejection {
+					# cat=modules/modules_registration/600; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_rejection_subject
+					subject = Activation Rejection
+
+					# cat=modules/modules_registration/610; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_rejection_from_email
+					fromEmail = mail@domain.com
+
+					# cat=modules/modules_registration/620; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_rejection_from_name
+					fromName = Registration
+
+					# cat=modules/modules_registration/630; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_email_admin_rejection_bcc_email
+					bccEmail =
+				}
+				# cat=modules/modules_registration/650; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_fronted_user_groups
+				frontendUserGroups =
+				# cat=modules/modules_registration/700; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_record_type
+				recordType =
+				# cat=modules/modules_registration/800; type=text; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_professions
+				professions = employed,officer,self_employed,pensioner
+				# cat=modules/modules_registration/900; type=text; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_marital_status
+				maritalStatus = single,married
+				# cat=modules/modules_registration/910; type=text; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_gender
+				gender = male,female
+				# cat=modules/modules_registration/920; type=text; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_accounting_type
+				accountingType = accounting,debit
+				# cat=modules/modules_registration/930; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_min_age
+				minAge = 18
+				# cat=modules/modules_registration/940; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.registration_invitation_required
+				invitationRequired = 0
+			}
+
+			# customsubcategory=modules_profile=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.subcategory_profile
+			profile {
+				emailOnUserUpdate {
+					# cat=modules/modules_profile/410; type=boolean; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_active
+					active = 0
+					# cat=modules/modules_profile/420; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_subject
+					subject = Profile update
+					# cat=modules/modules_profile/430; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_from_email
+					fromEmail = mail@domain.com
+					# cat=modules/modules_profile/440; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_from_name
+					fromName = profile
+					# cat=modules/modules_profile/450; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_to_email
+					toEmail = mail@domain.com
+					# cat=modules/modules_profile/460; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_to_name
+					toName = profile
+					# cat=modules/modules_profile/470; type=string; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.profile_email_on_user_update_bcc_email
+					bccEmail =
+				}
+			}
+
+		}
+	}
+}

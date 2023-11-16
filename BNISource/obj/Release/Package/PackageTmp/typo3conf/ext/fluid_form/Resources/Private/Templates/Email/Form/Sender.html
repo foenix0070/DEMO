@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="SystemEmail" />
+<f:section name="Subject"><f:format.raw>{subject}</f:format.raw></f:section>
+<f:section name="Title">{subject}</f:section>
+<f:section name="Main">
+	<f:format.html>{finisher.message.introduction}</f:format.html>
+	<f:render partial="Form/FieldRows" arguments="{_all}"/>
+	<f:format.html>{finisher.message.conclusion}</f:format.html>
+</f:section>
+</html>

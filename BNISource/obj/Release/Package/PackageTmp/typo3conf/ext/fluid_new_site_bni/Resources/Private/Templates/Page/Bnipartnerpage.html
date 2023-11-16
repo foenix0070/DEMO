@@ -1,0 +1,119 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+    
+<f:layout name="Default" />
+<f:section name="Main">
+    <div role="main" class="main container p-0">
+        <section id="main-head" class="banner-container">
+            <div class="d-flex">
+
+                <f:render partial="LeftNavigation" arguments="{_all}" />
+                
+                <f:for each="{Slider}" as="sliderContentElement">
+                    <div id="slider" class="slider-element dark py-5" style="background-image:url(/fileadmin{sliderContentElement.BackgroundImages.0.originalFile.identifier}); background-size: cover;">
+                        <div class="bg-overlay"></div>
+                        <div class="banner-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <f:render partial="breadcumbs" arguments="{_all}" />
+                                        <h2 class="h2-heading display-2">{sliderContentElement.data.header}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>              
+        </section>
+
+        <section id="tab-section" class="mb-5">
+            <div class="container py-4">
+                <f:for each="{ArticleSectionTitle}" as="MainSectionTitleContent">
+                    <div class="heading-block border-bottom-0 text-center mb-5">
+                        <h2>{MainSectionTitleContent.data.header}</h2>
+                        <span>{MainSectionTitleContent.data.subheader}</span>
+                    </div>
+                </f:for>
+
+                <div class="container">
+                    <div class="justify-content-center" id="main-partner">
+                        <div class="row">
+                            <div class="tabs tabs-bottom tabs-center tabs-simple custom-tabs-style-1">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" href="#tabsNavigationOurPartner" data-bs-toggle="tab" aria-selected="true" role="tab">Nos Partenaires</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" href="#tabsNavigationBeginPartner" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Devenir Partenaire</a>
+                                    </li>
+                                    <!-- <li class="nav-item" role="presentation">
+                                        <a class="nav-link" href="#tabsNavigationPartnerSpace" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Espace Partenaire</a>
+                                    </li> -->
+                                </ul>
+                                <div class="tab-content" id="isote-product">
+
+                                    <div class="tab-pane active" id="tabsNavigationOurPartner" role="tabpanel">
+                                        <div class="row">
+                                            <div class="filtering col-sm-12 text-center mt-3">
+                                                <span data-filter="*" class="active">All</span>
+                                                <f:for each="{MainSectionTitle}" as="MainSectionTitleContent">
+                                                    <span data-filter=".{MainSectionTitleContent.data.subheader}" class="">{MainSectionTitleContent.data.header}</span>
+                                                </f:for>
+                                            </div>
+                                        </div>
+                                        <div class="justify-content-start">
+                                            <div class="accordion accordion-style" id="accordion">
+                                                <div class="row gallery">
+                                                    <f:for each="{TabOne}" as="ParnerListContent">
+                                                        <div class="col-md-6 col-lg-2 p-1 mb-4 {ParnerListContent.data.subheader}">
+                                                            <a class="bnipartner-list--item border" href="{ParnerListContent.data.header_link}" target="_blank">
+                                                                <div class="bnipartner-list--degree">
+                                                                    <div class="bnipartner-list--border">
+                                                                        <img class="bnipartner-list--image" src="/fileadmin{ParnerListContent.TabOneBackground.0.originalFile.identifier}" title="{ParnerListContent.data.header}">
+                                                                    </div>
+                                                                </div>
+                                                                <h3 class="bnipartner-list--title overflow-lines">{ParnerListContent.data.header}</h3>
+                                                            </a>
+                                                        </div>
+                                                    </f:for>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="tabsNavigationBeginPartner" role="tabpanel">
+                                        <div class="text-center">
+                                            <f:for each="{TabTwo}" as="PartnerTextContent">
+                                                <div class="text-left"><f:format.html>{PartnerTextContent.data.bodytext}</f:format.html></div>
+                                            </f:for>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="tab-pane" id="tabsNavigationPartnerSpace" role="tabpanel">
+                                        <div class="text-center">
+                                            <p class="text-3-5">A Bientôt</p>
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        
+
+        
+</div><!-- End Main -->
+
+   
+<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+
+</f:section>

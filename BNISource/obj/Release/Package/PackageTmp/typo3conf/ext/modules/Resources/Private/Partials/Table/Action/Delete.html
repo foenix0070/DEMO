@@ -1,0 +1,3 @@
+<f:link.action action="delete" title="{options.title}" class="btn btn-primary btn-icon no-loading"
+			   additionalAttributes="{onclick : 'return confirm(\'{options.confirmation}\')'}"
+			   arguments="{object: listItem, parentObject: list.parentObject}"><f:spaceless><f:if condition="{options.iconIdentifier}"><core:icon alternativeMarkupIdentifier="inline" identifier="{options.iconIdentifier}"/></f:if> <f:if condition="{options.label}"><span class="btn-label">{options.label}</span></f:if></f:spaceless></f:link.action>

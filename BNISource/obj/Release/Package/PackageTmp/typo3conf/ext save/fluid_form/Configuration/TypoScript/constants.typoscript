@@ -1,0 +1,60 @@
+# customcategory=form=form
+plugin.tx_fluidform {
+	view {
+		# cat=form/file/10; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:fluid_form/Resources/Private/Templates/
+		# cat=form/file/11; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:fluid_form/Resources/Private/Partials/
+		# cat=form/file/12; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:fluid_form/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=form//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+themes.configuration {
+	colors {
+		primary = #8DD02E
+	}
+	extension {
+		fluid_form {
+			# customsubcategory=form_view=LLL:EXT:fluid_form/Resources/Private/Language/locallang_constants.xlf:tx_fluidform_constants.subcategory_view
+			view {
+				# cat=form/form_view/100; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang_constants.xlf:tx_fluidform_constants.view_template_root_path
+				templateRootPath = EXT:fluid_form/Resources/Private/Templates/
+				# cat=form/form_view/200; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang_constants.xlf:tx_fluidform_constants.view_partial_root_path
+				partialRootPath = EXT:fluid_form/Resources/Private/Partials/
+				# cat=form/form_view/300; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang_constants.xlf:tx_fluidform_constants.view_layout_root_path
+				layoutRootPath = EXT:fluid_form/Resources/Private/Layouts/
+			}
+			# customsubcategory=form_pdf=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.subcategory_pdf
+			pdf {
+				receiver {
+					# cat=form/form_pdf/310; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_receiver_font_path
+					fontPath = EXT:fluid_fpdf/Resources/Private/Fonts
+					# cat=form/form_pdf/320; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_receiver_image_path
+					imagePath = EXT:fluid_fpdf/Resources/Private/Images
+					# cat=form/form_pdf/330; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_receiver_background
+					background = EXT:fluid_fpdf/Resources/Private/Pdf/Normbriefbogen_DIN5008.pdf
+					# cat=form/form_pdf/340; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_receiver_partial_path
+					partialRootPath = EXT:fluid_form/Resources/Private/Partials/
+					# cat=form/form_pdf/350; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_receiver_template_path
+					templateRootPath = EXT:fluid_form/Resources/Private/Templates/
+				}
+				sender {
+					# cat=form/form_pdf/410; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_sender_font_path
+					fontPath = EXT:fluid_fpdf/Resources/Private/Fonts
+					# cat=form/form_pdf/420; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_sender_image_path
+					imagePath = EXT:fluid_fpdf/Resources/Private/Images
+					# cat=form/form_pdf/430; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_sender_background
+					background = EXT:fluid_fpdf/Resources/Private/Pdf/Normbriefbogen_DIN5008.pdf
+					# cat=form/form_pdf/440; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_sender_partial_path
+					partialRootPath = EXT:fluid_form/Resources/Private/Partials/
+					# cat=form/form_pdf/450; type=string; label=LLL:EXT:fluid_form/Resources/Private/Language/locallang.xlf:tx_fluidform_constants.pdf_sender_template_path
+					templateRootPath = EXT:fluid_form/Resources/Private/Templates/
+				}
+			}
+		}
+	}
+}

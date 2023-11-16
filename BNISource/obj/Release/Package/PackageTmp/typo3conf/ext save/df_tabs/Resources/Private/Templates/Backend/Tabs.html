@@ -1,0 +1,134 @@
+{namespace be=TYPO3\CMS\Backend\ViewHelpers}
+{namespace core=TYPO3\CMS\Core\ViewHelpers}
+
+<style type="text/css">
+	.backend-preview-table > tbody > tr > th {
+		white-space: normal;
+	}
+</style>
+
+<br/>
+
+<table class="table table-striped table-bordered backend-preview-table">
+	<f:render partial="PluginDataTableHeader"/>
+	<tbody>
+	<tr>
+		<th scope="row">
+			<f:translate
+				key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.mode"/>
+		</th>
+		<td>
+			<f:if condition="{data.tabs.0}">
+				<f:then>
+					<f:comment><!--Combined mode is forced.--></f:comment>
+					<f:translate
+						key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.mode.combined"/>
+				</f:then>
+				<f:else>
+					<f:translate
+						key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.mode.{data.mode}"/>
+				</f:else>
+			</f:if>
+		</td>
+	</tr>
+
+	<f:if condition="{data.tabs.0}">
+		<tr>
+			<th scope="row">
+				<f:translate
+					key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.data"/>
+			</th>
+			<td>
+				<f:for each="{data.tabs}" as="tab">
+					<f:switch expression="{tab.type}">
+						<f:case value="page">
+							<be:link.editRecord uid="{tab.uid}" table="pages">
+								<core:icon identifier="apps-pagetree-page-default"/> {tab.title} [{tab.uid}]
+							</be:link.editRecord>
+						</f:case>
+						<f:case value="content">
+							<be:link.editRecord uid="{tab.uid}" table="tt_content">
+								<core:icon identifier="content-header"/> {tab.title} [{tab.uid}]
+							</be:link.editRecord>
+						</f:case>
+						<f:defaultCase>
+							<core:icon identifier="default"/> {tab.title} [{tab.uid}]
+						</f:defaultCase>
+					</f:switch>
+					<br/>
+				</f:for>
+			</td>
+		</tr>
+	</f:if>
+
+	<f:if condition="{data.titles.0}">
+		<tr>
+			<th scope="row">
+				<f:translate
+					key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.titles"/>
+			</th>
+			<td>
+				<f:for each="{data.titles}" as="title" iteration="iterator">
+					<f:format.raw>{title}</f:format.raw>
+					<br/>
+				</f:for>
+			</td>
+		</tr>
+	</f:if>
+
+	<tr>
+		<th scope="row">
+			<f:translate
+				key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.enableAutoPlayInterval"/>
+		</th>
+		<td>
+			<f:if condition="{data.enableAutoPlay}">
+				<f:then>
+					<core:icon identifier="actions-check"/>
+				</f:then>
+				<f:else>
+					<core:icon identifier="actions-close"/>
+				</f:else>
+			</f:if>
+		</td>
+	</tr>
+
+	<f:if condition="{data.enableAutoPlay}">
+		<tr>
+			<th scope="row">
+				<f:translate
+					key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.autoPlayInterval"/>
+			</th>
+			<td>
+				{data.autoPlayInterval}
+			</td>
+		</tr>
+	</f:if>
+
+	<tr>
+		<th scope="row">
+			<f:translate
+				key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.enableMouseOver"/>
+		</th>
+		<td>
+			<f:if condition="{data.enableMouseOver}">
+				<f:then>
+					<core:icon identifier="actions-check"/>
+				</f:then>
+				<f:else>
+					<core:icon identifier="actions-close"/>
+				</f:else>
+			</f:if>
+		</td>
+	</tr>
+
+	<tr>
+		<th scope="row">
+			<f:translate key="LLL:EXT:df_tabs/Resources/Private/Language/locallang.xlf:flexform.sheets.general.hash"/>
+		</th>
+		<td>
+			{data.hashName}
+		</td>
+	</tr>
+	</tbody>
+</table>

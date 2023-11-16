@@ -1,0 +1,32 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<div class="{field.css.class.wrapper} form-field-select" style="{field.css.wrapper}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-wrapper">
+			<label for="form-{formUid}-{fieldsetKey}-{fieldKey}" class="{field.css.class.label}" style="{field.css.style.label}">{field.label}
+				<f:if condition="{field.required} == 1">
+					<span class="required">*</span>
+				</f:if>
+			</label>
+			<div class="{field.css.class.fieldWrapper}" style="{field.css.style.fieldWrapper}">
+				<f:if condition="{field.multiple}">
+					<f:then>
+						<f:form.select name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+									   options="{field.options}" value="{field.value}" multiple="multiple"
+									   class="{field.css.class.field}" style="{field.css.style.field}"
+
+						/>
+					</f:then>
+					<f:else>
+						<f:form.select name="form-{formUid}-{fieldsetKey}-{fieldKey}" id="form-{formUid}-{fieldsetKey}-{fieldKey}"
+									   options="{field.options}" value="{field.value}"
+									   class="{field.css.class.field}" style="{field.css.style.field}"
+
+						/>
+					</f:else>
+				</f:if>
+				<small class="{field.css.class.notice}" style="{field.css.style.notice}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-notice">{field.notice}</small>
+				<div class="{field.css.class.message}" style="{field.css.style.message}" id="form-{formUid}-{fieldsetKey}-{fieldKey}-message"></div>
+			</div>
+		</div>
+	</f:section>
+</div>

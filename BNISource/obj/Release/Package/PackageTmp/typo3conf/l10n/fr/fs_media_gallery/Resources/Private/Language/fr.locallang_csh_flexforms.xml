@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			<label index="settings.startingpoint.description">Définir les pages/dossiers qui vont contenir les enregistrements des albums.</label>
+			<label index="settings.recursive.description">Sélectionnez le niveau de récursion du point de départ.</label>
+			<label index="settings.random.targetPid.description">Cibler la page vers laquelle les photos doivent pointer. Sélectionner la page où l'album entier est affiché.</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

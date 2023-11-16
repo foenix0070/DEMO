@@ -27,8 +27,8 @@
 			<target>Schema.org Header aktivieren</target>
 		</trans-unit>
 			<trans-unit id="flexform.addSchemaOrgHeader.description">
-				<source>For details see https://schema.org/FAQPage"</source>
-				<target>Für Details siehe https://schema.org/FAQPage</target>
+				<source>For details see https://schema.org/faq.html.htmlPage"</source>
+				<target>Für Details siehe https://schema.org/faq.html.htmlPage</target>
 			</trans-unit>
 		<trans-unit id="flexform.enablePagination">
             <source>Enable Pagination</source>

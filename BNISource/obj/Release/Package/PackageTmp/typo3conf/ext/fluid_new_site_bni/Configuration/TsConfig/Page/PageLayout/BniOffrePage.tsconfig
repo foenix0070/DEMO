@@ -1,0 +1,39 @@
+mod.web_layout.BackendLayouts {
+    BniOffrePage {
+        title = Bni Offre Page
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = ArticleSectionTitle
+                                colPos = 29
+                                colspan = 2
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = ArticleSectionText
+                                colPos = 23
+                                colspan = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-08-06T00:00:00Z" product-name="fs_media_gallery" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="date_format" approved="yes">
+				<source>Y-m-d</source>
+			<target state="translated">d.m.Y</target></trans-unit>
+			<trans-unit id="media_album" approved="yes">
+				<source>Media Album</source>
+			<target state="translated">Album média</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album média</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Album</target></alt-trans></trans-unit>
+			<trans-unit id="media_albums" approved="yes">
+				<source>Media Albums</source>
+			<target state="translated">Albums média</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums média</target></alt-trans></trans-unit>
+			<trans-unit id="asset" approved="yes">
+				<source>asset</source>
+			<target state="translated">Image / média</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>galerie</target></alt-trans></trans-unit>
+			<trans-unit id="assets" approved="yes">
+				<source>assets</source>
+			<target state="translated">Images / médias</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>galeries</target></alt-trans></trans-unit>
+			<trans-unit id="no_albums_found" approved="yes">
+				<source>No albums found</source>
+			<target state="translated">Aucun album trouvé</target></trans-unit>
+			<trans-unit id="no_album_found" approved="yes">
+				<source>Album not found</source>
+			<target state="translated">Album introuvable</target></trans-unit>
+			<trans-unit id="no_assets_found" approved="yes">
+				<source>No assets found</source>
+			<target state="translated">Aucune image ou média trouvé</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Pas de galerie trouvée</target></alt-trans><alt-trans xml:space="preserve" origin="sdambreville"><target>Aucun album trouvé</target></alt-trans></trans-unit>
+			<trans-unit id="back_to_album" approved="yes">
+				<source>Back to album</source>
+			<target state="translated">Retour à l'album</target></trans-unit>
+			<trans-unit id="back_to_%s" approved="yes">
+				<source>Back to %s</source>
+			<target state="translated">Retour à %s</target></trans-unit>
+			<trans-unit id="back_to_albums_list" approved="yes">
+				<source>Back to albums list</source>
+			<target state="translated">Retour à la liste des albums</target></trans-unit>
+			<trans-unit id="lightbox_current" approved="yes">
+				<source>image {current} of {total}</source>
+			<target state="translated">image {current} sur {total}</target></trans-unit>
+			<trans-unit id="link_to_album" approved="yes">
+				<source>Show album '%s'</source>
+			<target state="translated">Afficher l'album '%s'</target></trans-unit>
+			<trans-unit id="widget.pagination.ellipsis">
+				<source>…</source>
+			<target></target></trans-unit>
+			<trans-unit id="widget.pagination.previous">
+				<source>«</source>
+			<target></target></trans-unit>
+			<trans-unit id="widget.pagination.next">
+				<source>»</source>
+			<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

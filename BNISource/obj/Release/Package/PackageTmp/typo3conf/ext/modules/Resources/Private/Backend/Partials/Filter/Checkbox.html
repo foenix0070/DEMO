@@ -1,0 +1,16 @@
+<f:if condition="{list.css.bootstrap} == 5">
+	<f:then>
+		<div class="form-check form-switch">
+			<f:form.checkbox name="{name}" value="1" checked="{value}" class="form-check-input" id="{name}-checkbox" />
+			<label class="form-check-label" for="{name}-checkbox">{label}</label>
+		</div>
+	</f:then>
+	<f:else>
+		<div class="checkbox">
+			<label>
+				<f:form.checkbox name="{name}" value="1" checked="{value}"  />
+				{label}
+			</label>
+		</div>
+	</f:else>
+</f:if>

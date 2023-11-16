@@ -1,0 +1,222 @@
+plugin.tx_fluidform.settings.forms.fileUpload < plugin.tx_fluidform.presets.forms.default
+plugin.tx_fluidform.settings.forms.fileUpload {
+	configuration {
+		# Send by AJAX 0/1
+		ajax = 1
+		# Add query string to target url
+		addQueryString = 0
+	}
+	# Fields
+	fieldsets {
+		complete < plugin.tx_fluidform.presets.fieldsets.normalWithoutLabel
+		complete {
+			fields {
+				name < plugin.tx_fluidform.presets.fields.inputName
+				name {
+					required = 1
+				}
+				email < plugin.tx_fluidform.presets.fields.inputEmail
+				email {
+					required = 1
+				}
+				message < plugin.tx_fluidform.presets.fields.textarea
+				message {
+					required = 1
+				}
+				photoRequired < plugin.tx_fluidform.presets.fields.upload
+				photoRequired {
+					label = Bild
+					notice = Bitte Bild von Ihrem Rechner auswählen
+					required = 0
+					css {
+						class {
+							wrapper = form-group col-md-12
+						}
+					}
+				}
+				captcha < plugin.tx_fluidform.presets.fields.captcha
+			}
+		}
+		buttons < plugin.tx_fluidform.presets.fieldsets.buttons
+		buttons {
+			fields {
+				submit < plugin.tx_fluidform.presets.fields.submit
+			}
+		}
+	}
+	# Finisher
+	finisher {
+		upload < plugin.tx_fluidform.presets.finisher.upload
+		upload {
+			active = {$themes.configuration.extension.fluid_form.fileUpload.upload.active}
+		}
+		database < plugin.tx_fluidform.presets.finisher.database
+		database {
+			active = {$themes.configuration.extension.fluid_form.fileUpload.database.active}
+			storagePid = {$themes.configuration.extension.fluid_form.fileUpload.database.storagePid}
+		}
+		pdf < plugin.tx_fluidform.presets.finisher.pdf
+		mail < plugin.tx_fluidform.presets.finisher.mail
+		mail {
+			active = {$themes.configuration.extension.fluid_form.fileUpload.mail.active}
+			subject = {$themes.configuration.extension.fluid_form.fileUpload.mail.subject}
+			message {
+				introduction (
+					<p>
+						Hi,<br />
+						this is a file upload.<br />
+						<br />
+						<b>Filled fields:</b>
+					</p>
+				)
+				conclusion (
+					<p>Thank you for your attention</p>
+				)
+			}
+			from {
+				name = {$themes.configuration.extension.fluid_form.fileUpload.mail.from.name}
+				email = {$themes.configuration.extension.fluid_form.fileUpload.mail.from.email}
+			}
+			to {
+				0 {
+					name = {$themes.configuration.extension.fluid_form.fileUpload.mail.to.0.name}
+					email = {$themes.configuration.extension.fluid_form.fileUpload.mail.to.0.email}
+				}
+				#1 {
+				#	name = Fluid form
+				#	email = fluid-form-to-1@t3co.de
+				#}
+			}
+			cc {
+				#0 {
+				#	name = Fluid form
+				#	email = fluid-form-cc@t3co.de
+				#}
+			}
+			bcc {
+				#0 {
+				#	name = Fluid form
+				#	email = fluid-form-bcc@t3co.de
+				#}
+			}
+		}
+	}
+}
+
+# Default language - sys_language_uid:0
+plugin.tx_fluidform.settings.forms.fileUpload {
+	fieldsets {
+		complete {
+			fields {
+				name.label = Name
+				name.placeholder = Max Mustermann
+				name.validation {
+					NotEmpty = Bitte geben Sie Ihren Namen ein
+				}
+				email.label = E-Mailadresse
+				email.placeholder = max@mustermann.de
+				email.validation {
+					NotEmpty = Bitte geben Sie Ihre E-Mailadresse ein
+					Email = Bitte geben Sie eine gültige E-Mailadresse ein
+				}
+				message.label = Nachricht
+				message.placeholder = Geben Sie hier Ihre Nachricht ein
+				message.validation {
+					NotEmpty = Bitte füllen Sie dieses Feld aus
+				}
+			}
+		}
+		buttons {
+			fields {
+				submit.value = Senden
+			}
+		}
+	}
+	messages {
+		successfullySent {
+			title = File-Upload wurde erfolgreich verschickt!
+			message = Wir werden uns in Kürze mit Ihnen in Verbindung setzen.
+		}
+		validationFailed {
+			title = Fehler beim versenden!
+			message = Bitte füllen Sie die erforderlichen Felder aus.
+		}
+	}
+	finisher {
+		mail {
+			message {
+				introduction (
+					<p>
+						Hallo,<br />
+						das ist ein File-Upload.<br />
+						<br />
+						<b>Ausgefüllte Felder:</b>
+					</p>
+				)
+				conclusion (
+					<p>Vielen Dank für Ihre Aufmerksamkeit</p>
+				)
+			}
+		}
+	}
+}
+
+# English
+[siteLanguage("locale") == "en_US.UTF-8"]
+	plugin.tx_fluidform.settings.forms.fileUpload {
+		fieldsets {
+			complete {
+				fields {
+					name.label = Name
+					name.placeholder = Max Mustermann
+					name.validation {
+						NotEmpty = Please enter your name
+					}
+					email.label = Emailaddress
+					email.placeholder = max@mustermann.de
+					email.validation {
+						NotEmpty = Please enter your emailaddress
+						Email = Please enter a valid emailaddress
+					}
+					message.label = Message
+					message.placeholder = Please enter your message here
+					message.validation {
+						NotEmpty = Please enter your message
+					}
+				}
+			}
+			buttons {
+				fields {
+					submit.value = send
+				}
+			}
+		}
+		messages {
+			successfullySent {
+				title = Form data successfully sent!
+				message = We will contact you soon.
+			}
+			validationFailed {
+				title = Form validation failed!
+				message = Please fill in all fields.
+			}
+		}
+		finisher {
+			mail {
+				message {
+					introduction (
+						<p>
+							Hi,<br />
+							this is a file upload.<br />
+							<br />
+							<b>Filled fields:</b>
+						</p>
+					)
+					conclusion (
+						<p>Thank you for your attention</p>
+					)
+				}
+			}
+		}
+	}
+[END]

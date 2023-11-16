@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="bootstrap_package" target-language="fr">
+        <header/>
+        <body>
+
+            <trans-unit id="class.text-left" approved="yes">
+                <source>Text: Left</source>
+            <target state="translated">Texte : gauche</target></trans-unit>
+            <trans-unit id="class.text-right" approved="yes">
+                <source>Text: Right</source>
+            <target state="translated">Texte : droite</target></trans-unit>
+            <trans-unit id="class.text-center" approved="yes">
+                <source>Text: Center</source>
+            <target state="translated">Texte : centré</target></trans-unit>
+            <trans-unit id="class.text-justify" approved="yes">
+                <source>Text: Justify</source>
+            <target state="translated">Texte : justifié</target></trans-unit>
+
+            <trans-unit id="class.lead" approved="no">
+                <source>Text: Lead</source>
+            <target state="needs-translation">Texte : Accroche</target></trans-unit>
+
+            <trans-unit id="class.active" approved="yes">
+                <source>Contextual: Active</source>
+            <target state="translated">Contextuel : Actif</target></trans-unit>
+            <trans-unit id="class.danger" approved="yes">
+                <source>Contextual: Danger</source>
+            <target state="translated">Contextuel : Danger</target></trans-unit>
+            <trans-unit id="class.info" approved="yes">
+                <source>Contextual: Info</source>
+            <target state="translated">Contextuel : Info</target></trans-unit>
+            <trans-unit id="class.success" approved="yes">
+                <source>Contextual: Success</source>
+            <target state="translated">Contextuel : Succès</target></trans-unit>
+            <trans-unit id="class.warning" approved="yes">
+                <source>Contextual: Warning</source>
+            <target state="translated">Contextuel : Attention</target></trans-unit>
+
+            <trans-unit id="class.visible-lg" approved="yes">
+                <source>Visibility: Large devices</source>
+            <target state="translated">Visibilité : grand périphérique</target></trans-unit>
+            <trans-unit id="class.visible-md" approved="yes">
+                <source>Visibility: Medium devices</source>
+            <target state="translated">Visibilité : périphérique moyen</target></trans-unit>
+            <trans-unit id="class.visible-print" approved="yes">
+                <source>Visibility: Print</source>
+            <target state="translated">Visibilité : Impression</target></trans-unit>
+            <trans-unit id="class.visible-sm" approved="yes">
+                <source>Visibility: Small devices</source>
+            <target state="translated">Visibilité : petit périphérique</target></trans-unit>
+            <trans-unit id="class.visible-xs" approved="no">
+                <source>Visibility: Extra small devices</source>
+            <target state="needs-translation">Visibilité : écrans très petits (xs)</target></trans-unit>
+
+            <trans-unit id="class.table-striped" approved="yes">
+                <source>Table: Striped rows</source>
+            <target state="translated">Table: rangées zébrées</target></trans-unit>
+            <trans-unit id="class.table-bordered" approved="yes">
+                <source>Table: Bordered table</source>
+            <target state="translated">Tableau : tableau avec bordures</target></trans-unit>
+            <trans-unit id="class.table-hover" approved="yes">
+                <source>Table: Hover rows</source>
+            <target state="translated">Table: rangées en surbrillance</target></trans-unit>
+            <trans-unit id="class.table-condensed" approved="yes">
+                <source>Table: Condensed table</source>
+            <target state="translated">Table: condensée</target></trans-unit>
+
+            <trans-unit id="class.list-unstyled" approved="yes">
+                <source>Lists: Unstyled</source>
+            <target state="translated">Listes : aucun style</target></trans-unit>
+            <trans-unit id="class.list-inline" approved="yes">
+                <source>Lists: Inline</source>
+            <target state="translated">Listes : en ligne</target></trans-unit>
+
+            <trans-unit id="class.btn" approved="yes">
+                <source>Buttons: Base</source>
+            <target state="translated">Boutons : base</target></trans-unit>
+            <trans-unit id="class.btn-default" approved="yes">
+                <source>Buttons: Default</source>
+            <target state="translated">Boutons : défaut</target></trans-unit>
+            <trans-unit id="class.btn-primary" approved="yes">
+                <source>Buttons: Primary</source>
+            <target state="translated">Bouton : primaire</target></trans-unit>
+            <trans-unit id="class.btn-success" approved="yes">
+                <source>Buttons: Success</source>
+            <target state="translated">Boutons : succès</target></trans-unit>
+            <trans-unit id="class.btn-warning" approved="yes">
+                <source>Buttons: Warning</source>
+            <target state="translated">Boutons : avertissement</target></trans-unit>
+            <trans-unit id="class.btn-danger" approved="yes">
+                <source>Buttons: Danger</source>
+            <target state="translated">Boutons : danger</target></trans-unit>
+            <trans-unit id="class.btn-link" approved="yes">
+                <source>Buttons: Link</source>
+            <target state="translated">Boutons : lien</target></trans-unit>
+            <trans-unit id="class.btn-block" approved="yes">
+                <source>Buttons: Block</source>
+            <target state="translated">Boutons : block</target></trans-unit>
+
+        </body>
+    </file>
+</xliff>

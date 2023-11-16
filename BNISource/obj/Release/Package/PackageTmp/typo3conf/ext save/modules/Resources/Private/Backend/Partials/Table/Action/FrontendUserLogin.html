@@ -1,0 +1,20 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<f:if condition="{listItem.disable}">
+	<f:then>
+
+		<modules:variable.set name="languageKey" value="tx_modules_label.list_{list.underscoredId}_action_login_as" />
+		<a href="/?type=1586608761&tx_modules_loginfrombackend[user]={listItem.uid}"
+		   target="_blank" title="{f:translate(key: languageKey)}" class="btn btn-default disabled {options.css}">
+			<core:icon identifier="actions-system-backend-user-switch"/></a>
+
+	</f:then>
+	<f:else>
+
+		<modules:variable.set name="languageKey" value="tx_modules_label.list_{list.underscoredId}_action_login_as" />
+		<a href="/?type=1586608761&tx_modules_loginfrombackend[user]={listItem.uid}"
+		   target="_blank" title="{f:translate(key: languageKey)}" class="btn btn-default {options.css}">
+			<core:icon identifier="actions-system-backend-user-switch"/></a>
+
+	</f:else>
+</f:if>

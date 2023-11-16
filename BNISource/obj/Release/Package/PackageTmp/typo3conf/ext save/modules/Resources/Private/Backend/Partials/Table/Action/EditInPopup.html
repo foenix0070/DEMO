@@ -1,0 +1,8 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<modules:variable.set name="languageKey" value="tx_modules_label.list_{list.underscoredId}_action_{action}" />
+<modules:be.editInPopupLink table="{list.table}"
+							uid="{listItem.uid}"
+							title="{f:translate(key: languageKey)}"
+							class="btn btn-default {options.css}">
+	<core:icon identifier="actions-window-open"/></modules:be.editInPopupLink>

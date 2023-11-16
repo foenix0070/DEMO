@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+
+			<label index="tx_fsmediagallery_domain_model_mediaalbum">Album média</label>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.slug"/>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.datetime">Date</label>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.webdescription">Description de l'album</label>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.parentalbum">Album parent</label>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.main_asset">Image / média principal pour l'album</label>
+			<label index="tx_fsmediagallery_domain_model_mediaalbum.main_asset.add">Ajouter un média / image</label>
+			<label index="tx_news_domain_model_news.related_fsmediaalbums">Albums en relation</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

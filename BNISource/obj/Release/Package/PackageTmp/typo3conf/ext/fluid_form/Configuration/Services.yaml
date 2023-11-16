@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  CodingMs\FluidForm\:
+    resource: '../Classes/*'
+
+  CodingMs\FluidForm\Command\ReportCommand:
+    tags:
+      - name: 'console.command'
+        command: 'fluid_form:report'
+        description: 'Send form reports.'
+        schedulable: true

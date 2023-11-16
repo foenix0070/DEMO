@@ -1,0 +1,7 @@
+# customcategory=container=container
+themes.configuration {
+	container {
+		# cat=container//010; type=int+; label=LLL:EXT:modules/Resources/Private/Language/locallang_constants.xlf:tx_modules_constants.container_frontend_user
+		frontendUser = 0
+	}
+}

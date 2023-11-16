@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-05-17T16:03:21Z" product-name="fluid_form">
+		<header/>
+		<body>
+			<trans-unit id="tx_fluidform_newcontentelementwizard_form.title">
+				<source>Fluid form</source>
+				<target>Fluid Form</target>
+			</trans-unit>
+			<trans-unit id="tx_fluidform_newcontentelementwizard_form.description">
+				<source>Display a form</source>
+				<target>Zeigt ein Formular an</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

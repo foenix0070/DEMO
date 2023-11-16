@@ -1,0 +1,21 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fluid_form/Configuration/PageTS/Library/" extensions="typoscript">
+
+mod.web_list.table.tx_fluidform_domain_model_field.hideTable = 1
+
+mod.wizards.newContentElement.wizardItems {
+	forms {
+		elements {
+			fluidform_form {
+				title = LLL:EXT:fluid_form/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_fluidform_newcontentelementwizard_form.title
+				description = LLL:EXT:fluid_form/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_fluidform_newcontentelementwizard_form.description
+				icon = ../typo3conf/ext/fluid_form/Resources/Public/Icons/iconmonstr-user-20.svg
+				iconIdentifier = mimetypes-x-content-fluid-form-field
+				tt_content_defValues {
+					CType = list
+					list_type = fluidform_form
+				}
+			}
+		}
+		show := addToList(fluidform_form)
+	}
+}

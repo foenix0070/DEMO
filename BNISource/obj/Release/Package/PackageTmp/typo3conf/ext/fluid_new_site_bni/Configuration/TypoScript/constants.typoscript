@@ -1,0 +1,68 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+
+##############################
+#### FLUID STYLED CONTENT ####
+##############################
+styles {
+    templates {
+        layoutRootPath = EXT:fluid_new_site_bni/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:fluid_new_site_bni/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:fluid_new_site_bni/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+############
+### PAGE ###
+############
+page {
+     fluidtemplate {
+        layoutRootPath = EXT:fluid_new_site_bni/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:fluid_new_site_bni/Resources/Private/Partials/Page/
+        templateRootPath = EXT:fluid_new_site_bni/Resources/Private/Templates/Page/
+    }
+    meta {
+        description =
+        author =
+        keywords =
+        viewport = width=device-width, initial-scale=1
+        robots = index,follow
+        apple-mobile-web-app-capable = no
+        compatible = IE=edge
+    }
+    tracking {
+        google {
+            trackingID =
+            anonymizeIp = 1
+        }
+    }
+}
+
+############
+### NEWS ###
+############
+
+plugin.tx_news {
+   view {
+      templateRootPath = EXT:fluid_new_site_bni/Resources/Private/Extensions/News/Templates/
+      partialRootPath = EXT:fluid_new_site_bni/Resources/Private/Extensions/News/Partials/
+      layoutRootPath = EXT:fluid_new_site_bni/Resources/Private/Extensions/News/Layouts/
+   }
+}
+
+
+##############
+### CONFIG ###
+##############
+config {
+    no_cache = 0
+    removeDefaultJS = 0
+    admPanel = 1
+    prefixLocalAnchors = all
+    headerComment = build by sitepackagebuilder.com
+    sendCacheHeaders = 1
+}

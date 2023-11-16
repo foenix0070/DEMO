@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-27T20:46:22Z" product-name="fs_media_gallery" target-language="fr">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum" approved="yes">
+				<source>Media Album</source>
+			<target state="translated">Album média</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album</target></alt-trans></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.slug">
+				<source>URL Segment</source>
+			<target></target></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.datetime" approved="yes">
+				<source>Date</source>
+			<target state="translated">Date</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Date</target></alt-trans></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.webdescription" approved="yes">
+				<source>Album description</source>
+			<target state="translated">Description de l'album</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Description de l'album</target></alt-trans></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.parentalbum" approved="yes">
+				<source>Parent album</source>
+			<target state="translated">Album parent</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Album parent</target></alt-trans></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.main_asset" approved="yes">
+				<source>Main asset/image for album</source>
+			<target state="translated">Image / média principal pour l'album</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Vignette principale de l'album</target></alt-trans></trans-unit>
+			<trans-unit id="tx_fsmediagallery_domain_model_mediaalbum.main_asset.add" approved="yes">
+				<source>Add asset/image</source>
+			<target state="translated">Ajouter un média / image</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Ajouter une nouvelle vignette</target></alt-trans></trans-unit>
+			<trans-unit id="tx_news_domain_model_news.related_fsmediaalbums" approved="yes">
+				<source>Related Media Albums</source>
+			<target state="translated">Albums en relation</target><alt-trans xml:space="preserve" origin="sdambreville"><target>Albums en relation</target></alt-trans></trans-unit>
+		</body>
+	</file>
+</xliff>

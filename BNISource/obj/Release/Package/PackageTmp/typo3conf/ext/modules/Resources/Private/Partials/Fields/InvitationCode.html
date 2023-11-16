@@ -1,0 +1,29 @@
+<div class="form-group" data-type="invitation-code">
+	<label for="{prefix}_{field.key}">{field.label}
+		<f:if condition="{field.required}"><span>*</span></f:if>
+	</label>
+	<f:if condition="{field.error}">
+		<f:then>
+			<f:form.textfield name="{field.key}"
+							  class="form-control is-invalid"
+							  id="{prefix}_{field.key}"
+							  value="{field.value}" />
+			<div class="invalid-feedback">{field.error}</div>
+		</f:then>
+		<f:else>
+			<f:if condition="{field.value}">
+				<f:then>
+					<f:form.textfield name="{field.key}"
+									  class="form-control is-valid"
+									  id="{prefix}_{field.key}"
+									  value="{field.value}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield name="{field.key}"
+									  class="form-control"
+									  id="{prefix}_{field.key}" />
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>

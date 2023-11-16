@@ -1,0 +1,58 @@
+plugin.tx_fluidform {
+	presets {
+		# Fieldsets
+		fieldsets {
+			normal {
+				label = Fieldset label
+				type = Normal
+				section = Default
+				css {
+					class {
+						fieldset =
+						fieldsetInner = row
+						legend =
+					}
+					style {
+						fieldset =
+						fieldsetInner =
+						legend =
+					}
+				}
+			}
+			normalWithoutLabel {
+				label = Screenreader label
+				type = Normal
+				section = Default
+				css {
+					class {
+						fieldset =
+						fieldsetInner = row
+						legend = sr-only
+					}
+					style {
+						fieldset =
+						fieldsetInner =
+						legend =
+					}
+				}
+			}
+			buttons {
+				label = Screenreader label
+				type = Button
+				section = Default
+				css {
+					class {
+						fieldset =
+						fieldsetInner = row
+						legend = sr-only
+					}
+					style {
+						fieldset =
+						fieldsetInner =
+						legend =
+					}
+				}
+			}
+		}
+	}
+}

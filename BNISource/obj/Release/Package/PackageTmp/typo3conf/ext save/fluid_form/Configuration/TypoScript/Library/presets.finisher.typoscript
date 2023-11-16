@@ -1,0 +1,162 @@
+plugin.tx_fluidform {
+	presets {
+		# Finisher
+		finisher {
+			# Database finisher
+			database {
+				# Class/Object
+				type = Database
+				active = 0
+				storagePid = 0
+			}
+			# PDF finisher
+			pdf {
+				# Class/Object
+				type = Pdf
+				active = 0
+			}
+			# Mail finisher
+			mail {
+				# Class/Object
+				type = Mail
+				active = 0
+				subject = {$themes.configuration.siteName}: Contact-Request
+				message {
+					introduction (
+						<p>
+							Hi,<br />
+							this is a contact request.<br />
+							<br />
+							<b>Filled fields:</b>
+						</p>
+					)
+					conclusion (
+						<p>Thank you for your attention</p>
+					)
+				}
+				# Configuration for sender
+				sender {
+					# Sender gets a copy
+					sendCopy = 0
+					# Fieldset that contains the sender email address field
+					addressFieldset = complete
+					# Field that contains the sender email address
+					addressField = email
+					pdf {
+						# Sender email needs the PDF attached
+						attach = 0
+						# PDF filename in email
+						filename = Sender.pdf
+					}
+					template = Form/Sender
+				}
+				receiver {
+					pdf {
+						# Receiver email needs the PDF attached
+						attach = 0
+						# PDF filename in email
+						filename = Receiver.pdf
+					}
+					template = Form/Receiver
+				}
+				reply {
+					# Activate the reply to email
+					active = 1
+					# Fieldset that contains the reply to email address field
+					addressFieldset = complete
+					# Field that contains the reply to email address
+					addressField = email
+				}
+				from {
+					name = Fluid form
+					email = fluid-form@t3co.de
+				}
+				to {
+					#0 {
+					#	name = Fluid form
+					#	email = fluid-form-to-0@t3co.de
+					#}
+					#1 {
+					#	name =  Fluid form
+					#	email = fluid-form-to-1@t3co.de
+					#}
+				}
+				cc {
+					#0 {
+					#	name = Fluid form
+					#	email = fluid-form-cc@t3co.de
+					#}
+				}
+				bcc {
+					#0 {
+					#	name = Fluid form
+					#	email = fluid-form-bcc@t3co.de
+					#}
+				}
+			}
+			# Upload finisher, must be the first
+			upload {
+				type = Upload
+				active = 0
+				# Sender address for emailOnUpload alert
+				emailOnUpload {
+					subject = New file upload
+					message {
+						introduction (
+							<p>
+								Hi,<br />
+								a new file was uploaded.<br />
+								<br />
+								<b>File data:</b>
+							</p>
+						)
+						conclusion (
+							<p>Thank you for your attention</p>
+						)
+					}
+					from {
+						name = Fluid form upload
+						email = fluid-form@t3co.de
+					}
+				}
+			}
+			# JavaScript finisher
+			javascript {
+				# Class/Object
+				type = JavaScript
+				functions {
+					#onInitialize (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('onInitialize', formUid);
+					#	}
+					#)
+					#onSend (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('onSend', formUid);
+					#	}
+					#)
+					#beforeSuccess (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('beforeSuccess', formUid);
+					#	}
+					#)
+					#afterSuccess (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('afterSuccess', formUid);
+					#	}
+					#)
+					#beforeError (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('beforeError', formUid);
+					#	}
+					#)
+					#afterError (
+					#	if(typeof(console)!='undefined') {
+					#		console.log('afterError', formUid);
+					#	}
+					#)
+				}
+			}
+		}
+	}
+}

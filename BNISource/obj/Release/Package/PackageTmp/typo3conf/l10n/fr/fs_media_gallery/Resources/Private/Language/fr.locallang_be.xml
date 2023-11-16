@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="fr" type="array">
+			
+
+			<label index="mediagallery.title">Album média</label>
+			<label index="mediagallery.description">Afficher vos images / médias depuis votre local ou depuis votre serveur distant en tant que galerie d'albums</label>
+
+			
+
+			
+			<label index="flexforms.general.I.inherit">Hérité (Typoscript)</label>
+			<label index="flexforms.general.resizeMode">Mode de redimensionnement</label>
+			<label index="flexforms.general.resizeMode.I.m">Redimensionner proportionnellement</label>
+			<label index="flexforms.general.resizeMode.I.c">rogner</label>
+			<label index="flexforms.general.resizeMode.I.s">compresser (ajustement exact mais déformé)</label>
+			
+			<label index="flexforms.mediagallery.tabs.general">Général</label>
+			<label index="flexforms.mediagallery.tabs.list">Liste d'albums</label>
+			<label index="flexforms.mediagallery.tabs.album">Affichage des albums</label>
+			<label index="flexforms.mediagallery.tabs.detail">Vue détail</label>
+			<label index="flexforms.mediagallery.tabs.random">Image / média aléatoire</label>
+			<label index="flexforms.mediagallery.switchableControllerActions">Mode d'affichage</label>
+			<label index="flexforms.mediagallery.switchableControllerActions.I.nestedList">Albums sélectionnés (manuellement)</label>
+			<label index="flexforms.mediagallery.switchableControllerActions.I.flatList">Liste d'albums</label>
+			<label index="flexforms.mediagallery.switchableControllerActions.I.showAlbumByParam">Album seul (Surcharge activée)</label>
+			<label index="flexforms.mediagallery.switchableControllerActions.I.showAlbumByConfig">Album seul (Surcharge désactivée)</label>
+			<label index="flexforms.mediagallery.switchableControllerActions.I.randomAsset">Image / média aléatoire</label>
+			<label index="flexforms.mediagallery.mediaAlbum">Album à afficher</label>
+			<label index="flexforms.mediagallery.mediaAlbumsUids">Albums à afficher</label>
+			<label index="flexforms.mediagallery.useAlbumFilterAsExclude">Filtres de sélection (si aucun album n'est sélectionné tous sont affichés)</label>
+			<label index="flexforms.mediagallery.useAlbumFilterAsExclude.I.0">Afficher seulement les éléments sélectionnés</label>
+			<label index="flexforms.mediagallery.useAlbumFilterAsExclude.I.1">Exclure les éléments sélectionnés</label>
+			
+			<label index="flexforms.mediagallery.list.hideEmptyAlbums">Cacher les albums vides</label>
+			<label index="flexforms.mediagallery.list.pagination.itemsPerPage">Nombre maximal de vignettes à afficher par page</label>
+			<label index="flexforms.mediagallery.list.thumb.width">Largeur de la vignette</label>
+			<label index="flexforms.mediagallery.list.thumb.height">Hauteur de la vignette</label>
+			<label index="flexforms.mediagallery.list.thumb.random">Vignette aléatoire</label>
+			<label index="flexforms.mediagallery.list.orderBy">Trier les albums par</label>
+			<label index="flexforms.mediagallery.list.orderBy.I.datetime">Date d'album</label>
+			<label index="flexforms.mediagallery.list.orderBy.I.crdate">Date de création</label>
+			<label index="flexforms.mediagallery.list.orderBy.I.sorting">Ordre de tri du backend</label>
+			<label index="flexforms.mediagallery.list.orderDirection">Direction de tri des listes d'albums</label>
+			<label index="flexforms.mediagallery.list.orderDirection.I.asc">Ascendant (ancien à récent)</label>
+			<label index="flexforms.mediagallery.list.orderDirection.I.desc">Descendant (récent à ancien)</label>
+			
+			<label index="flexforms.mediagallery.album.pagination.itemsPerPage">Nombre de vignettes maximales affichées par page</label>
+			<label index="flexforms.mediagallery.assets.orderBy"/>
+			<label index="flexforms.mediagallery.assets.orderBy.I.name"/>
+			<label index="flexforms.mediagallery.assets.orderBy.I.crdate">Date de création</label>
+			<label index="flexforms.mediagallery.assets.orderBy.I.title"/>
+			<label index="flexforms.mediagallery.assets.orderDirection"/>
+			<label index="flexforms.mediagallery.assets.orderDirection.I.asc">Ascendant (ancien à récent)</label>
+			<label index="flexforms.mediagallery.assets.orderDirection.I.desc">Descendant (récent à ancien)</label>
+			<label index="flexforms.mediagallery.album.thumb.width">Largeur de la vignette</label>
+			<label index="flexforms.mediagallery.album.thumb.height">Hauteur de la vignette</label>
+			<label index="flexforms.mediagallery.album.lightbox.enable">Utiliser une lightbox / colorbox à la place de la vue détaillée</label>
+			<label index="flexforms.mediagallery.album.displayTitle">Afficher le titre</label>
+			
+			<label index="flexforms.mediagallery.detail.asset.width">Largeur des médias</label>
+			<label index="flexforms.mediagallery.detail.asset.height">Hauteur des médias</label>
+			
+			<label index="flexforms.mediagallery.random.targetPid">Page de l'album</label>
+			<label index="flexforms.mediagallery.random.thumb.width">Largeur de la vignette</label>
+			<label index="flexforms.mediagallery.random.thumb.height">Hauteur de la vignette</label>
+
+			
+			<label index="extmng.allowedActionsInFlexforms">Actions du plugin disponibles dans le flexform : Liste séparée par des virgules des vues qui peuvent être choisies dans le plugin. Les options disponibles sont la sélection d'albums (nestedList), la liste d'albums (flatList), un album unique (avec ou sans surcharge active / showAlbumByParam), un album aléatoire (randomAsset). Si aucune configuration n'est faite, toutes ces options sont disponibles.</label>
+			<label index="extmng.list.orderOptions">L'option de tri pour les listes d'albums dans le plugin : liste des options séparées par des virgules. Les options disponibles sont : date de l'album (datetime), date de création (crdate), ordre du backend (sorting).</label>
+			<label index="extmng.asset.orderOptions"/>
+			<label index="extmng.enableAutoCreateFileCollection"/>
+			<label index="extmng.clearCacheAfterFileChange"/>
+
+			
+
+			<label index="module.buttons.createAlbum">Créer un nouvel album</label>
+			<label index="module.buttons.createAlbumIn">Créer un nouvel album dan "%s</label>
+			<label index="module.buttons.editAlbum">Modifier l'album "%s"</label>
+			<label index="module.alerts.firstCreateStorageFolder">Vous devez d'abord créer un dossier de stockage pour vos albums !</label>
+
+		</languageKey>
+  </data>
+</T3locallangExt>

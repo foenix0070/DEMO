@@ -1,0 +1,25 @@
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<th class="col-title">
+	<f:if condition="{options.sortable}">
+		<f:then>
+			<f:if condition="{field} == {list.sortingFieldUnmapped}">
+				<f:then>
+					<f:if condition="{list.sortingOrder} == 'asc'">
+						<f:then>
+							<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'desc'}"><f:translate key="tx_modules_label.list_{list.underscoredId}_col_{options.underscoredId}" /></f:link.action>
+							<core:icon identifier="status-status-sorting-asc"/>
+						</f:then>
+						<f:else>
+							<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'asc'}"><f:translate key="tx_modules_label.list_{list.underscoredId}_col_{options.underscoredId}" /></f:link.action>
+							<core:icon identifier="status-status-sorting-desc"/>
+						</f:else>
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:link.action action="{list.action}" arguments="{sortingField: field, sortingOrder: 'asc'}"><f:translate key="tx_modules_label.list_{list.underscoredId}_col_{options.underscoredId}" /></f:link.action>
+				</f:else>
+			</f:if>
+		</f:then>
+		<f:else><f:translate key="tx_modules_label.list_{list.underscoredId}_col_{options.underscoredId}" /></f:else>
+	</f:if>
+</th>

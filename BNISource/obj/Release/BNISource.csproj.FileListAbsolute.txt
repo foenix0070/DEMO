@@ -1,0 +1,14 @@
+D:\DEMO\BNISource\bin\BNISource.dll.config
+D:\DEMO\BNISource\bin\BNISource.dll
+D:\DEMO\BNISource\bin\BNISource.pdb
+D:\DEMO\BNISource\obj\Release\BNISource.csproj.AssemblyReference.cache
+D:\DEMO\BNISource\obj\Release\BNISource.csproj.CoreCompileInputs.cache
+D:\DEMO\BNISource\obj\Release\BNISource.dll
+D:\DEMO\BNISource\obj\Release\BNISource.pdb
+D:\SITE\DEMO-\BNISource\bin\BNISource.dll.config
+D:\SITE\DEMO-\BNISource\bin\BNISource.dll
+D:\SITE\DEMO-\BNISource\bin\BNISource.pdb
+D:\SITE\DEMO-\BNISource\obj\Release\BNISource.csproj.AssemblyReference.cache
+D:\SITE\DEMO-\BNISource\obj\Release\BNISource.csproj.CoreCompileInputs.cache
+D:\SITE\DEMO-\BNISource\obj\Release\BNISource.dll
+D:\SITE\DEMO-\BNISource\obj\Release\BNISource.pdb
